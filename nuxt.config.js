@@ -17,7 +17,6 @@ export default {
   },
 
   workbox: {
-    // Workbox options
     importScripts: [
       'https://cdn.otherlevels.com/js-sdk/ol-service-worker.js?appKey=7b9f8bc23f715afc5141842400f6451a',
     ],
@@ -76,12 +75,11 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  // loading: '~/components/Loading.vue',
   loadingIndicator: {
     name: '~/loading.html',
     color: 'white',
     throttle: 0,
-    background: 'rgb(28, 178, 169)',
+    background: 'black',
   },
 
   /*
@@ -92,7 +90,11 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '@/plugins/otherlevels', ssr: false }, { src: '@/plugins/vac', ssr: false }],
+  plugins: [
+    { src: '@/plugins/otherlevels', ssr: false },
+    { src: '@/plugins/vac', ssr: false },
+    // { src: '@/plugins/vuelidate', ssr: false },
+  ],
 
   /*
    ** Nuxt.js modules
