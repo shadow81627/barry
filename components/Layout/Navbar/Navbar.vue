@@ -1,0 +1,86 @@
+<template>
+  <b-navbar toggleable :type="type" :variant="color" class="main-nav">
+    <b-navbar-brand href="/">
+      <span class="text-primary display-4">sc</span
+      ><span class="text-light display-4" :class="{ 'text-dark': menuOpen }">Uber</span>
+    </b-navbar-brand>
+
+    <MenuButton class="ml-auto" />
+
+    <b-collapse id="nav-collapse" is-nav class="menu">
+      <b-navbar-nav class="fullpage-nav-list bg-light min-vh-100 text-center">
+        <b-nav-item :to="localePath('index')">About</b-nav-item>
+        <b-nav-item :to="localePath('entry')">Win</b-nav-item>
+        <b-nav-item :to="localePath('blog')">Explore</b-nav-item>
+        <b-nav-item :to="localePath('deals')">Deals</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+</template>
+
+<script>
+import MenuButton from './MenuButton';
+export default {
+  components: {
+    MenuButton,
+  },
+  props: {
+    variant: { type: String, default: 'faded' },
+    dark: { type: Boolean, default: false },
+  },
+  data: () => ({
+    menuOpen: false,
+  }),
+  computed: {
+    color: function() {
+      if (this.menuOpen) {
+        // Set nav variant to white when menu open
+        return 'light';
+      }
+      return this.variant;
+    },
+    type: function() {
+      return (this.dark || this.variant === 'dark') && !this.menuOpen ? 'dark' : 'light';
+    },
+  },
+  mounted() {
+    // Menu collapse state event listener. used to set nav color
+    this.$root.$on('bv::collapse::state', (collapseId, isJustShown) => {
+      this.menuOpen = isJustShown;
+    });
+  },
+};
+</script>
+
+<style lang="scss">
+@import '@/assets/scss/variables.scss';
+
+.navbar-nav.fullpage-nav-list .nav-item .nav-link {
+  font-size: 3rem;
+  color: $green;
+  border-bottom: 1px;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* active link underline */
+.navbar-nav.fullpage-nav-list .nav-item .nav-link.nuxt-link-exact-active::after {
+  content: '';
+  background: $dark;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  display: block;
+
+  /* distance from link */
+  bottom: 5px;
+
+  /* letter spacing offset */
+  left: -1rem;
+}
+</style>

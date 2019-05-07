@@ -1,0 +1,119 @@
+{
+  "links": {
+    "landing": "Enter Now",
+    "english": "English version",
+    "french": "French version",
+    "deals": "deals",
+    "blog": "explore",
+    "about": "about",
+    "entry": "win"
+  },
+  "pagination": [
+    { "value": "about", "text": "about" },
+    { "value": "entry", "text": "win" },
+    { "value": "deals", "text": "deals" },
+    { "value": "blog", "text": "explore" }
+  ],
+  "tip": {
+    "heading": "TIP:",
+    "description": "Share your entry"
+  },
+  "about": {
+    "hero": {
+      "brand": "Queensland | Partner",
+      "title": "scUber",
+      "blurb": "Great Barrier Reef Australia",
+      "link": {
+        "text": "Win a scuber ride",
+        "path": "entry"
+      }
+    },
+    "title": "Meet sc<strong style=\"color:black;\">Uber</strong>",
+    "intro": "A world first on the world’s greatest reef",
+    "body": "Experience the best that Queensland's summer has to offer with a $5,000 holiday on us! Whether you spend it exploring our world famous islands, lazing at the beach or enjoying the best of our super fresh seafood and tropical treats, you'll be able to choose your own summer fun!"
+  },
+  "entry": {
+    "hero": {
+      "brand": "Queensland | Partner",
+      "title": "Win a ride in sc<strong>Uber</strong>",
+      "blurb": "On the Great Barrier Reef Australia",
+      "cta": "Enter Now",
+      "link": {
+        "text": "Project Barry ",
+        "path": "about"
+      }
+    },
+    "intro": "To celebrate launch of scUber, Tourism and Events Queensland and Uber is giving one lucky person and a friend the opportunity to win a trip to Australia’s Great Barrier Reef.",
+    "prize_package": "For your chance to win, enter below and tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with ScUber.",
+    "form": {
+      "heading": "Tell us why you should experience the wonder of the Great Barrier Reef with ScUber in 25 words or less",
+      "cta": "Question details CTA",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email Address",
+      "country_iso": "Country/Region",
+      "postcode": "Postcode",
+      "entry_text": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
+      "word_count": "Words",
+      "opt_in": "I agree to the <a rel=\"noopener\" href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">terms and conditions</a>.",
+      "partner_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
+      "submit": "Enter Now"
+    }
+  },
+  "confirmation": {
+    "title": "Thank you! "
+  },
+  "closed": {
+    "title": "Competition is now closed"
+  },
+  "unsubscribed": {
+    "title": "You have now successfully been unsubscribed."
+  },
+  "comingsoon": {
+    "title": "Competition is coming soon"
+  },
+  "emailshare": {
+    "form": {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email Address",
+      "add": "Add",
+      "submit": "Send"
+    }
+  },
+  "thanks": {
+    "title": "Thank you!",
+    "intro": "<p>Thanks for entering the competition to experience the Great Barrier Reef with scUber!</p><p><a :href=\"`https://www.queensland.com/${$i18n.locales.find(i => i.code === this.$i18n.locale).iso}/plan-your-trip/travel-tools/enews-subscribe`\" target=\"_blank\">Subscribe</a> for exclusive offers, holiday deals and local tips from Queensland delivered straight toyour inbox.</p><p>Planning your perfect next Great Barrier Reef holiday?</p><p>Find out more about the ways to experience this World Heritage-listed wonder below.</p>"
+  },
+  "deals": {
+    "heading": "Australian Deals",
+    "no-deals": "No Deal",
+    "deals": [
+      {
+        "heading": "Deal 1 has a really big header to see how much text we can fit into this area without it looking silly.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "price": "$1000000",
+        "link": "https://example.com/deals/1"
+      },
+      {
+        "heading": "Sweet Deal highlight",
+        "description": "I am deal2",
+        "price": "$2000",
+        "link": "https://example.com/deals/2",
+        "disabled": true
+      },
+      {
+        "heading": "deal3",
+        "description": "I am deal3",
+        "price": "$3000",
+        "link": "https://example.com/deals/3"
+      },
+      {
+        "heading": "deal4",
+        "description": "tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et n",
+        "price": "$4000",
+        "link": "https://example.com/deals/4"
+      }
+    ]
+  }
+}

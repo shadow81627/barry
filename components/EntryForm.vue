@@ -1,0 +1,222 @@
+<template>
+  <div class="entry-form">
+    <!-- class="needs-validation was-validated" -->
+    <form novalidate @submit.prevent="submitForm">
+      <h2>{{ $t('entry.form.heading') }}</h2>
+      <p>{{ $t('entry.form.cta') }}</p>
+
+      <FormField
+        v-bind="{
+          id: 'entry_text',
+          type: 'entry-text',
+          placeholder: $t('entry.form.entry_text'),
+          required: true,
+        }"
+      />
+
+      <FormField
+        v-bind="{
+          id: 'first_name',
+          type: 'text',
+          placeholder: $t('entry.form.first_name'),
+          required: true,
+        }"
+      />
+      <FormField
+        v-bind="{
+          id: 'last_name',
+          type: 'text',
+          placeholder: $t('entry.form.last_name'),
+          required: true,
+        }"
+      />
+      <FormField
+        v-bind="{
+          id: 'email',
+          type: 'email',
+          placeholder: $t('entry.form.email'),
+          required: true,
+        }"
+      />
+
+      <div class="form-row">
+        <FormField
+          v-bind="{
+            id: 'country_iso',
+            type: 'select',
+            placeholder: $t('entry.form.country_iso'),
+            options: countries,
+            required: true,
+          }"
+          class="col-12 col-md-8 form-select"
+        />
+        <FormField
+          v-bind="{
+            id: 'postcode',
+            type: 'text',
+            placeholder: $t('entry.form.postcode'),
+          }"
+          class="col-12 col-md-4"
+          :disabled="this.$store.state.currentFormData.country_iso !== 'AU'"
+          :change="
+            this.$store.commit({
+              type: 'setFormDataById',
+              id: 'postcode',
+              value:
+                this.$store.state.currentFormData.country_iso !== 'AU'
+                  ? ''
+                  : this.$store.state.currentFormData.postcode,
+            })
+          "
+          :required="this.$store.state.currentFormData.country_iso === 'AU'"
+          pattern="\d*"
+          maxlength="4"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="dob" class="col-12 col-sm-3">
+          Birthday
+        </label>
+        <FormField type="text" placeholder="Day" class="col-4 col-sm-3" />
+        <FormField type="text" placeholder="Month" class="col-4 col-sm-3" />
+        <FormField type="text" placeholder="Year" class="col-4 col-sm-3" />
+      </div>
+
+      <FormField
+        v-bind="{
+          id: 'opt_in',
+          type: 'checkbox',
+          options: [{ text: $t('entry.form.opt_in'), value: '1', required: true }],
+        }"
+        class="checkbox"
+      />
+
+      <FormField
+        v-bind="{
+          id: 'teq_opt_in',
+          type: 'checkbox',
+          options: [{ text: $t('entry.form.partner_opt_in'), value: '1' }],
+        }"
+        class="checkbox"
+      />
+
+      <FormField
+        v-bind="{
+          id: 'submit',
+          type: 'submit',
+          value: $t('entry.form.submit'),
+        }"
+      />
+    </form>
+  </div>
+</template>
+
+<script>
+import { mapActions, mapMutations } from 'vuex';
+import FormField from '@/components/FormField/FormField.vue';
+
+import EventBus from '@/assets/js/EventBus.js';
+
+import axios from 'axios';
+
+export default {
+  components: {
+    FormField,
+  },
+  data() {
+    return {
+      entrant: this.$store.state.currentFormData,
+      countries: this.$store.state.countries,
+      states: this.$store.state.states,
+      ctaLoading: false,
+    };
+  },
+  methods: {
+    ...mapActions(['validate', 'submit', 'fetchSchema']),
+    ...mapMutations(['setCurrentFormData']),
+    async submitForm(event) {
+      event.preventDefault();
+      this.$store.commit('setFormSubmitted', true);
+
+      // // Collect form field values
+      // const formObject = {};
+      // new FormData(event.target).forEach((value, key) => {
+      //   formObject[key] = value;
+      // });
+      // formObject.secret = process.env.API_SECRET;
+      // formObject.opt_in = formObject.opt_in ? 1 : 0;
+
+      // // Set currentformdata
+      // this.$store.commit('setCurrentFormData', formObject);
+
+      const valid = await this.validate();
+
+      if (valid) {
+        // await this.submit();
+
+        // const url = `${process.env.API_BASE_URL}/api/enter`;
+
+        this.submit()
+          // .post(url, formObject)
+          .then(response => {
+            console.log(response);
+            // Trigger event
+            EventBus.$emit('entry-confirmed', true);
+            this.$router.push(this.localePath('confirmation'));
+          })
+          .catch(error => {
+            if (error.response) {
+              // The request was made and the server responded with a status code
+              // that falls out of the range of 2xx
+              console.log(error.response.data);
+              console.log(error.response.status);
+              console.log(error.response.headers);
+            } else if (error.request) {
+              console.log(error.request);
+            } else {
+              // Something happened in setting up the request that triggered an Error
+              console.log('Error', error.message);
+            }
+            console.log(error.config);
+          });
+      }
+    },
+    enterCompetition() {
+      this.ctaLoading = true;
+
+      // Set API secret
+      this.entrant.secret = process.env.API_SECRET;
+      this.entrant.opt_in = this.entrant.opt_in ? 1 : 0;
+
+      const url = `${process.env.API_BASE_URL}/api/enter`;
+
+      axios.post(url, this.entrant).then(response => {
+        this.ctaLoading = false;
+
+        if (response.data.success) {
+          // Set entrant's hash
+          this.entrant.hash = response.data.hash;
+
+          // Save entrant modal in store
+          this.$store.state.entrant = this.entrant;
+
+          // Trigger event
+          EventBus.$emit('entry-confirmed', true);
+        } else {
+          EventBus.$emit('notification', {
+            type: 'error',
+            message: 'Error submitting entry.',
+          });
+        }
+      });
+    },
+  },
+};
+</script>
+
+<style scoped>
+.checkbox {
+  color: #a2b8c1;
+}
+</style>

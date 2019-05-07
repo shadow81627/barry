@@ -1,0 +1,332 @@
+openapi: '3.0.0'
+info:
+  title: Barry API
+  contact:
+    name: XCOM Media
+    url: http://xcommedia.com.au/
+    email: dev@xcommedia.com.au
+  version: 0.0.0
+  
+servers:
+- url: http://localhost:3500/
+  description: Development server
+- url: https://stage-barry-api.hosted.xcom.digital/
+  description: Staging server
+- url: https://barry-api.hosted.xcom.digital/
+  description: Production server
+  
+components:
+  schemas:
+    Key:
+      type: string
+      example: st-Barry
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 500
+        message:
+          type: string
+          example: Server error
+        payload:
+          type: object
+      required:
+        - code
+        - message
+    EmailHash:
+      type: string
+      description: SHA1 hash of a lowercase Email concatenated with a secret string, used to identify Subscribers.
+      minLength: 40
+      maxLength: 40
+      example: ac772dc8ed1f7786332e1bb8d0e9edede72e66d6
+    Email:
+      type: string
+      example: username@gmail.com
+    Subscriber:
+      type: object
+      properties:
+        email:
+          $ref: '#/components/schemas/Email'
+      required:
+        - email
+    SubscriberDetail:
+      allOf:
+        - $ref: '#/components/schemas/Subscriber'
+        - type: object
+          properties:
+            first_name:
+              type: string
+              example: 'Bob'
+            last_name:
+              type: string
+              example: 'Subscriber'
+            dob:
+              type: string
+              format: date
+              example: '1997-06-30'
+            country_iso:
+              type: string
+              maxLength: 2
+              example: 'AU'
+            postcode:
+              type: string
+              example: '4005'
+            entry_text:
+              type: string
+              example: 'I like hotdogs'
+            opt_in:
+              type: integer
+              example: 1
+            partner_opt_in:
+              type: integer
+              example: 0
+          required:
+          - first_name
+          - last_name
+          - country_iso
+          - entry_text
+          - opt_in
+    Friend:
+      allOf:
+       - $ref: '#/components/schemas/Subscriber'
+       - type: object
+         properties:
+            first_name:
+              type: string
+              example: 'Bob'
+            last_name:
+              type: string
+              example: 'Subscriber'
+    Validation:
+      type: object
+      properties:
+        dataPath:
+          type: string
+          example: ".email"
+        keyword:
+          type: string
+          example: "required"
+        message:
+          type: string
+          example: should have required property 'email'"
+        params: 
+          type: object
+          properties: 
+            missingProperty:
+              type: string
+              example: "email"
+        schemaPath:
+          type: string
+          example: "#/required"
+      required:
+        - dataPath
+        - message
+
+  parameters:
+    hash:
+      name: hash
+      in: path
+      description: Database identifier for a subscriber.
+      required: true
+      schema:
+          $ref: '#/components/schemas/EmailHash'
+    email:
+      name: email
+      in: path
+      description: Subscriber email address.
+      required: true
+      schema:
+          $ref: '#/components/schemas/Subscriber/properties/email'
+    key:
+      name: key
+      in: path
+      description: Competition key
+      required: true
+      schema:
+          $ref: '#/components/schemas/Key'
+    
+  responses:
+    Subscriber:
+      description: Public Subscriber data
+      content:
+        application/json:
+          schema:
+            properties:
+              success:
+                type: boolean
+                example: true
+              hash:
+                $ref: '#/components/schemas/EmailHash'
+  
+    SubscriberDetail:
+      description: Private Subscriber data
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SubscriberDetail'
+    ValidationError:
+      description: Validation Error
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/Error'
+              - type: object
+                properties:
+                  errors:
+                    type: array
+                    items: 
+                      $ref: '#/components/schemas/Validation'
+          example: 
+            code: 422
+            message: Unprocessable Entity
+            payload:
+              dataPath: "firstname"
+              keyword: "minLength"
+              message: "'' is too short"
+              schemaPath: "minLength"
+
+    NotFound:
+      description: The specified resource was not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example: 
+            code: 404
+            message: Not Found
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example: 
+            code: 401
+            message: Unauthorized
+    Conflict:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example: 
+            code: 409
+            message: Conflict
+    IllegalInput:
+      description: Illegal input for operation.
+    UnexpectedError:
+      description: Unexpected error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    Mainenance:
+      description: Application is down for mainenance
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example: 
+            code: 503
+            message: Mainenance
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      name: token
+      in: query
+    BearerAuth:
+      type: http
+      scheme: bearer
+
+paths:
+  /{key}/api/enter:
+    parameters:
+        - $ref: '#/components/parameters/key'
+    post:
+      summary: Create a new subscriber.
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          x-www-form-urlencoded:
+            schema:
+              allOf:
+              - $ref: '#/components/schemas/SubscriberDetail'
+              - type: object
+                properties:
+                  secret:
+                   type: string
+                   example: mysecret
+      responses:
+        '201':
+          $ref: '#/components/responses/Subscriber'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '503':
+          $ref: '#/components/responses/Mainenance'
+        default:
+          $ref: '#/components/responses/UnexpectedError'
+          
+  /{key}/api/email_share:
+    parameters:
+      - $ref: '#/components/parameters/key'
+    post:
+      summary: Send email share.
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          x-www-form-urlencoded:
+            schema:
+                properties:
+                  secret:
+                   type: string
+                   example: mysecret
+                  hash:
+                    $ref: '#/components/schemas/EmailHash'
+                  friends:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Friend'
+      responses:
+        '201':
+          $ref: '#/components/responses/Subscriber'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '503':
+          $ref: '#/components/responses/Mainenance'
+        default:
+          $ref: '#/components/responses/UnexpectedError'
+
+  /{key}/api/unsubscribe/{hash}:
+    parameters:
+      - $ref: '#/components/parameters/key'
+      - $ref: '#/components/parameters/hash'
+      - in: query
+        name: secret
+        schema:
+          type: string
+        required: true
+    get:
+      summary: Get existing entrant by hash.
+      security:
+        - ApiKeyAuth: []
+      responses:
+        '200':
+          $ref: '#/components/responses/SubscriberDetail'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '503':
+          $ref: '#/components/responses/Mainenance'
+        default:
+          $ref: '#/components/responses/UnexpectedError'

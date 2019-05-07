@@ -1,0 +1,63 @@
+{
+  "links": {
+    "home": "Accueil",
+    "english": "Version Anglaise",
+    "french": "Version Française",
+    "deals": "offres",
+    "about": "sur"
+  },
+  "hero": {
+    "title": "Été",
+    "blurb": "<span>GAGNER UN</span> €5000<span>ÉTÉ VACANCES AU QUEENSLAND!</span>",
+    "cta": "Entre maintenant"
+  },
+  "entry": {
+    "title": "GAGNEZ VACANCES D'ÉTÉ DE €5 000 AU QUEENSLAND!",
+    "intro": "Comment ferez-vous l'été dans le Queensland?",
+    "prize-package": "Découvrez le meilleur de l'été du Queensland avec des vacances à €5 000! Que vous passiez à explorer nos îles de renommée mondiale, à vous prélasser à la plage ou à profiter du meilleur de nos fruits de mer super frais et de nos gâteries tropicales, vous pourrez choisir vos propres plaisirs estivaux!",
+    "form": {
+      "heading": "Inscrivez-vous maintenant pour gagner!",
+      "facebook": "Entrez avec Facebook",
+      "or": "ou",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "email": "Adresse électronique",
+      "country_iso": "Pays / région",
+      "postcode": "Code postal",
+      "textarea": "Pourquoi devriez-vous expérimenter les merveilles de la Grande barrière de corail avec ScUber?",
+      "opt_in": "Je suis d'accord avec le <a href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">Termes et conditions</a> et recevez des offres exclusives de vacances, des concours et des conseils d'initiés du Queensland.",
+      "submit": "Entre maintenant"
+    }
+  },
+  "deals": {
+    "heading": "Français Offres",
+    "no-deals": "Pas d'entente",
+    "deals": [
+      {
+        "heading": "offres 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "price": "€1000000",
+        "link": "https://example.com/deals/1"
+      },
+      {
+        "heading": "offres 2",
+        "description": "Je suis offres 2",
+        "price": "€2000",
+        "link": "https://example.com/deals/2",
+        "disabled": true
+      },
+      {
+        "heading": "offres 3",
+        "description": "I am offres 3",
+        "price": "€3000",
+        "link": "https://example.com/deals/3"
+      },
+      {
+        "heading": "offres 4",
+        "description": "tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et n",
+        "price": "€4000",
+        "link": "https://example.com/deals/4"
+      }
+    ]
+  }
+}
