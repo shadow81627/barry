@@ -14,7 +14,7 @@
 
         <div class="col-12">
           <a href="https://queensland.com" target="_blank">Queensland.com</a> |
-          <a href="https://uber.com" target="_blank">Unber.com</a> |
+          <a href="https://uber.com" target="_blank">Uber.com</a> |
           <a href="#" target="_blank">Privacy</a> |
           <a href="#" target="_blank">Terms and Conditions</a> |
           <a href="#" target="_blank">Media Centre</a> |
