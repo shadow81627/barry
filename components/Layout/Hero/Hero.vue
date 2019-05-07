@@ -1,52 +1,49 @@
 <template>
-  <div class="hero">
-    <header>
-      <div v-if="overlay" class="overlay" />
-      <video
-        id="vid1"
-        :poster="poster"
-        class="video-js fullscreen"
-        autoplay
-        preload="auto"
-        playsinline
-        muted
-        loop
-      >
-        <!-- Video width 100% for poster doesn't work on mobile for video -->
-        <source src="@/assets/videos/bg2.mp4" type="video/mp4" />
-      </video>
+  <header>
+    <div v-if="overlay" class="overlay" />
+    <video
+      id="vid1"
+      :poster="poster"
+      class="video-js fullscreen"
+      autoplay
+      preload="auto"
+      playsinline
+      muted
+      loop
+    >
+      <!-- Video width 100% for poster doesn't work on mobile for video -->
+      <source src="@/assets/videos/ProjectBarryLaunchPreEditAssembly5.mp4" type="video/mp4" />
+    </video>
 
-      <div class="container-fluid h-100 p-0">
-        <div class="hero__text">
-          <img
-            v-if="brand"
-            class="img-fluid"
-            src="https://cdn2.queensland.com/Content/Images/logos/teq-qldgov-logo-2017.png?d=20170822T145058"
-            alt="Tourism and Events Queensland | Queensland Government"
-          />
-          <h1 v-html="title" />
-          <div class="hero__blurb" v-html="blurb" />
+    <div class="container-fluid h-100 p-0">
+      <div class="hero__text">
+        <img
+          v-if="brand"
+          class="img-fluid"
+          src="https://cdn2.queensland.com/Content/Images/logos/teq-qldgov-logo-2017.png?d=20170822T145058"
+          alt="Tourism and Events Queensland | Queensland Government"
+        />
+        <h1 v-html="title" />
+        <div class="hero__blurb" v-html="blurb" />
 
-          <b-nav v-if="cta" v-b-scrollspy:page-content class="d-inline">
-            <b-nav-item
-              :to="{ path: localePath('entry'), hash: '#page-content' }"
-              class="[ btn ] btn-dark [ hero__cta ]"
-            >
-              {{ cta }}
-            </b-nav-item>
-          </b-nav>
-        </div>
-
-        <!-- <div class="[ hero__mouse ] visible-lg-block">
-          <img src="@/assets/images/mouse.svg" alt="Mouse" />
-        </div> -->
-
-        <nuxt-link v-if="link" :to="localePath(link.path)" class="hero__link"
-          >{{ link.text }} &gt;</nuxt-link
-        >
+        <b-nav v-if="cta" class="d-inline">
+          <b-nav-item
+            :to="{ path: localePath('entry'), hash: '#page-content' }"
+            class="[ btn ] btn-dark [ hero__cta ]"
+            >{{ cta }}</b-nav-item
+          >
+        </b-nav>
       </div>
-    </header>
-  </div>
+
+      <!-- <div class="[ hero__mouse ] visible-lg-block">
+          <img src="@/assets/images/mouse.svg" alt="Mouse" />
+      </div>-->
+
+      <nuxt-link v-if="link" :to="localePath(link.path)" class="hero__link"
+        >{{ link.text }} &gt;</nuxt-link
+      >
+    </div>
+  </header>
 </template>
 
 <script>
