@@ -2,7 +2,7 @@
   <div class="__card">
     <div class="card__item">
       <div class="card__content imagecardone">
-        <img src="@/assets/images/washing-machine.png" alt="scuber" />
+        <!-- <img src="@/assets/images/washing-machine.png" alt="scuber" /> -->
       </div>
     </div>
     <div class="card__item">

@@ -76,7 +76,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: '~/components/Loading.vue',
+  // loading: '~/components/Loading.vue',
   loadingIndicator: {
     name: '~/loading.html',
     color: 'white',
