@@ -1,6 +1,6 @@
 <template>
-  <div class="mb-4">
-    <h1 class="text-center text-light p-4 text-uppercase display-4 font-weight-bold">
+  <div class="mb-4 container-break-out">
+    <h1 class="text-center text-light p-4 text-uppercase font-weight-bold">
       {{ heading }}
     </h1>
   </div>

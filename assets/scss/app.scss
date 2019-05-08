@@ -32,10 +32,6 @@ h4 {
   color: $green;
 }
 
-// a, a:hover {
-// 	color: $green;
-// }
-
 .btn {
   border-radius: 0;
   color: white;
@@ -555,4 +551,15 @@ a.social__item {
   position: relative;
   z-index: 2;
   color: #e6665a;
+}
+
+/*------------------------------------*\
+  #LAYOUT
+\*------------------------------------*/
+.container-break-out {
+  /* force content full width when inside container */
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+  color: rgba(0, 0, 0, 0.6);
 }
