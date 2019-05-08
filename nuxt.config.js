@@ -159,15 +159,18 @@ export default {
     bootstrapVueCSS: false, // or `bvCSS`
     componentPlugins: [
       'Form',
+      'FormGroup',
       'FormCheckbox',
       'FormInput',
       'FormRadio',
       'FormTextarea',
+      'FormSelect',
       'Navbar',
       'Collapse',
       'Dropdown',
       'Badge',
       'Image',
+      'Button',
     ],
     directivePlugins: ['Toggle', 'Scrollspy'],
   },
