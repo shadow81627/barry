@@ -1,9 +1,9 @@
 {
   "navigation": [
-    { "value": "deals", "text": "travel offers" },
-    { "value": "blog", "text": "explore the reef" },
     { "value": "about", "text": "about scuber" },
-    { "value": "entry", "text": "win a ride" }
+    { "value": "entry", "text": "win a ride" },
+    { "value": "blog", "text": "explore the reef" },
+    { "value": "deals", "text": "travel offers" }
   ],
   "pagination": [
     { "value": "about", "text": "about" },
