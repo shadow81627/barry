@@ -118,16 +118,13 @@ header .overlay {
 
 .hero__video embed .hero__video iframe,
 .video-js,
+.video-js video,
 .hero__video object,
 .hero__video video {
   min-height: 100%;
   position: absolute;
   width: 100%;
   object-fit: cover;
-}
-
-.video-js video {
-  min-height: auto;
 }
 
 .hero__text {

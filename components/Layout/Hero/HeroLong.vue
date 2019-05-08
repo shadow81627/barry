@@ -1,7 +1,7 @@
 <script>
 import videojs from 'video.js';
 
-import Hero from '@/components/Hero';
+import Hero from './Hero';
 
 export default {
   extends: Hero,

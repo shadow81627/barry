@@ -29,7 +29,7 @@
 
 <script>
 import Notification from '@/components/Layout/Notification';
-import Hero from '@/components/Layout/Hero';
+import Hero from '@/components/Layout/Hero/HeroLong';
 import Footer from '@/components/Layout/Footer';
 import Navbar from '@/components/Layout/Navbar';
 import Pagination from '@/components/Layout/Navbar/Pagination';
