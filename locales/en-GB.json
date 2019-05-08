@@ -1,13 +1,4 @@
 {
-  "links": {
-    "landing": "Enter Now",
-    "english": "English version",
-    "french": "French version",
-    "deals": "travel offers",
-    "blog": "explore the reef",
-    "about": "about scuber",
-    "entry": "win a ride"
-  },
   "navigation": [
     { "value": "deals", "text": "travel offers" },
     { "value": "blog", "text": "explore the reef" },
@@ -20,6 +11,16 @@
     { "value": "deals", "text": "deals" },
     { "value": "blog", "text": "explore" }
   ],
+  "footer": {
+    "links": [
+      { "text": "Queensland.com", "href": "https://queensland.com" },
+      { "text": "Uber.com", "href": "https://uber.com" },
+      { "text": "Privacy", "href": "#" },
+      { "text": "Terms and Conditions", "href": "#" },
+      { "text": "Media Centre", "href": "#" },
+      { "text": "Generic Enquiries", "href": "#" }
+    ]
+  },
   "tip": {
     "heading": "TIP:",
     "description": "Share your entry"

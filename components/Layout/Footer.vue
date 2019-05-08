@@ -12,13 +12,10 @@
 
         <div class="col-12 py-4"><LangSelect class="mw-25" /></div>
 
-        <div class="col-12">
-          <a href="https://queensland.com" target="_blank">Queensland.com</a> |
-          <a href="https://uber.com" target="_blank">Uber.com</a> |
-          <a href="#" target="_blank">Privacy</a> |
-          <a href="#" target="_blank">Terms and Conditions</a> |
-          <a href="#" target="_blank">Media Centre</a> |
-          <a href="#" target="_blank">Generic Enquiries</a>
+        <div class="col-12 footer-links">
+          <a v-for="link in $t('footer.links')" :key="link.text" :href="link.href" target="_blank">
+            {{ link.text }}
+          </a>
         </div>
       </div>
     </div>
@@ -36,5 +33,13 @@ export default {
 footer a {
   color: #fff !important;
   text-decoration: none;
+}
+
+.footer-links a::before {
+  content: ' | ';
+}
+
+.footer-links a:first-child::before {
+  content: '';
 }
 </style>
