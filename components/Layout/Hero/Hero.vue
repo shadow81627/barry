@@ -20,7 +20,7 @@
         <img
           v-if="brand"
           class="img-fluid"
-          src="https://cdn2.queensland.com/Content/Images/logos/teq-qldgov-logo-2017.png?d=20170822T145058"
+          src="@/assets/images/QA_ScUber_WR.png"
           alt="Tourism and Events Queensland | Queensland Government"
         />
         <h1 v-html="title" />
