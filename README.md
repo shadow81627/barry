@@ -1,4 +1,4 @@
-# barry
+# Barry
 
 > Project barry is a super secret Tourism Events Queensland Competition. The comp is a "reskin" of summer feels 2017.
 
@@ -85,6 +85,7 @@ Things to fix:
 * Progressive Web App (PWA)
 * Unit tests with Jest (if I write some...)
 * SCSS custom theming for Bootstrap
+* Coming soon Countdown
 
 
 ## Usage
