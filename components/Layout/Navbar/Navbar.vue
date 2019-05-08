@@ -1,8 +1,8 @@
 <template>
   <b-navbar toggleable :type="type" :variant="color" class="main-nav">
-    <b-navbar-brand href="/">
-      <span class="text-primary display-4">sc</span
-      ><span class="text-light display-4" :class="{ 'text-dark': menuOpen }">Uber</span>
+    <b-navbar-brand v-if="brand" href="/">
+      <span class="text-primary h1">sc</span
+      ><span class="text-light h1" :class="{ 'text-dark': menuOpen }">Uber</span>
     </b-navbar-brand>
 
     <MenuButton class="ml-auto" />
@@ -24,6 +24,7 @@ export default {
     MenuButton,
   },
   props: {
+    brand: { type: Boolean, default: true },
     variant: { type: String, default: 'faded' },
     dark: { type: Boolean, default: false },
   },

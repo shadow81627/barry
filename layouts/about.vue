@@ -3,7 +3,7 @@
     <Hero
       v-bind="{
         overlay: false,
-        poster: '/images/Screen-Shot-2019-05-02-at-2.48.16-pm.gif',
+        poster: '/images/bg2_screen.jpg',
         link: {
           path: $t('about.hero.link.path'),
           text: $t('about.hero.link.text'),
@@ -11,7 +11,10 @@
       }"
     />
 
-    <Navbar style="position: absolute;top: 0;width: 100%;z-index: 1000;background:transparent;" />
+    <Navbar
+      :brand="false"
+      style="position: absolute;top: 0;width: 100%;z-index: 1000;background:transparent;"
+    />
 
     <div class="container" style="min-height: 100vh;">
       <Pagination />
