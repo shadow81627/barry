@@ -14,35 +14,35 @@
       />
 
       <FormField
+        v-model.trim="form.first_name"
         v-bind="{
           id: 'first_name',
           type: 'text',
           placeholder: $t('entry.form.first_name'),
           required: true,
         }"
-        v-model.trim="form.first_name"
         :state="$v.form.first_name.$dirty ? !$v.form.first_name.$error : null"
       />
 
       <FormField
+        v-model.trim="form.last_name"
         v-bind="{
           id: 'last_name',
           type: 'text',
           placeholder: $t('entry.form.last_name'),
           required: true,
         }"
-        v-model.trim="form.last_name"
         :state="$v.form.last_name.$dirty ? !$v.form.last_name.$error : null"
       />
 
       <FormField
+        v-model.trim="form.email"
         v-bind="{
           id: 'email',
           type: 'email',
           placeholder: $t('entry.form.email'),
           required: true,
         }"
-        v-model.trim="form.email"
       />
 
       <div class="form-row">
