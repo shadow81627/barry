@@ -1,10 +1,5 @@
 import pkg from './package';
 
-import gb from './locales/en-GB.json';
-import fr from './locales/fr-FR.json';
-
-// require('dotenv').config();
-
 export default {
   mode: 'spa',
 
@@ -146,10 +141,6 @@ export default {
         lazy: true,
         vueI18n: {
           fallbackLocale: 'en-au',
-          messages: {
-            en: gb,
-            fr: fr,
-          },
         },
       },
     ],
