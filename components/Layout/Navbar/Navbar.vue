@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable :type="type" :variant="color" class="main-nav">
-    <b-navbar-brand v-if="brand" href="/">
+    <b-navbar-brand v-if="brand || menuOpen" href="/">
       <span class="text-primary h1">sc</span
       ><span class="text-light h1" :class="{ 'text-dark': menuOpen }">Uber</span>
     </b-navbar-brand>
