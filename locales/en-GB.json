@@ -70,7 +70,13 @@
     "title": "You have now successfully been unsubscribed."
   },
   "comingsoon": {
-    "title": "Competition is coming soon"
+    "title": "Coming soon",
+    "timer": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    }
   },
   "emailshare": {
     "form": {

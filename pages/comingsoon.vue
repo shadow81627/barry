@@ -9,9 +9,10 @@
           `Event start time: ${new Date(startTime)}`
         }}</span>
         <div slot="process" slot-scope="{ timeObj }">
-          <div>Days: {{ timeObj.d }}</div>
-          <div>Minutes: {{ timeObj.m }}</div>
-          <div>Seconds: {{ timeObj.s }}</div>
+          <div>{{ $t('comingsoon.timer.days') }}: {{ timeObj.d }}</div>
+          <div>{{ $t('comingsoon.timer.hours') }}: {{ timeObj.h }}</div>
+          <div>{{ $t('comingsoon.timer.minutes') }}: {{ timeObj.m }}</div>
+          <div>{{ $t('comingsoon.timer.seconds') }}: {{ timeObj.s }}</div>
         </div>
         <span slot="finish">
           <a class="btn btn-primary" :href="localePath('entry')">Go Go Go!!!</a>

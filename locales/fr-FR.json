@@ -29,6 +29,15 @@
       "submit": "Entre maintenant"
     }
   },
+  "comingsoon": {
+    "title": "Arrive bientôt",
+    "timer": {
+      "days": "Jours",
+      "hours": "Heures",
+      "minutes": "Minutes",
+      "seconds": "Secondes"
+    }
+  },
   "deals": {
     "heading": "Français Offres",
     "no-deals": "Pas d'entente",
