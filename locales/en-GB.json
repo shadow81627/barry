@@ -3,11 +3,17 @@
     "landing": "Enter Now",
     "english": "English version",
     "french": "French version",
-    "deals": "deals",
-    "blog": "explore",
-    "about": "about",
-    "entry": "win"
+    "deals": "travel offers",
+    "blog": "explore the reef",
+    "about": "about scuber",
+    "entry": "win a ride"
   },
+  "navigation": [
+    { "value": "deals", "text": "travel offers" },
+    { "value": "blog", "text": "explore the reef" },
+    { "value": "about", "text": "about scuber" },
+    { "value": "entry", "text": "win a ride" }
+  ],
   "pagination": [
     { "value": "about", "text": "about" },
     { "value": "entry", "text": "win" },
@@ -35,7 +41,7 @@
   "entry": {
     "hero": {
       "brand": "Queensland | Partner",
-      "title": "Win a ride in sc<strong>Uber</strong>",
+      "title": "<span style=\"font-weight: 300;\">Win a ride in sc</span><strong>Uber</strong>",
       "blurb": "On the Great Barrier Reef Australia",
       "cta": "Enter Now",
       "link": {
@@ -80,6 +86,7 @@
   },
   "emailshare": {
     "form": {
+      "heading": "Forward to Friend",
       "first_name": "First Name",
       "last_name": "Last Name",
       "email": "Email Address",

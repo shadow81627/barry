@@ -7,12 +7,11 @@
 
     <MenuButton class="ml-auto" />
 
-    <b-collapse id="nav-collapse" is-nav class="menu">
+    <b-collapse id="nav-collapse" is-nav class="menu-collapse">
       <b-navbar-nav class="fullpage-nav-list bg-light min-vh-100 text-center">
-        <b-nav-item :to="localePath('index')">About</b-nav-item>
-        <b-nav-item :to="localePath('entry')">Win</b-nav-item>
-        <b-nav-item :to="localePath('blog')">Explore</b-nav-item>
-        <b-nav-item :to="localePath('deals')">Deals</b-nav-item>
+        <b-nav-item v-for="link in $t('navigation')" :key="link.value" :to="localePath(link.value)">
+          {{ link.text }}
+        </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -57,7 +56,7 @@ export default {
 
 .navbar-nav.fullpage-nav-list .nav-item .nav-link {
   font-size: 3rem;
-  color: $green;
+  color: $dark;
   border-bottom: 1px;
   font-size: 2rem;
   font-weight: 300;
@@ -71,7 +70,7 @@ export default {
 /* active link underline */
 .navbar-nav.fullpage-nav-list .nav-item .nav-link.nuxt-link-exact-active::after {
   content: '';
-  background: $dark;
+  background: $green;
   position: absolute;
   width: 100%;
   height: 2px;
