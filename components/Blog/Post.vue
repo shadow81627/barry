@@ -7,9 +7,6 @@
     />
 
     <Info class="col" v-bind="{ heading, description, link, dark: true }" style="bottom: 1rem;" />
-    <div style="padding-bottom: 42px;">{{ description }}</div>
-    <hr />
-    <div>19 Sep</div>
   </div>
 </template>
 
