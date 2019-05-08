@@ -1,12 +1,6 @@
 <template>
-  <!-- Columns -->
-  <!-- mb-3 for bootstrap margin bottom -->
-  <div v-show="type !== 'hidden'" class="form-group mb-3">
-    <!-- Label -->
-    <form-label v-bind="{ id, label, required }" class="p-0" />
-
-    <!-- Input -->
-    <div class="col-sm-12 p-0">
+  <b-form-group v-show="type !== 'hidden'" :id="`${id}-form-group`">
+    <slot>
       <componenet
         :is="inputType"
         v-model.lazy="fieldValue"
@@ -21,16 +15,17 @@
           state: dirty || this.$store.state.formSubmitted ? valid : null,
           disabled,
         }"
+        :aria-describedby="`${id}-live-feedback`"
+        @input="$emit('input', $event)"
       />
-      <!-- <i v-show="(!valid && (dirty || this.$store.state.formSubmitted))" class="fa fa-warning errspan" /> -->
-      <!-- TODO Set is-valid to display green border -->
-      <!-- class="is-valid" -->
-    </div>
+    </slot>
 
-    <!-- Validation -->
-    <!-- Disable validation messages -->
-    <form-field-message v-if="type !== 'submit' && false" v-bind="{ id, dirty }" />
-  </div>
+    <b-form-invalid-feedback :id="`${id}-live-feedback`">
+      Please enter your {{ placeholder }}
+    </b-form-invalid-feedback>
+
+    <b-form-valid-feedback>That is a nice {{ placeholder }}</b-form-valid-feedback>
+  </b-form-group>
 </template>
 
 <script>
@@ -69,6 +64,15 @@ export default {
     ...mapActions(['validate']),
   },
   computed: {
+    inputListeners() {
+      // Allow other events to be bound
+      const vm = this;
+      return Object.assign({}, this.$listeners, {
+        input(event) {
+          vm.$emit('input', event.target.value);
+        },
+      });
+    },
     valid() {
       const errors = this.$store.getters.getFormValidationById(this.id);
 

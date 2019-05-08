@@ -1,6 +1,5 @@
 <template>
   <div class="entry-form">
-    <!-- class="needs-validation was-validated" -->
     <form novalidate @submit.prevent="submitForm">
       <h2>{{ $t('entry.form.heading') }}</h2>
       <p>{{ $t('entry.form.cta') }}</p>
@@ -21,7 +20,10 @@
           placeholder: $t('entry.form.first_name'),
           required: true,
         }"
+        v-model.trim="form.first_name"
+        :state="$v.form.first_name.$dirty ? !$v.form.first_name.$error : null"
       />
+
       <FormField
         v-bind="{
           id: 'last_name',
@@ -29,7 +31,10 @@
           placeholder: $t('entry.form.last_name'),
           required: true,
         }"
+        v-model.trim="form.last_name"
+        :state="$v.form.last_name.$dirty ? !$v.form.last_name.$error : null"
       />
+
       <FormField
         v-bind="{
           id: 'email',
@@ -37,6 +42,7 @@
           placeholder: $t('entry.form.email'),
           required: true,
         }"
+        v-model.trim="form.email"
       />
 
       <div class="form-row">
@@ -78,9 +84,9 @@
         <label for="dob" class="col-12 col-sm-3">
           Birthday
         </label>
-        <FormField type="text" placeholder="Day" class="col-4 col-sm-3" />
-        <FormField type="text" placeholder="Month" class="col-4 col-sm-3" />
-        <FormField type="text" placeholder="Year" class="col-4 col-sm-3" />
+        <FormField id="day" name="day" type="text" placeholder="Day" class="col-4 col-sm-3" />
+        <FormField id="month" name="month" type="text" placeholder="Month" class="col-4 col-sm-3" />
+        <FormField id="year" name="year" type="text" placeholder="Year" class="col-4 col-sm-3" />
       </div>
 
       <FormField
@@ -113,6 +119,9 @@
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate';
+import { required } from 'vuelidate/lib/validators';
+
 import { mapActions, mapMutations } from 'vuex';
 import FormField from '@/components/FormField/FormField.vue';
 
@@ -124,12 +133,34 @@ export default {
   components: {
     FormField,
   },
+  mixins: [validationMixin],
+  validations: {
+    form: {
+      first_name: {
+        required: required,
+      },
+      last_name: {
+        required: required,
+      },
+      email: {
+        required: required,
+      },
+    },
+  },
   data() {
     return {
-      entrant: this.$store.state.currentFormData,
       countries: this.$store.state.countries,
       states: this.$store.state.states,
       ctaLoading: false,
+      form: {
+        first_name: null,
+        last_name: null,
+        email: null,
+        country_iso: '',
+        hash: null,
+        entry_text: '',
+        dob: '',
+      },
     };
   },
   methods: {
@@ -138,6 +169,8 @@ export default {
     async submitForm(event) {
       event.preventDefault();
       this.$store.commit('setFormSubmitted', true);
+
+      this.$v.form.$touch();
 
       // // Collect form field values
       // const formObject = {};
