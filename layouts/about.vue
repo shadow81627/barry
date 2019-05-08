@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Hero
+    <HeroLong
       v-bind="{
         overlay: false,
         poster: '/images/bg2_screen.jpg',
@@ -29,7 +29,7 @@
 
 <script>
 import Notification from '@/components/Layout/Notification';
-import Hero from '@/components/Layout/Hero/HeroLong';
+import HeroLong from '@/components/Layout/Hero/HeroLong';
 import Footer from '@/components/Layout/Footer';
 import Navbar from '@/components/Layout/Navbar';
 import Pagination from '@/components/Layout/Navbar/Pagination';
@@ -37,7 +37,7 @@ import Pagination from '@/components/Layout/Navbar/Pagination';
 export default {
   components: {
     Notification,
-    Hero,
+    HeroLong,
     Footer,
     Navbar,
     Pagination,
