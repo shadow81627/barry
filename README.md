@@ -37,6 +37,18 @@ npm run generate
 # Profit
 ```
 
+## Hero Video
+
+Use ffmpeg to generate video files with mime type application/x-mpegURL used for hls live streaming the video in chunks.
+
+```bash
+ffmpeg -i input.mp4 -profile:v baseline -level 3.0 -s 640x360 -start_number 0 -hls_time 10 -hls_list_size 0 -f hls index.m3u8
+```
+
+```bash
+ffmpeg -i "Salty Wings - Summersite - Whitehaven Couple Wide Qld endframe V3.mp4" -profile:v baseline -level 3.0 -s 640x360 -start_number 0 -hls_time 10 -hls_list_size 0 -f hls index.m3u8
+```
+
 ## Dependencies
 
 Dependencies:
@@ -93,8 +105,9 @@ Things to fix:
 ## Usage
 
 Page data is kept in three locations:
-* /assets/json
-* /locales
-* /static
+
+- /assets/json
+- /locales
+- /static
 
 The locales folder is where page content is store for internationalization all page text content should be loaded from here if it needs to be internationalized. The json assets is for storing files that do not need to be internationalized like the form validation schema. Static assets like the favicon are stored in /static folder.
