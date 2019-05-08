@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <Navbar class="bg-primary" />
+    <!-- <Navbar class="bg-dark" /> -->
 
     <div class="container" style="min-height: 100vh;">
       <nuxt id="page-content" class="main-content" />
     </div>
 
-    <Footer />
+    <!-- <Footer /> -->
 
     <Notification />
   </div>
@@ -14,14 +14,14 @@
 
 <script>
 import Notification from '@/components/Layout/Notification';
-import Footer from '@/components/Layout/Footer';
-import Navbar from '@/components/Layout/Navbar';
+// import Footer from '@/components/Layout/Footer';
+// import Navbar from '@/components/Layout/Navbar';
 
 export default {
   components: {
     Notification,
-    Footer,
-    Navbar,
+    // Footer,
+    // Navbar,
   },
 };
 </script>
