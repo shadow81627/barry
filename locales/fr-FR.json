@@ -17,8 +17,9 @@
     "prize-package": "Découvrez le meilleur de l'été du Queensland avec des vacances à €5 000! Que vous passiez à explorer nos îles de renommée mondiale, à vous prélasser à la plage ou à profiter du meilleur de nos fruits de mer super frais et de nos gâteries tropicales, vous pourrez choisir vos propres plaisirs estivaux!",
     "form": {
       "heading": "Inscrivez-vous maintenant pour gagner!",
+      "cta": "Pourquoi devriez-vous expérimenter les merveilles de la Grande barrière de corail avec ScUber?",
       "entry_text": {
-        "placeholder": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
+        "placeholder": "Pourquoi devriez-vous expérimenter les merveilles de la Grande barrière de corail avec ScUber?",
         "valid-feedback": "cool story bro",
         "invalid-feedback": "I don't like your answer >:("
       },
@@ -50,7 +51,6 @@
         "month": {},
         "year": {}
       },
-      "textarea": "Pourquoi devriez-vous expérimenter les merveilles de la Grande barrière de corail avec ScUber?",
       "opt_in": "Je suis d'accord avec le <a href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">Termes et conditions</a> et recevez des offres exclusives de vacances, des concours et des conseils d'initiés du Queensland.",
       "submit": "Entre maintenant"
     }
