@@ -77,7 +77,7 @@
           @input="$v.form.country_iso.$touch()"
         />
         <FormField
-          v-show="this.$store.state.currentFormData.country_iso === 'AU'"
+          v-show="this.form.country_iso === 'AU'"
           v-model.trim="form.postcode"
           v-bind="{
             id: 'postcode',
@@ -85,18 +85,15 @@
             placeholder: $t('entry.form.postcode.placeholder'),
           }"
           class="col-12 col-md-4"
-          :disabled="this.$store.state.currentFormData.country_iso !== 'AU'"
+          :disabled="this.form.country_iso !== 'AU'"
           :change="
             this.$store.commit({
               type: 'setFormDataById',
               id: 'postcode',
-              value:
-                this.$store.state.currentFormData.country_iso !== 'AU'
-                  ? ''
-                  : this.$store.state.currentFormData.postcode,
+              value: this.form.country_iso !== 'AU' ? '' : this.form.postcode,
             })
           "
-          :required="this.$store.state.currentFormData.country_iso === 'AU'"
+          :required="this.form.country_iso === 'AU'"
           pattern="\d*"
           maxlength="4"
           :state="$v.form.postcode.$dirty ? !$v.form.postcode.$error : null"
@@ -176,7 +173,14 @@
 
 <script>
 import { validationMixin } from 'vuelidate';
-import { required, email, minValue, maxValue, requiredIf } from 'vuelidate/lib/validators';
+import {
+  required,
+  email,
+  minValue,
+  maxValue,
+  requiredIf,
+  maxLength,
+} from 'vuelidate/lib/validators';
 
 import { mapMutations } from 'vuex';
 
@@ -197,7 +201,8 @@ export default {
     form: {
       entry_text: {
         required,
-        wordLimit: wordLimit(25),
+        wordLimit: wordLimit(50),
+        maxlength: maxLength(8000),
       },
       first_name: {
         required,
@@ -214,7 +219,7 @@ export default {
       },
       postcode: {
         required: requiredIf(function(value) {
-          return this.$store.state.currentFormData.country_iso === 'AU';
+          return this.form.country_iso === 'AU';
         }),
         minValue: minValue(200),
         maxValue: maxValue(9999),
@@ -248,9 +253,9 @@ export default {
   computed: {
     currentWordCount: function() {
       return `${
-        this.$store.state.currentFormData.entry_text.length === 0
+        this.form.entry_text.length === 0
           ? this.$n(0)
-          : this.$store.state.currentFormData.entry_text.trim().split(' ').length
+          : this.form.entry_text.trim().split(' ').length
       } / ${this.$n(25)} ${this.$t('entry.form.word_count')}`;
     },
   },

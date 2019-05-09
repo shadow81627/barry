@@ -53,7 +53,7 @@
 
 <script>
 import { validationMixin } from 'vuelidate';
-import { required, email, minLength } from 'vuelidate/lib/validators';
+import { required, email, maxLength } from 'vuelidate/lib/validators';
 
 import axios from 'axios';
 import EventBus from '@/assets/js/EventBus.js';
@@ -68,20 +68,17 @@ export default {
   validations: {
     friends: {
       required,
-      minLength: minLength(3),
+      maxLength: maxLength(3),
       $each: {
         first_name: {
           required,
-          minLength: minLength(2),
         },
         last_name: {
           required,
-          minLength: minLength(2),
         },
         email: {
           required,
           email,
-          minLength: minLength(2),
         },
       },
     },
