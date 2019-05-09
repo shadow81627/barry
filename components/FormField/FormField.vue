@@ -20,11 +20,11 @@
       />
     </slot>
 
-    <b-form-invalid-feedback :id="`${id}-live-feedback`">
-      Please enter your {{ placeholder }}
-    </b-form-invalid-feedback>
+    <b-form-valid-feedback>{{ validFeedback }}</b-form-valid-feedback>
 
-    <b-form-valid-feedback>That is a nice {{ placeholder }}</b-form-valid-feedback>
+    <b-form-invalid-feedback :id="`${id}-invalid-feedback`">
+      {{ invalidFeedback }}
+    </b-form-invalid-feedback>
   </b-form-group>
 </template>
 
@@ -45,6 +45,8 @@ export default {
   },
   props: {
     id: { type: String, required: true },
+    validFeedback: { type: String, default: 'Looks Good!' },
+    invalidFeedback: { type: String, default: "Something doesn't look right..." },
     value: {},
     placeholder: { type: String },
     display: Object,
