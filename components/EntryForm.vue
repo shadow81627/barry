@@ -10,24 +10,13 @@
           id: 'entry_text',
           type: 'textarea',
           placeholder: $t('entry.form.entry_text.placeholder'),
-          'valid-feedback': $t('entry.form.entry_text.valid-feedback'),
-          'invalid-feedback': $t('entry.form.entry_text.invalid-feedback'),
+          'valid-feedback': currentWordCount,
+          'invalid-feedback': currentWordCount,
           required: true,
         }"
         :state="$v.form.entry_text.$dirty ? !$v.form.entry_text.$error : null"
         @input="$v.form.entry_text.$touch()"
       />
-
-      <div class="text-right">
-        <b-form-text id="overlay" class="word-count"
-          >{{
-            this.$store.state.currentFormData.entry_text.length === 0
-              ? $n(0)
-              : this.$store.state.currentFormData.entry_text.trim().split(' ').length
-          }}
-          / {{ $n(25) }} {{ $t('entry.form.word_count') }}</b-form-text
-        >
-      </div>
 
       <FormField
         v-model.trim="form.first_name"
@@ -68,10 +57,12 @@
           required: true,
         }"
         :state="$v.form.email.$dirty ? !$v.form.email.$error : null"
+        @input="$v.form.email.$touch()"
       />
 
       <div class="form-row">
         <FormField
+          v-model.trim="form.country_iso"
           v-bind="{
             id: 'country_iso',
             type: 'select',
@@ -82,9 +73,12 @@
             required: true,
           }"
           class="col form-select"
+          :state="$v.form.country_iso.$dirty ? !$v.form.country_iso.$error : null"
+          @input="$v.form.country_iso.$touch()"
         />
         <FormField
           v-show="this.$store.state.currentFormData.country_iso === 'AU'"
+          v-model.trim="form.postcode"
           v-bind="{
             id: 'postcode',
             type: 'text',
@@ -105,6 +99,8 @@
           :required="this.$store.state.currentFormData.country_iso === 'AU'"
           pattern="\d*"
           maxlength="4"
+          :state="$v.form.postcode.$dirty ? !$v.form.postcode.$error : null"
+          @input="$v.form.postcode.$touch()"
         />
       </div>
 
@@ -130,41 +126,65 @@
         v-bind="{
           id: 'opt_in',
           type: 'checkbox',
-          options: [{ text: $t('entry.form.opt_in'), value: '1', required: true }],
+          value: 1,
         }"
         class="checkbox"
-      />
+        :state="$v.form.opt_in.$dirty ? !$v.form.opt_in.$error : null"
+      >
+        <b-form-checkbox
+          id="opt_in"
+          v-model="form.opt_in"
+          name="opt_in"
+          :value="1"
+          :unchecked-value="0"
+          :state="$v.form.opt_in.$dirty ? !$v.form.opt_in.$error : null"
+          @change="$v.form.opt_in.$touch()"
+        >
+          <span v-html="$t('entry.form.opt_in')" />
+        </b-form-checkbox>
+      </FormField>
 
       <FormField
         v-bind="{
-          id: 'teq_opt_in',
+          id: 'opt_in',
           type: 'checkbox',
-          options: [{ text: $t('entry.form.partner_opt_in'), value: '1' }],
+          value: 1,
         }"
         class="checkbox"
-      />
+        :state="$v.form.opt_in.$dirty ? !$v.form.opt_in.$error : null"
+      >
+        <b-form-checkbox
+          id="teq_opt_in"
+          v-model="form.teq_opt_in"
+          name="teq_opt_in"
+          :value="1"
+          :unchecked-value="0"
+          :state="$v.form.teq_opt_in.$dirty ? !$v.form.teq_opt_in.$error : null"
+          @change="$v.form.teq_opt_in.$touch()"
+        >
+          <span v-html="$t('entry.form.teq_opt_in')" />
+        </b-form-checkbox>
+      </FormField>
 
-      <FormField
-        v-bind="{
-          id: 'submit',
-          type: 'submit',
-          value: $t('entry.form.submit'),
-        }"
-      />
+      <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]">
+        <span v-if="!ctaLoading">{{ $t('entry.form.submit') }}</span>
+        <i v-else class="fa fa-circle-o-notch fa-spin fa-fw" />
+      </button>
     </form>
   </div>
 </template>
 
 <script>
 import { validationMixin } from 'vuelidate';
-import { required, email } from 'vuelidate/lib/validators';
+import { required, email, minValue, maxValue, requiredIf } from 'vuelidate/lib/validators';
 
-import { mapActions, mapMutations } from 'vuex';
 import FormField from '@/components/FormField/FormField.vue';
 
 import EventBus from '@/assets/js/EventBus.js';
 
 import axios from 'axios';
+
+const wordLimit = param => value => value.trim().split(' ').length <= param;
 
 export default {
   components: {
@@ -175,7 +195,7 @@ export default {
     form: {
       entry_text: {
         required,
-        // word_count,
+        wordLimit: wordLimit(25),
       },
       first_name: {
         required,
@@ -184,63 +204,81 @@ export default {
         required,
       },
       email: {
+        required,
         email,
-        required: required,
       },
+      country_iso: {
+        required,
+      },
+      postcode: {
+        required: requiredIf(function(value) {
+          return this.$store.state.currentFormData.country_iso === 'AU';
+        }),
+        minValue: minValue(200),
+        maxValue: maxValue(9999),
+      },
+      opt_in: {
+        required,
+        minValue: minValue(1),
+      },
+      teq_opt_in: {},
     },
   },
   data() {
     return {
       countries: this.$store.state.countries,
-      states: this.$store.state.states,
       ctaLoading: false,
       form: {
+        secret: process.env.API_SECRET,
         first_name: null,
         last_name: null,
         email: null,
         country_iso: '',
         hash: null,
         entry_text: '',
-        dob: '',
+        dob: '1904-02-31',
+        opt_in: 0,
+        teq_opt_in: 0,
       },
     };
   },
+  computed: {
+    currentWordCount: function() {
+      return `${
+        this.$store.state.currentFormData.entry_text.length === 0
+          ? this.$n(0)
+          : this.$store.state.currentFormData.entry_text.trim().split(' ').length
+      } / ${this.$n(25)} ${this.$t('entry.form.word_count')}`;
+    },
+  },
   methods: {
-    ...mapActions(['validate', 'submit', 'fetchSchema']),
-    ...mapMutations(['setCurrentFormData']),
-    async submitForm(event) {
+    submitForm(event) {
       event.preventDefault();
       this.$store.commit('setFormSubmitted', true);
 
       this.$v.form.$touch();
 
-      // // Collect form field values
-      // const formObject = {};
-      // new FormData(event.target).forEach((value, key) => {
-      //   formObject[key] = value;
-      // });
-      // formObject.secret = process.env.API_SECRET;
-      // formObject.opt_in = formObject.opt_in ? 1 : 0;
+      if (!this.$v.form.$error) {
+        const url = `${process.env.API_BASE_URL}/api/enter`;
 
-      // // Set currentformdata
-      // this.$store.commit('setCurrentFormData', formObject);
-
-      const valid = await this.validate();
-
-      if (valid) {
-        // await this.submit();
-
-        // const url = `${process.env.API_BASE_URL}/api/enter`;
-
-        this.submit()
-          // .post(url, formObject)
+        axios
+          .post(url, this.form)
           .then(response => {
             console.log(response);
+            // Set entrant's hash
+            this.entrant.hash = response.data.hash;
+            // Save entrant model in store
+            this.$store.state.entrant = this.entrant;
+
             // Trigger event
             EventBus.$emit('entry-confirmed', true);
             this.$router.push(this.localePath('confirmation'));
           })
           .catch(error => {
+            EventBus.$emit('notification', {
+              type: 'error',
+              message: 'Error submitting entry.',
+            });
             if (error.response) {
               // The request was made and the server responded with a status code
               // that falls out of the range of 2xx
@@ -256,35 +294,6 @@ export default {
             console.log(error.config);
           });
       }
-    },
-    enterCompetition() {
-      this.ctaLoading = true;
-
-      // Set API secret
-      this.entrant.secret = process.env.API_SECRET;
-      this.entrant.opt_in = this.entrant.opt_in ? 1 : 0;
-
-      const url = `${process.env.API_BASE_URL}/api/enter`;
-
-      axios.post(url, this.entrant).then(response => {
-        this.ctaLoading = false;
-
-        if (response.data.success) {
-          // Set entrant's hash
-          this.entrant.hash = response.data.hash;
-
-          // Save entrant modal in store
-          this.$store.state.entrant = this.entrant;
-
-          // Trigger event
-          EventBus.$emit('entry-confirmed', true);
-        } else {
-          EventBus.$emit('notification', {
-            type: 'error',
-            message: 'Error submitting entry.',
-          });
-        }
-      });
     },
   },
 };

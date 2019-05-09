@@ -11,8 +11,7 @@
           type,
           placeholder,
           options,
-          invalid: !valid && (dirty || this.$store.state.formSubmitted),
-          state: dirty || this.$store.state.formSubmitted ? valid : null,
+          state,
           disabled,
         }"
         :aria-describedby="`${id}-live-feedback`"
@@ -55,12 +54,7 @@ export default {
     type: { type: String, default: 'text' },
     label: { type: String },
     options: Array,
-  },
-  data() {
-    return {
-      // if dirty true then form has been touched, validation messages can now display
-      dirty: false,
-    };
+    state: { type: Boolean, default: null },
   },
   methods: {
     ...mapActions(['validate']),
@@ -74,11 +68,6 @@ export default {
           vm.$emit('input', event.target.value);
         },
       });
-    },
-    valid() {
-      const errors = this.$store.getters.getFormValidationById(this.id);
-
-      return !errors;
     },
     fieldValue: {
       get() {
@@ -107,11 +96,8 @@ export default {
         text: 'b-form-input',
         email: 'b-form-input',
         select: 'SelectInput',
-        submit: 'SubmitInput',
-        radio: 'RadioListInput',
-        checkbox: 'CheckboxListInput',
+        checkbox: 'b-form-checkbox',
         textarea: 'b-form-textarea',
-        'entry-text': 'entry-text',
       };
 
       // special input component found
@@ -120,7 +106,7 @@ export default {
       }
 
       // No special input component
-      return 'BaseInput';
+      return 'b-form-input';
     },
   },
 };

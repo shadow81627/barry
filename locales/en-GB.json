@@ -95,7 +95,7 @@
       },
       "word_count": "Words",
       "opt_in": "I agree to the <a rel=\"noopener\" href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">terms and conditions</a>.",
-      "partner_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
+      "teq_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
       "submit": "Enter Now"
     }
   },
