@@ -103,6 +103,7 @@ export default {
     [
       'nuxt-i18n',
       {
+        strategy: 'prefix',
         langDir: 'locales/',
         locales: [
           {
