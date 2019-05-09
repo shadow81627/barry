@@ -11,8 +11,8 @@
       {{ placeholder }}
     </option>
     <option
-      v-for="option in options"
-      :key="option.value || option"
+      v-for="(option, index) in options"
+      :key="index"
       :value="option.value || option"
       :disabled="option.disabled"
     >
