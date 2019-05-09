@@ -2,27 +2,36 @@
   <div class="entry-form">
     <h4>{{ $t('emailshare.form.heading') }}</h4>
     <form autocomplete="off" novalidate @submit.prevent="send()">
-      <div v-for="(friend, index) in friends" :key="index" class="ff-modal__item">
+      <div v-for="(v, index) in $v.friends.$each.$iter" :key="index" class="ff-modal__item">
         <FormField
+          v-model.trim="v.first_name.$model"
           v-bind="{
             id: `first_name-${index}`,
             type: 'text',
             placeholder: $t('emailshare.form.first_name'),
           }"
+          :state="v.first_name.$dirty ? !v.first_name.$error : null"
+          @input="v.first_name.$touch()"
         />
         <FormField
+          v-model.trim="v.last_name.$model"
           v-bind="{
             id: `last_name-${index}`,
             type: 'text',
             placeholder: $t('emailshare.form.last_name'),
           }"
+          :state="v.last_name.$dirty ? !v.last_name.$error : null"
+          @input="v.last_name.$touch()"
         />
         <FormField
+          v-model.trim="v.email.$model"
           v-bind="{
             id: `email-${index}`,
             type: 'email',
             placeholder: $t('emailshare.form.email'),
           }"
+          :state="v.email.$dirty ? !v.email.$error : null"
+          @input="v.email.$touch()"
         />
 
         <span v-show="friends.length > 1" class="ff-modal__remove" @click="removeFriend(index)">
@@ -34,22 +43,20 @@
         >[+] {{ $t('emailshare.form.add') }}</span
       >
 
-      <FormField
-        v-bind="{
-          id: 'submit',
-          type: 'submit',
-          value: $t('emailshare.form.submit'),
-        }"
-      />
+      <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]">
+        <span v-if="!ctaLoading">{{ $t('emailshare.form.submit') }}</span>
+        <i v-else class="fa fa-circle-o-notch fa-spin fa-fw" />
+      </button>
     </form>
   </div>
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
+import { validationMixin } from 'vuelidate';
+import { required, email, minLength } from 'vuelidate/lib/validators';
 
 import axios from 'axios';
-import event from '@/assets/js/EventBus.js';
+import EventBus from '@/assets/js/EventBus.js';
 
 import FormField from '@/components/FormField/FormField.vue';
 
@@ -57,21 +64,54 @@ export default {
   components: {
     FormField,
   },
-  data() {
+  mixins: [validationMixin],
+  validations: {
+    friends: {
+      required,
+      minLength: minLength(3),
+      $each: {
+        first_name: {
+          required,
+          minLength: minLength(2),
+        },
+        last_name: {
+          required,
+          minLength: minLength(2),
+        },
+        email: {
+          required,
+          email,
+          minLength: minLength(2),
+        },
+      },
+    },
+  },
+  data: function() {
     return {
-      entrant: this.$store.state.currentFormData,
-      friends: this.$store.state.friends,
+      entrant: this.$store.state.entrant,
+      friends: [
+        {
+          first_name: null,
+          last_name: null,
+          email: null,
+        },
+      ],
       ctaLoading: false,
     };
   },
   methods: {
-    ...mapMutations(['addFriend', 'removeFriend']),
-    validateBeforeSubmit(scope) {
-      this.$validator.validateAll(scope).then(result => {
-        if (result) {
-          this.send();
-        }
-      });
+    addFriend() {
+      if (this.friends.length < 3) {
+        const clone = {
+          first_name: null,
+          last_name: null,
+          email: null,
+        };
+        this.friends.push(clone);
+      }
+    },
+    removeFriend(index) {
+      this.friends.splice(index, 1);
     },
     send() {
       this.ctaLoading = true;
@@ -106,6 +146,25 @@ export default {
               message: 'Error processing event data.',
             });
           }
+        })
+        .catch(error => {
+          EventBus.$emit('notification', {
+            type: 'error',
+            message: 'Error submitting entry.',
+          });
+          if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+          }
+          console.log(error.config);
         });
     },
   },

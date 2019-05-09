@@ -3,7 +3,6 @@
     <slot>
       <componenet
         :is="inputType"
-        v-model.lazy="fieldValue"
         class="rounded-0"
         v-bind="{
           id,
@@ -28,8 +27,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-
 import FormLabel from '@/components/FormField/FormFieldLabel.vue';
 import FormFieldMessage from '@/components/FormField/FormFieldMessage.vue';
 
@@ -56,9 +53,6 @@ export default {
     options: Array,
     state: { type: Boolean, default: null },
   },
-  methods: {
-    ...mapActions(['validate']),
-  },
   computed: {
     inputListeners() {
       // Allow other events to be bound
@@ -68,27 +62,6 @@ export default {
           vm.$emit('input', event.target.value);
         },
       });
-    },
-    fieldValue: {
-      get() {
-        return this.value || this.$store.state.currentFormData[this.id];
-        // return this.value || this.$store.getters.getFormDataById(this.id);
-      },
-      set(value) {
-        // Set field to be dirty, now errors can display
-        this.dirty = true;
-
-        // this.$store.state.currentFormData[this.id] = value;
-        // Save formdata
-        this.$store.commit({
-          type: 'setFormDataById',
-          id: this.id,
-          value,
-        });
-
-        // Call validate from vuex
-        this.validate();
-      },
     },
     inputType() {
       // List of supported input types

@@ -178,6 +178,8 @@
 import { validationMixin } from 'vuelidate';
 import { required, email, minValue, maxValue, requiredIf } from 'vuelidate/lib/validators';
 
+import { mapMutations } from 'vuex';
+
 import FormField from '@/components/FormField/FormField.vue';
 
 import EventBus from '@/assets/js/EventBus.js';
@@ -229,6 +231,7 @@ export default {
       countries: this.$store.state.countries,
       ctaLoading: false,
       form: {
+        locale: this.$store.state.i18n.locale,
         secret: process.env.API_SECRET,
         first_name: null,
         last_name: null,
@@ -252,6 +255,7 @@ export default {
     },
   },
   methods: {
+    ...mapMutations(['setEntrant']),
     submitForm(event) {
       event.preventDefault();
       this.$store.commit('setFormSubmitted', true);
@@ -265,10 +269,8 @@ export default {
           .post(url, this.form)
           .then(response => {
             console.log(response);
-            // Set entrant's hash
-            this.entrant.hash = response.data.hash;
-            // Save entrant model in store
-            this.$store.state.entrant = this.entrant;
+            // Set entrant in vuex store
+            this.$store.commit('setEntrant', { ...this.form, hash: response.data.hash });
 
             // Trigger event
             EventBus.$emit('entry-confirmed', true);
