@@ -5,13 +5,25 @@
       <p>{{ $t('entry.form.cta') }}</p>
 
       <FormField
+        v-model.trim="form.entry_text"
         v-bind="{
           id: 'entry_text',
-          type: 'entry-text',
+          type: 'textarea',
           placeholder: $t('entry.form.entry_text'),
           required: true,
         }"
       />
+
+      <div class="text-right">
+        <b-form-text id="overlay" class="word-count"
+          >{{
+            this.$store.state.currentFormData.entry_text.length === 0
+              ? $n(0)
+              : this.$store.state.currentFormData.entry_text.trim().split(' ').length
+          }}
+          / {{ $n(25) }} {{ $t('entry.form.word_count') }}</b-form-text
+        >
+      </div>
 
       <FormField
         v-model.trim="form.first_name"
@@ -120,7 +132,7 @@
 
 <script>
 import { validationMixin } from 'vuelidate';
-import { required } from 'vuelidate/lib/validators';
+import { required, email } from 'vuelidate/lib/validators';
 
 import { mapActions, mapMutations } from 'vuex';
 import FormField from '@/components/FormField/FormField.vue';
@@ -136,13 +148,18 @@ export default {
   mixins: [validationMixin],
   validations: {
     form: {
+      entry_text: {
+        required,
+        // word_count,
+      },
       first_name: {
-        required: required,
+        required,
       },
       last_name: {
-        required: required,
+        required,
       },
       email: {
+        email,
         required: required,
       },
     },
