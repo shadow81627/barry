@@ -2,21 +2,29 @@
   <div class="entry-form">
     <form novalidate @submit.prevent="submitForm">
       <h2>{{ $t('entry.form.heading') }}</h2>
-      <p>{{ $t('entry.form.cta') }}</p>
 
       <FormField
         v-model.trim="form.entry_text"
         v-bind="{
           id: 'entry_text',
           type: 'textarea',
+          label: $t('entry.form.entry_text.label'),
           placeholder: $t('entry.form.entry_text.placeholder'),
-          'valid-feedback': currentWordCount,
-          'invalid-feedback': currentWordCount,
+          'valid-feedback': null,
+          'invalid-feedback': null,
           required: true,
         }"
         :state="$v.form.entry_text.$dirty ? !$v.form.entry_text.$error : null"
         @input="$v.form.entry_text.$touch()"
-      />
+      >
+        <template #description>
+          <b-form-text :text-variant="wordCountColor">
+            <span :class="{ 'font-weight-bold': countWords(form.entry_text) > 25 }">{{
+              currentWordCountText
+            }}</span>
+          </b-form-text>
+        </template>
+      </FormField>
 
       <FormField
         v-model.trim="form.first_name"
@@ -190,7 +198,7 @@ import EventBus from '@/assets/js/EventBus.js';
 
 import axios from 'axios';
 
-const wordLimit = param => value => value.trim().split(' ').length <= param;
+const wordLimit = param => value => value.trim().split(' ').length < param;
 
 export default {
   components: {
@@ -251,12 +259,21 @@ export default {
     };
   },
   computed: {
-    currentWordCount: function() {
+    currentWordCountText: function() {
+      // display word count text
       return `${
-        this.form.entry_text.length === 0
-          ? this.$n(0)
-          : this.form.entry_text.trim().split(' ').length
+        this.form.entry_text.length === 0 ? this.$n(0) : this.countWords(this.form.entry_text)
       } / ${this.$n(25)} ${this.$t('entry.form.word_count')}`;
+    },
+    wordCountColor: function() {
+      // Set word count description display color based on word count
+      if (this.$v.form.entry_text.$dirty) {
+        if (this.$v.form.entry_text.$error) {
+          return 'danger';
+        }
+        return this.countWords(this.form.entry_text) > 25 ? 'warning' : 'success';
+      }
+      return 'muted';
     },
   },
   methods: {
@@ -301,6 +318,9 @@ export default {
             console.log(error.config);
           });
       }
+    },
+    countWords(words) {
+      return words.trim().split(' ').length;
     },
   },
 };

@@ -1,5 +1,6 @@
 <template>
   <b-form-group v-show="type !== 'hidden'" :id="`${id}-form-group`">
+    <label :for="id" :class="{ 'sr-only': !label }">{{ placeholder }}</label>
     <slot>
       <componenet
         :is="inputType"
@@ -13,12 +14,21 @@
           state,
           disabled,
         }"
-        :aria-describedby="`${id}-live-feedback`"
+        :aria-describedby="`${id}-description ${id}-valid-feedback ${id}-invalid-feedback`"
+        trim
         @input="$emit('input', $event)"
       />
     </slot>
 
-    <b-form-valid-feedback>{{ validFeedback }}</b-form-valid-feedback>
+    <slot name="description">
+      <b-form-text :id="`${id}-description`">{{ description }}</b-form-text>
+    </slot>
+
+    <slot name="valid">
+      <b-form-valid-feedback :id="`${id}-valid-feedback`">{{
+        validFeedback
+      }}</b-form-valid-feedback>
+    </slot>
 
     <b-form-invalid-feedback :id="`${id}-invalid-feedback`">
       {{ invalidFeedback }}
@@ -41,6 +51,7 @@ export default {
   },
   props: {
     id: { type: String, required: true },
+    description: { type: String },
     validFeedback: { type: String, default: 'Looks Good!' },
     invalidFeedback: { type: String, default: "Something doesn't look right..." },
     value: {},

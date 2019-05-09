@@ -27,7 +27,6 @@
   },
   "about": {
     "hero": {
-      "brand": "Queensland | Partner",
       "title": "scUber",
       "blurb": "Great Barrier Reef Australia",
       "link": {
@@ -41,7 +40,6 @@
   },
   "entry": {
     "hero": {
-      "brand": "Queensland | Partner",
       "title": "<span style=\"font-weight: 300;\">Win a ride in sc</span><strong>Uber</strong>",
       "blurb": "On the Great Barrier Reef Australia",
       "cta": "Enter Now",
@@ -54,8 +52,8 @@
     "prize_package": "For your chance to win, enter below and tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with ScUber.",
     "form": {
       "heading": "Tell us why you should experience the wonder of the Great Barrier Reef with ScUber in 25 words or less",
-      "cta": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
       "entry_text": {
+        "label": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
         "placeholder": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
         "valid-feedback": "cool story bro",
         "invalid-feedback": "I don't like your answer >:("
