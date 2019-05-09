@@ -102,8 +102,8 @@ export default {
     inputType() {
       // List of supported input types
       const typeMap = {
-        text: 'BaseInput',
-        email: 'BaseInput',
+        text: 'b-form-input',
+        email: 'b-form-input',
         select: 'SelectInput',
         submit: 'SubmitInput',
         radio: 'RadioListInput',
