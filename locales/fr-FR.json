@@ -43,6 +43,11 @@
         "valid-feedback": "Merci!",
         "invalid-feedback": "Veuillez sélectionner votre pays/région"
       },
+      "postcode": {
+        "placeholder": "Code postal",
+        "valid-feedback": "Merci!",
+        "invalid-feedback": "S'il vous plaît entrer votre code postal"
+      },
       "dob": {
         "placeholder": "Birthday",
         "valid-feedback": "Thanks!",
