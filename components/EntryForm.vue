@@ -9,7 +9,9 @@
         v-bind="{
           id: 'entry_text',
           type: 'textarea',
-          placeholder: $t('entry.form.entry_text'),
+          placeholder: $t('entry.form.entry_text.placeholder'),
+          'valid-feedback': $t('entry.form.entry_text.valid-feedback'),
+          'invalid-feedback': $t('entry.form.entry_text.invalid-feedback'),
           required: true,
         }"
         :state="$v.form.entry_text.$dirty ? !$v.form.entry_text.$error : null"
@@ -32,7 +34,9 @@
         v-bind="{
           id: 'first_name',
           type: 'text',
-          placeholder: $t('entry.form.first_name'),
+          placeholder: $t('entry.form.first_name.placeholder'),
+          'valid-feedback': $t('entry.form.first_name.valid-feedback'),
+          'invalid-feedback': $t('entry.form.first_name.invalid-feedback'),
           required: true,
         }"
         :state="$v.form.first_name.$dirty ? !$v.form.first_name.$error : null"
@@ -44,7 +48,9 @@
         v-bind="{
           id: 'last_name',
           type: 'text',
-          placeholder: $t('entry.form.last_name'),
+          placeholder: $t('entry.form.last_name.placeholder'),
+          'valid-feedback': $t('entry.form.last_name.valid-feedback'),
+          'invalid-feedback': $t('entry.form.last_name.invalid-feedback'),
           required: true,
         }"
         :state="$v.form.last_name.$dirty ? !$v.form.last_name.$error : null"
@@ -56,11 +62,12 @@
         v-bind="{
           id: 'email',
           type: 'email',
-          placeholder: $t('entry.form.email'),
+          placeholder: $t('entry.form.email.placeholder'),
+          'valid-feedback': $t('entry.form.email.valid-feedback'),
+          'invalid-feedback': $t('entry.form.email.invalid-feedback'),
           required: true,
         }"
         :state="$v.form.email.$dirty ? !$v.form.email.$error : null"
-        @input="$v.form.email.$touch()"
       />
 
       <div class="form-row">
@@ -68,17 +75,20 @@
           v-bind="{
             id: 'country_iso',
             type: 'select',
-            placeholder: $t('entry.form.country_iso'),
+            placeholder: $t('entry.form.country_iso.placeholder'),
+            'valid-feedback': $t('entry.form.country_iso.valid-feedback'),
+            'invalid-feedback': $t('entry.form.country_iso.invalid-feedback'),
             options: countries,
             required: true,
           }"
-          class="col-12 col-md-8 form-select"
+          class="col form-select"
         />
         <FormField
+          v-show="this.$store.state.currentFormData.country_iso === 'AU'"
           v-bind="{
             id: 'postcode',
             type: 'text',
-            placeholder: $t('entry.form.postcode'),
+            placeholder: $t('entry.form.postcode.placeholder'),
           }"
           class="col-12 col-md-4"
           :disabled="this.$store.state.currentFormData.country_iso !== 'AU'"
@@ -100,11 +110,20 @@
 
       <div class="form-row">
         <label for="dob" class="col-12 col-sm-3">
-          Birthday
+          {{ $t('entry.form.dob.placeholder') }}
         </label>
         <FormField id="day" name="day" type="text" placeholder="Day" class="col-4 col-sm-3" />
         <FormField id="month" name="month" type="text" placeholder="Month" class="col-4 col-sm-3" />
-        <FormField id="year" name="year" type="text" placeholder="Year" class="col-4 col-sm-3" />
+        <FormField
+          id="year"
+          name="year"
+          type="number"
+          maxlength="4"
+          minlength="4"
+          pattern="\d*"
+          placeholder="Year"
+          class="col-4 col-sm-3"
+        />
       </div>
 
       <FormField

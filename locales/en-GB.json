@@ -55,12 +55,44 @@
     "form": {
       "heading": "Tell us why you should experience the wonder of the Great Barrier Reef with ScUber in 25 words or less",
       "cta": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
-      "first_name": "First Name",
-      "last_name": "Last Name",
-      "email": "Email Address",
-      "country_iso": "Country/Region",
-      "postcode": "Postcode",
-      "entry_text": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
+      "entry_text": {
+        "placeholder": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
+        "valid-feedback": "cool story bro",
+        "invalid-feedback": "I don't like your answer >:("
+      },
+      "first_name": {
+        "placeholder": "First Name",
+        "valid-feedback": "Looks good!",
+        "invalid-feedback": "What name do you like to go by?"
+      },
+      "last_name": {
+        "placeholder": "Last Name",
+        "valid-feedback": "Looks good!",
+        "invalid-feedback": "Don't forget your surname please"
+      },
+      "email": {
+        "placeholder": "Email Address",
+        "valid-feedback": "Email is good!",
+        "invalid-feedback": "An email address is required please"
+      },
+      "country_iso": {
+        "placeholder": "Country/Region",
+        "valid-feedback": "Thank you!",
+        "invalid-feedback": "Don't forget to select your Country/Region"
+      },
+      "postcode": {
+        "placeholder": "Postcode",
+        "valid-feedback": "Great!",
+        "invalid-feedback": "Please enter your Postcode"
+      },
+      "dob": {
+        "placeholder": "Birthday",
+        "valid-feedback": "Thanks!",
+        "invalid-feedback": "Please provide your birthday!",
+        "day": {},
+        "month": {},
+        "year": {}
+      },
       "word_count": "Words",
       "opt_in": "I agree to the <a rel=\"noopener\" href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">terms and conditions</a>.",
       "partner_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
