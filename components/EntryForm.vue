@@ -12,6 +12,8 @@
           placeholder: $t('entry.form.entry_text'),
           required: true,
         }"
+        :state="$v.form.entry_text.$dirty ? !$v.form.entry_text.$error : null"
+        @input="$v.form.entry_text.$touch()"
       />
 
       <div class="text-right">
@@ -34,6 +36,7 @@
           required: true,
         }"
         :state="$v.form.first_name.$dirty ? !$v.form.first_name.$error : null"
+        @input="$v.form.first_name.$touch()"
       />
 
       <FormField
@@ -45,6 +48,7 @@
           required: true,
         }"
         :state="$v.form.last_name.$dirty ? !$v.form.last_name.$error : null"
+        @input="$v.form.last_name.$touch()"
       />
 
       <FormField
@@ -55,6 +59,8 @@
           placeholder: $t('entry.form.email'),
           required: true,
         }"
+        :state="$v.form.email.$dirty ? !$v.form.email.$error : null"
+        @input="$v.form.email.$touch()"
       />
 
       <div class="form-row">
