@@ -95,11 +95,7 @@
           class="col-12 col-md-4"
           :disabled="this.form.country_iso !== 'AU'"
           :change="
-            this.$store.commit({
-              type: 'setFormDataById',
-              id: 'postcode',
-              value: this.form.country_iso !== 'AU' ? '' : this.form.postcode,
-            })
+            (this.form.postcode = this.form.country_iso !== 'AU' ? null : this.form.postcode)
           "
           :required="this.form.country_iso === 'AU'"
           pattern="\d*"
@@ -185,7 +181,7 @@ import {
   required,
   email,
   minValue,
-  maxValue,
+  // maxValue,
   requiredIf,
   maxLength,
 } from 'vuelidate/lib/validators';
@@ -227,10 +223,11 @@ export default {
       },
       postcode: {
         required: requiredIf(function(value) {
+          console.log(this.form.country_iso);
           return this.form.country_iso === 'AU';
         }),
-        minValue: minValue(200),
-        maxValue: maxValue(9999),
+        // minValue: minValue(200),
+        // maxValue: maxValue(9999),
       },
       opt_in: {
         required,
@@ -280,7 +277,7 @@ export default {
     ...mapMutations(['setEntrant']),
     submitForm(event) {
       event.preventDefault();
-      this.$store.commit('setFormSubmitted', true);
+      // this.$store.commit('setFormSubmitted', true);
 
       this.$v.form.$touch();
 
