@@ -62,6 +62,11 @@
   },
   "comingsoon": {
     "title": "Arrive bientôt",
+    "description": "Une première expérience mondiale est lancée le 23 mai! Inscrivez-vous maintenant <a href=\"https://www.queensland.com/fr-fr/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\">Register now</a> pour être le premier.",
+    "cta": {
+      "link": "https://www.queensland.com/fr-fr/Plan-Your-Trip/Travel-Tools/eNews-Subscribe",
+      "text": "Inscrivez-vous maintenant"
+    },
     "timer": {
       "days": "Jours",
       "hours": "Heures",

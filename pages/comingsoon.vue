@@ -3,11 +3,8 @@
     <div class="intro text-center">
       <h1 class="text-uppercase">{{ $t('comingsoon.title') }}</h1>
       <p v-html="$t('comingsoon.description')" />
-      <a
-        href="https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe"
-        class="[ btn ] btn-dark [ hero__cta ] shadow"
-      >
-        Register
+      <a :href="$t('comingsoon.cta.link')" class="[ btn ] btn-dark [ hero__cta ] shadow">
+        {{ $t('comingsoon.cta.text') }}
       </a>
     </div>
     <no-ssr>

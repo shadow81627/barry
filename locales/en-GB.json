@@ -135,6 +135,10 @@
   "comingsoon": {
     "title": "Coming soon",
     "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\">Register now</a> to be the first to hear.",
+    "cta": {
+      "link": "https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe",
+      "text": "Register now"
+    },
     "timer": {
       "days": "Days",
       "hours": "Hours",
