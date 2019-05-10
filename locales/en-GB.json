@@ -34,9 +34,35 @@
         "path": "entry"
       }
     },
-    "title": "Meet sc<strong style=\"color:black;\">Uber</strong>",
-    "intro": "A world first on the world’s greatest reef",
-    "body": "Experience the best that Queensland's summer has to offer with a $5,000 holiday on us! Whether you spend it exploring our world famous islands, lazing at the beach or enjoying the best of our super fresh seafood and tropical treats, you'll be able to choose your own summer fun!"
+    "card1_title": "Meet sc<strong style=\"color:black;\">Uber</strong>",
+    "card1_intro": "Introducing a world first on the Great Barrier Reef",
+    "card1_body_line1": "Travel like never before, exploring Australia's Great Barrier Reef in the world's first rideshare submarine, scUber.",
+    "card1_body_line2": "Uber and Queensland, Australia are giving riders the opportunity to delve into the depths of one of the world's greatest natural wonders, the Great Barrier Reef, and discover a breathtaking underwater playground.",
+    "card1_body_line3": "From May 27 to June 18, 2019, this once-in-a-lifetime experience will provide riders with an authentic view of an extraordinary underwater world, rich and diverse in marine life.",
+    "card1_body_line4": "There are two ways to experience scUber: for participating countries, you can enter the global competition; or riders in selected Queensland cities will have the opportunity to request a scUber ride directly in the Uber app.",
+    "card2_title": "WIN! a ride in scUber",
+    "card2_intro": "You and a friend can <strong class=\"text-primary\">WIN a once-in-a-lifetime trip</strong> to Australia's Great Barrier Reef to experience the ride of your lives in scUber.",
+    "card2_body_line1": "For your chance to win, enter the competition (hyperlink to competition page) and tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
+    "card2_cta": "ENTER NOW",
+    "card3_title": "How to request a ride with scUber",
+    "card3_body_line1": "For a limited time only, Uber riders in selected Queensland cities will have the opportunity to request a scUber experience directly through the app. These numbers are strictly limited so availability cannot be guaranteed.",
+    "card3_body_line2": "If you're an Uber rider in Gladstone, Cairns, Palm Cove or Port Douglas, find out what dates (hyperlink to in app page) are available to request a scUber experience in your city.",
+    "card3_body_line3": "The cost of each scUber experience is $3,000 for two people.",
+    "card4_title": "Take a deep dive",
+    "card4_body_line1": "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/Explore-Queensland/Great-Barrier-Reef' target='_blank'>Great Barrier Reef</a>.",
+    "card4_body_line2": "scUber is a new way to have a completely immersive underwater experience in the home of 3,000 individual reefs, 900 islands and over 1,500 species of fish.",
+    "card4_intro": "Here's what else makes it so great:",
+    "card4_list1": "It represents approximately 10% of all <a href='https://www.queensland.com/en-au/search-results/~/link.aspx?_id=55A4DCAF07B74C5B935C1ED898D09F12&_z=z' target='_blank'>coral reefs</a> in the world.",
+    "card4_list2": "The Great Barrier Reef is the size of about 70 million football fields.",
+    "card4_list3": "It's the largest natural feature on earth and is the only living structure that can be seen from the moon.",
+    "card4_list4": "The Great Barrier Reef is home to the 'Great 8' marine encounters: whales, turtles, manta rays, clown fish, sharks, potato cod, Maori wrasse and the giant clam.",
+    "card4_list5": "The Reef is the world's largest and longest coral reef system, stretching for 2,300km from the tip of Cape York in the north to Bundaberg in the south. That's about the distance between New York and Dallas!",
+    "card4_list6": "A World Heritage Area since 1981 and the world's first reef ecosystem to be recognised by UNESCO, the Great Barrier Reef is highly protected and one of the best-managed marine areas on Earth. ",
+    "card5_title": "Protecting the Reef",
+    "card5_body_line1": "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce their partnership with the Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
+    "card5_body_line2": "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
+    "card5_body_line3": "<a href='https://citizensgbr.org/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef.",
+    "card5_cta": "FIND OUT MORE"
   },
   "entry": {
     "hero": {
