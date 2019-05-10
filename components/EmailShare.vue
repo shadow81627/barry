@@ -43,7 +43,7 @@
         >[+] {{ $t('emailshare.form.add') }}</span
       >
 
-      <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]">
+      <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]" :disabled="ctaLoading">
         <span v-if="!ctaLoading">{{ $t('emailshare.form.submit') }}</span>
         <i v-else class="fa fa-circle-o-notch fa-spin fa-fw" />
       </button>
@@ -145,6 +145,7 @@ export default {
           }
         })
         .catch(error => {
+          // this.ctaLoading = false;
           EventBus.$emit('notification', {
             type: 'error',
             message: 'Error submitting entry.',
@@ -162,6 +163,9 @@ export default {
             console.log('Error', error.message);
           }
           console.log(error.config);
+        })
+        .finally(function() {
+          this.ctaLoading = false;
         });
     },
   },
