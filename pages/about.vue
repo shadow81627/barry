@@ -4,8 +4,8 @@
       <layerCard src="/images/Layer919.png" reverse>
         <div class="intro">
           <h2 class="pb-4" v-html="$t('about.card1_title')" />
-          <p>
-            <strong>{{ $t('about.card1_intro') }}</strong>
+          <p class="sub-heading">
+            {{ $t('about.card1_intro') }}
           </p>
           <p>
             {{ $t('about.card1_body_line1') }}

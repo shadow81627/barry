@@ -8,7 +8,6 @@ import error404 from '@/components/error/404.vue';
 import error500 from '@/components/error/500.vue';
 
 export default {
-  layout: 'none',
   props: {
     error: {
       type: Object,

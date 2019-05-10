@@ -179,8 +179,8 @@ select {
     font-size: 2.8rem;
     font-weight: 300;
   }
-  p {
-    font-size: 1.15rem;
+  .sub-heading {
+    font-size: 1.5rem;
   }
 }
 
@@ -220,7 +220,7 @@ select {
   position: relative;
 
   .blog-header {
-    background-image: url('../images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg');
+    // background-image: url('../images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg');
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -274,7 +274,7 @@ select {
 }
 
 .imagecard_tip {
-  background: url('../images/tile_2.png') no-repeat center;
+  // background: url('../images/tile_2.png') no-repeat center;
   background-size: cover;
   width: 100%;
   min-height: 300px;

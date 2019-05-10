@@ -1,9 +1,18 @@
 <template>
   <div id="app">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WV2SB2T"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+
     <Hero
       v-bind="{
         title: $t('entry.hero.title'),
-        poster: '/images/Screen-Shot-2019-05-02-at-2.48.16-pm.gif',
+        poster: '/images/bg2_screen.jpg',
         brand: $t('entry.hero.brand'),
         cta: $t('entry.hero.cta'),
         blurb: $t('entry.hero.blurb'),
