@@ -24,11 +24,11 @@
     "bootstrap-vue": "^2.0.0-rc.19",
     "cross-env": "^5.2.0",
     "nuxt": "^2.6.3",
-    "nuxt-i18n": "^5.12.0",
+    "nuxt-i18n": "^5.12.2",
     "video.js": "^7.5.4",
     "vue-awesome-countdown": "^1.0.12",
     "vuelidate": "^0.7.4",
-    "vuex": "^3.1.0"
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
