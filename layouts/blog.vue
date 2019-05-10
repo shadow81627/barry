@@ -13,7 +13,7 @@
 
     <Heading heading="Explore the Reef" class="bg-dark" />
 
-    <div class="container-fluid" style="min-height: 100vh;padding-left:10%;padding-right:10%;">
+    <div class="container" style="min-height: 100vh;">
       <Pagination />
       <nuxt id="page-content" class="main-content" />
     </div>
