@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html data-vue-meta-server-rendered="" lang="en" data-n-head="data-vue-meta-server-rendered,lang">
+  <head data-n-head="">
+    <title data-n-head="true">barry</title>
+    <meta data-n-head="true" charset="utf-8" />
+    <meta data-n-head="true" name="viewport" content="width=device-width,initial-scale=1" />
+    <meta data-n-head="true" data-hid="description" name="description" content="barry" />
+  </head>
+  <body>
+    <script src="https://cdn.rawgit.com/vuejs/vue/v1.0.24/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <div class="text">
+      <h1>Coming soon</h1>
+      <p>
+        A world-first experience is launching May 23!
+        <a href="https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe"
+          >Register now</a
+        >
+        to be the first to hear.
+      </p>
+      <a
+        href="https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe"
+        class="[ btn ] btn-light [ hero__cta ] shadow"
+      >
+        Register now
+      </a>
+    </div>
+    <style scoped>
+      body {
+        font-family: Tahoma, sans-serif;
+        background: black;
+        color: #fff;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-family: 'StagSans', Roboto, sans-serif;
+        color: #1cb2a9;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      .text {
+        text-align: center;
+      }
+      a {
+        color: #1cb2a9;
+        text-decoration: none;
+      }
+      .btn {
+        border-radius: 0;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      .btn-light {
+        color: white;
+      }
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        border-radius: 0.25rem;
+        -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+          -webkit-box-shadow 0.15s ease-in-out;
+      }
+      .btn.hero__cta {
+        font-size: 1.5rem;
+      }
+      .main-content-center {
+        min-height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .flip-clock {
+        text-align: center;
+        -webkit-perspective: 600px;
+        perspective: 600px;
+        margin: 0 auto;
+      }
+      .flip-clock *,
+      .flip-clock *:before,
+      .flip-clock *:after {
+        box-sizing: border-box;
+      }
+      .flip-clock__piece {
+        display: inline-block;
+        margin: 0 0.2vw;
+      }
+      @media (min-width: 1000px) {
+        .flip-clock__piece {
+          margin: 0 5px;
+        }
+      }
+      .flip-clock__slot {
+        font-size: 1rem;
+        line-height: 1.5;
+        display: block;
+        color: #fff;
+      }
+      .flip-card {
+        display: block;
+        position: relative;
+        padding-bottom: 0.72em;
+        font-size: 2.25rem;
+        line-height: 0.95;
+      }
+      @media (min-width: 1000px) {
+        .flip-clock__slot {
+          font-size: 1.2rem;
+        }
+        .flip-card {
+          font-size: 3rem;
+        }
+      }
+      /*////////////////////////////////////////*/
+      .flip-card__top,
+      .flip-card__bottom,
+      .flip-card__back-bottom,
+      .flip-card__back::before,
+      .flip-card__back::after {
+        display: block;
+        height: 0.72em;
+        color: #ccc;
+        background: #222;
+        padding: 0.23em 0.25em 0.4em;
+        border-radius: 0.15em 0.15em 0 0;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 1.8em;
+      }
+      .flip-card__bottom,
+      .flip-card__back-bottom {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border-top: solid 1px #000;
+        background: #393939;
+        border-radius: 0 0 0.15em 0.15em;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 2;
+      }
+      .flip-card__back-bottom {
+        z-index: 1;
+      }
+      .flip-card__bottom::after,
+      .flip-card__back-bottom::after {
+        display: block;
+        margin-top: -0.72em;
+      }
+      .flip-card__back::before,
+      .flip-card__bottom::after,
+      .flip-card__back-bottom::after {
+        content: attr(data-value);
+      }
+      .flip-card__back {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 0%;
+        pointer-events: none;
+      }
+      .flip-card__back::before {
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+      }
+      .flip .flip-card__back::before {
+        z-index: 1;
+        -webkit-animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
+        animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+      }
+      .flip .flip-card__bottom {
+        -webkit-transform-origin: center top;
+        transform-origin: center top;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
+        animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
+      }
+      @-webkit-keyframes flipTop {
+        0% {
+          -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+          z-index: 2;
+        }
+        0%,
+        99% {
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+          opacity: 0;
+        }
+      }
+      @keyframes flipTop {
+        0% {
+          -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+          z-index: 2;
+        }
+        0%,
+        99% {
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+          opacity: 0;
+        }
+      }
+      @-webkit-keyframes flipBottom {
+        0%,
+        50% {
+          z-index: -1;
+          -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+          opacity: 0;
+        }
+        51% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+          z-index: 5;
+        }
+      }
+      @keyframes flipBottom {
+        0%,
+        50% {
+          z-index: -1;
+          -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+          opacity: 0;
+        }
+        51% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+          z-index: 5;
+        }
+      }
+    </style>
+    <script>
+      Vue.filter('zerofill', function(value) {
+        //value = ( value < 0 ? 0 : value );
+        return (value < 10 && value > -1 ? '0' : '') + value;
+      });
+
+      var Tracker = Vue.extend({
+        template: `
+                <span v-show="show" class="flip-clock__piece">
+                  <span class="flip-clock__card flip-card">
+                    <b class="flip-card__top">{{current | zerofill}}</b>
+                    <b class="flip-card__bottom" data-value="{{current | zerofill}}"></b>
+                    <b class="flip-card__back" data-value="{{previous | zerofill}}"></b>
+                    <b class="flip-card__back-bottom" data-value="{{previous | zerofill}}"></b>
+                  </span>
+                  <span class="flip-clock__slot">{{property}}</span>
+                </span>`,
+        props: ['property', 'time'],
+        data: () => ({
+          current: 0,
+          previous: 0,
+          show: false,
+        }),
+
+        events: {
+          time(newValue) {
+            if (newValue[this.property] === undefined) {
+              this.show = false;
+              return;
+            }
+
+            var val = newValue[this.property];
+            this.show = true;
+
+            val = val < 0 ? 0 : val;
+
+            if (val !== this.current) {
+              this.previous = this.current;
+              this.current = val;
+
+              this.$el.classList.remove('flip');
+              void this.$el.offsetWidth;
+              this.$el.classList.add('flip');
+            }
+          },
+        },
+      });
+
+      var el = document.createElement('div');
+      document.body.appendChild(el);
+
+      var Countdown = new Vue({
+        el: el,
+
+        template: ` 
+                <div class="flip-clock" data-date="2019-05-23" @click="update">
+                  <tracker 
+                    v-for="tracker in trackers"
+                    :property="tracker"
+                    :time="time"
+                    v-ref:trackers
+                  ></tracker>
+                </div>
+                `,
+
+        props: ['date', 'callback'],
+
+        data: () => ({
+          time: {},
+          i: 0,
+          trackers: ['Days', 'Hours', 'Minutes', 'Seconds'], //'Random',
+        }),
+
+        components: {
+          Tracker,
+        },
+
+        beforeDestroy() {
+          if (window['cancelAnimationFrame']) {
+            cancelAnimationFrame(this.frame);
+          }
+        },
+
+        watch: {
+          date: function(newVal) {
+            this.setCountdown(newVal);
+          },
+        },
+
+        ready() {
+          if (window['requestAnimationFrame']) {
+            this.setCountdown(this.date);
+            this.callback = this.callback || function() {};
+            this.update();
+          }
+        },
+
+        methods: {
+          setCountdown(date) {
+            if (date) {
+              this.countdown = moment(date, 'YYYY-MM-DD HH:mm:ss');
+            } else {
+              //this.countdown = moment().endOf('day');
+              this.countdown = moment('2019-05-23 10:00:00', 'YYYY-MM-DD HH:mm:ss');
+            }
+          },
+
+          update() {
+            this.frame = requestAnimationFrame(this.update.bind(this));
+            if (this.i++ % 10) {
+              return;
+            }
+            var t = moment(new Date());
+            // Calculation adapted from https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+            if (this.countdown) {
+              t = this.countdown.diff(t);
+
+              //t = this.countdown.diff(t);//.getTime();
+              //console.log(t);
+              this.time.Days = Math.floor(t / (1000 * 60 * 60 * 24));
+              this.time.Hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+              this.time.Minutes = Math.floor((t / 1000 / 60) % 60);
+              this.time.Seconds = Math.floor((t / 1000) % 60);
+            } else {
+              this.time.Days = undefined;
+              this.time.Hours = t.hours() % 13;
+              this.time.Minutes = t.minutes();
+              this.time.Seconds = t.seconds();
+            }
+
+            this.time.Total = t;
+
+            this.$broadcast('time', this.time);
+            return this.time;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
