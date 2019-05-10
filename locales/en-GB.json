@@ -183,6 +183,17 @@
     "title": "Thank you!",
     "intro": "<p>Thanks for entering the competition to experience the Great Barrier Reef with scUber!</p><p><a :href=\"`https://www.queensland.com/${$i18n.locales.find(i => i.code === this.$i18n.locale).iso}/plan-your-trip/travel-tools/enews-subscribe`\" target=\"_blank\">Subscribe</a> for exclusive offers, holiday deals and local tips from Queensland delivered straight toyour inbox.</p><p>Planning your perfect next Great Barrier Reef holiday?</p><p>Find out more about the ways to experience this World Heritage-listed wonder below.</p>"
   },
+  "blog": {
+    "posts": [
+      {
+        "image": "/image/blog/5_most_unforgettable.jpg",
+        "heading": "Deal 1 has a really big header to see how much text we can fit into this area without it looking silly.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "price": "$1000000",
+        "link": "https://example.com/deals/1"
+      }
+    ]
+  },
   "deals": {
     "heading": "Australian Deals",
     "no-deals": "No Deal",
