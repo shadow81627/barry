@@ -101,7 +101,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
-    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }],
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-WV2SB2T' }],
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     [
