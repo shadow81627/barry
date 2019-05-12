@@ -97,11 +97,11 @@
         "path": "about"
       }
     },
-    "intro": "To celebrate the launch of scUber, Queensland, Australia and Uber are giving one lucky person and a friend the opportunity to win a trip to Australia's Great Barrier Reef.",
-    "body": "For your chance to win, tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
-    "prize_package": [
-      "Prize package",
-      "Win a trip for two people from the United Kingdom including:",
+    "title": "To celebrate the launch of scUber, Queensland, Australia and Uber are giving one lucky person and a friend the opportunity to win a trip to Australia's Great Barrier Reef.",
+    "intro": "For your chance to win, tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
+    "prize_package_title": "Prize package",
+    "prize_package_intro": "Win a trip for two people from the United Kingdom including:",
+    "prize_package_list": [
       "Return economy airfares from your nearest International airport to Cairns",
       "Return airport transfers from Cairns Airport to hotel",
       "5 nights' accommodation staying at Riley, a Crystalbrook Collection Resort",
