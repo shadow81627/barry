@@ -100,12 +100,9 @@
     "intro": "To celebrate launch of scUber, Tourism and Events Queensland and Uber is giving one lucky person and a friend the opportunity to win a trip to Australia’s Great Barrier Reef.",
     "prize_package": "For your chance to win, enter below and tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with ScUber.",
     "form": {
-      "heading": "Tell us why you should experience the wonder of the Great Barrier Reef with ScUber in 25 words or less",
+      "heading": "Tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
       "entry_text": {
-        "label": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
-        "placeholder": "Why you should experience the wonder of the Great Barrier Reef with ScUber?",
-        "valid-feedback": "cool story bro",
-        "invalid-feedback": "I don't like your answer >:("
+        "placeholder": "25 words or less"
       },
       "first_name": {
         "placeholder": "First Name",

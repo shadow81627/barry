@@ -8,7 +8,6 @@
         v-bind="{
           id: 'entry_text',
           type: 'textarea',
-          label: $t('entry.form.entry_text.label'),
           placeholder: $t('entry.form.entry_text.placeholder'),
           'valid-feedback': null,
           'invalid-feedback': null,
