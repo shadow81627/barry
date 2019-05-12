@@ -97,8 +97,19 @@
         "path": "about"
       }
     },
-    "intro": "To celebrate launch of scUber, Tourism and Events Queensland and Uber is giving one lucky person and a friend the opportunity to win a trip to Australia’s Great Barrier Reef.",
-    "prize_package": "For your chance to win, enter below and tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with ScUber.",
+    "intro": "To celebrate the launch of scUber, Queensland, Australia and Uber are giving one lucky person and a friend the opportunity to win a trip to Australia's Great Barrier Reef.",
+    "body": "For your chance to win, tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
+    "prize_package": [
+      "Prize package",
+      "Win a trip for two people from the United Kingdom including:",
+      "Return economy airfares from your nearest International airport to Cairns",
+      "Return airport transfers from Cairns Airport to hotel",
+      "5 nights' accommodation staying at Riley, a Crystalbrook Collection Resort",
+      "Experience of a lifetime on the Great Barrier Reef with Quicksilver Cruises and Nautilus Aviation including a ride in scUber at Agincourt Reef",
+      "Cape Tribulation, Daintree & Mossman Day Tour",
+      "$250 AUD Uber credit for use in the Uber and Uber Eats app",
+      "The competition closes June 1, 2019 (2pm AEST) and winners will be announced on June 3, 2019 (10am AEST)."
+    ],
     "form": {
       "heading": "Tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
       "entry_text": {

@@ -7,7 +7,7 @@
     </div>
 
     <div class="prize-package">
-      <p>{{ $t('entry.prize_package') }}</p>
+      <p v-for="item in $t('entry.prize_package')" :key="item" v-html="item" />
     </div>
 
     <EntryForm />
