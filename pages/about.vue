@@ -28,7 +28,7 @@
       <template #column-2>
         <div class="intro">
           <p class="pb-2 sub-heading" v-html="$t('about.card2.intro')" />
-          <p v-for="item in $t('about.card2.body')" :key="item" v-html="item" class="pb-2" />
+          <p v-for="item in $t('about.card2.body')" :key="item" class="pb-2" v-html="item" />
         </div>
         <nuxt-link
           :to="{ path: localePath('entry'), hash: '#page-content' }"
@@ -52,7 +52,7 @@
       </template>
       <template #column-2>
         <div class="intro">
-          <p v-for="item in $t('about.card3.body')" :key="item" v-html="item" class="pb-2" />
+          <p v-for="item in $t('about.card3.body')" :key="item" class="pb-2" v-html="item" />
         </div>
       </template>
     </TwoByOne>
@@ -124,7 +124,7 @@
       <template #column-2>
         <div class="intro">
           <h2 v-html="$t('about.card5.title')" />
-          <p v-for="item in $t('about.card5.body')" :key="item" v-html="item" class="pb-2" />
+          <p v-for="item in $t('about.card5.body')" :key="item" class="pb-2" v-html="item" />
         </div>
         <nuxt-link :to="localePath('blog')" class="[ btn ] btn-dark [ hero__cta ] shadow">
           {{ $t('about.card5.cta') }}
