@@ -3,13 +3,15 @@
     { "value": "about", "text": "about scuber" },
     { "value": "win", "text": "win a ride" },
     { "value": "explore", "text": "explore the reef" },
-    { "value": "deals", "text": "travel offers" }
+    { "value": "deals", "text": "travel offers" },
+    { "value": "in_app", "text": "in-app experience" }
   ],
   "pagination": [
     { "value": "about", "text": "about" },
     { "value": "win", "text": "win" },
     { "value": "deals", "text": "deals" },
-    { "value": "explore", "text": "explore" }
+    { "value": "explore", "text": "explore" },
+    { "value": "in_app", "text": "in-app" }
   ],
   "footer": {
     "links": [
