@@ -3,6 +3,7 @@
     <div class="intro">
       <h2 v-html="$t('closed.title')" />
     </div>
+    <p v-for="item in $t('closed.body')" :key="item" v-html="item" />
   </div>
 </template>
 

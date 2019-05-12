@@ -150,7 +150,12 @@
     "title": "Thank you! "
   },
   "closed": {
-    "title": "Competition is now closed"
+    "title": "The competition is now closed.",
+    "body": [
+      "Winners will be announced on June 3, 2019 (10am AEST).",
+      "Good luck!"
+    ]
+  },
   },
   "unsubscribed": {
     "title": "You have now successfully been unsubscribed."
