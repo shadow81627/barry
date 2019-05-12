@@ -151,10 +151,7 @@
   },
   "closed": {
     "title": "The competition is now closed.",
-    "body": [
-      "Winners will be announced on June 3, 2019 (10am AEST).",
-      "Good luck!"
-    ]
+    "body": ["Winners will be announced on June 3, 2019 (10am AEST).", "Good luck!"]
   },
   },
   "unsubscribed": {
