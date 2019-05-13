@@ -4,14 +4,14 @@
     { "value": "win", "text": "win a ride" },
     { "value": "explore", "text": "explore the reef" },
     { "value": "deals", "text": "travel offers" },
-    { "value": "in-app", "text": "in-app experience" }
+    { "value": "ondemand", "text": "in-app experience" }
   ],
   "pagination": [
     { "value": "about", "text": "about" },
     { "value": "win", "text": "win" },
     { "value": "deals", "text": "deals" },
     { "value": "explore", "text": "explore" },
-    { "value": "in-app", "text": "in-app" }
+    { "value": "ondemand", "text": "in-app" }
   ],
   "footer": {
     "links": [
@@ -181,40 +181,46 @@
       ]
     }
   },
-  "in_app_experience": {
-    "in_app_title": "scUber On Demand",
-    "in_app_intro": "How to request a scUber ride",
-    "in_app_body_line1": "Uber and Queensland, Australia are offering a limited number of people the chance to delve into the depths of one of the world's greatest natural wonders – the Great Barrier Reef – and explore a breathtaking underwater playground. For some lucky people, it all starts with a simple tap on the Uber app.",
-    "in_app_body_line2": "How to request a ride with scUber",
-    "in_app_body_line3": "We want to showcase the incredible Great Barrier Reef with this once-in-a-lifetime chance to explore the world's largest ecosystem.",
-    "in_app_body_line4": "For a limited time only, a select number of Uber riders in selected Queensland cities will have the chance to request a scUber experience directly through the app.",
-    "in_app_body_line5": "If you're an Uber rider in Gladstone, Cairns, Port Douglas or Palm Cove, you can request a scUber experience on the following dates:",
-    "in_app_body_line5a": "Gladstone - 27th May, 28th May, 30th May, 31 May, 2nd June, 3rd June;",
-    "in_app_body_line5b": "Port Douglas, Palm Cove and Cairns - 9th June, 11th June, 12th June, 14th June, 15th June 17th June, 18th June",
-    "in_app_body_line6": "Please note just one trip for two will become available daily in each location. These numbers are strictly limited so availability cannot be guaranteed.",
-    "in_app_body_line7": "The cost of each scUber experience will be $3,000 for two people. Uber will match the cost of all scUber rides and donate the equivalent amount to Citizens of the Great Barrier Reef.",
-    "in_app_body_line8": "Find out more details about the full scUber experience here.",
-    "in_app_body_line9": "The experience includes:",
-    "in_app_body_list9a": "Pickup and drop-off from your location in a scUber car",
-    "in_app_body_list9b": "Chopper ride to and from Gladstone to Heron Island or from Cairns or Port Douglas to Agincourt Reef",
-    "in_app_body_list9c": "Ride in a scUber submarine",
-    "in_app_body_list9d": "Car back to your original pick up address",
-    "in_app_body_list10": "1. Open your Uber app from 7.30am",
-    "in_app_body_list11": "2. Chose the scUber option",
-    "in_app_body_list12": "3. Wait for your ride to be confirmed (as there is only one per day)",
-    "in_app_body_list13": "4. An Uber team member will then ring you and talk you through where you need to be",
-    "in_app_body_list14": "Other details",
-    "in_app_body_list15": "20 rides will be available throughout the 4 weeks which means 40 riders will get to experience the Great Barrier Reef like never before in a fully submersible submarine",
-    "in_app_body_list16": "At 7.30am each morning scUber becomes available for riders to request within the geo fence (see maps below)",
-    "in_app_body_list17": "ONE request is accepted (first-come-first-serve). Maximum seats you can book is 2",
-    "in_app_body_list18": "You must be available for travel each day at 9am on the day you select your scUber ride (So you need to be ready!)",
-    "in_app_body_list19": "scUber rides will be 1 hour in length",
-    "in_app_body_list20": "You should be returned back to your original pick up address by 4.30pm on the day of travel",
-    "in_app_disclaimer1": "The scUber experience is strictly limited and available for a limited time only. A scUber request can only be made using the Uber app on or after 7.30am on specified dates (set out below), for travel on the same date. A successful scUber request will be confirmed no later than 8:30am on the date it was requested and all riders must be available to commence travel by 9am on the same day. Uber does not guarantee availability of scUber rides. Each scUber trip is priced at $3000 for two riders. Where only one rider can attend, the full cost of the scUber trip remains due and payable. All passengers must satisfy certain physical and legal requirements. Please note, Uber is not a submarine operator and all scUber rides will be operated by Aquatica Submarines.",
-    "in_app_disclaimer2": "The specified dates for each of the participating geographical area are as follows:",
-    "in_app_disclaimer3": "Gladstone - 27th May, 28th May, 30th May, 31 May, 2nd June, 3rd June;",
-    "in_app_disclaimer4": "Port Douglas, Palm Cove and Cairns - 9th June, 11th June, 12th June, 14th June, 15th June, 17th June, 18th June",
-    "in_app_disclaimer5": "These dates may change due to inclement weather."
+  "ondemand": {
+    "heading": "scUber On Demand",
+    "title": "How to request a scUber ride",
+    "intro": "Uber and Queensland, Australia are offering a limited number of people the chance to delve into the depths of one of the world's greatest natural wonders – the Great Barrier Reef – and explore a breathtaking underwater playground. For some lucky people, it all starts with a simple tap on the Uber app.",
+    "body": [
+      "How to request a ride with scUber",
+      "We want to showcase the incredible Great Barrier Reef with this once-in-a-lifetime chance to explore the world's largest ecosystem.",
+      "For a limited time only, a select number of Uber riders in selected Queensland cities will have the chance to request a scUber experience directly through the app.",
+      "If you're an Uber rider in Gladstone, Cairns, Port Douglas or Palm Cove, you can request a scUber experience on the following dates:",
+      "Gladstone - 27th May, 28th May, 30th May, 31 May, 2nd June, 3rd June;",
+      "Port Douglas, Palm Cove and Cairns - 9th June, 11th June, 12th June, 14th June, 15th June 17th June, 18th June",
+      "Please note just one trip for two will become available daily in each location. These numbers are strictly limited so availability cannot be guaranteed.",
+      "The cost of each scUber experience will be $3,000 for two people. Uber will match the cost of all scUber rides and donate the equivalent amount to Citizens of the Great Barrier Reef.",
+      "Find out more details about the full scUber experience here.",
+      "The experience includes:"
+    ],
+    "list": [
+      "Pickup and drop-off from your location in a scUber car",
+      "Chopper ride to and from Gladstone to Heron Island or from Cairns or Port Douglas to Agincourt Reef",
+      "Ride in a scUber submarine",
+      "Car back to your original pick up address",
+      "1. Open your Uber app from 7.30am",
+      "2. Chose the scUber option",
+      "3. Wait for your ride to be confirmed (as there is only one per day)",
+      "4. An Uber team member will then ring you and talk you through where you need to be",
+      "Other details",
+      "20 rides will be available throughout the 4 weeks which means 40 riders will get to experience the Great Barrier Reef like never before in a fully submersible submarine",
+      "At 7.30am each morning scUber becomes available for riders to request within the geo fence (see maps below)",
+      "ONE request is accepted (first-come-first-serve). Maximum seats you can book is 2",
+      "You must be available for travel each day at 9am on the day you select your scUber ride (So you need to be ready!)",
+      "scUber rides will be 1 hour in length",
+      "You should be returned back to your original pick up address by 4.30pm on the day of travel"
+    ],
+    "disclaimer": [
+      "The scUber experience is strictly limited and available for a limited time only. A scUber request can only be made using the Uber app on or after 7.30am on specified dates (set out below), for travel on the same date. A successful scUber request will be confirmed no later than 8:30am on the date it was requested and all riders must be available to commence travel by 9am on the same day. Uber does not guarantee availability of scUber rides. Each scUber trip is priced at $3000 for two riders. Where only one rider can attend, the full cost of the scUber trip remains due and payable. All passengers must satisfy certain physical and legal requirements. Please note, Uber is not a submarine operator and all scUber rides will be operated by Aquatica Submarines.",
+      "The specified dates for each of the participating geographical area are as follows:",
+      "Gladstone - 27th May, 28th May, 30th May, 31 May, 2nd June, 3rd June;",
+      "Port Douglas, Palm Cove and Cairns - 9th June, 11th June, 12th June, 14th June, 15th June, 17th June, 18th June",
+      "These dates may change due to inclement weather."
+    ]
   },
   "closed": {
     "title": "The competition is now closed.",
