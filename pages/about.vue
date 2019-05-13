@@ -16,13 +16,8 @@
     <!-- card2 -->
     <TwoByOne class="py-5">
       <template #column-1>
-        <div
-          class="text-center p-5"
-          style="background-image: url('/images/fader5.png');background-size: cover;"
-        >
-          <h2 class="display-3 text-light">
-            {{ $t('about.card2.title') }}
-          </h2>
+        <div class="p-5">
+          <img class="img-fluid d-block" :src="$t('about.card2.image')" />
         </div>
       </template>
       <template #column-2>
@@ -41,14 +36,7 @@
     <!-- card3 -->
     <TwoByOne class="py-5" reverse>
       <template #column-1>
-        <div
-          class="text-center p-5"
-          style="background-image: url('/images/fader5.png');background-size: cover;"
-        >
-          <h2 class="display-3 text-light">
-            {{ $t('about.card3.title') }}
-          </h2>
-        </div>
+        <img class="img-fluid d-block" :src="$t('about.card3.image')" />
       </template>
       <template #column-2>
         <div class="intro">
@@ -59,7 +47,7 @@
 
     <!-- card4 -->
     <div class="row py-5">
-      <LayerCard src="/images/Layer783.png" full-width>
+      <LayerCard :src="$t('about.card4.image')" full-width>
         <h2>{{ $t('about.card4.title') }}</h2>
         <p v-for="item in $t('about.card4.body')" :key="item" v-html="item" />
         <div class="intro">
@@ -78,14 +66,7 @@
     <!-- card5 -->
     <TwoByOne class="py-5">
       <template #column-1>
-        <div
-          class="text-center p-5"
-          style="background-image: url('/images/fader5.png');background-size: cover;"
-        >
-          <h2 class="display-3 text-light">
-            {{ $t('about.card2.title') }}
-          </h2>
-        </div>
+        <img class="img-fluid d-block" :src="$t('about.card5.image')" />
       </template>
       <template #column-2>
         <div class="intro">

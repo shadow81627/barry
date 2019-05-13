@@ -39,7 +39,7 @@
     "card1": {
       "title": "Meet sc<strong style=\"color:black;\">Uber</strong>",
       "intro": "Introducing a world first on the Great Barrier Reef",
-      "image": "/images/Layer919.png",
+      "image": "/images/card1-image.jpg",
       "alt": "",
       "body": [
         "Travel like never before, exploring Australia's Great Barrier Reef in the world's first rideshare submarine, scUber.",
@@ -51,7 +51,7 @@
     "card2": {
       "title": "WIN! a ride in scUber",
       "intro": "You and a friend can <strong class=\"text-primary\">WIN a once-in-a-lifetime trip</strong> to Australia's Great Barrier Reef to experience the ride of your lives in scUber.",
-      "image": "/images/10icon.png",
+      "image": "/images/card2-image.jpg",
       "alt": "",
       "body": [
         "For your chance to win, enter the competition (hyperlink to competition page) and tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber."
@@ -60,7 +60,7 @@
     },
     "card3": {
       "title": "How to request a ride with scUber",
-      "image": "/images/10icon.png",
+      "image": "/images/card3-image.jpg",
       "alt": "",
       "body": [
         "For a limited time only, Uber riders in selected Queensland cities will have the opportunity to request a scUber experience directly through the app. These numbers are strictly limited so availability cannot be guaranteed.",
@@ -71,7 +71,7 @@
     "card4": {
       "title": "Take a deep dive",
       "intro": "Here's what else makes it so great:",
-      "image": "/images/10icon.png",
+      "image": "/images/card4-image.jpg",
       "alt": "",
       "body": [
         "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/Explore-Queensland/Great-Barrier-Reef' target='_blank'>Great Barrier Reef</a>.",
@@ -79,34 +79,34 @@
       ],
       "list": [
         {
-          "image": "/images/10icon.png",
+          "image": "/images/icons/about-1.png",
           "text": "It represents approximately 10% of all <a href='https://www.queensland.com/en-au/search-results/~/link.aspx?_id=55A4DCAF07B74C5B935C1ED898D09F12&_z=z' target='_blank'>coral reefs</a> in the world."
         },
         {
-          "image": "/images/10icon.png",
+          "image": "/images/icons/about-2.png",
           "text": "The Great Barrier Reef is the size of about 70 million football fields."
         },
         {
-          "image": "/images/10icon.png",
+          "image": "/images/icons/about-3.png",
           "text": "It's the largest natural feature on earth and is the only living structure that can be seen from the moon."
         },
         {
-          "image": "/images/10icon.png",
+          "image": "/images/icons/about-4.png",
           "text": "The Great Barrier Reef is home to the 'Great 8' marine encounters: whales, turtles, manta rays, clown fish, sharks, potato cod, Maori wrasse and the giant clam."
         },
         {
-          "image": "/images/10icon.png",
+          "image": "/images/icons/about-5.png",
           "text": "The Reef is the world's largest and longest coral reef system, stretching for 2,300km from the tip of Cape York in the north to Bundaberg in the south. That's about the distance between New York and Dallas!"
         },
         {
-          "image": "/images/10icon.png",
+          "image": "/images/icons/about-6.png",
           "text": "A World Heritage Area since 1981 and the world's first reef ecosystem to be recognised by UNESCO, the Great Barrier Reef is highly protected and one of the best-managed marine areas on Earth. "
         }
       ]
     },
     "card5": {
       "title": "Protecting the Reef",
-      "image": "/images/10icon.png",
+      "image": "/images/card5-image.jpg",
       "alt": "",
       "body": [
         "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce their partnership with the Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
@@ -191,6 +191,7 @@
     ],
     "blog": {
       "title": "EXPLORE THE REEF",
+      "image": "/images/blog/blog-hero.jpg",
       "body": [
         "Find out more about the ways to experience this World Heritage-listed wonder below:"
       ],
@@ -295,49 +296,49 @@
   "blog": {
     "posts": [
       {
-        "image": "/images/blog/6 tips to plan.jpg",
+        "image": "/images/blog/blog-6-tips.jpg",
         "alt_text": "6 tips to plan your GBR holiday",
         "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
         "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/"
       },
       {
-        "image": "/images/blog/How to see GBR.jpg",
+        "image": "/images/blog/blog-see-gbr.jpg",
         "alt_text": "How to see the GBR",
         "heading": "How to see the Great Barrier Reef without getting wet",
         "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/"
       },
       {
-        "image": "/images/blog/10 GBR Islands.jpg",
+        "image": "/images/blog/blog-gbr-islands.jpg",
         "alt_text": "10 Great Barrier Reef islands",
         "heading": "10 Great Barrier Reef islands you need to experience now",
         "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/"
       },
       {
-        "image": "/images/blog/Where to stay.jpg",
+        "image": "/images/blog/blog-stay.jpg",
         "alt_text": "Where to stay on the GBR",
         "heading": "Where to stay on the Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/"
       },
       {
-        "image": "/images/blog/8 way to exp.jpg",
+        "image": "/images/blog/blog-8-ways.jpg",
         "alt_text": "8 ways to experience the GBR",
         "heading": "8 epic ways to experience the Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/"
       },
       {
-        "image": "/images/blog/5 Most Unforgettable.jpg",
+        "image": "/images/blog/blog-unforgettable.jpg",
         "alt_text": "Unforgettable dining on the GBR",
         "heading": "The 5 most unforgettable dining experiences on the Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/"
       },
       {
-        "image": "/images/blog/How to do Daintree.jpg",
+        "image": "/images/blog/blog-daintree.jpg",
         "alt_text": "The world's oldest rainforest",
         "heading": "Everything you need to know about the world's oldest rainforest",
         "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/"
       },
       {
-        "image": "/images/blog/Best diving.jpg",
+        "image": "/images/blog/blog-best-diving.jpg",
         "alt_text": "Best diving in the world",
         "heading": "Best diving in the world: 11 must-dive sites",
         "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/"
@@ -357,7 +358,7 @@
         "link": "https://example.com/deals/1"
       },
       {
-        "image": "/images/fader5.png",
+        "image": "/images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg",
         "alt_text": "Deal2",
         "heading": "Sweet Deal highlight",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
@@ -366,7 +367,7 @@
         "disabled": true
       },
       {
-        "image": "/images/fader5.png",
+        "image": "/images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg",
         "alt_text": "Deal3",
         "heading": "Sweet Deal highlight",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
@@ -374,7 +375,7 @@
         "link": "https://example.com/deals/3"
       },
       {
-        "image": "/images/fader5.png",
+        "image": "/images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg",
         "alt_text": "Deal4",
         "heading": "deal4",
         "description": "tLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
