@@ -13,6 +13,8 @@
           options,
           state,
           disabled,
+          maxlength,
+          pattern,
         }"
         :aria-describedby="`${id}-description ${id}-valid-feedback ${id}-invalid-feedback`"
         trim
@@ -63,6 +65,8 @@ export default {
     label: { type: String },
     options: Array,
     state: { type: Boolean, default: null },
+    maxlength: { type: Number, default: null },
+    pattern: { type: String },
   },
   computed: {
     inputListeners() {

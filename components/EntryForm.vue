@@ -14,6 +14,7 @@
           required: true,
         }"
         :state="$v.form.entry_text.$dirty ? !$v.form.entry_text.$error : null"
+        :maxlength="8000"
         @input="$v.form.entry_text.$touch()"
       >
         <template #description>
@@ -98,7 +99,7 @@
           "
           :required="this.form.country_iso === 'AU'"
           pattern="\d*"
-          maxlength="4"
+          :maxlength="4"
           :state="$v.form.postcode.$dirty ? !$v.form.postcode.$error : null"
           @input="$v.form.postcode.$touch()"
         />
@@ -114,7 +115,7 @@
           id="year"
           name="year"
           type="number"
-          maxlength="4"
+          :maxlength="4"
           minlength="4"
           pattern="\d*"
           placeholder="Year"
