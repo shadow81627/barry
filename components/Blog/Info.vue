@@ -1,7 +1,7 @@
 <template>
   <div
-    class="card__content blogpost__description mx-2 shadow px-2"
-    :class="{ 'bg-dark': dark, 'text-light': dark, 'bg-light': !dark }"
+    class="card__content blogpost__description mx-2 shadow px-2 text-uppercase"
+    :class="{ 'bg-dark': dark, 'text-light': dark, 'bg-light': !dark, 'p-4': dark }"
     :style="{ 'text-align': textAlign }"
   >
     <p>{{ heading }}</p>
@@ -20,9 +20,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.blogpost__description {
-  padding: 2rem;
-}
-</style>

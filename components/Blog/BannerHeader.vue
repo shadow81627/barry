@@ -4,7 +4,7 @@
       class="card__content blogpost__description bg-light text-dark shadow text-uppercase text-left"
     >
       <h2 class="article__title article--billboard__title text-dark h3">
-        <span>Why you need to do the Noosa Everglades, stat</span>
+        <span>8 epic ways to experience the Great Barrier Reef</span>
       </h2>
     </div>
     <div class="col-12 pb-5 pl-5 pt-2">
