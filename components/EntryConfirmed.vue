@@ -4,11 +4,8 @@
     <div class="row">
       <div class="col-12">
         <span style="text-align:center">
-          <h3>
-            Congratulations, You're
-            <br />in the draw!
-          </h3>
-          <p>Remember to share your entry for extra entries!</p>
+          <h2 v-html="$t('confirmation.title')" />
+          <p v-for="item in $t('confirmation.body')" :key="item" v-html="item" />
         </span>
       </div>
     </div>
@@ -38,20 +35,23 @@
     </div>
     <div class="blog-link row my-4" style="position: relative;">
       <div class="text-center">
-        <h3>NEED SOME sweaty deals?</h3>
-        <p>
-          Visit our blog to get the most out of your Queensland summer and uncover local secrets to
-          make your holiday unforgettable.
-        </p>
+        <h3>{{ $t('confirmation.blog.title') }}</h3>
+        <p v-for="item in $t('confirmation.blog.body')" :key="item" v-html="item" />
+
         <div class="row d-flex justify-content-center">
-          <div class="m-2">
+          <div
+            v-for="item in $t('confirmation.blog.posts')"
+            :key="item"
+            class="col m-2"
+            :style="`background-image: url(${item.image}); min-height: 200px;`"
+          >
             <nuxt-link
               :to="localePath('deals')"
               target="_blank"
-              class="[ btn btn--green ] btn-blog"
+              class="[ btn btn-dark ] btn-blog"
               role="button"
             >
-              <span>sweaty deals</span>
+              <span>{{ item.heading }}</span>
             </nuxt-link>
           </div>
         </div>

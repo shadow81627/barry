@@ -157,7 +157,30 @@
     }
   },
   "confirmation": {
-    "title": "Thank you! "
+    "title": "CONGRATULATIONS, YOU'RE IN THE DRAW!",
+    "body": [
+      "Thanks for entering the competition to experience the Great Barrier Reef with scUber!  Winners will be selected and notified by email at 10am (AEST) on Monday 3 June 2019.",
+      "Get set to embark on an awesome ocean adventure and don't forget to share with your friends."
+    ],
+    "blog": {
+      "title": "EXPLORE THE REEF",
+      "body": [
+        "Find out more about the ways to experience this World Heritage-listed wonder below:"
+      ],
+      "posts": [
+        {
+          "heading": "8 epic ways to experience the Great Barrier Reef",
+          "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/",
+          "image": "/images/fader5.png"
+        },
+        {
+          "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
+          "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/",
+          "image": "/images/fader5.png"
+        }
+      ]
+    }
+  },
   },
   "closed": {
     "title": "The competition is now closed.",
