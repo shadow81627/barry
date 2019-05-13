@@ -13,5 +13,13 @@ export default {
       type: 'application/x-mpegURL',
     });
   },
+  head: () => ({
+    link: [
+      {
+        href: 'https://vjs.zencdn.net/7.5.4/video-js.css',
+        rel: 'stylesheet',
+      },
+    ],
+  }),
 };
 </script>
