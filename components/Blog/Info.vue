@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <div
-      class="card__content blogpost__description mx-2 shadow"
-      :class="{ 'bg-dark': dark, 'text-light': dark, 'bg-light': !dark }"
-    >
-      <p>{{ heading }}</p>
-    </div>
+  <div
+    class="card__content blogpost__description mx-2 shadow px-2"
+    :class="{ 'bg-dark': dark, 'text-light': dark, 'bg-light': !dark }"
+    :style="{ 'text-align': textAlign }"
+  >
+    <p>{{ heading }}</p>
   </div>
 </template>
 
@@ -17,13 +16,13 @@ export default {
     link: { type: String, default: 'https://example.com/deals/1' },
     disabled: { type: Boolean, default: false },
     dark: { type: Boolean },
+    textAlign: { type: String, default: 'center' },
   },
 };
 </script>
 
 <style>
 .blogpost__description {
-  text-align: center;
   padding: 2rem;
 }
 </style>

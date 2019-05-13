@@ -1,13 +1,21 @@
 <template>
-  <div :id="heading" class="mb-5">
+  <b-link :id="heading" :href="link" target="_blank" class="mb-5">
     <img
       class="img-fluid mx-auto d-block w-100"
       alt="How to go camping in the tropics and survive"
       :src="image"
     />
 
-    <Info class="col" v-bind="{ heading, description, link, dark: true }" style="bottom: 1rem;" />
-  </div>
+    <div class="row mb-2">
+      <div
+        class="col"
+        :class="{ 'position-absolute': infoPosition === 'absolute' }"
+        style="bottom: 1rem;"
+      >
+        <Info v-bind="{ heading, description, link, dark, textAlign }" />
+      </div>
+    </div>
+  </b-link>
 </template>
 
 <script>
@@ -24,6 +32,9 @@ export default {
     heading: { type: String, default: 'deal1' },
     description: { type: String, default: 'I am deal1' },
     link: { type: String, default: 'https://example.com/deals/1' },
+    dark: { type: Boolean, default: true },
+    infoPosition: { type: String, default: null },
+    textAlign: { type: String, default: 'center' },
   },
 };
 </script>

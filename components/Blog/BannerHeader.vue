@@ -1,12 +1,9 @@
 <template>
   <div>
-    <!-- <div v-if="category" class="col-12 m-1">
-      <span class="billboard__category p-2" style="background: black; color: white;opacity: 0.7;">{{
-        category
-      }}</span>
-    </div> -->
-    <div class="card__content blogpost__description bg-light text-dark shadow">
-      <h2 class="article__title article--billboard__title text-dark">
+    <div
+      class="card__content blogpost__description bg-light text-dark shadow text-uppercase text-left"
+    >
+      <h2 class="article__title article--billboard__title text-dark h3">
         <span>Why you need to do the Noosa Everglades, stat</span>
       </h2>
     </div>
