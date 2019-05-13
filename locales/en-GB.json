@@ -205,7 +205,7 @@
   },
   "emailshare": {
     "form": {
-      "heading": "Forward to Friend",
+      "heading": "Forward to a Friend",
       "first_name": "First Name",
       "last_name": "Last Name",
       "email": "Email Address",
@@ -213,18 +213,47 @@
       "submit": "Send"
     }
   },
-  "thanks": {
-    "title": "Thank you!",
-    "intro": "<p>Thanks for entering the competition to experience the Great Barrier Reef with scUber!</p><p><a :href=\"`https://www.queensland.com/${$i18n.locales.find(i => i.code === this.$i18n.locale).iso}/plan-your-trip/travel-tools/enews-subscribe`\" target=\"_blank\">Subscribe</a> for exclusive offers, holiday deals and local tips from Queensland delivered straight toyour inbox.</p><p>Planning your perfect next Great Barrier Reef holiday?</p><p>Find out more about the ways to experience this World Heritage-listed wonder below.</p>"
-  },
   "blog": {
     "posts": [
       {
-        "image": "/image/blog/5_most_unforgettable.jpg",
-        "heading": "Deal 1 has a really big header to see how much text we can fit into this area without it looking silly.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "price": "$1000000",
-        "link": "https://example.com/deals/1"
+        "image": "/images/blog/5_most_unforgettable.jpg",
+        "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
+        "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/"
+      },
+      {
+        "image": "/images/blog/6 tips to plan.jpg",
+        "heading": "How to see the Great Barrier Reef without getting wet",
+        "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/"
+      },
+      {
+        "image": "/images/blog/8 way to exp.jpg",
+        "heading": "10 Great Barrier Reef islands you need to experience now",
+        "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/"
+      },
+      {
+        "image": "/images/blog/10 GBR Islands.jpg",
+        "heading": "Where to stay on the Great Barrier Reef",
+        "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/"
+      },
+      {
+        "image": "/images/blog/Best diving.jpg",
+        "heading": "8 epic ways to experience the Great Barrier Reef",
+        "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/"
+      },
+      {
+        "image": "/images/blog/How to do Daintree.jpg",
+        "heading": "The 5 most unforgettable dining experiences on the Great Barrier Reef",
+        "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/"
+      },
+      {
+        "image": "/images/blog/How to see GBR.jpg",
+        "heading": "Everything you need to know about the world's oldest rainforest",
+        "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/"
+      },
+      {
+        "image": "/images/blog/Where to stay.jpg",
+        "heading": "Best diving in the world: 11 must-dive sites",
+        "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/"
       }
     ]
   },

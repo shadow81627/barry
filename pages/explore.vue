@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <div v-for="(chunk, index) in chunk(deals.concat(deals), 3)" :key="index" class="row">
+    <div v-for="(chunk, index) in chunk(deals, 3)" :key="index" class="row">
       <div v-for="deal in chunk" :key="deal.heading" class="col-lg-4 col-md-6 col-sm-12">
         <BlogPost v-bind="deal" />
       </div>
@@ -29,7 +29,7 @@ export default {
   },
   data: function() {
     return {
-      deals: this.$t('deals.deals'),
+      deals: this.$t('blog.posts'),
     };
   },
   methods: {
