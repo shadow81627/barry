@@ -1,7 +1,7 @@
 <template>
   <div class="[ main-content__left ] col-12 col-md-7">
+    <h2 class="h4">{{ $t('entry.title') }}</h2>
     <div class="intro">
-      <h2>{{ $t('entry.title') }}</h2>
       <p>
         {{ $t('entry.intro') }}
       </p>
