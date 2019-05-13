@@ -1,16 +1,16 @@
 <template>
   <div class="__card">
-    <div class="card__item">
+    <div class="card__item bg-secondary">
       <div class="card__content imagecardone">
         <!-- <img src="@/assets/images/washing-machine.png" alt="scuber" /> -->
       </div>
     </div>
-    <div class="card__item">
+    <div class="card__item bg-secondary">
       <div class="card__content imagecardone">
         <!-- <img src="@/assets/images/washing-machine.png" alt="scuber" /> -->
       </div>
     </div>
-    <div class="card__item">
+    <div class="card__item bg-secondary">
       <div class="card__content imagecard_tip" style="padding-top:2.5rem;">
         <div class="tip_container">
           <h3>{{ $t('tip.heading') }}</h3>
