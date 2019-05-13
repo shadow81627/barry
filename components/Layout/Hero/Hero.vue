@@ -12,7 +12,7 @@
       loop
     >
       <!-- Video width 100% for poster doesn't work on mobile for video -->
-      <source src="@/assets/videos/ProjectBarryLaunchPreEditAssembly5.mp4" type="video/mp4" />
+      <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
     </video>
 
     <div class="container-fluid h-100 p-0">
