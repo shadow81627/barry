@@ -8,7 +8,9 @@
           v-bind="{
             id: `first_name-${index}`,
             type: 'text',
-            placeholder: $t('emailshare.form.first_name'),
+            placeholder: $t('emailshare.form.first_name.placeholder'),
+            'valid-feedback': $t('emailshare.form.first_name.valid-feedback'),
+            'invalid-feedback': $t('emailshare.form.first_name.invalid-feedback'),
           }"
           :state="v.first_name.$dirty ? !v.first_name.$error : null"
           @input="v.first_name.$touch()"
@@ -18,7 +20,9 @@
           v-bind="{
             id: `last_name-${index}`,
             type: 'text',
-            placeholder: $t('emailshare.form.last_name'),
+            placeholder: $t('emailshare.form.last_name.placeholder'),
+            'valid-feedback': $t('emailshare.form.last_name.valid-feedback'),
+            'invalid-feedback': $t('emailshare.form.last_name.invalid-feedback'),
           }"
           :state="v.last_name.$dirty ? !v.last_name.$error : null"
           @input="v.last_name.$touch()"
@@ -28,7 +32,9 @@
           v-bind="{
             id: `email-${index}`,
             type: 'email',
-            placeholder: $t('emailshare.form.email'),
+            placeholder: $t('emailshare.form.email.placeholder'),
+            'valid-feedback': $t('emailshare.form.email.valid-feedback'),
+            'invalid-feedback': $t('emailshare.form.email.invalid-feedback'),
           }"
           :state="v.email.$dirty ? !v.email.$error : null"
           @input="v.email.$touch()"

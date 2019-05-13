@@ -4,14 +4,14 @@
     { "value": "win", "text": "win a ride" },
     { "value": "explore", "text": "explore the reef" },
     { "value": "deals", "text": "travel offers" },
-    { "value": "in_app", "text": "in-app experience" }
+    { "value": "in-app", "text": "in-app experience" }
   ],
   "pagination": [
     { "value": "about", "text": "about" },
     { "value": "win", "text": "win" },
     { "value": "deals", "text": "deals" },
     { "value": "explore", "text": "explore" },
-    { "value": "in_app", "text": "in-app" }
+    { "value": "in-app", "text": "in-app" }
   ],
   "footer": {
     "links": [
@@ -240,9 +240,21 @@
   "emailshare": {
     "form": {
       "heading": "Forward to a Friend",
-      "first_name": "First Name",
-      "last_name": "Last Name",
-      "email": "Email Address",
+      "first_name": {
+        "placeholder": "First Name",
+        "valid-feedback": "Looks good!",
+        "invalid-feedback": "What name do you like to go by?"
+      },
+      "last_name": {
+        "placeholder": "Last Name",
+        "valid-feedback": "Looks good!",
+        "invalid-feedback": "Don't forget your surname please"
+      },
+      "email": {
+        "placeholder": "Email Address",
+        "valid-feedback": "Email is good!",
+        "invalid-feedback": "An email address is required please"
+      },
       "add": "Add",
       "submit": "Send"
     }
