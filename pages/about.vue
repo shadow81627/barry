@@ -2,7 +2,7 @@
   <div>
     <!-- card1 -->
     <div class="row py-5">
-      <layerCard src="/images/Layer919.png" reverse>
+      <layerCard :src="$t('about.card1.image')" :alt="$t('about.card1.alt')" reverse>
         <div class="intro">
           <h2 class="pb-4" v-html="$t('about.card1.title')" />
           <p class="sub-heading">
@@ -59,55 +59,21 @@
 
     <!-- card4 -->
     <div class="row py-5">
-      <LayerCard src="/images/Layer783.png">
+      <LayerCard src="/images/Layer783.png" full-width>
         <h2>{{ $t('about.card4.title') }}</h2>
         <p v-for="item in $t('about.card4.body')" :key="item" v-html="item" />
-      </LayerCard>
-    </div>
-
-    <TwoByOne class="py-5">
-      <template #column-1>
-        <img class="image-fluid mx-auto d-block mw-100" src="/images/GBRcopy.png" />
-      </template>
-      <template #column-2>
         <div class="intro">
           <p class="sub-heading" v-html="$t('about.card4.intro')" />
         </div>
 
-        <div class="row">
-          <div class="col-6">
-            <img src="/images/10icon.png" height="42" width="42" />
-            <p v-html="$t('about.card4.list[1]')" />
-          </div>
-          <div class="col-6">
-            <img src="/images/70MIconcopy.png" height="42" width="42" />
-            <p v-html="$t('about.card4.list[2]')" />
+        <div v-for="(chunk, index) in chunk($t('about.card4.list'), 3)" :key="index" class="row">
+          <div v-for="item in chunk" :key="item.text" class="col-lg-4 col-md-6 col-sm-12">
+            <img :src="item.image" height="42" width="42" />
+            <p v-html="item.text" />
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-6">
-            <img src="/images/MoonIconcopy.png" height="42" width="42" />
-            <p v-html="$t('about.card4.list[3]')" />
-          </div>
-          <div class="col-6">
-            <img src="/images/2300KMIconcopy.png" height="42" width="42" />
-            <p v-html="$t('about.card4.list[4]')" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6">
-            <img src="/images/2300KMIconcopy.png" height="42" width="42" />
-            <p v-html="$t('about.card4.list[5]')" />
-          </div>
-          <div class="col-6">
-            <img src="/images/ECOIconcopy.png" height="42" width="42" />
-            <p v-html="$t('about.card4.list[6]')" />
-          </div>
-        </div>
-      </template>
-    </TwoByOne>
+      </LayerCard>
+    </div>
 
     <!-- card5 -->
     <TwoByOne class="py-5">
@@ -135,6 +101,8 @@
 </template>
 
 <script>
+import utils from '@/assets/js/utils';
+
 import TwoByOne from '@/components/TwoByOne';
 import LayerCard from '@/components/LayerCard';
 export default {
@@ -142,6 +110,9 @@ export default {
   components: {
     TwoByOne,
     LayerCard,
+  },
+  methods: {
+    chunk: utils.chunk,
   },
 };
 </script>
