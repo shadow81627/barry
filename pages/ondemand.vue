@@ -9,3 +9,9 @@
     <p v-for="item in $t('ondemand.disclaimer')" :key="item" v-html="item" />
   </div>
 </template>
+
+<script>
+export default {
+  layout: 'ondemand',
+};
+</script>
