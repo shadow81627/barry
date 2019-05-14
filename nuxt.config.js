@@ -28,10 +28,6 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      {
-        property: 'og:video',
-        content: '/video/ProjectBarryLaunchPreEditAssembly5.mp4',
-      },
     ],
     link: [
       {
@@ -49,25 +45,9 @@ export default {
     ],
     script: [
       {
-        src: '/facebook.js',
-        type: 'text/javascript',
-        body: true,
-      },
-      {
-        src: '/twitter.js',
-        type: 'text/javascript',
-        body: true,
-      },
-      {
         src:
           'https://cdn.otherlevels.com/js-sdk/otherlevels.js?appKey=7b9f8bc23f715afc5141842400f6451a',
       },
-      // {
-      //   defer: '',
-      //   src: 'https://use.fontawesome.com/releases/v5.8.1/js/all.js',
-      //   integrity: 'sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ',
-      //   crossorigin: 'anonymous',
-      // },
     ],
   },
 
@@ -91,8 +71,9 @@ export default {
    */
   plugins: [
     { src: '@/plugins/otherlevels', ssr: false },
+    { src: '@/plugins/facebook', ssr: false },
+    { src: '@/plugins/twitter', ssr: false },
     { src: '@/plugins/vac', ssr: false },
-    // { src: '@/plugins/vuelidate', ssr: false },
   ],
 
   /*
