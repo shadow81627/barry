@@ -2,7 +2,7 @@
   <div>
     <!-- card1 -->
     <div
-      class="row mx-auto container-break-out"
+      class="row mx-auto container-break-out pb-5"
       style="max-width: 1400px;transform: translateX(-50%);left: 50%;padding-top: 10px;"
     >
       <layerCard :src="$t('about.card1.image')" :alt="$t('about.card1.alt')" reverse>
@@ -19,38 +19,47 @@
     <!-- card2 -->
     <TwoByOne class="py-5">
       <template #column-1>
-        <div class="p-5">
+        <div class="w-100" style="max-width: 420px;">
           <img class="img-fluid d-block" :src="$t('about.card2.image')" />
         </div>
       </template>
       <template #column-2>
-        <div class="intro">
-          <p class="pb-2 sub-heading" v-html="$t('about.card2.intro')" />
-          <p v-for="item in $t('about.card2.body')" :key="item" class="pb-2" v-html="item" />
+        <div class="">
+          <div class="intro">
+            <p class="pb-2 sub-heading" v-html="$t('about.card2.intro')" />
+            <p v-for="item in $t('about.card2.body')" :key="item" class="pb-2" v-html="item" />
+          </div>
+          <nuxt-link
+            :to="{ path: localePath('entry'), hash: '#page-content' }"
+            class="[ btn ] btn-dark [ hero__cta ] shadow"
+            >{{ $t('about.card2.cta') }}</nuxt-link
+          >
         </div>
-        <nuxt-link
-          :to="{ path: localePath('entry'), hash: '#page-content' }"
-          class="[ btn ] btn-dark [ hero__cta ] shadow"
-          >{{ $t('about.card2.cta') }}</nuxt-link
-        >
       </template>
     </TwoByOne>
 
     <!-- card3 -->
     <TwoByOne class="py-5" reverse>
       <template #column-1>
-        <img class="img-fluid d-block" :src="$t('about.card3.image')" />
+        <div class="w-100" style="max-width: 420px;">
+          <img class="img-fluid d-block" :src="$t('about.card3.image')" />
+        </div>
       </template>
       <template #column-2>
-        <div class="intro">
-          <h2>{{ $t('about.card3.title') }}</h2>
-          <p v-for="item in $t('about.card3.body')" :key="item" class="pb-2" v-html="item" />
+        <div class="p-5">
+          <div class="intro">
+            <h2>{{ $t('about.card3.title') }}</h2>
+            <p v-for="item in $t('about.card3.body')" :key="item" class="pb-2" v-html="item" />
+          </div>
         </div>
       </template>
     </TwoByOne>
 
     <!-- card4 -->
-    <div class="row py-5">
+    <div
+      class="row container-break-out pb-5"
+      style="max-width: 1400px;transform: translateX(-50%);left: 50%;padding-top: 10px;"
+    >
       <LayerCard :src="$t('about.card4.image')" full-width>
         <h2>{{ $t('about.card4.title') }}</h2>
         <p v-for="item in $t('about.card4.body')" :key="item" v-html="item" />
@@ -70,7 +79,9 @@
     <!-- card5 -->
     <TwoByOne class="py-5">
       <template #column-1>
-        <img class="img-fluid d-block" :src="$t('about.card5.image')" />
+        <div class="w-100" style="max-width: 420px;">
+          <img class="img-fluid d-block" :src="$t('about.card5.image')" />
+        </div>
       </template>
       <template #column-2>
         <div class="intro">
@@ -95,6 +106,17 @@ export default {
   components: {
     TwoByOne,
     LayerCard,
+  },
+  mounted: () => {
+    const olCookieAccepted = function(event, context) {
+      context.close();
+      context.pushPhash();
+    };
+    const olCookieHandler = {};
+    olCookieHandler['click Cookies'] = olCookieAccepted;
+
+    _ol('displayInterstitial', 'Placement 1', olCookieHandler);
+    console.log('placement');
   },
   methods: {
     chunk: utils.chunk,

@@ -32,7 +32,9 @@ export default {
         'offset-md-0': this.reverse && !this.fullWidth,
         'col-lg-6': !this.fullWidth,
         'col-md-9': !this.fullWidth,
-        'col-12': this.fullWidth,
+        'col-10': this.fullWidth,
+        'full-card': this.fullWidth,
+        'offset-1': this.fullWidth,
       };
     },
     imageClass() {
@@ -45,8 +47,8 @@ export default {
     },
     backgroundClass() {
       return {
-        'offset-md-4': !this.reverse && !this.fullWidth,
-        'col-md-8': !this.fullWidth,
+        'offset-md-4': !this.reverse,
+        'col-md-7': true,
         'col-12': this.fullWidth,
       };
     },
@@ -66,5 +68,9 @@ export default {
 
 .layer-card__bg--image {
   background-size: cover;
+}
+
+.full-card {
+  top: -300px;
 }
 </style>
