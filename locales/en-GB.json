@@ -136,13 +136,16 @@
       "5 nights' accommodation staying at Riley, a Crystalbrook Collection Resort",
       "Experience of a lifetime on the Great Barrier Reef with Quicksilver Cruises and Nautilus Aviation including a ride in scUber at Agincourt Reef",
       "Cape Tribulation, Daintree & Mossman Day Tour",
-      "$250 AUD Uber credit for use in the Uber and Uber Eats app",
+      "$250 AUD Uber credit for use in the Uber and Uber Eats app"
+    ],
+    "body": [
       "The competition closes June 1, 2019 (2pm AEST) and winners will be announced on June 3, 2019 (10am AEST)."
     ],
     "form": {
-      "heading": "Tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
+      "heading": "Enter Now",
       "entry_text": {
-        "placeholder": "25 words or less"
+        "placeholder": "25 words or less",
+        "label": "Tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber."
       },
       "first_name": {
         "placeholder": "First Name",
@@ -199,12 +202,12 @@
         {
           "heading": "8 epic ways to experience the Great Barrier Reef",
           "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/",
-          "image": "/images/fader5.png"
+          "image": "/images/blog/blog-8-ways.jpg"
         },
         {
           "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
           "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/",
-          "image": "/images/fader5.png"
+          "image": "/images/blog/blog-6-tips.jpg"
         }
       ]
     }

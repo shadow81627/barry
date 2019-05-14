@@ -13,6 +13,7 @@
       <ul>
         <li v-for="item in $t('entry.prize_package_list')" :key="item" v-html="item" />
       </ul>
+      <p v-for="item in $t('entry.body')" :key="item" class="pb-2" v-html="item" />
     </div>
 
     <EntryForm />
