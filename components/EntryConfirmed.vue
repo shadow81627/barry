@@ -33,7 +33,13 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="blog-link row my-4" style="position: relative;">
+    <div
+      class="blog-link row my-4"
+      style="position: relative;"
+      :style="
+        `background-image: url(/images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg); min-height: 200px;`
+      "
+    >
       <div class="text-center">
         <h3>{{ $t('confirmation.blog.title') }}</h3>
         <p v-for="item in $t('confirmation.blog.body')" :key="item" v-html="item" />
@@ -43,7 +49,7 @@
             v-for="item in $t('confirmation.blog.posts')"
             :key="item"
             class="col m-2"
-            :style="`background-image: url(${item.image}); min-height: 200px;`"
+            :style="`background-image: url(${item.image});`"
           >
             <nuxt-link
               :to="localePath('deals')"
