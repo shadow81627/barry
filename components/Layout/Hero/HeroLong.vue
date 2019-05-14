@@ -23,3 +23,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+header .container-fluid.container-fluid {
+  position: flex;
+  z-index: 2;
+}
+</style>
