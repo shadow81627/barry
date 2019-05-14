@@ -41,13 +41,14 @@ export default {
         rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css',
       },
-      // { rel: 'stylesheet', href: 'https://vjs.zencdn.net/7.4.1/video-js.css' },
+      { rel: 'stylesheet', href: 'https://vjs.zencdn.net/7.4.1/video-js.css' },
     ],
     script: [
       {
         src:
           'https://cdn.otherlevels.com/js-sdk/otherlevels.js?appKey=7b9f8bc23f715afc5141842400f6451a',
       },
+      { hid: 'videojs', src: 'https://vjs.zencdn.net/7.5.4/video.js' },
     ],
   },
 

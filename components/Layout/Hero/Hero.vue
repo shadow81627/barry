@@ -10,8 +10,10 @@
       playsinline
       muted
       loop
+      :data-setup="dataSetup"
     >
       <!-- Video width 100% for poster doesn't work on mobile for video -->
+      <source src="/video/index.m3u8" type="application/x-mpegURL" />
       <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
     </video>
 
@@ -57,6 +59,7 @@ export default {
     blurb: { type: String },
     cta: { type: String },
     link: { type: Object },
+    dataSetup: { type: Object, default: null },
   },
   head() {
     return { title: this.title };

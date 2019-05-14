@@ -18,6 +18,7 @@
           text: $t('about.hero.link.text'),
         },
       }"
+      data-setup="{}"
     />
 
     <Navbar

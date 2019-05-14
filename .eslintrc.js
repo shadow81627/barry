@@ -38,5 +38,6 @@ module.exports = {
     twttr: 'readable',
     $: 'readable',
     _ol: 'readable',
+    videojs: 'readable',
   },
 };
