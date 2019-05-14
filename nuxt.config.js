@@ -47,8 +47,8 @@ export default {
       {
         src:
           'https://cdn.otherlevels.com/js-sdk/otherlevels.js?appKey=7b9f8bc23f715afc5141842400f6451a',
-        async: true,
-        defer: true,
+        // async: true,
+        // defer: true,
       },
       {
         hid: 'videojs',
