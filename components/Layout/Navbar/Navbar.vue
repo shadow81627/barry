@@ -8,8 +8,13 @@
     <MenuButton class="ml-auto" />
 
     <b-collapse id="nav-collapse" is-nav class="menu-collapse">
-      <b-navbar-nav class="fullpage-nav-list bg-light min-vh-100 text-center">
-        <b-nav-item v-for="link in $t('navigation')" :key="link.value" :to="localePath(link.value)">
+      <b-navbar-nav class="fullpage-nav-list bg-light min-vh-100 text-center pt-5">
+        <b-nav-item
+          v-for="link in $t('navigation')"
+          :key="link.value"
+          :to="localePath(link.value)"
+          class="py-1"
+        >
           {{ link.text }}
         </b-nav-item>
       </b-navbar-nav>
@@ -82,5 +87,11 @@ export default {
 
   /* letter spacing offset */
   left: -1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-nav.fullpage-nav-list .nav-item .nav-link {
+    font-size: 1.2rem;
+  }
 }
 </style>
