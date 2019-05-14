@@ -160,15 +160,16 @@ select {
   }
 }
 
-.main-content__left {
+.main-content__left,
+.main-content__right {
   padding-top: 3rem;
 }
 
-@media all and (min-width: 992px) {
-  .main-content__right {
-    margin-top: 1rem;
-  }
-}
+// @media all and (min-width: 992px) {
+//   .main-content__right {
+//     margin-top: 1rem;
+//   }
+// }
 
 /*------------------------------------*\
   #INTRO
