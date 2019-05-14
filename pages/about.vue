@@ -1,7 +1,10 @@
 <template>
   <div>
     <!-- card1 -->
-    <div class="row py-5">
+    <div
+      class="row mx-auto container-break-out"
+      style="max-width: 1400px;transform: translateX(-50%);left: 50%;padding-top: 10px;"
+    >
       <layerCard :src="$t('about.card1.image')" :alt="$t('about.card1.alt')" reverse>
         <div class="intro">
           <h2 class="pb-4" v-html="$t('about.card1.title')" />

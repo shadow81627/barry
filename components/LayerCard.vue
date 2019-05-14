@@ -27,11 +27,11 @@ export default {
   computed: {
     cardClass() {
       return {
-        'offset-lg-6': !this.reverse && !this.fullWidth,
-        'offset-md-4': !this.reverse && !this.fullWidth,
-        'offset-md-1': this.reverse && !this.fullWidth,
-        'col-lg-5': !this.fullWidth,
-        'col-md-7': !this.fullWidth,
+        'offset-lg-5': !this.reverse && !this.fullWidth,
+        'offset-md-3': !this.reverse && !this.fullWidth,
+        'offset-md-0': this.reverse && !this.fullWidth,
+        'col-lg-6': !this.fullWidth,
+        'col-md-9': !this.fullWidth,
         'col-12': this.fullWidth,
       };
     },
@@ -61,6 +61,7 @@ export default {
   z-index: -1;
   height: 100%;
   background-color: #e2eaee;
+  object-fit: cover;
 }
 
 .layer-card__bg--image {
