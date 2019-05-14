@@ -43,6 +43,7 @@
       </template>
       <template #column-2>
         <div class="intro">
+          <h2>{{ $t('about.card3.title') }}</h2>
           <p v-for="item in $t('about.card3.body')" :key="item" class="pb-2" v-html="item" />
         </div>
       </template>
