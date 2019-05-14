@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div v-if="overlay" class="overlay" />
+    <!-- <div v-if="overlay" class="overlay" /> -->
     <video
       id="vid1"
       :poster="poster"
@@ -74,6 +74,7 @@ html {
   bottom: 0;
   right: 0;
   background: white;
+  color: black;
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.5rem;
