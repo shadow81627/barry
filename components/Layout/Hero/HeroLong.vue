@@ -26,7 +26,8 @@ export default {
 
 <style scoped>
 header .container-fluid.container-fluid {
-  position: flex;
+  position: absolute;
+  top: 0px;
   z-index: 2;
 }
 </style>
