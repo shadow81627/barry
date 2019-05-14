@@ -1,10 +1,7 @@
 <template>
   <div>
     <!-- card1 -->
-    <div
-      class="row mx-auto container-break-out pb-5"
-      style="max-width: 1400px;transform: translateX(-50%);left: 50%;padding-top: 10px;"
-    >
+    <div class="row mx-auto container-break-out-center pb-5" style="padding-top: 10px;">
       <layerCard :src="$t('about.card1.image')" :alt="$t('about.card1.alt')" reverse>
         <div class="intro">
           <h2 class="pb-4" v-html="$t('about.card1.title')" />
@@ -56,10 +53,7 @@
     </TwoByOne>
 
     <!-- card4 -->
-    <div
-      class="row container-break-out pb-5"
-      style="max-width: 1400px;transform: translateX(-50%);left: 50%;padding-top: 10px;"
-    >
+    <div class="row container-break-out-center pb-5" style="">
       <LayerCard :src="$t('about.card4.image')" full-width>
         <h2>{{ $t('about.card4.title') }}</h2>
         <p v-for="item in $t('about.card4.body')" :key="item" v-html="item" />
@@ -123,3 +117,17 @@ export default {
   },
 };
 </script>
+
+<style>
+@media only screen and (min-width: 1400px) {
+  .container-break-out-center {
+    max-width: 1400px;
+    transform: translateX(-50%);
+    left: 50%;
+    /* force content full width when inside container */
+    width: 100vw;
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+</style>

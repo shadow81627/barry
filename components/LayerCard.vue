@@ -1,16 +1,23 @@
 <template>
-  <div class="col-12 mb-5">
-    <div class="row">
-      <div class="layer-card__bg mt-5" :class="backgroundClass" />
-    </div>
+  <div class="row">
+    <div class="col-12 mb-5">
+      <div class="row">
+        <div class="layer-card__bg mt-5 h-100" :class="backgroundClass" />
+      </div>
 
-    <div class="row">
-      <img class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
-    </div>
-    <div class="row">
-      <div class="my-5" :class="cardClass">
-        <div class="card card-body rounded-0 text-center shadow p-5 my-5">
-          <slot />
+      <div class="row">
+        <img class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
+        <img
+          class="layer-card__bg layer-card__bg--image p-0 position-absolute d-none d-xl-block"
+          :class="imageClass"
+          :src="src"
+        />
+      </div>
+      <div class="row">
+        <div class="" :class="cardClass">
+          <div class="card card-body rounded-0 text-center shadow p-5 my-5">
+            <slot />
+          </div>
         </div>
       </div>
     </div>
@@ -35,6 +42,7 @@ export default {
         'col-10': this.fullWidth,
         'full-card': this.fullWidth,
         'offset-1': this.fullWidth,
+        'my-5': !this.fullWidth,
       };
     },
     imageClass() {
@@ -43,6 +51,7 @@ export default {
         'col-md-10': !this.fullWidth,
         'col-12': this.fullWidth,
         'position-relative': this.fullWidth,
+        'h-100': !this.fullWidth,
       };
     },
     backgroundClass() {
@@ -61,7 +70,7 @@ export default {
   position: absolute;
   top: 0px;
   z-index: -1;
-  height: 100%;
+  /* height: 100%; */
   background-color: #e2eaee;
   object-fit: cover;
 }
@@ -71,6 +80,6 @@ export default {
 }
 
 .full-card {
-  top: -300px;
+  margin-top: -300px;
 }
 </style>
