@@ -7,11 +7,6 @@
 
       <div class="row">
         <img class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
-        <img
-          class="layer-card__bg layer-card__bg--image p-0 position-absolute d-none d-xl-block"
-          :class="imageClass"
-          :src="src"
-        />
       </div>
       <div class="row">
         <div class="" :class="cardClass">
