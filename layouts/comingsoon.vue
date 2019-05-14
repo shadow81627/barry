@@ -15,8 +15,7 @@
   </div>
 </template>
 
-<style lang="scss">
-@import '~/assets/scss/app.scss';
+<style>
 #comingsoon-layout {
   min-height: 100vh;
   display: flex;
