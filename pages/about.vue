@@ -58,7 +58,7 @@
           <p class="sub-heading" v-html="$t('about.card4.intro')" />
         </div>
 
-        <div v-for="(chunk, index) in chunk($t('about.card4.list'), 3)" :key="index" class="row">
+        <div v-for="(chunk, index) in chunk($t('about.card4.list'), 10)" :key="index" class="row">
           <div v-for="item in chunk" :key="item.text" class="col-lg-4 col-md-6 col-sm-12">
             <img :src="item.image" height="42" width="42" />
             <p v-html="item.text" />
