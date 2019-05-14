@@ -1,6 +1,6 @@
 <template>
   <div class="[ main-content__left ] col-12 col-md-7">
-    <h2 class="h4">{{ $t('entry.title') }}</h2>
+    <h2 class="h4 text-dark">{{ $t('entry.title') }}</h2>
     <div class="intro">
       <p>
         {{ $t('entry.intro') }}
@@ -8,8 +8,8 @@
     </div>
 
     <div class="prize-package">
-      <p>{{ $t('entry.prize_package_title') }}</p>
-      <p>{{ $t('entry.prize_package_intro') }}</p>
+      <h2 class="h4 text-dark">{{ $t('entry.prize_package_title') }}</h2>
+      <p class="text-primary">{{ $t('entry.prize_package_intro') }}</p>
       <ul>
         <li v-for="item in $t('entry.prize_package_list')" :key="item" v-html="item" />
       </ul>
