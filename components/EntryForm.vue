@@ -8,6 +8,7 @@
         v-bind="{
           id: 'entry_text',
           type: 'textarea',
+          label: $t('entry.form.entry_text.label'),
           placeholder: $t('entry.form.entry_text.placeholder'),
           'valid-feedback': null,
           'invalid-feedback': null,
@@ -15,6 +16,7 @@
         }"
         :state="$v.form.entry_text.$dirty ? !$v.form.entry_text.$error : null"
         :maxlength="8000"
+        rows="4"
         @input="$v.form.entry_text.$touch()"
       >
         <template #description>
@@ -86,7 +88,7 @@
         />
         <FormField
           v-show="this.form.country_iso === 'AU'"
-          v-model.trim="form.postcode"
+          v-model="form.postcode"
           v-bind="{
             id: 'postcode',
             type: 'text',
@@ -179,9 +181,10 @@
 import { validationMixin } from 'vuelidate';
 import {
   required,
+  integer,
   email,
   minValue,
-  // maxValue,
+  maxValue,
   requiredIf,
   maxLength,
 } from 'vuelidate/lib/validators';
@@ -222,12 +225,14 @@ export default {
         required,
       },
       postcode: {
-        required: requiredIf(function(value) {
+        requiredIf: requiredIf(function(value) {
           console.log(this.form.country_iso);
+          console.log(this.form.country_iso === 'AU');
           return this.form.country_iso === 'AU';
         }),
-        // minValue: minValue(200),
-        // maxValue: maxValue(9999),
+        minValue: minValue(200),
+        maxValue: maxValue(9999),
+        integer,
       },
       opt_in: {
         required,

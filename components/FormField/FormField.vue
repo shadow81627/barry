@@ -1,6 +1,6 @@
 <template>
   <b-form-group v-show="type !== 'hidden'" :id="`${id}-form-group`">
-    <label :for="id" :class="{ 'sr-only': !label }">{{ placeholder }}</label>
+    <label :for="id" :class="{ 'sr-only': !label }">{{ label || placeholder }}</label>
     <slot>
       <componenet
         :is="inputType"
@@ -15,6 +15,7 @@
           disabled,
           maxlength,
           pattern,
+          rows,
         }"
         :aria-describedby="`${id}-description ${id}-valid-feedback ${id}-invalid-feedback`"
         trim
@@ -67,6 +68,7 @@ export default {
     state: { type: Boolean, default: null },
     maxlength: { type: Number, default: null },
     pattern: { type: String },
+    rows: { type: String },
   },
   computed: {
     inputListeners() {
