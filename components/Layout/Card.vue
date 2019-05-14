@@ -2,20 +2,17 @@
   <div class="__card">
     <div class="card__item bg-secondary">
       <div class="card__content imagecardone">
-        <!-- <img src="@/assets/images/washing-machine.png" alt="scuber" /> -->
+        <img src="/images/win1-image.jpg" alt="scuber" />
       </div>
     </div>
     <div class="card__item bg-secondary">
       <div class="card__content imagecardone">
-        <!-- <img src="@/assets/images/washing-machine.png" alt="scuber" /> -->
+        <img src="/images/win2-image.jpg" alt="scuber" />
       </div>
     </div>
     <div class="card__item bg-secondary">
-      <div class="card__content imagecard_tip" style="padding-top:2.5rem;">
-        <div class="tip_container">
-          <h3>{{ $t('tip.heading') }}</h3>
-          <p>{{ $t('tip.description') }}</p>
-        </div>
+      <div class="card__content imagecardone">
+        <img src="/images/win3-image.jpg" alt="scuber" />
       </div>
     </div>
   </div>
