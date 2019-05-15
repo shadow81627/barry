@@ -21,18 +21,19 @@
       <div class="hero__text">
         <img
           v-if="brand"
-          class="img-fluid"
+          class="ximg-fluid col-7 col-md-4"
           src="@/assets/images/QA_ScUber_WR.png"
           alt="Tourism and Events Queensland | Queensland Government"
+          style="max-width: 300px;"
         />
-        <h1 v-html="title" />
+        <h1 class="pt-3" v-html="title" />
         <div class="hero__blurb" v-html="blurb" />
 
         <b-nav v-if="cta" class="d-inline">
-          <b-nav-item
+          <nuxt-link
             :to="{ path: localePath('entry'), hash: '#page-content' }"
             class="[ btn ] btn-dark [ hero__cta ]"
-            >{{ cta }}</b-nav-item
+            >{{ cta }}</nuxt-link
           >
         </b-nav>
       </div>
@@ -142,14 +143,9 @@ header .overlay {
 
   h1 {
     color: white;
-    font-size: 2rem;
+    // font-size: 2rem;
+    font-size: 5.7rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-
-  @media all and (min-width: 992px) {
-    h1 {
-      font-size: 5.7rem;
-    }
   }
 }
 
@@ -171,6 +167,23 @@ header .overlay {
   letter-spacing: 0.25rem;
 }
 
+@media all and (max-width: 520px) {
+  // ELI
+  .hero__link {
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    padding: 1rem 1rem;
+  }
+
+  .hero__blurb {
+    font-size: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+  }
+}
+
 @media all and (min-width: 992px) {
   .hero__blurb {
     font-size: 1.7rem;
@@ -184,6 +197,10 @@ header .overlay {
     line-height: 100%;
     width: 60%;
     margin-bottom: 0.8rem;
+  }
+
+  .hero__text h1 {
+    font-size: 4rem;
   }
 }
 

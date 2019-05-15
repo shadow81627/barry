@@ -564,3 +564,19 @@ a.social__item {
   left: calc(-1 * (100vw - 100%) / 2);
   color: rgba(0, 0, 0, 0.6);
 }
+
+// https://www.w3schools.com/howto/howto_css_bullet_color.asp
+// Thanks Eli
+// list point color
+.color-list {
+  list-style: none; /* Remove default bullets */
+}
+
+.color-list li::before {
+  content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $primary; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
