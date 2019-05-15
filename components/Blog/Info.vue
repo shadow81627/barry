@@ -1,7 +1,7 @@
 <template>
   <div
-    class="card__content blogpost__description mx-2 shadow px-2 text-uppercase"
-    :class="{ 'bg-dark': dark, 'text-light': dark, 'bg-light': !dark, 'p-4': dark }"
+    class="card__content blogpost__description mx-3 shadow px-2 text-uppercase"
+    :class="{ 'bg-dark': dark, 'text-light': dark, 'bg-light': !dark, 'p-2': dark }"
     :style="{ 'text-align': textAlign }"
   >
     <p>{{ heading }}</p>

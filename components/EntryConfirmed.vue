@@ -1,6 +1,6 @@
 <template>
   <div id="entry-form" class="entry-form confirmed">
-    <div class="blog-header" />
+    <div class="blog-header" :style="`background-image: url(/images/sharebg-image.jpg);`" />
     <div class="row">
       <div class="col-12">
         <span style="text-align:center">
@@ -33,32 +33,18 @@
         </nuxt-link>
       </div>
     </div>
-    <div
-      class="blog-link row my-4"
-      style="position: relative;"
-      :style="
-        `background-image: url(/images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg); min-height: 200px;`
-      "
-    >
+    <div class="blog-link row my-4" style="position: relative;">
       <div class="text-center">
         <h3>{{ $t('confirmation.blog.title') }}</h3>
         <p v-for="item in $t('confirmation.blog.body')" :key="item" v-html="item" />
 
         <div class="row d-flex justify-content-center">
           <div
-            v-for="item in $t('confirmation.blog.posts')"
-            :key="item"
-            class="col m-2"
-            :style="`background-image: url(${item.image});`"
+            v-for="deal in $t('confirmation.blog.posts')"
+            :key="deal.heading"
+            class="col confirmation-blog-post"
           >
-            <nuxt-link
-              :to="localePath('deals')"
-              target="_blank"
-              class="[ btn btn-dark ] btn-blog"
-              role="button"
-            >
-              <span>{{ item.heading }}</span>
-            </nuxt-link>
+            <BlogPost v-bind="deal" />
           </div>
         </div>
       </div>
@@ -71,7 +57,12 @@ import axios from 'axios';
 import qs from 'qs';
 import EventBus from '@/assets/js/EventBus.js';
 
+import BlogPost from '@/components/Blog/Post';
+
 export default {
+  components: {
+    BlogPost,
+  },
   data() {
     return {
       entrant: this.$root.entrant,
@@ -156,5 +147,15 @@ export default {
 .blog-link {
   background-color: white;
   padding: 50px 20px 50px 20px;
+}
+
+.confirmation-blog-posts .card__content {
+  font-weight: 400;
+  font-size: 1.1rem;
+
+  p {
+    margin-bottom: 0px;
+    color: purple;
+  }
 }
 </style>
