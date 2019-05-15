@@ -361,7 +361,7 @@
         "alt_text": "Deal1",
         "heading": "QUEENSLAND À CONTRE-COURANT, DE CAIRNS À BRISBANE",
         "description": "Dévouvrez les joyaux de la côte Est :  forêt pluviale de Daintree, plages dorées de Port Douglas, l'archipel des Whitsundays, Fraser Island. Un parcours classique mais à contre-sens des itinéraires classiques.",
-        "price": "À partir de<br>1 399 € / pers.",
+        "price": "<span style='font-size: 0.9rem;'>À partir de<br>1 399 € <br>/ pers.</span>",
         "link": "https://www.australietours.com/voyage/circuits-a-la-carte/australie-camping-car-de-cairns-a-brisbane/?utm_source=Tourmag&utm_medium=referrals&adtag=Tour-mag-ad"
       },
       {
@@ -369,7 +369,7 @@
         "alt_text": "Deal2",
         "heading": "ROADTRIP DANS LA DAINTREE",
         "description": "Une fabuleuse échappée en 4×4, à la croisée de la forêt pluviale de Daintree et de la Grande Barrière de Corail. Un itinéraire aux paysages multiples, entre mer de corail et jungle primaire.",
-        "price": "À partir de<br>1 189 € / pers.",
+        "price": "<span style='font-size: 0.9rem;'>À partir de<br>1 189 € <br>/ pers.</span>",
         "link": "https://www.australietours.com/voyage/mini-circuits-roadtrips/roadtrip-dans-la-daintree-voyage-australie/?utm_source=Tourmag&utm_medium=referrals&adtag=Tour-mag-ad"
       },
       {
@@ -377,7 +377,7 @@
         "alt_text": "Deal3",
         "heading": "MERVEILLES DU QUEENSLAND",
         "description": "Hébergement au milieu de la forêt tropicale à Narrows Escape (Sunshine Coast). Séjour dans une ferme australienne à Rockhampton avec dîner-barbecue. Croisière dans l'archipel des Whitsundays. Observation des ornithorynques dans le parc national Eungella.",
-        "price": "À partir de<br>3 179 € / pers.",
+        "price": "<span style='font-size: 0.9rem;'>À partir de<br>3 179 € <br>/ pers.</span>",
         "link": "https://www.australietours.com/voyage/circuits-a-la-carte/merveilles-du-queensland/?utm_source=Tourmag&utm_medium=referrals&adtag=Tour-mag-ad"
       },
       {
@@ -385,7 +385,7 @@
         "alt_text": "Deal4",
         "heading": "D'ÎLE EN ÎLE SUR LA CAPRICORN COAST",
         "description": "Visitez Fraser Island, la plus grande île de sable du monde hors des sentiers battus. Lady Musgrave et son lagon turquoise au cœur de la Grande Barrière de Corail. Assistez à la nidification, la ponte ou l'éclosion des tortues de mer à Mon Repos.",
-        "price": "À partir de<br>1 669 € / pers.",
+        "price": "<span style='font-size: 0.9rem;'>À partir de<br>1 669 € <br>/ pers.</span>",
         "link": "https://www.australietours.com/voyage/circuits-a-la-carte/capricorn-coast-queensland-fraser-island/?utm_source=Tourmag&utm_medium=referrals&adtag=Tour-mag-ad"
       },
       {
@@ -393,7 +393,7 @@
         "alt_text": "Deal5",
         "heading": "BIENVENUE À CAIRNS",
         "description": "Une escale idéale pour découvrir Cairns. Une région unique ou la forêt tropicale et la Grande Barrière de Corail se rencontrent.",
-        "price": "À partir de<br>499 € / pers.",
+        "price": "<span style='font-size: 0.9rem;'>À partir de<br>499 € <br>/ pers.</span>",
         "link": "https://www.australietours.com/voyage/escales/premiers-pas-a-cairns-voyage-australie/?utm_source=Tourmag&utm_medium=referrals&adtag=Tour-mag-ad"
       },
       {
@@ -401,7 +401,7 @@
         "alt_text": "Deal6",
         "heading": "BIENVENUE À PORT DOUGLAS",
         "description": "Plongée et les activités nautiques autour de la Grande Barrière de corail. Forêt tropicale de Daintree, pour une évasion au cœur de la nature. Les magnifiques plages bordées de cocotiers. Demi-journée en compagnie d'un guide aborigène.",
-        "price": "À partir de<br>575 € / pers.",
+        "price": "<span style='font-size: 0.9rem;'>À partir de<br>575 € <br>/ pers.</span>",
         "link": "https://www.australietours.com/voyage/escales/detente-balneaire-a-port-douglas-voyage-australie/?utm_source=Tourmag&utm_medium=referrals&adtag=Tour-mag-ad"
       }
     ]
