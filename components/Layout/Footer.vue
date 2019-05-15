@@ -2,7 +2,7 @@
   <footer class="bg-dark text-light pt-4 pb-4">
     <div class="container">
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-12">
+        <div class="col-12 pb-4">
           <img
             class="img-fluid d-block mx-auto"
             src="@/assets/images/QA_ScUber_WR.png"
@@ -10,7 +10,17 @@
           />
         </div>
 
-        <div class="col-12 py-4"><LangSelect class="mw-25" /></div>
+        <div class="col-12 py-2"><LangSelect class="col-md-4 col-sm-6 col-12" /></div>
+
+        <div v-for="link in $t('footer.links').slice(0, 2)" :key="link.text" class="col-12 py-2">
+          <a
+            :href="link.href"
+            target="_blank"
+            class="btn btn-outline-light col-md-4 col-sm-6 col-12"
+          >
+            {{ link.text }}
+          </a>
+        </div>
 
         <div class="col-12 footer-links">
           <a v-for="link in $t('footer.links')" :key="link.text" :href="link.href" target="_blank">
