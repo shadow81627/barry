@@ -103,13 +103,13 @@ export default {
             code: 'en-au',
             name: 'English Australia',
             iso: 'en-AU',
-            file: 'en-GB.json',
+            file: 'en-AU.json',
           },
           {
             code: 'en-nz',
             name: 'English New Zealand',
             iso: 'en-AU',
-            file: 'en-GB.json',
+            file: 'en-NZ.json',
           },
           {
             code: 'en-gb',
@@ -121,7 +121,7 @@ export default {
             code: 'en-us',
             name: 'English USA',
             iso: 'en-US',
-            file: 'en-GB.json',
+            file: 'en-US.json',
           },
           {
             code: 'en-ca',
