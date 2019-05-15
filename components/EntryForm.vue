@@ -169,7 +169,12 @@
         </b-form-checkbox>
       </FormField>
 
-      <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]" :disabled="ctaLoading">
+      <button
+        type="submit"
+        class="[ btn btn--green ] [ entry-form__cta ]"
+        :disabled="ctaLoading"
+        :class="{ disabled: ctaLoading }"
+      >
         <span v-if="!ctaLoading">{{ $t('entry.form.submit') }}</span>
         <i v-else class="fa fa-circle-o-notch fa-spin fa-fw" />
       </button>
@@ -288,17 +293,23 @@ export default {
       this.$gtm.pushEvent({
         event: 'formSubmission',
         formType: 'Competition Entry',
-        formValid: true,
+        formValid: false,
       });
 
       this.$v.form.$touch();
 
       if (!this.$v.form.$error) {
+        this.$gtm.pushEvent({
+          event: 'formSubmission',
+          formType: 'Competition Entry',
+          formValid: true,
+        });
         const url = `${process.env.API_BASE_URL}/api/enter`;
 
         axios
           .post(url, this.form)
           .then(response => {
+            this.ctaLoading = false;
             console.log(response);
             // Set entrant in vuex store
             this.$store.commit('setEntrant', { ...this.form, hash: response.data.hash });
@@ -308,6 +319,7 @@ export default {
             this.$router.push(this.localePath('confirmation'));
           })
           .catch(error => {
+            this.ctaLoading = false;
             EventBus.$emit('notification', {
               type: 'error',
               message: 'Error submitting entry.',
@@ -325,8 +337,12 @@ export default {
               console.log('Error', error.message);
             }
             console.log(error.config);
+          })
+          .finally(function() {
+            this.ctaLoading = false;
           });
       }
+      this.ctaLoading = false;
     },
     countWords(words) {
       return words.trim().split(' ').length;
