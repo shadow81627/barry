@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- card1 -->
-    <div class="row mx-auto container-break-out-center pb-5" style="padding-top: 10px;">
-      <layerCard :src="$t('about.card1.image')" :alt="$t('about.card1.alt')" reverse>
+    <div class="row container-break-out-center pb-5" style="padding-top: 10px;">
+      <layerCard :src="$t('about.card1.image')" :alt="$t('about.card1.alt')" reverse xfull-width>
         <div class="intro">
           <h2 class="pb-4" v-html="$t('about.card1.title')" />
           <p class="sub-heading">
@@ -53,7 +53,7 @@
     </TwoByOne>
 
     <!-- card4 -->
-    <div class="row container-break-out-center pb-5" style="">
+    <div class="row container-break-out-center pb-5">
       <LayerCard :src="$t('about.card4.image')" full-width>
         <h2>{{ $t('about.card4.title') }}</h2>
         <p v-for="item in $t('about.card4.body')" :key="item" v-html="item" />

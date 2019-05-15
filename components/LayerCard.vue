@@ -1,18 +1,16 @@
 <template>
-  <div class="row">
-    <div class="col-12 mb-5">
-      <div class="row">
-        <div class="layer-card__bg mt-5 h-100" :class="backgroundClass" />
-      </div>
+  <div class="col-12 mb-5">
+    <div class="row">
+      <div class="layer-card__bg mt-5 h-100" :class="backgroundClass" />
+    </div>
 
-      <div class="row">
-        <img class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
-      </div>
-      <div class="row">
-        <div class="" :class="cardClass">
-          <div class="card card-body rounded-0 text-center shadow p-5 my-5">
-            <slot />
-          </div>
+    <div class="row">
+      <img class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
+    </div>
+    <div class="row">
+      <div class="" :class="cardClass">
+        <div class="card card-body rounded-0 text-center shadow p-5 my-5">
+          <slot />
         </div>
       </div>
     </div>
