@@ -169,7 +169,7 @@
         </b-form-checkbox>
       </FormField>
 
-      <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]">
+      <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]" :disabled="ctaLoading">
         <span v-if="!ctaLoading">{{ $t('entry.form.submit') }}</span>
         <i v-else class="fa fa-circle-o-notch fa-spin fa-fw" />
       </button>
@@ -282,7 +282,14 @@ export default {
     ...mapMutations(['setEntrant']),
     submitForm(event) {
       event.preventDefault();
+      this.ctaLoading = true;
       // this.$store.commit('setFormSubmitted', true);
+
+      this.$gtm.pushEvent({
+        event: 'formSubmission',
+        formType: 'Competition Entry',
+        formValid: true,
+      });
 
       this.$v.form.$touch();
 
