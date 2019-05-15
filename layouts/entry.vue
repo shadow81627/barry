@@ -19,7 +19,10 @@
       }"
     />
 
-    <Navbar style="position: absolute;top: 0;width: 100%;z-index: 1000;background:transparent;" />
+    <Navbar
+      style="position: absolute;top: 0;width: 100%;z-index: 1000;background:transparent;"
+      :brand="false"
+    />
 
     <div class="container">
       <div class="row">
