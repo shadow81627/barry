@@ -119,17 +119,3 @@ export default {
   },
 };
 </script>
-
-<style>
-@media only screen and (min-width: 1400px) {
-  .container-break-out-center {
-    max-width: 1400px;
-    transform: translateX(-50%);
-    left: 50%;
-    /* force content full width when inside container */
-    width: 100vw;
-    position: relative;
-    color: rgba(0, 0, 0, 0.6);
-  }
-}
-</style>
