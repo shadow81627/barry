@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="deals-layout">
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-WV2SB2T"
@@ -41,4 +41,8 @@ export default {
 };
 </script>
 
-<style src="@/assets/scss/app.scss" lang="scss"></style>
+<style>
+.deals-layout {
+  background: white;
+}
+</style>

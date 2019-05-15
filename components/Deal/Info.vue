@@ -5,10 +5,10 @@
       style="border-bottom: 4px solid black;"
     >
       <h2 class="h4 text-uppercase text-dark">{{ heading }}</h2>
-      <div>{{ description }}</div>
+      <div class="deal__description--body">{{ description }}</div>
       <div class="w-100 py-3">
         <a :href="link" target="_blank" class="deal__link text-primary text-center text-uppercase">
-          view more >
+          {{ $t('deals.cta_view_deal') }} >
         </a>
       </div>
     </div>
@@ -32,5 +32,10 @@ export default {
   text-align: center;
   padding-top: 2rem;
   padding-top: 1rem;
+}
+
+.deal__description--body {
+  line-height: 1.4;
+  font-size: 0.9rem;
 }
 </style>

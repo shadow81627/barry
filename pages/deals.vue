@@ -11,7 +11,7 @@
     </div>
 
     <div v-for="(chunk, index) in chunk(sortDisabledDeals, 2)" :key="index" class="row">
-      <div v-for="deal in chunk" :key="deal.heading" class="col-md-6 col-sm-12">
+      <div v-for="deal in chunk" :key="deal.heading" class="col-md-6 col-sm-12 deal-column">
         <Deal v-bind="deal" />
       </div>
     </div>
@@ -49,3 +49,15 @@ export default {
   },
 };
 </script>
+
+<style>
+@media only screen and (max-width: 429px) {
+  .deal-column.deal-column {
+    padding: 0px;
+  }
+
+  .deal__description.deal__description {
+    margin: 0px !important;
+  }
+}
+</style>

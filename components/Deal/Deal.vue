@@ -42,12 +42,15 @@ export default {
   background-size: cover;
   position: absolute;
   width: 100%;
-  height: 85%;
   left: 0;
-  bottom: 15%;
+  object-fit: cover;
+
+  height: 50%;
+  top: 0%;
 }
 
 @media only screen and (min-width: 576px) {
+  /* This media query sucks, it feels backwards */
   .sold-out-container {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -55,6 +58,11 @@ export default {
 
   .sold-out {
     font-size: 2.5rem;
+  }
+
+  .deal__image {
+    height: 85%;
+    bottom: 15%;
   }
 }
 

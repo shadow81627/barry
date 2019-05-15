@@ -25,7 +25,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1.4;
 }
+
 .price-height {
   height: 300px;
 }
