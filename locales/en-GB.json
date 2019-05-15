@@ -1,13 +1,13 @@
 {
   "navigation": [
-    { "value": "about", "text": "about scuber" },
+    { "value": "index", "text": "about scuber" },
     { "value": "win", "text": "win a ride" },
     { "value": "explore", "text": "explore the reef" },
     { "value": "deals", "text": "travel offers" },
     { "value": "ondemand", "text": "in-app experience" }
   ],
   "pagination": [
-    { "value": "about", "text": "about" },
+    { "value": "index", "text": "about" },
     { "value": "win", "text": "win" },
     { "value": "deals", "text": "deals" },
     { "value": "explore", "text": "explore" },
