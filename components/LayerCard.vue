@@ -32,9 +32,9 @@ export default {
         'offset-md-0': this.reverse && !this.fullWidth,
         'col-lg-6': !this.fullWidth,
         'col-md-9': !this.fullWidth,
-        'col-10': this.fullWidth,
+        'col-sm-10': this.fullWidth,
         'full-card': this.fullWidth,
-        'offset-1': this.fullWidth,
+        'offset-sm-1': this.fullWidth,
         'my-5': !this.fullWidth,
       };
     },
