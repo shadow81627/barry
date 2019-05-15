@@ -1,16 +1,14 @@
 <template>
-  <div class="col-12" style="bottom: -4rem;">
-    <div class="card__content deal__description bg-light mx-2 shadow">
-      <h2 class="text-uppercase text-dark">{{ heading }}</h2>
+  <div class="col-12">
+    <div
+      class="card__content deal__description bg-light mx-2 shadow px-4 pt-4"
+      style="border-bottom: 4px solid black;"
+    >
+      <h2 class="h4 text-uppercase text-dark">{{ heading }}</h2>
       <div>{{ description }}</div>
-    </div>
-    <div class="col-12" style="bottom: 25px;">
-      <div class="d-flex justify-content-center p-2">
-        <a
-          :href="`#${heading}`"
-          class="deal__link rounded-circle bg-primary text-center text-light shadow"
-        >
-          <i class="fa fa-arrow-right" />
+      <div class="w-100 py-3">
+        <a :href="link" target="_blank" class="deal__link text-primary text-center text-uppercase">
+          view more >
         </a>
       </div>
     </div>
@@ -30,16 +28,9 @@ export default {
 </script>
 
 <style>
-.deal__link {
-  height: 2.5rem;
-  width: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .deal__description {
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-top: 1rem;
 }
 </style>

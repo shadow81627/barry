@@ -1,9 +1,14 @@
 <template>
   <div :id="heading" style="margin-bottom: 4rem">
-    <div class="position-relative">
+    <div v-if="disabled" class="row">
+      <div class="col text-center sold-out-container" style="z-index: 1000; top: 200px;">
+        <h3 class="sold-out bg-light px-2 mx-auto text-dark">SOLD OUT</h3>
+      </div>
+    </div>
+    <div class="position-relative" :class="{ disabled: disabled }">
       <img class="deal__image shadow" :src="image" />
 
-      <Price :price="price" :disabled="disabled" />
+      <Price :price="price" />
 
       <Info v-bind="{ heading, description, link }" />
     </div>
@@ -40,5 +45,26 @@ export default {
   height: 85%;
   left: 0;
   bottom: 15%;
+}
+
+@media only screen and (min-width: 576px) {
+  .sold-out-container {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .sold-out {
+    font-size: 2.5rem;
+  }
+}
+
+.sold-out {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+}
+
+.disabled {
+  opacity: 0.4;
 }
 </style>

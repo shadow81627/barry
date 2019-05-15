@@ -1,12 +1,10 @@
 <template>
-  <div class="card__content rounded col-12 p-0" style="height: 300px;">
+  <div class="card__content rounded col-12 p-0 price-height">
     <div class="d-flex flex-row-reverse p-2">
-      <span v-if="!disabled" class="deal__price rounded-circle bg-primary text-center text-light">{{
-        price
-      }}</span>
-      <span v-else class="deal__price rounded-circle bg-danger text-center text-light"
-        >SOLD OUT</span
-      >
+      <span
+        class="deal__price rounded-circle bg-primary text-center text-light m-2"
+        v-html="price"
+      />
     </div>
   </div>
 </template>
@@ -27,5 +25,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.price-height {
+  height: 300px;
+}
+
+@media only screen and (max-width: 576px) {
+  .price-height {
+    height: 200px;
+  }
 }
 </style>
