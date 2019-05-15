@@ -108,7 +108,7 @@
       </div>
 
       <div class="form-row">
-        <label for="dob" class="col-12 col-sm-3">
+        <label for="dob" class="col-12 col-sm-3 col-form-label">
           {{ $t('entry.form.dob.placeholder') }}
         </label>
         <FormField id="day" name="day" type="text" placeholder="Day" class="col-4 col-sm-3" />
