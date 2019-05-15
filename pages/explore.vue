@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h2>{{ $t('blog.explore_title') }}</h2>
+    <p v-for="item in $t('blog.explore_intro')" :key="item" v-html="item" />
     <BlogPostBanner />
     <div class="row">
       <div class="col-12 text-center">
