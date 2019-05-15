@@ -2,7 +2,10 @@
   <div>
     <div class="row">
       <div class="col-12 text-center">
-        <h2>Deals brand</h2>
+        <div class="mx-auto" style="max-width: 400px;">
+          <img :src="$t('deals.partner_logo')" class="img-fluid d-block" />
+        </div>
+        <p class="pb-4">{{ $t('deals.deals_intro') }}</p>
         <h2 v-if="deals.length === 0">{{ $t('deals.no-deals') }}</h2>
       </div>
     </div>
@@ -32,12 +35,13 @@ export default {
   },
   computed: {
     sortDisabledDeals: function() {
-      return [...this.deals].sort(function(x, y) {
-        // true values first
-        return x === y ? 0 : x ? -1 : 1;
-        // false values first
-        // return x === y ? 0 : x ? 1 : -1;
-      });
+      return this.deals;
+      // return [...this.deals].sort(function(x, y) {
+      //   // true values first
+      //   return x === y ? 0 : x ? -1 : 1;
+      //   // false values first
+      //   // return x === y ? 0 : x ? 1 : -1;
+      // });
     },
   },
   methods: {
