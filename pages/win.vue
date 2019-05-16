@@ -8,15 +8,13 @@
     </div>
 
     <div class="prize-package">
-      <h2 class="h4 text-dark">{{ $t('entry.prize_package_title') }}</h2>
-      <p class="text-primary">{{ $t('entry.prize_package_intro') }}</p>
+      <h2 class="h4 text-primary">{{ $t('entry.prize_package_title') }}</h2>
       <ul class="color-list">
         <li v-for="item in $t('entry.prize_package_list')" :key="item" v-html="item" />
       </ul>
-      <p v-for="item in $t('entry.body')" :key="item" class="pb-2" v-html="item" />
     </div>
-
     <EntryForm />
+    <p v-for="item in $t('entry.body')" :key="item" class="pb-2" v-html="item" />
   </div>
 </template>
 
