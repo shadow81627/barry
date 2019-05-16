@@ -1,0 +1,36 @@
+{
+  "deals": {
+    "heading": "TRAVEL OFFERS",
+    "no-deals": "No Deal",
+    "partner_logo": "/images/deals/CA_Deal_Logo.jpg",
+    "partner_alt_text": "Downunder Travel",
+    "deals_intro": "From iconic city lights of the Gold Coast, Brisbane and Cairns to the stunning underwater world of the Great Barrier Reef and various island stays, add that tropical Queensland gem to your Australian travel plans today!",
+    "cta_view_deal": "View Offer",
+    "deals": [
+      {
+        "image": "/images/deals/CA_Deal_1.jpg",
+        "alt_text": "Deal1",
+        "heading": "Guided Adventure in Beautiful Queensland",
+        "description": "Enjoy a 9-day Guided Queensland Adventure and explore Brisbane, Cairns & the Great Barrier Reef!",
+        "price": "From<br>$4,371pp",
+        "link": "https://downunder-travel.com/ready-made-adventure/best-of-queensland/"
+      },
+      {
+        "image": "/images/deals/CA_Deal_2.jpg",
+        "alt_text": "Deal2",
+        "heading": "Enjoy a 22-Day Winter 2020 Tropical Longstay in The Gold Coast!",
+        "description": "With many renowned attractions, the Gold Coast makes a terrific option for a winter longstay getaway! You can live like a local and enjoy laid-back neighbourhoods, a booming culinary scene and the hinterland.",
+        "price": "From<br>$3,726pp",
+        "link": "https://downunder-travel.com/ready-made-adventure/queensland-longstay/"
+      },
+      {
+        "image": "/images/deals/CA_Deal_3.jpg",
+        "alt_text": "Deal3",
+        "heading": "13 Day East-Coast Australia Adventure!",
+        "description": "From Sydney to the capital city of Queensland, Brisbane, and to the Great Barrier Reef and Cairns, this itinerary gives travellers a stunning itinerary to enjoy many of Australia's much-loved regions!",
+        "price": "From<br>$3,605pp",
+        "link": "https://downunder-travel.com/ready-made-adventure/east-coast-australia/"
+      }
+    ]
+  }
+}
