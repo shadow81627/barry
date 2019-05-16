@@ -285,8 +285,9 @@ export default {
   },
   methods: {
     ...mapMutations(['setEntrant']),
-    submitForm(event) {
+    async submitForm(event) {
       event.preventDefault();
+      const vm = this;
       this.ctaLoading = true;
       // this.$store.commit('setFormSubmitted', true);
 
@@ -306,10 +307,9 @@ export default {
         });
         const url = `${process.env.API_BASE_URL}/api/enter`;
 
-        axios
+        await axios
           .post(url, this.form)
           .then(response => {
-            this.ctaLoading = false;
             console.log(response);
             // Set entrant in vuex store
             this.$store.commit('setEntrant', { ...this.form, hash: response.data.hash });
@@ -319,7 +319,6 @@ export default {
             this.$router.push(this.localePath('confirmation'));
           })
           .catch(error => {
-            this.ctaLoading = false;
             EventBus.$emit('notification', {
               type: 'error',
               message: 'Error submitting entry.',
@@ -339,7 +338,7 @@ export default {
             console.log(error.config);
           })
           .finally(function() {
-            this.ctaLoading = false;
+            vm.ctaLoading = false;
           });
       }
       this.ctaLoading = false;
