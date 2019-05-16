@@ -16,7 +16,9 @@
         brand: $t('entry.hero.brand'),
         cta: $t('entry.hero.cta'),
       }"
-    />
+    >
+      <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
+    </Hero>
 
     <Navbar
       style="position: absolute;top: 0;width: 100%;z-index: 1000;background:transparent;"

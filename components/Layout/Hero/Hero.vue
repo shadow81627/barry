@@ -1,6 +1,5 @@
 <template>
   <header>
-    <!-- <div v-if="overlay" class="overlay" /> -->
     <video
       id="vid1"
       :poster="poster"
@@ -12,9 +11,15 @@
       loop
       :data-setup="dataSetup"
     >
-      <!-- Video width 100% for poster doesn't work on mobile for video -->
-      <source src="/video/index.m3u8" type="application/x-mpegURL" />
-      <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
+      <slot>
+        <source src="/video/index.m3u8" type="application/x-mpegURL" />
+        <source
+          src="/video/ABOUT_Mobile_Placeholder.mp4"
+          type="video/mp4"
+          media="all and (max-width: 480px)"
+        />
+        <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
+      </slot>
     </video>
 
     <div class="container-fluid h-100 p-0">
@@ -30,10 +35,6 @@
           >
         </b-nav>
       </div>
-
-      <!-- <div class="[ hero__mouse ] visible-lg-block">
-          <img src="@/assets/images/mouse.svg" alt="Mouse" />
-      </div>-->
 
       <nuxt-link v-if="link" :to="localePath(link.path)" class="hero__link"
         >{{ link.text }} &gt;</nuxt-link
@@ -53,7 +54,7 @@ export default {
     blurb: { type: String },
     cta: { type: String },
     link: { type: Object },
-    dataSetup: { type: String, default: null },
+    dataSetup: { type: String, default: '{}' },
   },
   head() {
     return { title: this.title };
@@ -104,15 +105,6 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
-
-/* @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('/images/bg2_screen.jpg') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-} */
 
 .hero__video embed .hero__video iframe,
 .video-js,
@@ -218,20 +210,13 @@ header .overlay {
   }
 }
 
-// Mouse bouncing animation
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-15px);
-  }
-  60% {
-    transform: translateY(-3px);
-  }
+// fucked video dimensions
+.vid1-dimensions {
+  width: 100%;
+  height: 100%;
+}
+.video-js {
+  width: 100%;
+  height: 100%;
 }
 </style>
