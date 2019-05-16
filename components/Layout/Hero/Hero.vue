@@ -19,13 +19,6 @@
 
     <div class="container-fluid h-100 p-0">
       <div class="hero__text">
-        <img
-          v-if="brand"
-          class="ximg-fluid col-7 col-md-4"
-          src="@/assets/images/QA_ScUber_WR.png"
-          alt="Tourism and Events Queensland | Queensland Government"
-          style="max-width: 300px;"
-        />
         <h1 class="pt-3" v-html="title" />
         <div class="hero__blurb" v-html="blurb" />
 
