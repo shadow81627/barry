@@ -15,7 +15,7 @@
           :state="v.first_name.$dirty ? !v.first_name.$error : null"
           @input="v.first_name.$touch()"
         />
-        <FormField
+        <!-- <FormField
           v-model.trim="v.last_name.$model"
           v-bind="{
             id: `last_name-${index}`,
@@ -26,7 +26,7 @@
           }"
           :state="v.last_name.$dirty ? !v.last_name.$error : null"
           @input="v.last_name.$touch()"
-        />
+        /> -->
         <FormField
           v-model.trim="v.email.$model"
           v-bind="{
@@ -66,6 +66,12 @@ import EventBus from '@/assets/js/EventBus.js';
 
 import FormField from '@/components/FormField/FormField.vue';
 
+const emptyFriend = {
+  first_name: null,
+  // last_name: null,
+  email: null,
+};
+
 export default {
   components: {
     FormField,
@@ -79,9 +85,9 @@ export default {
         first_name: {
           required,
         },
-        last_name: {
-          required,
-        },
+        // last_name: {
+        //   required,
+        // },
         email: {
           required,
           email,
@@ -92,24 +98,14 @@ export default {
   data: function() {
     return {
       entrant: this.$store.state.entrant,
-      friends: [
-        {
-          first_name: null,
-          last_name: null,
-          email: null,
-        },
-      ],
+      friends: [emptyFriend],
       ctaLoading: false,
     };
   },
   methods: {
     addFriend() {
       if (this.friends.length < 3) {
-        const clone = {
-          first_name: null,
-          last_name: null,
-          email: null,
-        };
+        const clone = emptyFriend;
         this.friends.push(clone);
       }
     },
@@ -130,13 +126,7 @@ export default {
         .then(response => {
           if (response.data.success) {
             // Reset
-            this.friends = [
-              {
-                first_name: null,
-                last_name: null,
-                email: null,
-              },
-            ];
+            this.friends = [emptyFriend];
 
             this.ctaLoading = false;
             event.$emit('notification', {
