@@ -2,10 +2,11 @@
   <div>
     <h2>{{ $t('blog.explore_title') }}</h2>
     <p v-for="item in $t('blog.explore_intro')" :key="item" v-html="item" />
-    <BlogPostBanner />
+    <BlogPostBanner class="mb-4" />
+
     <div class="row">
       <div class="col-12 text-center">
-        <h2 v-if="deals.length === 0">{{ $t('deals.no-deals') }}</h2>
+        <h2 v-if="deals.length === 0">No posts</h2>
       </div>
     </div>
 
