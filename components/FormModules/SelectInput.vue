@@ -33,11 +33,12 @@ export default {
       default: 'Please select one',
     },
     value: {
-      type: String,
+      type: [String, Number],
       default: '',
     },
     options: {
-      type: Array,
+      // allow number for range list
+      type: [Array, Number],
       default: () => [1, 2, 3, 4],
     },
   },
