@@ -12,17 +12,17 @@
 
         <div class="col-12 py-2"><LangSelect class="col-md-4 col-sm-6 col-12" /></div>
 
-        <div v-for="link in $t('footer.links').slice(0, 2)" :key="link.text" class="col-12 py-2">
+        <div v-for="link in $t('footer.links')" :key="link.text" class="col-12 py-2">
           <a
             :href="link.href"
             target="_blank"
-            class="btn btn-outline-light col-md-4 col-sm-6 col-12 d-none"
+            class="btn btn-outline-light col-md-4 col-sm-6 col-12 d-sm-none"
           >
             {{ link.text }}
           </a>
         </div>
 
-        <div class="col-12 footer-links">
+        <div class="col-12 footer-links d-none d-sm-block">
           <a v-for="link in $t('footer.links')" :key="link.text" :href="link.href" target="_blank">
             {{ link.text }}
           </a>
