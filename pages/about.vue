@@ -67,6 +67,15 @@
             <p v-html="item.text" />
           </div>
         </div>
+        <div>
+          <a
+            :href="$t('about.card4.link.href')"
+            class="[ btn ] btn-dark [ hero__cta ] shadow"
+            target="blank"
+          >
+            {{ $t('about.card4.link.text') }}
+          </a>
+        </div>
       </LayerCard>
     </div>
 
@@ -83,9 +92,13 @@
             <h2 v-html="$t('about.card5.title')" />
             <p v-for="item in $t('about.card5.body')" :key="item" class="pb-2" v-html="item" />
           </div>
-          <nuxt-link :to="localePath('blog')" class="[ btn ] btn-dark [ hero__cta ] shadow">
-            {{ $t('about.card5.cta') }}
-          </nuxt-link>
+          <a
+            :href="$t('about.card5.link.href')"
+            class="[ btn ] btn-dark [ hero__cta ] shadow"
+            target="blank"
+          >
+            {{ $t('about.card5.link.text') }}
+          </a>
         </div>
       </template>
     </TwoByOne>

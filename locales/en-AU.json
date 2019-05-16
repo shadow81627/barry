@@ -102,7 +102,11 @@
           "image": "/images/icons/about-6.png",
           "text": "A World Heritage Area since 1981 and the world's first reef ecosystem to be recognised by UNESCO, the Great Barrier Reef is highly protected and one of the best-managed marine areas on Earth. "
         }
-      ]
+      ],
+      "link": {
+        "text": "FIND OUT MORE",
+        "href": "https://www.queensland.com/en-au/search-results/~/link.aspx?_id=55A4DCAF07B74C5B935C1ED898D09F12&_z=z"
+      }
     },
     "card5": {
       "title": "Protecting the Reef",
@@ -113,13 +117,15 @@
         "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
         "<a href='https://citizensgbr.org/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
       ],
-      "cta": "FIND OUT MORE"
+      "link": {
+        "text": "FIND OUT MORE",
+        "href": "https://citizensgbr.org/"
+      }
     }
   },
   "entry": {
     "hero": {
-      "title": "<span style=\"font-weight: 300;\">Win a ride in sc</span><strong>Uber</strong>",
-      "blurb": "On the Great Barrier Reef, Australia",
+      "title": "<span style=\"font-weight: 300;\">Win a sc</span><strong>Uber</strong> ride",
       "cta": "Enter Now",
       "link": {
         "text": "Project Barry ",
