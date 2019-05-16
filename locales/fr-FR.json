@@ -2,16 +2,16 @@
   "navigation": [
     { "value": "index", "text": "about scuber" },
     { "value": "win", "text": "win a ride" },
+    { "value": "ondemand", "text": "scuber on demand" },
     { "value": "explore", "text": "explore the reef" },
-    { "value": "deals", "text": "travel offers" },
-    { "value": "ondemand", "text": "in-app experience" }
+    { "value": "deals", "text": "travel offers" }
   ],
   "pagination": [
     { "value": "index", "text": "about" },
     { "value": "win", "text": "win" },
-    { "value": "deals", "text": "deals" },
+    { "value": "ondemand", "text": "on demand" },
     { "value": "explore", "text": "explore" },
-    { "value": "ondemand", "text": "in-app" }
+    { "value": "deals", "text": "offers" }
   ],
   "footer": {
     "links": [
@@ -102,7 +102,9 @@
           "image": "/images/icons/about-6.png",
           "text": "A World Heritage Area since 1981 and the world's first reef ecosystem to be recognised by UNESCO, the Great Barrier Reef is highly protected and one of the best-managed marine areas on Earth. "
         }
-      ]
+      ],
+      "card4_cta": "FIND OUT MORE",
+      "card4_link": "https://www.queensland.com/en-au/search-results/~/link.aspx?_id=55A4DCAF07B74C5B935C1ED898D09F12&_z=z"
     },
     "card5": {
       "title": "Protecting the Reef",
@@ -113,13 +115,13 @@
         "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
         "<a href='https://citizensgbr.org/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
       ],
-      "cta": "FIND OUT MORE"
+      "card5_cta": "FIND OUT MORE",
+      "card5_link": "https://citizensgbr.org/"
     }
   },
   "entry": {
     "hero": {
-      "title": "<span style=\"font-weight: 300;\">Win a ride in sc</span><strong>Uber</strong>",
-      "blurb": "On the Great Barrier Reef, Australia",
+      "title": "<span style=\"font-weight: 300;\">Win a sc</span><strong>Uber</strong> ride",
       "cta": "Enter Now",
       "link": {
         "text": "Project Barry ",
