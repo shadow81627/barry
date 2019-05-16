@@ -7,11 +7,6 @@
         <span>8 epic ways to experience the Great Barrier Reef</span>
       </h2>
     </div>
-    <div class="col-12 pb-5 pl-5 pt-2">
-      <a href="https://blog.queensland.com/2019/04/13/noosa-everglades/">
-        <span class="small-link read-more-label" style="color: white;">Read Full Story »</span>
-      </a>
-    </div>
   </div>
 </template>
 

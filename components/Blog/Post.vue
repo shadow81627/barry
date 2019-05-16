@@ -1,9 +1,10 @@
 <template>
-  <b-link :id="heading" :href="link" target="_blank" class="mb-5">
-    <img
+  <a :id="heading" :href="link" target="_blank" class="mb-5 text-decoration-none">
+    <b-img-lazy
       class="img-fluid mx-auto d-block w-100"
       alt="How to go camping in the tropics and survive"
       :src="image"
+      fluid
     />
 
     <div class="row mb-2">
@@ -12,10 +13,10 @@
         :class="{ 'position-absolute': infoPosition === 'absolute' }"
         style="bottom: 1rem;"
       >
-        <Info v-bind="{ heading, description, link, dark, textAlign }" />
+        <Info v-bind="{ heading, description, link, dark, textAlign, featured }" />
       </div>
     </div>
-  </b-link>
+  </a>
 </template>
 
 <script>
@@ -35,6 +36,7 @@ export default {
     dark: { type: Boolean, default: true },
     infoPosition: { type: String, default: null },
     textAlign: { type: String, default: 'center' },
+    featured: { type: Boolean },
   },
 };
 </script>
