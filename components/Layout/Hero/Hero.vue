@@ -60,7 +60,7 @@ export default {
     blurb: { type: String },
     cta: { type: String },
     link: { type: Object },
-    dataSetup: { type: Object, default: null },
+    dataSetup: { type: String, default: null },
   },
   head() {
     return { title: this.title };
