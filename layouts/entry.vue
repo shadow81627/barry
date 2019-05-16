@@ -15,7 +15,6 @@
         poster: '/images/bg2_screen.jpg',
         brand: $t('entry.hero.brand'),
         cta: $t('entry.hero.cta'),
-        blurb: $t('entry.hero.blurb'),
       }"
     />
 
