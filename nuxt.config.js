@@ -127,7 +127,7 @@ export default {
             code: 'en-ca',
             name: 'English Canada',
             iso: 'en-CA',
-            file: 'en-GB.json',
+            file: 'en-CA.json',
           },
           { code: 'fr-fr', name: 'Français', iso: 'fr-FR', file: 'fr-FR.json' },
         ],
