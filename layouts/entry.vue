@@ -16,7 +16,9 @@
         brand: $t('entry.hero.brand'),
         cta: $t('entry.hero.cta'),
       }"
+      data-setup="{}"
     >
+      <source src="/video/win.m3u8" type="application/x-mpegURL" />
       <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
     </Hero>
 
