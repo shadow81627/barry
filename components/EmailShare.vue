@@ -113,56 +113,61 @@ export default {
       this.friends.splice(index, 1);
     },
     send() {
-      this.ctaLoading = true;
+      const vm = this;
+      vm.ctaLoading = true;
+
+      this.$v.friends.$touch();
 
       const url = `${process.env.API_BASE_URL}/api/email_share`;
 
-      axios
-        .post(url, {
-          secret: process.env.API_SECRET,
-          hash: this.entrant.hash,
-          friend: this.friends,
-        })
-        .then(response => {
-          if (response.data.success) {
-            // Reset
-            this.friends = [emptyFriend];
+      if (!this.$v.friends.$error) {
+        axios
+          .post(url, {
+            secret: process.env.API_SECRET,
+            hash: this.entrant.hash,
+            friend: this.friends,
+          })
+          .then(response => {
+            if (response.data.success) {
+              // Reset
+              this.friends = [emptyFriend];
 
-            this.ctaLoading = false;
-            event.$emit('notification', {
-              type: 'success',
-              message: 'Forward to friend successful.',
-            });
-          } else {
-            event.$emit('notification', {
+              EventBus.$emit('notification', {
+                type: 'success',
+                message: 'Forward to friend successful.',
+              });
+            } else {
+              EventBus.$emit('notification', {
+                type: 'error',
+                message: 'Error processing event data.',
+              });
+            }
+          })
+          .catch(error => {
+            // this.ctaLoading = false;
+            EventBus.$emit('notification', {
               type: 'error',
-              message: 'Error processing event data.',
+              message: 'Error submitting Forward to friend.',
             });
-          }
-        })
-        .catch(error => {
-          // this.ctaLoading = false;
-          EventBus.$emit('notification', {
-            type: 'error',
-            message: 'Error submitting entry.',
+            if (error.response) {
+              // The request was made and the server responded with a status code
+              // that falls out of the range of 2xx
+              console.log(error.response.data);
+              console.log(error.response.status);
+              console.log(error.response.headers);
+            } else if (error.request) {
+              console.log(error.request);
+            } else {
+              // Something happened in setting up the request that triggered an Error
+              console.log('Error', error.message);
+            }
+            console.log(error.config);
+          })
+          .finally(function() {
+            vm.ctaLoading = false;
           });
-          if (error.response) {
-            // The request was made and the server responded with a status code
-            // that falls out of the range of 2xx
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-          } else if (error.request) {
-            console.log(error.request);
-          } else {
-            // Something happened in setting up the request that triggered an Error
-            console.log('Error', error.message);
-          }
-          console.log(error.config);
-        })
-        .finally(function() {
-          this.ctaLoading = false;
-        });
+      }
+      vm.ctaLoading = false;
     },
   },
 };
