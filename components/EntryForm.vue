@@ -169,6 +169,8 @@
         </b-form-checkbox>
       </FormField>
 
+      <small class="text-muted">You can unsubscribe from queensland.com at any time.</small>
+
       <button
         type="submit"
         class="[ btn btn--green ] [ entry-form__cta ]"
