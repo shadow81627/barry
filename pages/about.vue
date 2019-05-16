@@ -16,8 +16,14 @@
     <!-- card2 -->
     <TwoByOne class="py-5">
       <template #column-1>
-        <div class="w-100" style="max-width: 420px;">
-          <img class="img-fluid d-block" :src="$t('about.card2.image')" />
+        <div class="w-100">
+          <b-img-lazy
+            class="img-fluid d-block mx-auto"
+            :src="$t('about.card2.image')"
+            width="420"
+            height="420"
+            blank-color="secondry"
+          />
         </div>
       </template>
       <template #column-2>
@@ -38,8 +44,15 @@
     <!-- card3 -->
     <TwoByOne class="py-5" reverse>
       <template #column-1>
-        <div class="w-100" style="max-width: 420px;">
-          <img class="img-fluid d-block" :src="$t('about.card3.image')" />
+        <div class="w-100">
+          <b-img-lazy
+            :src="$t('about.card3.image')"
+            width="420"
+            height="420"
+            blank-color="#777"
+            center
+            fluid
+          />
         </div>
       </template>
       <template #column-2>
@@ -63,7 +76,7 @@
 
         <div v-for="(chunk, index) in chunk($t('about.card4.list'), 10)" :key="index" class="row">
           <div v-for="item in chunk" :key="item.text" class="col-lg-4 col-md-6 col-sm-12">
-            <img :src="item.image" height="42" width="42" />
+            <b-img-lazy :src="item.image" height="42" width="42" blank-color="#777" />
             <p v-html="item.text" />
           </div>
         </div>
@@ -82,8 +95,14 @@
     <!-- card5 -->
     <TwoByOne class="py-5">
       <template #column-1>
-        <div class="w-100" style="max-width: 420px;">
-          <img class="img-fluid d-block" :src="$t('about.card5.image')" />
+        <div class="w-100">
+          <b-img-lazy
+            class="img-fluid d-block mx-auto"
+            :src="$t('about.card5.image')"
+            width="420"
+            height="420"
+            blank-color="#777"
+          />
         </div>
       </template>
       <template #column-2>
