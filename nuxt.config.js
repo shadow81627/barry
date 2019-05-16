@@ -31,13 +31,6 @@ export default {
     ],
     link: [
       {
-        rel: 'icon',
-        type: 'image/x-icon',
-        href:
-          'https://cdn.queensland.com/Content/Images/site-icons/con-favicon-16x16.png?d=20170718T075516',
-        sizes: '16x16',
-      },
-      {
         rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css',
       },
