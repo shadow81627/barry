@@ -1,7 +1,47 @@
 {
-  "landing": {
-    "form": {
-      "postcode": "Zip code"
-    }
+  "deals": {
+    "heading": "TRAVEL OFFERS",
+    "no-deals": "No Deal",
+    "partner_logo": "/images/deals/US_AA_Deal_Logo.jpg",
+    "partner_alt_text": "About Australia",
+    "deals_intro": "Take a worry-free vacation to the Great Barrier Reef with a vacation package from About Australia.",
+    "partner2_logo": "/images/deals/US_Deal_Logo.jpg",
+    "partner2_alt_text": "Aspire Down Under",
+    "deals2_intro": "G'Day and welcome to Aspire Down Under! At Aspire we solely specialize in vacations to Australia and we have curated an amazing collection of packages highlighting why a visit to Queensland is a must on any Australia itinerary! These amazing packages include superb values of reduced airfares, free nights & value touring as well as our most recommended itineraries that ensure you get the most out of your trip to Australia. There is no better place than Queensland to experience the best of Australia's very special lifestyle.",
+    "cta_view_deal": "View Offer",
+    "deals": [
+      {
+        "image": "/images/deals/US_AA_Deal_1.jpg",
+        "alt_text": "Deal1",
+        "heading": "11-Day Gold Coast, Great Barrier Reef & Icons",
+        "description": "Includes flights. Experience the best of Australia - long stretches of beaches, world-famous sites and unique natural wonders.",
+        "price": "$1,695+",
+        "link": "https://www.aboutaustralia.com/travel-deal/australia-vacation-deal-gold-coast-great-barrier-reef-sydney-vacation/?tour_option=ST-QGQ1&departure_city=Los%20Angeles&departure_month=August%202019&utm_source=TEQ&utm_medium=LP&utm_campaign=TEQ-UB-519"
+      },
+      {
+        "image": "/images/deals/US_AA_Deal_2.jpg",
+        "alt_text": "Deal2",
+        "heading": "11 -Day Gold Coast, Port Douglas & Sydney",
+        "description": "Includes flights. Enjoy incredible beaches, quintessential Aussie lifestyle, local hotspots, the Great Barrier Reef and Sydney with this 9 night vacation package.",
+        "price": "$1,695+",
+        "link": "https://www.aboutaustralia.com/travel-deal/australia-vacation-deal-gold-coast-reef-sydney-local-favorites/?tour_option=ST-TA170&departure_city=Los%20Angeles&departure_month=August%202019&utm_source=TEQ&utm_medium=LP&utm_campaign=TEQ-UB-519"
+      },
+      {
+        "image": "/images/deals/US_Deal_3.jpg",
+        "alt_text": "Deal3",
+        "heading": "Escorted East Coast Australia Tour",
+        "description": "Explore Australia's stunning east coast via active small group 16 days tour taking in the iconic Great Barrier Reef, Whitsunday Islands, Fraser Island and Sydney. Price includes international flights.",
+        "price": "From<br>$4,999",
+        "link": "http://www.aspiredownunder.com/australia-small-group-tour.html"
+      },
+      {
+        "image": "/images/deals/US_Deal_4.jpg",
+        "alt_text": "Deal4",
+        "heading": "Green Island Resort & Port Douglas",
+        "description": "Green Island Resort is nestled amid tropical rainforest on a coral cay. Just a short cruise back to the mainland, enjoy the lively beach town of Port Douglas, home to Four Mile Beach and the gateway to the Outer Barrier Reef and Daintree Rainforest. Price includes international flights.",
+        "price": "From<br>$2,599",
+        "link": "http://www.aspiredownunder.com/green_island_and_port_douglas.html"
+      }
+    ]
   }
 }
