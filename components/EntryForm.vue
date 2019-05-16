@@ -84,7 +84,10 @@
           }"
           class="col form-select"
           :state="$v.form.country_iso.$dirty ? !$v.form.country_iso.$error : null"
-          @input="$v.form.country_iso.$touch()"
+          @input="
+            $v.form.country_iso.$touch();
+            form.postcode = form.country_iso !== 'AU' ? null : form.postcode;
+          "
         />
         <FormField
           v-show="this.form.country_iso === 'AU'"
@@ -95,11 +98,8 @@
             placeholder: $t('entry.form.postcode.placeholder'),
           }"
           class="col-12 col-md-4"
-          :disabled="this.form.country_iso !== 'AU'"
-          :change="
-            (this.form.postcode = this.form.country_iso !== 'AU' ? null : this.form.postcode)
-          "
-          :required="this.form.country_iso === 'AU'"
+          :disabled="form.country_iso !== 'AU'"
+          :required="form.country_iso === 'AU'"
           pattern="\d*"
           :maxlength="4"
           :state="$v.form.postcode.$dirty ? !$v.form.postcode.$error : null"
@@ -107,23 +107,7 @@
         />
       </div>
 
-      <div class="form-row">
-        <label for="dob" class="col-12 col-sm-3 col-form-label">
-          {{ $t('entry.form.dob.placeholder') }}
-        </label>
-        <FormField id="day" name="day" type="text" placeholder="Day" class="col-4 col-sm-3" />
-        <FormField id="month" name="month" type="text" placeholder="Month" class="col-4 col-sm-3" />
-        <FormField
-          id="year"
-          name="year"
-          type="number"
-          :maxlength="4"
-          minlength="4"
-          pattern="\d*"
-          placeholder="Year"
-          class="col-4 col-sm-3"
-        />
-      </div>
+      <Birthday id="dob" v-model="form.dob" />
 
       <FormField
         v-bind="{
@@ -186,19 +170,12 @@
 
 <script>
 import { validationMixin } from 'vuelidate';
-import {
-  required,
-  integer,
-  email,
-  minValue,
-  maxValue,
-  requiredIf,
-  maxLength,
-} from 'vuelidate/lib/validators';
+import { required, email, minValue, requiredIf, maxLength } from 'vuelidate/lib/validators';
 
 import { mapMutations } from 'vuex';
 
 import FormField from '@/components/FormField/FormField.vue';
+import Birthday from '@/components/FormModules/Birthday';
 
 import EventBus from '@/assets/js/EventBus.js';
 
@@ -209,6 +186,7 @@ const wordLimit = param => value => value.trim().split(' ').length < param;
 export default {
   components: {
     FormField,
+    Birthday,
   },
   mixins: [validationMixin],
   validations: {
@@ -233,13 +211,11 @@ export default {
       },
       postcode: {
         requiredIf: requiredIf(function(value) {
-          console.log(this.form.country_iso);
-          console.log(this.form.country_iso === 'AU');
           return this.form.country_iso === 'AU';
         }),
-        minValue: minValue(200),
-        maxValue: maxValue(9999),
-        integer,
+      },
+      dob: {
+        required,
       },
       opt_in: {
         required,
@@ -261,7 +237,7 @@ export default {
         country_iso: '',
         hash: null,
         entry_text: '',
-        dob: '1904-02-31',
+        dob: null,
         opt_in: 0,
         teq_opt_in: 0,
       },
@@ -291,7 +267,6 @@ export default {
       event.preventDefault();
       const vm = this;
       this.ctaLoading = true;
-      // this.$store.commit('setFormSubmitted', true);
 
       this.$gtm.pushEvent({
         event: 'formSubmission',
@@ -318,6 +293,10 @@ export default {
 
             // Trigger event
             EventBus.$emit('entry-confirmed', true);
+            EventBus.$emit('notification', {
+              type: 'success',
+              message: 'Entry successful.',
+            });
             this.$router.push(this.localePath('confirmation'));
           })
           .catch(error => {
