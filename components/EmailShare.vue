@@ -1,5 +1,10 @@
 <template>
   <div class="entry-form">
+    <div class="float-right">
+      <nuxt-link :to="localePath('confirm')" class="text-right">
+        <i class="fa fa-close fa-2x" aria-hidden="true" />
+      </nuxt-link>
+    </div>
     <h4>{{ $t('emailshare.form.heading') }}</h4>
     <form autocomplete="off" novalidate @submit.prevent="send()">
       <div v-for="(v, index) in $v.friends.$each.$iter" :key="index" class="ff-modal__item">
@@ -112,7 +117,7 @@ export default {
     removeFriend(index) {
       this.friends.splice(index, 1);
     },
-    send() {
+    async send() {
       const vm = this;
       vm.ctaLoading = true;
 
@@ -121,7 +126,7 @@ export default {
       const url = `${process.env.API_BASE_URL}/api/email_share`;
 
       if (!this.$v.friends.$error) {
-        axios
+        await axios
           .post(url, {
             secret: process.env.API_SECRET,
             hash: this.entrant.hash,
@@ -136,6 +141,7 @@ export default {
                 type: 'success',
                 message: 'Forward to friend successful.',
               });
+              this.$router.push(this.localePath('confirm'));
             } else {
               EventBus.$emit('notification', {
                 type: 'error',
