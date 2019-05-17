@@ -1,11 +1,10 @@
 <template>
-  <div class="col-12 p-0">
+  <div class="col-12 xp-0">
     <Post
-      image="/images/blog/blog-hero.jpg"
-      heading="6 tips to plan your ultimate Great Barrier Reef holiday"
-      :dark="false"
+      v-bind="{ image, heading, link }"
+      :dark="true"
       info-position="absolute"
-      text-align="left"
+      text-align="right"
       featured
     />
   </div>
@@ -16,6 +15,14 @@ import Post from './Post';
 export default {
   components: {
     Post,
+  },
+  props: {
+    image: { type: String },
+    heading: { type: String },
+    description: { type: String },
+    price: { type: String },
+    link: { type: String },
+    disabled: { type: Boolean, default: false },
   },
 };
 </script>

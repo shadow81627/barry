@@ -27,9 +27,12 @@ export default {
         'text-dark': !this.dark,
         'bg-light': !this.dark,
         'p-2': !this.featured,
+        'p-4': this.featured,
         'col-12': this.featured,
         'col-md-10': this.featured,
         'col-lg-8': this.featured,
+        'offset-lg-4': this.featured,
+        'offset-md-2': this.featured,
         'mx-3': !this.featured,
       };
     },
