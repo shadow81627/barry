@@ -77,11 +77,14 @@ function olSetup() {
 
     _ol('registerEvent', 'pageview', '', function() {});
 
-    const olCookiesAccepted = new RegExp('[; ]cookies_accepted=([^\\s;]*)');
-    const olCheckCookie = (' ' + document.cookie).match(olCookiesAccepted);
+    // const olCookiesAccepted = new RegExp('[; ]cookies_accepted=([^\\s;]*)');
+    // const olCheckCookie = (' ' + document.cookie).match(olCookiesAccepted);
 
-    if (olCheckCookie !== null) {
-      _ol('setTag', 'cookies_accepted', olCheckCookie[1], 'string', function() {});
+    const cookieElement = document.getElementById('Cookies');
+
+    if (cookieElement !== null) {
+      console.log('cookies_accepted');
+      _ol('setTag', 'cookies_accepted', cookieElement, 'string', function() {});
     }
 
     _ol('push.isSupported', function(isSupported) {
