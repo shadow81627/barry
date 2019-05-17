@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h2>{{ $t('blog.explore_title') }}</h2>
-    <p v-for="item in $t('blog.explore_intro')" :key="item" v-html="item" />
+  <div class="text-center">
+    <!-- <h2>{{ $t('blog.explore_title') }}</h2> -->
+    <b-img :src="$t('blog.image')" :alt="$t('blog.alt')" center fluid />
+    <p v-for="item in $t('blog.intro')" :key="item" v-html="item" />
     <BlogPostBanner class="mb-4" />
 
     <div class="row">

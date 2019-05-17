@@ -329,7 +329,7 @@
   "blog": {
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
-    "explore_intro": [
+    "intro": [
       "Each year, two million people make the trip to Queensland all in the name of a Great Barrier Reef holiday. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
       "Use the below Great Barrier Reef holiday guides to discover the world’s largest living organism, with ease."
     ],
