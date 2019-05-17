@@ -17,14 +17,9 @@
     <TwoByOne class="py-5">
       <template #column-1>
         <div class="w-100">
-          <b-img-lazy
-            class="img-fluid d-block mx-auto"
-            :src="$t('about.card2.image')"
-            width="420"
-            height="420"
-            fluid
-            center
-          />
+          <nuxt-link :to="localePath($t('about.card2.image-link.path'))">
+            <b-img-lazy :src="$t('about.card2.image')" width="420" height="420" fluid center />
+          </nuxt-link>
         </div>
       </template>
       <template #column-2>
@@ -46,7 +41,9 @@
     <TwoByOne class="py-5" reverse>
       <template #column-1>
         <div class="w-100">
-          <b-img-lazy :src="$t('about.card3.image')" width="420" height="420" fluid center />
+          <nuxt-link :to="localePath($t('about.card3.image-link.path'))">
+            <b-img-lazy :src="$t('about.card3.image')" width="420" height="420" fluid center />
+          </nuxt-link>
         </div>
       </template>
       <template #column-2>
@@ -90,12 +87,9 @@
     <TwoByOne class="py-5">
       <template #column-1>
         <div class="w-100">
-          <b-img-lazy
-            class="img-fluid d-block mx-auto"
-            :src="$t('about.card5.image')"
-            width="420"
-            height="420"
-          />
+          <a :href="$t('about.card5.image-link.href')">
+            <b-img-lazy :src="$t('about.card5.image')" width="420" height="420" fluid center />
+          </a>
         </div>
       </template>
       <template #column-2>
@@ -104,13 +98,13 @@
             <h2 v-html="$t('about.card5.title')" />
             <p v-for="item in $t('about.card5.body')" :key="item" class="pb-2" v-html="item" />
           </div>
-          <a
+          <!-- <a
             :href="$t('about.card5.link.href')"
             class="[ btn ] btn-dark [ hero__cta ] shadow"
             target="blank"
           >
             {{ $t('about.card5.link.text') }}
-          </a>
+          </a> -->
         </div>
       </template>
     </TwoByOne>

@@ -17,7 +17,7 @@
     "links": [
       { "text": "Queensland.com", "href": "https://queensland.com" },
       { "text": "Uber.com", "href": "https://uber.com" },
-      { "text": "Privacy", "href": "#" },
+      { "text": "Privacy", "href": "https://www.queensland.com/en-au/info/disclaimer-and-privacy" },
       { "text": "Terms & Conditions", "href": "#" },
       { "text": "Media Centre", "href": "#" },
       { "text": "General Enquiries", "href": "#" }
@@ -51,12 +51,18 @@
       "title": "WIN! a ride in scUber",
       "intro": "You and a friend can <strong class=\"text-primary\">WIN a once-in-a-lifetime trip</strong> to Australia's Great Barrier Reef to experience the ride of your lives with scUber.",
       "image": "/images/card2-image.jpg",
+      "image-link": {
+        "path": "win"
+      },
       "alt": "Win a ride in scUber",
       "cta": "ENTER NOW"
     },
     "card3": {
-      "title": "How to request a ride with scUber",
+      "title": "",
       "image": "/images/card3-image.jpg",
+      "image-link": {
+        "path": "request"
+      },
       "alt": "Request a ride",
       "body": [
         "For a limited time only, Uber riders in selected Queensland cities will have the opportunity to request a scUber experience directly through the app. These numbers are strictly limited so availability cannot be guaranteed.",
@@ -64,7 +70,7 @@
       ],
       "link": {
         "text": "LEARN MORE",
-        "path": "ondemand"
+        "path": "request"
       }
     },
     "card4": {
@@ -108,18 +114,17 @@
       }
     },
     "card5": {
-      "title": "Protecting the Reef",
+      "title": "",
       "image": "/images/card5-image.jpg",
+      "image-link": {
+        "href": "https://citizensgbr.org/"
+      },
       "alt": "Protecting the Reef",
       "body": [
         "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce their partnership with Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
         "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
         "<a href='https://citizensgbr.org/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
-      ],
-      "link": {
-        "text": "LEARN MORE",
-        "href": "https://citizensgbr.org/"
-      }
+      ]
     }
   },
   "entry": {
@@ -221,8 +226,8 @@
   "ondemand": {
     "heading": "Request a Ride",
     "intro": "Uber and Queensland, Australia are offering a limited number of people the chance to delve into the depths of one of the world's greatest natural wonders – the Great Barrier Reef – and explore a breathtaking underwater playground. For some lucky people, it all starts with a simple tap on the Uber app.",
+    "title": "How to request a ride with scUber",
     "body": [
-      "How to request a ride with scUber",
       "We want to showcase the incredible Great Barrier Reef with this once-in-a-lifetime chance to explore the world's largest ecosystem.",
       "For a limited time only, a select number of Uber riders in selected Queensland cities will have the chance to request a scUber experience directly through the app.",
       "If you're an Uber rider in Gladstone, Cairns, Port Douglas or Palm Cove, you can request a scUber experience on the following dates:",
@@ -322,7 +327,8 @@
     }
   },
   "blog": {
-    "explore_title": "Experience the Great Barrier Reef",
+    "image": "/images/blog/queensland-blog-logo.png",
+    "alt": "BlogLogo",
     "explore_intro": [
       "Each year, two million people make the trip to Queensland all in the name of a Great Barrier Reef holiday. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
       "Use the below Great Barrier Reef holiday guides to discover the world’s largest living organism, with ease."
@@ -335,16 +341,22 @@
         "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/"
       },
       {
-        "image": "/images/blog/blog-see-gbr.jpg",
+        "image": "/images/blog/blog-daintree.jpg",
+        "alt_text": "The world's oldest rainforest",
+        "heading": "Everything you need to know about the world's oldest rainforest",
+        "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/"
+      },
+      {
+        "image": "/images/blog/blog-hotel-cairns.jpg",
+        "alt_text": "Hotel in Cairns",
+        "heading": "The hotel making a huge splash in Cairns",
+        "link": "https://blog.queensland.com/2019/05/16/riley-cairns-hotel/"
+      },
+      {
+        "image": "/images/blog/blog-GBR-wet.jpg",
         "alt_text": "How to see the GBR",
         "heading": "How to see the Great Barrier Reef without getting wet",
         "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/"
-      },
-      {
-        "image": "/images/blog/blog-gbr-islands.jpg",
-        "alt_text": "10 Great Barrier Reef islands",
-        "heading": "10 Great Barrier Reef islands you need to experience now",
-        "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/"
       },
       {
         "image": "/images/blog/blog-stay.jpg",
@@ -365,10 +377,16 @@
         "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/"
       },
       {
-        "image": "/images/blog/blog-daintree.jpg",
-        "alt_text": "The world's oldest rainforest",
-        "heading": "Everything you need to know about the world's oldest rainforest",
-        "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/"
+        "image": "/images/blog/blog-gbr-islands.jpg",
+        "alt_text": "10 Great Barrier Reef islands",
+        "heading": "10 Great Barrier Reef islands you need to experience now",
+        "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/"
+      },
+      {
+        "image": "/images/blog/blog-heron-island.jpg",
+        "alt_text": "Where to stay on the GBR",
+        "heading": "How to spend a long weekend on Heron Island",
+        "link": "https://blog.queensland.com/2019/04/12/3-days-on-heron-island/"
       },
       {
         "image": "/images/blog/blog-best-diving.jpg",
