@@ -31,7 +31,7 @@
         <div class="p-1">
           <div class="intro">
             <p class="pb-2 sub-heading" v-html="$t('about.card2.intro')" />
-            <p v-for="item in $t('about.card2.body')" :key="item" class="pb-2" v-html="item" />
+            <!-- <p v-for="item in $t('about.card2.body')" :key="item" class="pb-2" v-html="item" /> -->
           </div>
           <nuxt-link
             :to="{ path: localePath('entry'), hash: '#page-content' }"
