@@ -18,10 +18,10 @@
 <script>
 export default {
   props: {
-    heading: { type: String, default: 'deal1' },
-    description: { type: String, default: 'I am deal1' },
-    price: { type: String, default: '$100' },
-    link: { type: String, default: 'https://example.com/deals/1' },
+    heading: { type: String },
+    description: { type: String },
+    price: { type: String },
+    link: { type: String },
     disabled: { type: Boolean, default: false },
   },
 };

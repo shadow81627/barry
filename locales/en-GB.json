@@ -1,65 +1,66 @@
 {
   "deals": {
-    "heading": "UK Deals",
-    "no-deals": "No Deal",
-    "partner_logo": "/images/deals/UK_Deal_Logo.jpg",
-    "partner_alt_text": "Flight Centre",
-    "deals_intro": "Planning your next Great Barrier Reef holiday?  We've got some of best ways for you to experience the reef below.",
-    "cta_view_deal": "View Deal",
-    "deals": [
+    "sections": [
       {
-        "image": "/images/deals/UK_Deal_1.jpg",
-        "alt_text": "Deal1",
-        "heading": "Tropical North Queensland",
-        "description": "Australia's tropical north is strewn with breathtaking landscapes, natural wonders and idyllic beaches. Explore the ancient rainforest, the Great Barrier Reef and the spectacular Atherton Tablelands.",
-        "price": "From<br>£2,149",
-        "cta": "View Deal",
-        "link": "https://www.flightcentre.co.uk/holidays/australia/3436494"
-      },
-      {
-        "image": "/images/deals/UK_Deal_2.jpg",
-        "alt_text": "Deal2",
-        "heading": "Colours of Queensland",
-        "description": "Discover the delights of Brisbane, the Whitsundays and the Great Barrier Reef. Explore the rainforest, laze on white sand beaches or grab a snorkel or dive below to discover a magical underwater world.",
-        "price": "From<br>£2,999",
-        "cta": "View Deal",
-        "link": "https://www.flightcentre.co.uk/holidays/australia/3954374"
-      },
-      {
-        "image": "/images/deals/UK_Deal_3.jpg",
-        "alt_text": "Deal3",
-        "heading": "Coral Expeditions - Reef & Rainforest",
-        "description": "Jump on board the Coral Princess, cruise the calm blue waters and discover the best of this marine wonderland. Choose to don your snorkel or scuba gear and get up close and personal with the reef.",
-        "price": "From<br>£3,845",
-        "cta": "View Deal",
-        "link": "https://www.flightcentre.co.uk/holidays/australia/3447807"
-      },
-      {
-        "image": "/images/deals/UK_Deal_4.jpg",
-        "alt_text": "Deal4",
-        "heading": "Queensland's East Coast Wildlife & Nature",
-        "description": "Discover the diverse nature of Queensland - from whales, dolphins, birds and dingoes to the corals, forests, waterways and gorges, there are plenty of natural wonders to discover.",
-        "price": "From<br>£3,779",
-        "cta": "View Deal",
-        "link": "https://www.flightcentre.co.uk/holidays/australia/3954373"
-      },
-      {
-        "image": "/images/deals/UK_Deal_5.jpg",
-        "alt_text": "Deal5",
-        "heading": "Luxury Great Barrier Reef & Hinterland",
-        "description": "Explore the idyllic islands of the Great Barrier Reef and stay in luxury hotels and resorts just a stone's throw from beaches. Swim or snorkel the warm waters or indulge in a relaxing spa treatment.",
-        "price": "From<br>£6,335",
-        "cta": "View Deal",
-        "link": "https://www.flightcentre.co.uk/holidays/australia/3954375"
-      },
-      {
-        "image": "/images/deals/UK_Deal_6.jpg",
-        "alt_text": "Deal6",
-        "heading": "Queensland's Islands & Beaches",
-        "description": "From the bright lights of Brisbane to the beaches and reefs of Hamilton Island, with the lakes and dunes of Fraser Island and the warm waters of Lady Elliot Island in between, this journey has it all.",
-        "price": "From<br>£2,949",
-        "cta": "View Deal",
-        "link": "https://www.flightcentre.co.uk/holidays/australia/4980632"
+        "image": "/images/deals/UK_Deal_Logo.jpg",
+        "alt": "Flight Centre",
+        "intro": "Planning your next Great Barrier Reef holiday?  We've got some of best ways for you to experience the reef below.",
+        "deals": [
+          {
+            "image": "/images/deals/UK_Deal_1.jpg",
+            "alt_text": "Deal1",
+            "heading": "Tropical North Queensland",
+            "description": "Australia's tropical north is strewn with breathtaking landscapes, natural wonders and idyllic beaches. Explore the ancient rainforest, the Great Barrier Reef and the spectacular Atherton Tablelands.",
+            "price": "From<br>£2,149",
+            "cta": "View Deal",
+            "link": "https://www.flightcentre.co.uk/holidays/australia/3436494"
+          },
+          {
+            "image": "/images/deals/UK_Deal_2.jpg",
+            "alt_text": "Deal2",
+            "heading": "Colours of Queensland",
+            "description": "Discover the delights of Brisbane, the Whitsundays and the Great Barrier Reef. Explore the rainforest, laze on white sand beaches or grab a snorkel or dive below to discover a magical underwater world.",
+            "price": "From<br>£2,999",
+            "cta": "View Deal",
+            "link": "https://www.flightcentre.co.uk/holidays/australia/3954374"
+          },
+          {
+            "image": "/images/deals/UK_Deal_3.jpg",
+            "alt_text": "Deal3",
+            "heading": "Coral Expeditions - Reef & Rainforest",
+            "description": "Jump on board the Coral Princess, cruise the calm blue waters and discover the best of this marine wonderland. Choose to don your snorkel or scuba gear and get up close and personal with the reef.",
+            "price": "From<br>£3,845",
+            "cta": "View Deal",
+            "link": "https://www.flightcentre.co.uk/holidays/australia/3447807"
+          },
+          {
+            "image": "/images/deals/UK_Deal_4.jpg",
+            "alt_text": "Deal4",
+            "heading": "Queensland's East Coast Wildlife & Nature",
+            "description": "Discover the diverse nature of Queensland - from whales, dolphins, birds and dingoes to the corals, forests, waterways and gorges, there are plenty of natural wonders to discover.",
+            "price": "From<br>£3,779",
+            "cta": "View Deal",
+            "link": "https://www.flightcentre.co.uk/holidays/australia/3954373"
+          },
+          {
+            "image": "/images/deals/UK_Deal_5.jpg",
+            "alt_text": "Deal5",
+            "heading": "Luxury Great Barrier Reef & Hinterland",
+            "description": "Explore the idyllic islands of the Great Barrier Reef and stay in luxury hotels and resorts just a stone's throw from beaches. Swim or snorkel the warm waters or indulge in a relaxing spa treatment.",
+            "price": "From<br>£6,335",
+            "cta": "View Deal",
+            "link": "https://www.flightcentre.co.uk/holidays/australia/3954375"
+          },
+          {
+            "image": "/images/deals/UK_Deal_6.jpg",
+            "alt_text": "Deal6",
+            "heading": "Queensland's Islands & Beaches",
+            "description": "From the bright lights of Brisbane to the beaches and reefs of Hamilton Island, with the lakes and dunes of Fraser Island and the warm waters of Lady Elliot Island in between, this journey has it all.",
+            "price": "From<br>£2,949",
+            "cta": "View Deal",
+            "link": "https://www.flightcentre.co.uk/holidays/australia/4980632"
+          }
+        ]
       }
     ]
   }

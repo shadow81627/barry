@@ -24,14 +24,11 @@ export default {
     Info,
   },
   props: {
-    image: {
-      type: String,
-      default: '/images/SC_2016_Rainbow_Beach_Carlo_Sandblow_3_Katie_Purling_JOINT_COPYRIGHT.jpg',
-    },
-    heading: { type: String, default: 'deal1' },
-    description: { type: String, default: 'I am deal1' },
-    price: { type: String, default: '$100' },
-    link: { type: String, default: 'https://example.com/deals/1' },
+    image: { type: String },
+    heading: { type: String },
+    description: { type: String },
+    price: { type: String },
+    link: { type: String },
     disabled: { type: Boolean, default: false },
   },
 };

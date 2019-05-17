@@ -1,46 +1,51 @@
 {
   "deals": {
-    "heading": "TRAVEL OFFERS",
-    "no-deals": "No Deal",
-    "partner_logo": "/images/deals/CA_DT_Deal_Logo.jpg",
-    "partner_alt_text": "Downunder Travel",
-    "deals_intro": "From iconic city lights of the Gold Coast, Brisbane and Cairns to the stunning underwater world of the Great Barrier Reef and various island stays, add that tropical Queensland gem to your Australian travel plans today!",
-    "partner2_logo": "/images/deals/CA_GW_Deal_Logo.jpg",
-    "partner2_alt_text": "Goway",
-    "deals2_intro": "Established in 1970, Goway is a leading name in independent, customized travel to Australia.  For Australia we offer customers every way to get around: self-drives, coach tours, chauffeur limousines, helicopters, cruises, trains, treks and more.  ",
-    "cta_view_deal": "View Offer",
-    "deals": [
+    "sections": [
       {
-        "image": "/images/deals/CA_DT_Deal_1.jpg",
-        "alt_text": "Deal1",
-        "heading": "Guided Adventure in Beautiful Queensland",
-        "description": "Enjoy a 9-day Guided Queensland Adventure and explore Brisbane, Cairns & the Great Barrier Reef!",
-        "price": "From<br>$4,371",
-        "link": "https://downunder-travel.com/ready-made-adventure/best-of-queensland/"
+        "image": "/images/deals/CA_DT_Deal_Logo.jpg",
+        "alt": "Downunder Travel",
+        "intro": "From iconic city lights of the Gold Coast, Brisbane and Cairns to the stunning underwater world of the Great Barrier Reef and various island stays, add that tropical Queensland gem to your Australian travel plans today!",
+        "deals": [
+          {
+            "image": "/images/deals/CA_DT_Deal_1.jpg",
+            "alt_text": "Deal1",
+            "heading": "Guided Adventure in Beautiful Queensland",
+            "description": "Enjoy a 9-day Guided Queensland Adventure and explore Brisbane, Cairns & the Great Barrier Reef!",
+            "price": "From<br>$4,371",
+            "link": "https://downunder-travel.com/ready-made-adventure/best-of-queensland/"
+          },
+          {
+            "image": "/images/deals/CA_DT_Deal_2.jpg",
+            "alt_text": "Deal2",
+            "heading": "13 Day East-Coast Australia Adventure!",
+            "description": "From Sydney to the capital city of Queensland, Brisbane, and to the Great Barrier Reef and Cairns, this itinerary gives travellers a stunning itinerary to enjoy many of Australia’s much-loved regions!",
+            "price": "From<br>$3,605",
+            "link": "https://downunder-travel.com/ready-made-adventure/east-coast-australia/"
+          }
+        ]
       },
       {
-        "image": "/images/deals/CA_DT_Deal_2.jpg",
-        "alt_text": "Deal2",
-        "heading": "13 Day East-Coast Australia Adventure!",
-        "description": "From Sydney to the capital city of Queensland, Brisbane, and to the Great Barrier Reef and Cairns, this itinerary gives travellers a stunning itinerary to enjoy many of Australia’s much-loved regions!",
-        "price": "From<br>$3,605",
-        "link": "https://downunder-travel.com/ready-made-adventure/east-coast-australia/"
-      },
-      {
-        "image": "/images/deals/CA_GW_Deal_1.jpg",
-        "alt_text": "Deal3",
-        "heading": "7 Day Best of the Tropical North",
-        "description": "From Cairns, experience easy access to tropical islands, rainforests, mountains, beautiful beaches and the Great Barrier Reef, one of nature’s wonders of the world. Land only, from CA$1,228.",
-        "price": "From<br>$1,228",
-        "link": "https://www.goway.com/trip/australia-and-south-pacific/best-tropical-north/"
-      },
-      {
-        "image": "/images/deals/CA_GW_Deal_2.jpg",
-        "alt_text": "Deal3",
-        "heading": "10 Day Gold Coast & Great Barrier Reef Getaway",
-        "description": "Experience the coastal highlights of Queensland on an air-inclusive vacation. Enjoy Australia’s beach culture at the Gold Coast. Fly north to Cairns and visit the Great Barrier Reef, the world’s largest coral reef.",
-        "price": "From<br>$3,399",
-        "link": "https://www.goway.com/trip/australia-and-south-pacific/gold-coast-great-barrier-reef-getaway/"
+        "image": "/images/deals/CA_GW_Deal_Logo.jpg",
+        "alt": "Goway",
+        "ntro": "Established in 1970, Goway is a leading name in independent, customized travel to Australia.  For Australia we offer customers every way to get around: self-drives, coach tours, chauffeur limousines, helicopters, cruises, trains, treks and more.  ",
+        "deals": [
+          {
+            "image": "/images/deals/CA_GW_Deal_1.jpg",
+            "alt_text": "Deal3",
+            "heading": "7 Day Best of the Tropical North",
+            "description": "From Cairns, experience easy access to tropical islands, rainforests, mountains, beautiful beaches and the Great Barrier Reef, one of nature’s wonders of the world. Land only, from CA$1,228.",
+            "price": "From<br>$1,228",
+            "link": "https://www.goway.com/trip/australia-and-south-pacific/best-tropical-north/"
+          },
+          {
+            "image": "/images/deals/CA_GW_Deal_2.jpg",
+            "alt_text": "Deal3",
+            "heading": "10 Day Gold Coast & Great Barrier Reef Getaway",
+            "description": "Experience the coastal highlights of Queensland on an air-inclusive vacation. Enjoy Australia’s beach culture at the Gold Coast. Fly north to Cairns and visit the Great Barrier Reef, the world’s largest coral reef.",
+            "price": "From<br>$3,399",
+            "link": "https://www.goway.com/trip/australia-and-south-pacific/gold-coast-great-barrier-reef-getaway/"
+          }
+        ]
       }
     ]
   }

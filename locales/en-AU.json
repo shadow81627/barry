@@ -380,42 +380,46 @@
   "deals": {
     "heading": "TRAVEL OFFERS",
     "no-deals": "No Deal",
-    "partner_logo": "/images/deals/AU_Deal_Logo.jpg",
-    "partner_alt_text": "MyQLDholiday",
-    "deals_intro": "Planning your next Great Barrier Reef holiday?  We've got some of best ways for you to experience the reef below.",
     "cta_view_deal": "View Offer",
-    "deals": [
+    "sections": [
       {
-        "image": "/images/deals/AU_Deal_1.jpg",
-        "alt_text": "Deal1",
-        "heading": "Riley, a Crystalbrook Collection Resort",
-        "description": "7 Nights in a Resort Room, Flights, Transfers + $3,500 Bonus Value",
-        "price": "From<br>$1,490pp",
-        "link": "https://www.myqldholiday.com.au/package/riley-a-crystalbrook-collection-resort-resort-room-7-nights-mq-relief/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
-      },
-      {
-        "image": "/images/deals/AU_Deal_2.jpg",
-        "alt_text": "Deal2",
-        "heading": "Reef View Hotel Hamilton Island",
-        "description": "5 Nights in a Garden View Room, Flights, Transfers + $750 Bonus Value",
-        "price": "From<br>$1,190pp",
-        "link": "https://www.myqldholiday.com.au/package/reef-view-hotel-hamilton-island-garden-view-room-5-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
-      },
-      {
-        "image": "/images/deals/AU_Deal_3.jpg",
-        "alt_text": "Deal3",
-        "heading": "Hotel Grand Chancellor Townsville",
-        "description": "3 Nights in an Executive Room, Flights, Transfers + $500 Bonus Value",
-        "price": "From<br>$690pp",
-        "link": "https://www.myqldholiday.com.au/package/hotel-grand-chancellor-townsville-executive-room-3-nights-mq-relief/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
-      },
-      {
-        "image": "/images/deals/AU_Deal_4.jpg",
-        "alt_text": "Deal4",
-        "heading": "Heron Island Resort",
-        "description": "4 Nights in a Turtle Room, Flights, Transfers + $500 Bonus Value",
-        "price": "From<br>$1,290pp",
-        "link": "https://www.myqldholiday.com.au/package/heron-island-resort-turtle-room-4-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
+        "image": "/images/deals/AU_Deal_Logo.jpg",
+        "alt": "MyQLDholiday",
+        "intro": "Planning your next Great Barrier Reef holiday?  We've got some of best ways for you to experience the reef below.",
+        "deals": [
+          {
+            "image": "/images/deals/AU_Deal_1.jpg",
+            "alt_text": "Deal1",
+            "heading": "Riley, a Crystalbrook Collection Resort",
+            "description": "7 Nights in a Resort Room, Flights, Transfers + $3,500 Bonus Value",
+            "price": "From<br>$1,490pp",
+            "link": "https://www.myqldholiday.com.au/package/riley-a-crystalbrook-collection-resort-resort-room-7-nights-mq-relief/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
+          },
+          {
+            "image": "/images/deals/AU_Deal_2.jpg",
+            "alt_text": "Deal2",
+            "heading": "Reef View Hotel Hamilton Island",
+            "description": "5 Nights in a Garden View Room, Flights, Transfers + $750 Bonus Value",
+            "price": "From<br>$1,190pp",
+            "link": "https://www.myqldholiday.com.au/package/reef-view-hotel-hamilton-island-garden-view-room-5-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
+          },
+          {
+            "image": "/images/deals/AU_Deal_3.jpg",
+            "alt_text": "Deal3",
+            "heading": "Hotel Grand Chancellor Townsville",
+            "description": "3 Nights in an Executive Room, Flights, Transfers + $500 Bonus Value",
+            "price": "From<br>$690pp",
+            "link": "https://www.myqldholiday.com.au/package/hotel-grand-chancellor-townsville-executive-room-3-nights-mq-relief/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
+          },
+          {
+            "image": "/images/deals/AU_Deal_4.jpg",
+            "alt_text": "Deal4",
+            "heading": "Heron Island Resort",
+            "description": "4 Nights in a Turtle Room, Flights, Transfers + $500 Bonus Value",
+            "price": "From<br>$1,290pp",
+            "link": "https://www.myqldholiday.com.au/package/heron-island-resort-turtle-room-4-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
+          }
+        ]
       }
     ]
   }
