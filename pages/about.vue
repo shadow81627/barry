@@ -22,7 +22,8 @@
             :src="$t('about.card2.image')"
             width="420"
             height="420"
-            blank-color="secondry"
+            fluid
+            center
           />
         </div>
       </template>
@@ -45,14 +46,7 @@
     <TwoByOne class="py-5" reverse>
       <template #column-1>
         <div class="w-100">
-          <b-img-lazy
-            :src="$t('about.card3.image')"
-            width="420"
-            height="420"
-            blank-color="#777"
-            center
-            fluid
-          />
+          <b-img-lazy :src="$t('about.card3.image')" width="420" height="420" fluid center />
         </div>
       </template>
       <template #column-2>
@@ -76,7 +70,7 @@
 
         <div v-for="(chunk, index) in chunk($t('about.card4.list'), 10)" :key="index" class="row">
           <div v-for="item in chunk" :key="item.text" class="col-lg-4 col-md-6 col-sm-12">
-            <b-img-lazy :src="item.image" height="42" width="42" blank-color="#777" />
+            <b-img-lazy :src="item.image" height="42" width="42" fluid />
             <p v-html="item.text" />
           </div>
         </div>
@@ -101,7 +95,6 @@
             :src="$t('about.card5.image')"
             width="420"
             height="420"
-            blank-color="#777"
           />
         </div>
       </template>
