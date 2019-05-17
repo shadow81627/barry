@@ -1,5 +1,5 @@
 <template>
-  <div class="[ main-content__left ] col-12 col-md-7">
+  <div class="[ main-content__left ] col-12 col-md-8 offset-md-2 p-0">
     <EmailShare />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import EmailShare from '@/components/EmailShare';
 
 export default {
-  layout: 'entry',
+  // layout: 'entry',
   components: {
     EmailShare,
   },
