@@ -9,6 +9,42 @@ function olSetup() {
       console.log(typeof e === 'string' ? e : e.message);
     },
   };
+
+  const olMaxDepth = 3;
+  const olPageUrlArray = location.pathname.substring(location.pathname.indexOf('/') + 1).split('/');
+  let olCurrentPageName;
+
+  // grab the URL relative path and dissect it for use in tags and events
+  const olLastPageCategoryTags = olPageUrlArray
+    .slice(0, olMaxDepth)
+    .filter(function(url, index) {
+      return url && url.length;
+    })
+    .map(function(url, index) {
+      return {
+        name: 'lastPageCategory' + (index + 1),
+        value: olPageUrlArray[index] || '',
+        type: 'string',
+      };
+    });
+
+  if (olLastPageCategoryTags.length) {
+    olCurrentPageName = olPageUrlArray[0];
+  } else {
+    olCurrentPageName = 'home';
+  }
+
+  let placementToPreload;
+
+  // exclude soft optin for win page
+  if (olCurrentPageName !== 'win') {
+    options.preloadContent.push('Notification Prompt');
+  }
+
+  if (placementToPreload) {
+    options.preloadContent.push(placementToPreload);
+  }
+
   _ol('create', appKey, options, function() {
     if (localStorage.getItem('OL_os_name') == null) {
       const olOsName = getOSName();
@@ -38,6 +74,69 @@ function olSetup() {
     });
 
     checkIncognito();
+
+    _ol('registerEvent', 'pageview', '', function() {});
+
+    const olCookiesAccepted = new RegExp('[; ]cookies_accepted=([^\\s;]*)');
+    const olCheckCookie = (' ' + document.cookie).match(olCookiesAccepted);
+
+    if (olCheckCookie !== null) {
+      _ol('setTag', 'cookies_accepted', olCheckCookie[1], 'string', function() {});
+    }
+
+    _ol('push.isSupported', function(isSupported) {
+      if (isSupported) {
+        _ol('push.isSubscribed', function(isSubscribed) {
+          if (!isSubscribed) {
+            _ol('askForPermission', 'notification', function(subscribed) {
+              if (subscribed === 'subscribed') {
+                _ol('registerEvent', 'softyes_hardallow', '', function() {});
+                setTimeout(sendWelcomePushSW, 5000);
+              } else if (subscribed == 'notsubscribed') {
+                _ol('registerEvent', 'softyes_hardblock', '', function() {});
+              }
+            });
+          } else {
+            _ol('push.subscribe');
+            _ol('getTag', 'os_name', function(tag) {
+              const olOsName = getOSName();
+              if (!tag.value) {
+                _ol('setTag', 'os_name', olOsName, 'string', function() {});
+              } else if (olOsName !== tag.value) {
+                _ol('setTag', 'os_name', olOsName, 'string', function() {});
+              }
+            });
+            _ol('getTag', 'device_type', function(tag) {
+              const olDeviceType = getMobileOrDesktop();
+              if (!tag.value) {
+                _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
+              } else if (olDeviceType !== tag.value) {
+                _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
+              }
+            });
+          }
+        });
+      }
+    });
+
+    // subscribe me interstitial
+    if (olCurrentPageName !== 'win') {
+      const olOnSubscribeClicked = function(event, context) {
+        context.close();
+        context.pushPhash();
+      };
+      const olSubscribeHandlers = {};
+      olSubscribeHandlers['click olPlacement1Click'] = olOnSubscribeClicked;
+
+      _ol('displayInterstitial', 'Placement 1', olSubscribeHandlers);
+    }
+    // i) NOT ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
+    // ii) NOT ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
+    // iii) Ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
+    // iv) Ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
+
+    // _ol('setTag', 'existingSubscriber', true, 'boolean', function() {});
+    // _ol('setTag', 'TEQOptIn', true, 'boolean', function() {});
 
     _ol(
       'displayInterstitial',
