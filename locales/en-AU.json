@@ -263,12 +263,13 @@
         ]
       }
     ],
-
-    "title": "Where can you request a ride with scUber?",
-    "image1": "/images/ondemand/map1-cairns.jpg",
-    "alt1": "Map-Cairns",
-    "image2": "/images/ondemand/map2-gladstone.jpg",
-    "alt2": "Map-Gladstone",
+    "map": {
+      "title": "Where can you request a ride with scUber?",
+      "image1": "/images/ondemand/map1-cairns.jpg",
+      "alt1": "Map-Cairns",
+      "image2": "/images/ondemand/map2-gladstone.jpg",
+      "alt2": "Map-Gladstone"
+    },
     "disclaimer": [
       "The scUber experience is strictly limited and available for a limited time only. A scUber request can only be made using the Uber app on or after 7.30am on specified dates (set out below), for travel on the same date. A successful scUber request will be confirmed no later than 8:30am on the date it was requested and all riders must be available to commence travel by 9am on the same day. Uber does not guarantee availability of scUber rides. Each scUber trip is priced at $3000 for two riders. Where only one rider can attend, the full cost of the scUber trip remains due and payable. All passengers must satisfy certain physical and legal requirements. Please note, Uber is not a submarine operator and all scUber rides will be operated by Aquatica Submarines.",
       "The specified dates for each of the participating geographical area are as follows:",
