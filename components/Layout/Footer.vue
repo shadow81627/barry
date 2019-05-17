@@ -3,10 +3,11 @@
     <div class="container">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-12">
-          <img
-            class="img-fluid d-block mx-auto"
-            src="@/assets/images/QA_ScUber_WR.png"
+          <b-img-lazy
+            :src="require('@/assets/images/QA_ScUber_WR.png')"
             alt="Tourism and Events Queensland | Queensland Government"
+            center
+            fluid
           />
         </div>
 
