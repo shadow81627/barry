@@ -92,7 +92,7 @@ function olSetup() {
               if (subscribed === 'subscribed') {
                 _ol('registerEvent', 'softyes_hardallow', '', function() {});
                 setTimeout(sendWelcomePushSW, 5000);
-              } else if (subscribed == 'notsubscribed') {
+              } else if (subscribed === 'notsubscribed') {
                 _ol('registerEvent', 'softyes_hardblock', '', function() {});
               }
             });
