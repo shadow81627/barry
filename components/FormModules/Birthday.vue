@@ -4,22 +4,21 @@
       {{ $t('entry.form.dob.placeholder') }}
     </label>
     <SelectInput
-      id="month"
-      v-model="month"
-      name="month"
-      type="number"
-      placeholder="Month"
-      class="col-4 col-sm-3"
-      :options="months"
-      @input="$emit('input', dob)"
-    />
-    <SelectInput
       id="day"
       v-model="day"
       name="day"
       placeholder="Day"
       class="col-4 col-sm-3"
       :options="days"
+      @input="$emit('input', dob)"
+    />
+    <SelectInput
+      v-model="month"
+      name="month"
+      type="number"
+      placeholder="Month"
+      class="col-4 col-sm-3"
+      :options="months"
       @input="$emit('input', dob)"
     />
     <BaseInput
