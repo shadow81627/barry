@@ -107,7 +107,9 @@
         />
       </div>
 
-      <Birthday id="dob" v-model="form.dob" />
+      <FormField id="dob" :state="$v.form.dob.$dirty ? !$v.form.dob.$error : null">
+        <Birthday id="dob" v-model="form.dob" @change="$v.form.dob.$touch()" />
+      </FormField>
 
       <FormField
         v-bind="{
