@@ -75,6 +75,7 @@ export default {
     { src: '@/plugins/facebook', ssr: false },
     { src: '@/plugins/twitter', ssr: false },
     { src: '@/plugins/vac', ssr: false },
+    { src: '@/plugins/mq', ssr: false },
   ],
 
   /*
