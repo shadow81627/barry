@@ -4,8 +4,8 @@
       class="card__content deal__description bg-light mx-2 shadow px-4 pt-4"
       style="border-bottom: 4px solid black;"
     >
-      <h2 class="h4 text-uppercase text-dark">{{ heading }}</h2>
-      <div class="deal__description--body">{{ description }}</div>
+      <h2 class="h4 text-uppercase text-dark" v-html="heading" />
+      <div class="deal__description--body" v-html="description" />
       <div class="w-100 py-3">
         <a :href="link" target="_blank" class="deal__link text-primary text-center text-uppercase">
           {{ $t('deals.cta_view_deal') }} >
