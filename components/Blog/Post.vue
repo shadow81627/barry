@@ -1,5 +1,5 @@
 <template>
-  <a :id="heading" :href="link" target="_blank" class="mb-5 text-decoration-none">
+  <a :id="heading" :href="link" target="_blank" class="mb-5 text-decoration-none" rel="noopener">
     <b-img-lazy
       class="img-fluid mx-auto d-block w-100"
       alt="How to go camping in the tropics and survive"
