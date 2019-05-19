@@ -18,8 +18,11 @@
           text: $t('about.hero.link.text'),
         },
       }"
-      data-setup="{}"
-    />
+      :data-setup="JSON.stringify({})"
+    >
+      <source v-if="$mq === 'sm'" src="/video/about_mobile.m3u8" type="application/x-mpegURL" />
+      <source v-else src="/video/index.m3u8" type="application/x-mpegURL" />
+    </HeroLong>
 
     <Navbar
       :brand="true"
@@ -51,6 +54,14 @@ export default {
     Footer,
     Navbar,
     Pagination,
+  },
+  computed: {
+    dataSetup() {
+      return {
+        src: this.$mq === 'sm' ? '/video/about_mobile.m3u8' : '/video/index.m3u8',
+        type: 'application/x-mpegURL',
+      };
+    },
   },
 };
 </script>

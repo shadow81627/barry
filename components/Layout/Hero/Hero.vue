@@ -9,17 +9,10 @@
       playsinline
       muted
       loop
+      xcontrols
       :data-setup="dataSetup"
     >
-      <slot>
-        <source src="/video/index.m3u8" type="application/x-mpegURL" />
-        <source
-          src="/video/ABOUT_Mobile_Placeholder.mp4"
-          type="video/mp4"
-          media="all and (max-width: 480px)"
-        />
-        <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
-      </slot>
+      <slot />
     </video>
 
     <div class="container-fluid h-100 p-0">
@@ -54,7 +47,7 @@ export default {
     blurb: { type: String },
     cta: { type: String },
     link: { type: Object },
-    dataSetup: { type: String, default: '{}' },
+    dataSetup: { type: String, default: '' },
   },
   head() {
     return { title: this.title };
@@ -128,7 +121,6 @@ header .overlay {
 
   h1 {
     color: white;
-    // font-size: 2rem;
     font-size: 5.7rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
