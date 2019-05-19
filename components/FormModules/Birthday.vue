@@ -25,9 +25,9 @@
       id="year"
       v-model="year"
       name="year"
-      type="number"
-      :maxvalue="4"
-      minvalue="4"
+      type="text"
+      :maxlength="4"
+      minlength="4"
       pattern="\d*"
       placeholder="Year"
       class="col-4 col-sm-3"
@@ -61,18 +61,18 @@ export default {
     month: '',
     year: null,
     months: [
-      { value: 1, text: 'January' },
-      { value: 2, text: 'Feb' },
-      { value: 3, text: 'March' },
-      { value: 4, text: 'April' },
-      { value: 5, text: 'May' },
-      { value: 6, text: 'June' },
-      { value: 7, text: 'July' },
-      { value: 8, text: 'August' },
-      { value: 9, text: 'September' },
-      { value: 10, text: 'October' },
-      { value: 11, text: 'November' },
-      { value: 12, text: 'December' },
+      { value: 0, text: 'January' },
+      { value: 1, text: 'Feb' },
+      { value: 2, text: 'March' },
+      { value: 3, text: 'April' },
+      { value: 4, text: 'May' },
+      { value: 5, text: 'June' },
+      { value: 6, text: 'July' },
+      { value: 7, text: 'August' },
+      { value: 8, text: 'September' },
+      { value: 9, text: 'October' },
+      { value: 10, text: 'November' },
+      { value: 11, text: 'December' },
     ],
   }),
   computed: {
