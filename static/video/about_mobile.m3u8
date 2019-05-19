@@ -1,0 +1,15 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:11
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10.480000,
+about_mobile0.ts
+#EXTINF:9.720000,
+about_mobile1.ts
+#EXTINF:9.800000,
+about_mobile2.ts
+#EXTINF:11.280000,
+about_mobile3.ts
+#EXTINF:6.760000,
+about_mobile4.ts
+#EXT-X-ENDLIST
