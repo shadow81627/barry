@@ -9,7 +9,7 @@
       ></iframe
     ></noscript>
 
-    <Hero
+    <HeroLong
       v-bind="{
         title: $t('entry.hero.title'),
         poster: '/images/bg2_screen.jpg',
@@ -19,8 +19,8 @@
       data-setup="{}"
     >
       <source src="/video/win.m3u8" type="application/x-mpegURL" />
-      <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
-    </Hero>
+      <!-- <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" /> -->
+    </HeroLong>
 
     <Navbar
       style="position: absolute;top: 0;width: 100%;z-index: 1000;background:transparent;"
@@ -42,7 +42,7 @@
 
 <script>
 import Notification from '@/components/Layout/Notification';
-import Hero from '@/components/Layout/Hero';
+import HeroLong from '@/components/Layout/Hero/HeroLong';
 import MainContentRight from '@/components/Layout/MainContentRight.vue';
 import Footer from '@/components/Layout/Footer';
 import Navbar from '@/components/Layout/Navbar';
@@ -50,7 +50,7 @@ import Navbar from '@/components/Layout/Navbar';
 export default {
   components: {
     Notification,
-    Hero,
+    HeroLong,
     MainContentRight,
     Footer,
     Navbar,
