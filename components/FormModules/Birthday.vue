@@ -60,7 +60,20 @@ export default {
     day: '',
     month: '',
     year: null,
-    months: 12,
+    months: [
+      { value: 1, text: 'January' },
+      { value: 2, text: 'Feb' },
+      { value: 3, text: 'March' },
+      { value: 4, text: 'April' },
+      { value: 5, text: 'May' },
+      { value: 6, text: 'June' },
+      { value: 7, text: 'July' },
+      { value: 8, text: 'August' },
+      { value: 9, text: 'September' },
+      { value: 10, text: 'October' },
+      { value: 11, text: 'November' },
+      { value: 12, text: 'December' },
+    ],
   }),
   computed: {
     days() {
@@ -70,6 +83,18 @@ export default {
       const dob = new Date(this.year, this.month, this.day);
       console.log(dob);
       return dob;
+    },
+    inputs() {
+      return [
+        {
+          id: 'month',
+          model: this.month,
+          name: 'month',
+          type: 'number',
+          placeholder: 'Month',
+          options: 12,
+        },
+      ];
     },
   },
   methods: {
