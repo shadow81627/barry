@@ -2,14 +2,14 @@
   "navigation": [
     { "value": "index", "text": "about scuber" },
     { "value": "win", "text": "win a ride" },
-    { "value": "ondemand", "text": "request a ride" },
+    { "value": "request", "text": "request a ride" },
     { "value": "explore", "text": "explore the reef" },
     { "value": "deals", "text": "travel offers" }
   ],
   "pagination": [
     { "value": "index", "text": "about" },
     { "value": "win", "text": "win" },
-    { "value": "ondemand", "text": "request" },
+    { "value": "request", "text": "request" },
     { "value": "explore", "text": "explore" },
     { "value": "deals", "text": "offers" }
   ],
