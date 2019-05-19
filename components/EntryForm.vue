@@ -155,7 +155,7 @@
         </b-form-checkbox>
       </FormField>
 
-      <small class="text-muted">You can unsubscribe from queensland.com at any time.</small>
+      <small class="text-muted" v-html="$t('entry.form.teq_opt_in_info')" />
 
       <button
         type="submit"
