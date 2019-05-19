@@ -9,7 +9,7 @@
       ></iframe
     ></noscript>
 
-    <Navbar class="bg-dark" />
+    <Navbar variant="dark" />
 
     <div class="container" style="min-height: 100vh;">
       <nuxt id="page-content" class="main-content" />
