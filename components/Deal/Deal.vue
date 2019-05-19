@@ -1,18 +1,20 @@
 <template>
-  <div :id="heading" style="margin-bottom: 4rem">
-    <div v-if="disabled" class="row">
-      <div class="col text-center sold-out-container" style="z-index: 1000; top: 200px;">
-        <h3 class="sold-out bg-light px-2 mx-auto text-dark">SOLD OUT</h3>
+  <a :id="heading" :href="link" target="_blank" class="mb-5 text-decoration-none" rel="noopener">
+    <div :id="heading" style="margin-bottom: 4rem">
+      <div v-if="disabled" class="row">
+        <div class="col text-center sold-out-container" style="z-index: 1000; top: 200px;">
+          <h3 class="sold-out bg-light px-2 mx-auto text-dark">SOLD OUT</h3>
+        </div>
+      </div>
+      <div class="position-relative" :class="{ disabled: disabled }">
+        <img class="deal__image shadow" :src="image" />
+
+        <Price :price="price" />
+
+        <Info v-bind="{ heading, description, link }" />
       </div>
     </div>
-    <div class="position-relative" :class="{ disabled: disabled }">
-      <img class="deal__image shadow" :src="image" />
-
-      <Price :price="price" />
-
-      <Info v-bind="{ heading, description, link }" />
-    </div>
-  </div>
+  </a>
 </template>
 
 <script>
