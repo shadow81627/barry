@@ -2,8 +2,10 @@
   <b-navbar toggleable :type="type" :variant="color" class="main-nav">
     <b-navbar-brand v-if="brand || menuOpen" href="/">
       <slot name="brand">
-        <span class="text-primary h1">sc</span
-        ><span class="text-light h1" :class="{ 'text-dark': menuOpen }">Uber</span>
+        <!-- <span class="text-primary h1">sc</span
+        ><span class="text-light h1" :class="{ 'text-dark': menuOpen }">Uber</span> -->
+        <img v-if="menuOpen" src="/images/logos/scUber-logo-gbr-black.png" />
+        <img v-else src="/images/logos/scUber-logo-gbr.png" />
       </slot>
     </b-navbar-brand>
 
