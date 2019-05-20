@@ -27,15 +27,15 @@
   "mrec-tiles": [
     {
       "image": "/images/win1-image.jpg",
-      "alt": ""
+      "alt": "Nautilus"
     },
     {
       "image": "/images/win2-image.jpg",
-      "alt": ""
+      "alt": "Quicksilver"
     },
     {
       "image": "/images/win3-image.jpg",
-      "alt": ""
+      "alt": "Riley"
     }
   ],
 
@@ -78,7 +78,7 @@
       "alt": "Request a ride",
       "body": [
         "For a limited time only, Uber riders in selected Queensland cities will have the opportunity to request a scUber experience directly through the app. These numbers are strictly limited so availability cannot be guaranteed.",
-        "If you're an Uber rider in Gladstone, Cairns, Palm Cove or Port Douglas, find out what dates (hyperlink to in app page) are available to request a scUber experience in your city."
+        "If you're an Uber rider in Gladstone, Cairns, Palm Cove or Port Douglas, find out what dates are available to request a scUber experience in your city."
       ],
       "link": {
         "text": "LEARN MORE",
