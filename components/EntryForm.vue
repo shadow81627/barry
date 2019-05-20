@@ -84,14 +84,11 @@
           }"
           class="col form-select"
           :state="$v.form.country_iso.$dirty ? !$v.form.country_iso.$error : null"
-          @input="
-            $v.form.country_iso.$touch();
-            form.postcode = form.country_iso !== 'AU' ? null : form.postcode;
-          "
+          @input="$v.form.country_iso.$touch()"
         />
         <FormField
           v-show="this.form.country_iso === 'AU'"
-          v-model="form.postcode"
+          v-model.trim="form.postcode"
           v-bind="{
             id: 'postcode',
             type: 'text',
@@ -237,6 +234,7 @@ export default {
         last_name: null,
         email: null,
         country_iso: '',
+        postcode: null,
         hash: null,
         entry_text: '',
         dob: null,
@@ -304,7 +302,7 @@ export default {
               type: 'success',
               message: 'Entry successful.',
             });
-            this.$router.push(this.localePath('confirmation'));
+            this.$router.push(this.localePath('confirm'));
           })
           .catch(error => {
             EventBus.$emit('notification', {
