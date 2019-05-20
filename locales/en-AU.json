@@ -26,16 +26,16 @@
 
   "mrec-tiles": [
     {
-      "image": "/images/win1-image.jpg",
-      "alt": "Nautilus"
+      "image": "/images/win3-image.jpg",
+      "alt": "Riley"
     },
     {
       "image": "/images/win2-image.jpg",
       "alt": "Quicksilver"
     },
     {
-      "image": "/images/win3-image.jpg",
-      "alt": "Riley"
+      "image": "/images/win1-image.jpg",
+      "alt": "Nautilus"
     }
   ],
 
