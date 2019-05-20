@@ -4,7 +4,7 @@
     :class="wrapperClass"
     :style="{ 'text-align': textAlign }"
   >
-    <p :class="headingClass">{{ heading }}</p>
+    <p :class="headingClass" v-html="heading" />
   </div>
 </template>
 
