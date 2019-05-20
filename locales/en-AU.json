@@ -15,12 +15,18 @@
   ],
   "footer": {
     "links": [
-      { "text": "Queensland.com", "href": "https://queensland.com" },
+      {
+        "text": "Queensland.com",
+        "href": "https://www.queensland.com?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
+      },
       { "text": "Uber.com", "href": "https://uber.com" },
-      { "text": "Privacy", "href": "https://www.queensland.com/en-au/info/disclaimer-and-privacy" },
+      {
+        "text": "Privacy",
+        "href": "https://www.queensland.com/info/disclaimer-and-privacy?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
+      },
       { "text": "Terms & Conditions", "href": "#" },
-      { "text": "Media Centre", "href": "#" },
-      { "text": "General Enquiries", "href": "#" }
+      { "text": "Media Centre", "href": "https://media.queensland.com/explore-queensland" },
+      { "text": "General Enquiries", "href": "mailto:scuberenquiries@queensland.com" }
     ]
   },
 
@@ -54,7 +60,7 @@
       "image": "/images/card1-image.jpg",
       "alt": "Meet scUber",
       "body": [
-        "Uber and Queensland, Australia are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
+        "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
         "From May 27 to June 18, 2019, this once-in-a-lifetime experience will provide riders with an unfiltered view of an extraordinary underwater world, rich and diverse in marine life.",
         "There are two ways to experience scUber: for participating countries, you can enter the global competition; or riders in selected Queensland cities will have the opportunity to request a scUber ride directly in the Uber app."
       ]
@@ -91,13 +97,13 @@
       "image": "/images/card4-image.jpg",
       "alt": "Take a deep dive",
       "body": [
-        "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/Explore-Queensland/Great-Barrier-Reef' target='_blank'>Great Barrier Reef</a>.",
+        "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>Great Barrier Reef</a>.",
         "scUber is a new way to have a completely immersive underwater experience in the home of 3,000 individual reefs, 900 islands and over 1,500 species of fish."
       ],
       "list": [
         {
           "image": "/images/icons/about-1.png",
-          "text": "It represents approximately 10% of all <a href='https://www.queensland.com/en-au/search-results/~/link.aspx?_id=55A4DCAF07B74C5B935C1ED898D09F12&_z=z' target='_blank'>coral reefs</a> in the world."
+          "text": "It represents approximately 10% of all <a href='https://www.queensland.com/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>coral reefs</a> in the world."
         },
         {
           "image": "/images/icons/about-2.png",
@@ -105,7 +111,7 @@
         },
         {
           "image": "/images/icons/about-3.png",
-          "text": "It's the largest natural feature on earth and is the only living structure that can be seen from the moon."
+          "text": "It's the largest natural feature on Earth and is the only living structure that can be seen from the moon."
         },
         {
           "image": "/images/icons/about-4.png",
@@ -133,7 +139,7 @@
       },
       "alt": "Protecting the Reef",
       "body": [
-        "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce their partnership with Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
+        "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce its partnership with Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
         "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
         "<a href='https://citizensgbr.org/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
       ]
@@ -145,10 +151,10 @@
       "cta": "Enter Now",
       "link": {
         "text": "Project Barry ",
-        "path": "index"
+        "path": "about"
       }
     },
-    "title": "Uber and Queensland, Australia are giving one lucky person and their friend the opportunity to win a trip to the Great Barrier Reef.",
+    "title": "Uber and Queensland, Australia are giving you and a friend the opportunity to win a trip to the Great Barrier Reef.",
     "intro": "To enter, tell us in 25 words or less why you should experience the wonder of the Great Barrier Reef with scUber.",
     "prize_package_title": "Prize package includes:",
     "prize_package_list": [
@@ -201,7 +207,7 @@
           "placeholder": "Month",
           "options": [
             { "value": 0, "text": "January" },
-            { "value": 1, "text": "Feb" },
+            { "value": 1, "text": "February" },
             { "value": 2, "text": "March" },
             { "value": 3, "text": "April" },
             { "value": 4, "text": "May" },
@@ -226,8 +232,8 @@
   "confirmation": {
     "title": "CONGRATULATIONS, YOU'RE IN THE DRAW!",
     "body": [
-      "Thanks for entering the competition to experience the Great Barrier Reef with scUber!  Winners will be selected and notified by email at 10am (AEST) on Monday 3 June 2019.",
-      "Get set to embark on an awesome ocean adventure and don't forget to share with your friends."
+      "Thanks for entering the competition to experience the Great Barrier Reef with scUber!  Winners will be selected and notified by email at 10am (AEST) on Monday, 3 June 2019.",
+      "Get set to embark on an awesome ocean adventure and don't forget to share this with your friends."
     ],
     "blog": {
       "title": "EXPLORE THE REEF",
@@ -239,13 +245,13 @@
       "posts": [
         {
           "heading": "8 epic ways to experience the Great Barrier Reef",
-          "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/",
+          "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland",
           "image": "/images/blog/blog-8-ways.jpg",
           "alt": "blog-8-ways"
         },
         {
           "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
-          "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/",
+          "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland",
           "image": "/images/blog/blog-6-tips.jpg",
           "alt": "blog-6-tips"
         }
@@ -295,9 +301,10 @@
         "alt": "Request a ride",
         "list": [
           "1. Open your Uber app from 7.30am",
-          "2. Chose the scUber option",
+          "2. Choose the scUber ride option",
           "3. Enter 'Great Barrier Reef' as your destination in the app in order to request a scUber ride",
-          "4. An Uber team member will then ring you and talk you through where you need to be"
+          "4. An Uber team member will call you and talk through what happens next",
+          "5. Be ready to travel at 9am"
         ]
       },
       {
@@ -383,7 +390,7 @@
         "image": "/images/blog/blog-hero.jpg",
         "alt_text": "6 tips to plan your GBR holiday",
         "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
-        "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/"
+        "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-daintree.jpg",
@@ -449,7 +456,7 @@
       {
         "image": "/images/deals/AU_Deal_Logo.jpg",
         "alt": "MyQLDholiday",
-        "intro": "Planning your next Great Barrier Reef holiday?  We've got some of best ways for you to experience the reef below.",
+        "intro": "Planning your next Great Barrier Reef holiday?  We've got some of the best ways for you to experience the reef below.",
         "deals": [
           {
             "image": "/images/deals/AU_Deal_1.jpg",
@@ -460,12 +467,12 @@
             "link": "https://www.myqldholiday.com.au/package/riley-a-crystalbrook-collection-resort-resort-room-7-nights-mq-relief/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
           },
           {
-            "image": "/images/deals/AU_Deal_2.jpg",
-            "alt_text": "Deal2",
-            "heading": "Reef View Hotel <span><br/>&nbsp;</span>Hamilton Island",
-            "description": "5 Nights in a Garden View Room, Flights, Transfers + $750 Bonus Value",
-            "price": "From<br>$1,190pp",
-            "link": "https://www.myqldholiday.com.au/package/reef-view-hotel-hamilton-island-garden-view-room-5-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
+            "image": "/images/deals/AU_Deal_4.jpg",
+            "alt_text": "Deal4",
+            "heading": "Heron Island Resort",
+            "description": "4 Nights in a Turtle Room, Flights, Transfers + $500 Bonus Value",
+            "price": "From<br>$1,290pp",
+            "link": "https://www.myqldholiday.com.au/package/heron-island-resort-turtle-room-4-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
           },
           {
             "image": "/images/deals/AU_Deal_3.jpg",
@@ -476,12 +483,12 @@
             "link": "https://www.myqldholiday.com.au/package/hotel-grand-chancellor-townsville-executive-room-3-nights-mq-relief/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
           },
           {
-            "image": "/images/deals/AU_Deal_4.jpg",
-            "alt_text": "Deal4",
-            "heading": "Heron Island Resort",
-            "description": "4 Nights in a Turtle Room, Flights, Transfers + $500 Bonus Value",
-            "price": "From<br>$1,290pp",
-            "link": "https://www.myqldholiday.com.au/package/heron-island-resort-turtle-room-4-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
+            "image": "/images/deals/AU_Deal_2.jpg",
+            "alt_text": "Deal2",
+            "heading": "Reef View Hotel <span><br/>&nbsp;</span>Hamilton Island",
+            "description": "5 Nights in a Garden View Room, Flights, Transfers + $750 Bonus Value",
+            "price": "From<br>$1,190pp",
+            "link": "https://www.myqldholiday.com.au/package/reef-view-hotel-hamilton-island-garden-view-room-5-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
           }
         ]
       }
