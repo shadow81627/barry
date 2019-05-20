@@ -24,7 +24,13 @@
         </div>
 
         <div class="col-12 footer-links d-none d-sm-block">
-          <a v-for="link in $t('footer.links')" :key="link.text" :href="link.href" target="_blank">
+          <a
+            v-for="link in $t('footer.links')"
+            :key="link.text"
+            :href="link.href"
+            target="_blank"
+            rel="noopener"
+          >
             {{ link.text }}
           </a>
         </div>

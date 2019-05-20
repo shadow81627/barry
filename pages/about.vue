@@ -92,7 +92,7 @@
     <TwoByOne class="py-5">
       <template #column-1>
         <div class="w-100">
-          <a :href="$t('about.card5.image-link.href')" target="_blank">
+          <a :href="$t('about.card5.image-link.href')" target="_blank" rel="noopener">
             <b-img-lazy :src="$t('about.card5.image')" width="420" height="420" fluid center />
           </a>
         </div>
