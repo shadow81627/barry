@@ -9,8 +9,13 @@
 
     <div class="prize-package">
       <h2 class="h4 text-primary">{{ $t('entry.prize_package_title') }}</h2>
-      <ul class="color-list">
-        <li v-for="item in $t('entry.prize_package_list')" :key="item" v-html="item" />
+      <ul class="color-list" style="padding-inline-start: 0px;">
+        <li
+          v-for="item in $t('entry.prize_package_list')"
+          :key="item"
+          style="padding-left: 4rem;"
+          v-html="item"
+        />
       </ul>
     </div>
     <EntryForm />
