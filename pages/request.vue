@@ -34,7 +34,7 @@
         :src="$t('ondemand.sections')[1].image"
         :alt="$t('ondemand.sections')[1].alt"
         reverse
-        xfull-width
+        :full-width="this.$mq === 'md' || this.$mq === 'sm'"
       >
         <div class="intro">
           <h2 class="pb-4" v-html="$t('ondemand.sections')[1].title" />

@@ -78,4 +78,10 @@ export default {
 .full-card {
   margin-top: -300px;
 }
+
+@media only screen and (max-width: 768px) {
+  .full-card {
+    margin-top: -100px;
+  }
+}
 </style>
