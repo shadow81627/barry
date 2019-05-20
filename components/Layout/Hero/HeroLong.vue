@@ -5,11 +5,17 @@ import Hero from './Hero';
 
 export default {
   extends: Hero,
-  mounted: () => {
-    // const player = videojs('vid1');
+  mounted() {
+    videojs(document.querySelector('.video-js'));
+    // const player = videojs(document.querySelector('.video-js'));
+    // let src;
+    // if (this.$mq === 'sm') {
+    //   src = '/video/about_mobile.m3u8';
+    // } else {
+    //   src = '/video/index.m3u8';
+    // }
     // player.src({
-    //   // src: 'https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8',
-    //   src: '/video/index.m3u8',
+    //   src,
     //   type: 'application/x-mpegURL',
     // });
   },
