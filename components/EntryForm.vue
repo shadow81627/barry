@@ -104,8 +104,13 @@
         />
       </div>
 
-      <FormField id="dob" :state="$v.form.dob.$dirty ? !$v.form.dob.$error : null">
-        <Birthday id="dob" v-model="form.dob" @change="$v.form.dob.$touch()" />
+      <FormField id="dob">
+        <Birthday
+          id="dob"
+          v-model="form.dob"
+          :state="$v.form.dob.$dirty ? !$v.form.dob.$error : null"
+          @change="$v.form.dob.$touch()"
+        />
       </FormField>
 
       <FormField
@@ -136,7 +141,7 @@
           type: 'checkbox',
           value: 1,
         }"
-        class="checkbox"
+        class="checkbox m-0"
         :state="$v.form.opt_in.$dirty ? !$v.form.opt_in.$error : null"
       >
         <b-form-checkbox

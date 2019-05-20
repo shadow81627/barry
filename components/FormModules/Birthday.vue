@@ -11,6 +11,7 @@
       class="col-4 col-sm-3"
       :options="days"
       @input="$emit('input', dob)"
+      :state="state"
     />
     <SelectInput
       v-model="month"
@@ -20,6 +21,7 @@
       class="col-4 col-sm-3"
       :options="months"
       @input="$emit('input', dob)"
+      :state="state"
     />
     <BaseInput
       id="year"
@@ -33,6 +35,7 @@
       class="col-4 col-sm-3"
       trim
       @input="$emit('input', dob)"
+      :state="state"
     />
   </div>
 </template>
@@ -52,6 +55,7 @@ export default {
     value: {
       type: [String, Date],
     },
+    state: { type: Boolean },
   },
   data: () => ({
     // day: new Date().getDay(),
