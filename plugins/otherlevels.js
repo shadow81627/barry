@@ -77,16 +77,6 @@ function olSetup() {
 
     _ol('registerEvent', 'pageview', '', function() {});
 
-    // const olCookiesAccepted = new RegExp('[; ]cookies_accepted=([^\\s;]*)');
-    // const olCheckCookie = (' ' + document.cookie).match(olCookiesAccepted);
-
-    const cookieElement = document.getElementById('Cookies');
-
-    if (cookieElement !== null) {
-      console.log('cookies_accepted');
-      _ol('setTag', 'cookies_accepted', cookieElement, 'string', function() {});
-    }
-
     _ol('push.isSupported', function(isSupported) {
       if (isSupported) {
         _ol('push.isSubscribed', function(isSubscribed) {
@@ -121,6 +111,28 @@ function olSetup() {
         });
       }
     });
+
+    const olCookieAccepted = function(event, context) {
+      context.close();
+      context.pushPhash();
+
+      // const olCookiesAccepted = new RegExp('[; ]cookies_accepted=([^\\s;]*)');
+      // const olCheckCookie = (' ' + document.cookie).match(olCookiesAccepted);
+
+      const cookieElement = document.getElementById('Cookies');
+
+      console.log(`cookie element: ${cookieElement}`);
+
+      if (cookieElement !== null) {
+        console.log('cookies_accepted');
+        _ol('setTag', 'cookies_accepted', 1, 'numeric', function() {});
+      }
+    };
+    const olCookieHandler = {};
+    olCookieHandler['click Cookies'] = olCookieAccepted;
+
+    _ol('displayInterstitial', 'Placement 1', olCookieHandler);
+    console.log('placement');
 
     // subscribe me interstitial
     if (olCurrentPageName !== 'win') {
