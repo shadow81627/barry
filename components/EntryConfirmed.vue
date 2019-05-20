@@ -49,6 +49,11 @@
             >
               <BlogPost v-bind="deal" />
             </div>
+            <nuxt-link
+              :to="{ path: localePath('explore') }"
+              class="[ btn ] btn-dark [ hero__cta ] shadow"
+              >LEARN MORE</nuxt-link
+            >
           </div>
         </div>
       </div>
