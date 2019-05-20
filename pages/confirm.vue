@@ -12,6 +12,12 @@ export default {
   components: {
     EntryConfirmed,
   },
+  data() {
+    return {
+      appId: process.env.FACEBOOK_APP_ID,
+      version: process.env.FACEBOOK_API_VERSION,
+    };
+  },
   head() {
     return {
       link: [
@@ -22,6 +28,18 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    try {
+      FB.init({
+        appId: this.appId,
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: this.version,
+      });
+    } catch (err) {
+      console.log(err);
+    }
   },
 };
 </script>
