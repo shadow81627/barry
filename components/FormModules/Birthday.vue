@@ -10,8 +10,8 @@
       placeholder="Day"
       class="col-4 col-sm-3"
       :options="days"
-      @input="$emit('input', dob)"
       :state="state"
+      @input="$emit('input', dob)"
     />
     <SelectInput
       v-model="month"
@@ -20,8 +20,8 @@
       placeholder="Month"
       class="col-4 col-sm-3"
       :options="months"
-      @input="$emit('input', dob)"
       :state="state"
+      @input="$emit('input', dob)"
     />
     <BaseInput
       id="year"
@@ -34,8 +34,8 @@
       placeholder="Year"
       class="col-4 col-sm-3"
       trim
-      @input="$emit('input', dob)"
       :state="state"
+      @input="$emit('input', dob)"
     />
   </div>
 </template>
