@@ -27,7 +27,7 @@
           {
             "image": "/images/deals/UK_Deal_3.jpg",
             "alt_text": "Deal3",
-            "heading": "Coral Expeditions - Reef & Rainforest",
+            "heading": "Coral Expeditions - <span><br/>&nbsp;</span>Reef & Rainforest",
             "description": "Jump on board the Coral Princess, cruise the calm blue waters and discover the best of this marine wonderland. Choose to don your snorkel or scuba gear and get up close and personal with the reef.",
             "price": "From<br>£3,845",
             "cta": "View Deal",
@@ -36,7 +36,7 @@
           {
             "image": "/images/deals/UK_Deal_4.jpg",
             "alt_text": "Deal4",
-            "heading": "Queensland's East Coast Wildlife & Nature",
+            "heading": "Queensland's East Coast <span><br/>&nbsp;</span>Wildlife & Nature",
             "description": "Discover the diverse nature of Queensland - from whales, dolphins, birds and dingoes to the corals, forests, waterways and gorges, there are plenty of natural wonders to discover.",
             "price": "From<br>£3,779",
             "cta": "View Deal",
@@ -54,7 +54,7 @@
           {
             "image": "/images/deals/UK_Deal_6.jpg",
             "alt_text": "Deal6",
-            "heading": "Queensland's Islands & Beaches",
+            "heading": "Queensland's Islands <span><br/>&nbsp;</span>& Beaches",
             "description": "From the bright lights of Brisbane to the beaches and reefs of Hamilton Island, with the lakes and dunes of Fraser Island and the warm waters of Lady Elliot Island in between, this journey has it all.",
             "price": "From<br>£2,949",
             "cta": "View Deal",

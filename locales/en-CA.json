@@ -10,7 +10,7 @@
             "image": "/images/deals/CA_DT_Deal_1.jpg",
             "alt_text": "Deal1",
             "heading": "Guided Adventure in Beautiful Queensland",
-            "description": "Enjoy a 9-day Guided Queensland Adventure and explore Brisbane, Cairns & the Great Barrier Reef!",
+            "description": "Enjoy a 9-day Guided Queensland Adventure and explore Brisbane, Cairns & the Great Barrier Reef!<span><br/>&nbsp;</span>",
             "price": "From<br>$4,371",
             "link": "https://downunder-travel.com/ready-made-adventure/best-of-queensland/"
           },
@@ -32,7 +32,7 @@
           {
             "image": "/images/deals/CA_GW_Deal_1.jpg",
             "alt_text": "Deal3",
-            "heading": "7 Day Best of the Tropical North",
+            "heading": "7 Day Best of <span><br/>&nbsp;</span>the Tropical North",
             "description": "From Cairns, experience easy access to tropical islands, rainforests, mountains, beautiful beaches and the Great Barrier Reef, one of nature’s wonders of the world. Land only, from CA$1,228.",
             "price": "From<br>$1,228",
             "link": "https://www.goway.com/trip/australia-and-south-pacific/best-tropical-north/"
