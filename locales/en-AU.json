@@ -4,14 +4,14 @@
     { "value": "win", "text": "win a ride" },
     { "value": "request", "text": "request a ride" },
     { "value": "explore", "text": "explore the reef" },
-    { "value": "deals", "text": "travel offers" }
+    { "value": "offers", "text": "travel offers" }
   ],
   "pagination": [
     { "value": "index", "text": "about" },
     { "value": "win", "text": "win" },
     { "value": "request", "text": "request" },
     { "value": "explore", "text": "explore" },
-    { "value": "deals", "text": "offers" }
+    { "value": "offers", "text": "offers" }
   ],
   "footer": {
     "links": [
@@ -23,10 +23,21 @@
       { "text": "General Enquiries", "href": "#" }
     ]
   },
-  "tip": {
-    "heading": "TIP:",
-    "description": "Share your entry"
-  },
+  "mrec-tiles": [
+    {
+      "image": "/images/win1-image.jpg",
+      "alt": ""
+    },
+    {
+      "image": "/images/win2-image.jpg",
+      "alt": ""
+    },
+    {
+      "image": "/images/win3-image.jpg",
+      "alt": ""
+    }
+  ],
+
   "about": {
     "hero": {
       "title": "scUber",
@@ -224,6 +235,7 @@
       ]
     }
   },
+
   "ondemand": {
     "heading": "Request a Ride",
     "intro": "Uber and Queensland, Australia are offering a limited number of people the chance to delve into the depths of one of the world's greatest natural wonders – the Great Barrier Reef – and explore a breathtaking underwater playground. For some lucky people, it all starts with a simple tap on the Uber app.",
