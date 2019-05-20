@@ -14,6 +14,7 @@
       @input="$emit('input', dob)"
     />
     <SelectInput
+      id="month"
       v-model="month"
       name="month"
       type="number"
@@ -90,9 +91,12 @@ export default {
       return this.daysInMonth(this.month, this.year);
     },
     dob() {
-      const dob = new Date(this.year, this.month, this.day);
-      console.log(dob);
-      return dob.toISOString().split('T')[0];
+      if (this.year && this.month && this.day) {
+        const dob = new Date(this.year, this.month, this.day);
+        console.log(dob);
+        return dob.toISOString().split('T')[0];
+      }
+      return null;
     },
     inputs() {
       return [
