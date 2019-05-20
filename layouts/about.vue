@@ -18,7 +18,15 @@
           text: $t('about.hero.link.text'),
         },
       }"
-      :data-setup="JSON.stringify({})"
+      :data-setup="
+        JSON.stringify({
+          html5: {
+            hls: {
+              overrideNative: true,
+            },
+          },
+        })
+      "
     >
       <source v-if="$mq === 'sm'" src="/video/about_mobile.m3u8" type="application/x-mpegURL" />
       <source v-else src="/video/index.m3u8" type="application/x-mpegURL" />
