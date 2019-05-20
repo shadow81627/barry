@@ -1,16 +1,16 @@
 /* eslint-disable */
-window.fbAsyncInit = function() {
-  try {
-    FB.init({
-      appId: '286769528496888',
-      autoLogAppEvents: true,
-      xfbml: true,
-      version: 'v2.10',
-    });
-  } catch (err) {
-    console.log(err);
-  }
-};
+// window.fbAsyncInit = function() {
+//   try {
+//     FB.init({
+//       appId: process.env.FACEBOOK_APP_ID,
+//       autoLogAppEvents: true,
+//       xfbml: true,
+//       version: process.env.FACEBOOK_API_VERSION,
+//     });
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 (function(d, s, id) {
   var js,
     fjs = d.getElementsByTagName(s)[0];

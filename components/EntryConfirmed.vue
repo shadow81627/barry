@@ -67,6 +67,7 @@ export default {
     return {
       entrant: this.$root.entrant,
       friends: [],
+      appUrl: process.env.APP_URL,
     };
   },
   created() {
@@ -86,7 +87,7 @@ export default {
         {
           method: 'share',
           mobile_iframe: true,
-          href: 'https://teq-summer-feels-stage.xcomhosted.com/', // FIXME: Fix before Go-Live
+          href: this.appUrl,
           display: 'popup',
         },
         response => {
