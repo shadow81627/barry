@@ -22,7 +22,7 @@
           class="row"
         >
           <div v-for="item in chunk" :key="item.text" class="col-sm-12 p-2">
-            <b-img-lazy v-if="item.image" :src="item.image" height="42" width="42" fluid center />
+            <b-img-lazy v-if="item.image" :src="item.image" height="43" width="43" fluid center />
             <p v-html="item.text" />
           </div>
         </div>

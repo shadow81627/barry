@@ -72,7 +72,7 @@
 
         <div v-for="(chunk, index) in chunk($t('about.card4.list'), 10)" :key="index" class="row">
           <div v-for="item in chunk" :key="item.text" class="col-lg-4 col-md-6 col-sm-12">
-            <b-img-lazy :src="item.image" height="42" width="42" fluid />
+            <b-img-lazy :src="item.image" height="43" width="43" fluid />
             <p v-html="item.text" />
           </div>
         </div>
