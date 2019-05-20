@@ -21,23 +21,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.card__item:first-child {
-  order: 1;
-}
-.card__item:nth-child(1) {
-  order: 2;
-}
-
-@media screen and (max-width: 991px) {
-  .__card {
-    display: flex;
-    flex-direction: column;
-  }
-  .card__item:nth-child(2) {
-    order: 1;
-    height: 0px;
-  }
-}
-</style>
