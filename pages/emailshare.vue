@@ -13,7 +13,16 @@ export default {
     EmailShare,
   },
   head() {
-    return { title: this.$t('entry.title') };
+    return {
+      title: this.$t('entry.title'),
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/emailsahre',
+        },
+      ],
+    };
   },
 };
 </script>

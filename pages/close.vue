@@ -16,5 +16,16 @@ h2 {
 <script>
 export default {
   layout: 'default',
+  head() {
+    return {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/close',
+        },
+      ],
+    };
+  },
 };
 </script>

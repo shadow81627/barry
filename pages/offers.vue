@@ -31,6 +31,18 @@ export default {
   methods: {
     chunk: utils.chunk,
   },
+  head() {
+    return {
+      title: 'Explore',
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/explore',
+        },
+      ],
+    };
+  },
 };
 </script>
 

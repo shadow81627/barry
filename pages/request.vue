@@ -111,5 +111,17 @@ export default {
   methods: {
     chunk: utils.chunk,
   },
+  head() {
+    return {
+      title: 'Request',
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/request',
+        },
+      ],
+    };
+  },
 };
 </script>

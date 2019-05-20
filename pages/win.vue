@@ -33,7 +33,16 @@ export default {
     EntryForm,
   },
   head() {
-    return { title: this.$t('entry.title') };
+    return {
+      title: 'Win',
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/win',
+        },
+      ],
+    };
   },
 };
 </script>

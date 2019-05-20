@@ -6,6 +6,23 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Unsubscribe',
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/unsubscribe',
+        },
+      ],
+    };
+  },
+};
+</script>
+
 <style scoped>
 h2 {
   margin-bottom: 3rem;

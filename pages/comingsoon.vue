@@ -65,6 +65,17 @@
 <script>
 export default {
   layout: 'comingsoon',
+  head() {
+    return {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/comingsoon',
+        },
+      ],
+    };
+  },
 };
 </script>
 
