@@ -4,17 +4,25 @@
       <p v-html="$t('ondemand.intro')" />
     </div>
 
-    <div class="row py-5">
-      <div class="col-md-6">
+    <div class="row p-5">
+      <div class="col-md-7 pr-5">
         <div class="intro">
-          <h2 v-html="$t('ondemand.heading')" />
+          <h2 v-html="$t('ondemand.title')" />
         </div>
         <p v-for="item in $t('ondemand.body')" :key="item" v-html="item" />
       </div>
-      <div class="col-md-6 text-center py-2" style="background-color: #e2eaee;">
-        <div v-for="(chunk, index) in chunk($t('about.card4.list'), 10)" :key="index" class="row">
-          <div v-for="item in chunk" :key="item.text" class="col-sm-12">
-            <b-img-lazy :src="item.image" height="42" width="42" fluid center />
+      <div class="col-1">
+        <!-- spacing col -->
+      </div>
+      <div class="col-md-4 text-center p-5" style="background-color: #e2eaee;">
+        <h2 class="h4 text-dark" v-html="$t('ondemand.sections')[0].title" />
+        <div
+          v-for="(chunk, index) in chunk($t('ondemand.sections')[0].list, 10)"
+          :key="index"
+          class="row"
+        >
+          <div v-for="item in chunk" :key="item.text" class="col-sm-12 p-2">
+            <b-img-lazy v-if="item.image" :src="item.image" height="42" width="42" fluid center />
             <p v-html="item.text" />
           </div>
         </div>
@@ -22,26 +30,60 @@
     </div>
 
     <div class="row container-break-out-center py-5" style="padding-top: 10px;">
-      <layerCard :src="$t('about.card1.image')" :alt="$t('about.card1.alt')" reverse xfull-width>
+      <layerCard
+        :src="$t('ondemand.sections')[1].image"
+        :alt="$t('ondemand.sections')[1].alt"
+        reverse
+        xfull-width
+      >
         <div class="intro">
-          <h2 class="pb-4" v-html="$t('about.card1.title')" />
-          <p class="sub-heading">
-            {{ $t('about.card1.intro') }}
-          </p>
-          <p v-for="item in $t('about.card1.body')" :key="item" v-html="item" />
+          <h2 class="pb-4" v-html="$t('ondemand.sections')[1].title" />
+          <p v-for="item in $t('ondemand.sections')[1].list" :key="item" v-html="item" />
         </div>
       </layerCard>
     </div>
 
-    <div v-for="section in $t('ondemand.sections')" :key="section.title">
-      <h2 v-html="section.title" class="h4 text-dark" />
+    <!-- <div v-for="section in $t('ondemand.sections')" :key="section.title" class="row">
+      <h2 class="h4 text-dark" v-html="section.title" />
       <p v-for="item in section.list" :key="item" v-html="item" />
+    </div> -->
+
+    <div class="row">
+      <div clas="col-sm-12">
+        <h2 class="h4 text-dark" v-html="$t('ondemand.sections')[2].title" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>
+          <li
+            v-for="item in $t('ondemand.sections')[2].list.slice(
+              0,
+              Math.floor($t('ondemand.sections')[2].list.length / 2),
+            )"
+            :key="item"
+            v-html="item"
+          />
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>
+          <li
+            v-for="item in $t('ondemand.sections')[2].list.slice(
+              Math.floor($t('ondemand.sections')[2].list.length / 2),
+              $t('ondemand.sections')[2].list.length,
+            )"
+            :key="item"
+            v-html="item"
+          />
+        </ul>
+      </div>
     </div>
 
     <!-- map section -->
     <div>
-      <h2 v-html="$t('ondemand.map.title')" class="h4 text-dark" />
-      <div class="row">
+      <h2 class="h4 text-dark" v-html="$t('ondemand.map.title')" />
+      <div class="row py-5">
         <div class="col-sm-6">
           <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
         </div>
