@@ -15,8 +15,8 @@
 
     <div class="container-fluid h-100 p-0">
       <div class="hero__text">
-        <h1 class="pt-3" v-html="title" />
-        <div class="hero__blurb" v-html="blurb" />
+        <h1 class="pt-3 hero__title text-uppercase" v-html="title" />
+        <div v-if="blurb" class="hero__blurb" v-html="blurb" />
 
         <b-nav v-if="cta" class="d-inline">
           <nuxt-link
@@ -108,6 +108,12 @@ header .overlay {
   object-fit: cover;
 }
 
+.hero__title {
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 7rem;
+}
+
 .hero__text {
   position: absolute;
   top: 50%;
@@ -119,7 +125,7 @@ header .overlay {
 
   h1 {
     color: white;
-    font-size: 5.7rem;
+    // font-size: 5.7rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 }
@@ -157,6 +163,10 @@ header .overlay {
     font-weight: 300;
     letter-spacing: 0.25rem;
   }
+
+  .hero__title {
+    font-size: 3rem;
+  }
 }
 
 @media all and (min-width: 992px) {
@@ -175,7 +185,7 @@ header .overlay {
   }
 
   .hero__text h1 {
-    font-size: 4rem;
+    // font-size: 4rem;
   }
 }
 

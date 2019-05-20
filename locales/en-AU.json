@@ -141,7 +141,7 @@
   },
   "entry": {
     "hero": {
-      "title": "<span class=\"text-uppercase\" style=\"font-weight: 300;line-height: 1.2;font-size:8rem;\" >Win a scUber ride</span>",
+      "title": "Win a scUber ride",
       "cta": "Enter Now",
       "link": {
         "text": "Project Barry ",

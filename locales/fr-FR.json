@@ -141,7 +141,7 @@
   },
   "entry": {
     "hero": {
-      "title": "<span class=\"text-uppercase\" style=\"font-weight: 300;line-height: 1.2;font-size:8rem;\" >GAGNEZ UNE PLONGÉE EN SCUBER</span>",
+      "title": "GAGNEZ UNE PLONGÉE EN SCUBER",
       "cta": "ENTRER",
       "link": {
         "text": "Project Barry ",
