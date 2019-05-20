@@ -196,9 +196,25 @@
         "placeholder": "Birthday",
         "valid-feedback": "Thanks!",
         "invalid-feedback": "Please provide your birthday!",
-        "day": {},
-        "month": {},
-        "year": {}
+        "day": { "placeholder": "Day" },
+        "month": {
+          "placeholder": "Month",
+          "options": [
+            { "value": 0, "text": "January" },
+            { "value": 1, "text": "Feb" },
+            { "value": 2, "text": "March" },
+            { "value": 3, "text": "April" },
+            { "value": 4, "text": "May" },
+            { "value": 5, "text": "June" },
+            { "value": 6, "text": "July" },
+            { "value": 7, "text": "August" },
+            { "value": 8, "text": "September" },
+            { "value": 9, "text": "October" },
+            { "value": 10, "text": "November" },
+            { "value": 11, "text": "December" }
+          ]
+        },
+        "year": { "placeholder": "Year" }
       },
       "word_count": "Words",
       "opt_in": "I agree to the <a rel=\"noopener\" href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">terms and conditions</a>.",
