@@ -1,7 +1,6 @@
 <template>
-  <div id="entry-form" class="entry-form confirmed">
-    <div class="blog-header" :style="`background-image: url(/images/sharebg-image.jpg);`" />
-    <div class="row">
+  <div id="entry-form" class="entry-form confirmed p-0">
+    <div class="row m-5 pt-5">
       <div class="col-12">
         <span style="text-align:center">
           <h2 v-html="$t('confirmation.title')" />
@@ -10,7 +9,7 @@
       </div>
     </div>
 
-    <div class="[ social ] row">
+    <div class="[ social ] row" style="margin-bottom: -40px;">
       <div class="col-4">
         <button type="button" class="social__item" @click="shareFacebook">
           <i class="fa fa-facebook" aria-hidden="true" />
@@ -33,18 +32,23 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="blog-link row my-4" style="position: relative;">
-      <div class="text-center">
-        <h3>{{ $t('confirmation.blog.title') }}</h3>
-        <p v-for="item in $t('confirmation.blog.body')" :key="item" v-html="item" />
+    <div
+      class="xblog-header w-100 h-100 pt-5"
+      :style="`background-image: url(/images/sharebg-image.jpg); background-size: cover;`"
+    >
+      <div class="blog-link row" style="position: relative;">
+        <div class="text-center">
+          <h3>{{ $t('confirmation.blog.title') }}</h3>
+          <p v-for="item in $t('confirmation.blog.body')" :key="item" v-html="item" />
 
-        <div class="row d-flex justify-content-center">
-          <div
-            v-for="deal in $t('confirmation.blog.posts')"
-            :key="deal.heading"
-            class="col confirmation-blog-post"
-          >
-            <BlogPost v-bind="deal" />
+          <div class="row d-flex justify-content-center">
+            <div
+              v-for="deal in $t('confirmation.blog.posts')"
+              :key="deal.heading"
+              class="col-md-6  confirmation-blog-post"
+            >
+              <BlogPost v-bind="deal" />
+            </div>
           </div>
         </div>
       </div>
@@ -147,7 +151,8 @@ export default {
 <style scoped lang="scss">
 .blog-link {
   background-color: white;
-  padding: 50px 20px 50px 20px;
+  padding: 20px 20px 20px 20px;
+  margin: 40px;
 }
 
 .confirmation-blog-posts .card__content {
