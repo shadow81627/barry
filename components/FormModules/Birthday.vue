@@ -7,7 +7,7 @@
       id="day"
       v-model="day"
       name="day"
-      placeholder="Day"
+      :placeholder="dayPlaceholder"
       class="col-4 col-sm-3"
       :options="days"
       :state="state"
@@ -17,7 +17,7 @@
       v-model="month"
       name="month"
       type="number"
-      placeholder="Month"
+      :placeholder="monthPlaceholder"
       class="col-4 col-sm-3"
       :options="months"
       :state="state"
@@ -31,7 +31,7 @@
       :maxlength="4"
       minlength="4"
       pattern="\d*"
-      placeholder="Year"
+      :placeholder="yearPlaceholder"
       class="col-4 col-sm-3"
       trim
       :state="state"
@@ -56,6 +56,26 @@ export default {
       type: [String, Date],
     },
     state: { type: Boolean },
+    dayPlaceholder: { type: String, default: 'Day' },
+    monthPlaceholder: { type: String, default: 'Month' },
+    yearPlaceholder: { type: String, default: 'Year' },
+    months: {
+      type: Array,
+      default: () => [
+        { value: 0, text: 'January' },
+        { value: 1, text: 'Febuary' },
+        { value: 2, text: 'March' },
+        { value: 3, text: 'April' },
+        { value: 4, text: 'May' },
+        { value: 5, text: 'June' },
+        { value: 6, text: 'July' },
+        { value: 7, text: 'August' },
+        { value: 8, text: 'September' },
+        { value: 9, text: 'October' },
+        { value: 10, text: 'November' },
+        { value: 11, text: 'December' },
+      ],
+    },
   },
   data: () => ({
     // day: new Date().getDay(),
@@ -64,20 +84,6 @@ export default {
     day: '',
     month: '',
     year: null,
-    months: [
-      { value: 0, text: 'January' },
-      { value: 1, text: 'Feb' },
-      { value: 2, text: 'March' },
-      { value: 3, text: 'April' },
-      { value: 4, text: 'May' },
-      { value: 5, text: 'June' },
-      { value: 6, text: 'July' },
-      { value: 7, text: 'August' },
-      { value: 8, text: 'September' },
-      { value: 9, text: 'October' },
-      { value: 10, text: 'November' },
-      { value: 11, text: 'December' },
-    ],
   }),
   computed: {
     days() {

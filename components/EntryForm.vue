@@ -108,6 +108,10 @@
         <Birthday
           id="dob"
           v-model="form.dob"
+          :months="$t('entry.form.dob.month.options')"
+          :day-placeholder="$t('entry.form.dob.day.placeholder')"
+          :month-placeholder="$t('entry.form.dob.month.placeholder')"
+          :year-placeholder="$t('entry.form.dob.year.placeholder')"
           :state="$v.form.dob.$dirty ? !$v.form.dob.$error : null"
           @change="$v.form.dob.$touch()"
         />
