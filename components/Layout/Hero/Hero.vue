@@ -5,11 +5,9 @@
       :poster="poster"
       class="video-js fullscreen"
       autoplay
-      preload="auto"
       playsinline
       muted
       loop
-      xcontrols
       :data-setup="dataSetup"
     >
       <slot />
