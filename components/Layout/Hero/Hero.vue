@@ -2,7 +2,7 @@
   <header>
     <video
       id="vid1"
-      :poster="poster"
+      :xposter="poster"
       class="video-js fullscreen"
       autoplay
       playsinline
