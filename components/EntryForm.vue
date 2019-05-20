@@ -117,7 +117,7 @@
           type: 'checkbox',
           value: 1,
         }"
-        class="checkbox"
+        class="checkbox m-0"
         :state="$v.form.opt_in.$dirty ? !$v.form.opt_in.$error : null"
       >
         <b-form-checkbox
