@@ -1,6 +1,8 @@
 <template>
   <b-form-group v-show="type !== 'hidden'" :id="`${id}-form-group`">
-    <label :for="id" :class="{ 'sr-only': !label }">{{ label || placeholder }}</label>
+    <label v-if="label || placeholder" :for="id" :class="{ 'sr-only': !label }">{{
+      label || placeholder
+    }}</label>
     <slot>
       <componenet
         :is="inputType"
@@ -24,7 +26,7 @@
     </slot>
 
     <slot name="description">
-      <b-form-text :id="`${id}-description`">{{ description }}</b-form-text>
+      <b-form-text v-if="description" :id="`${id}-description`">{{ description }}</b-form-text>
     </slot>
 
     <slot name="valid">
