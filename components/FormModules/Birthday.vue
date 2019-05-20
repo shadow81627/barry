@@ -82,7 +82,7 @@ export default {
     dob() {
       const dob = new Date(this.year, this.month, this.day);
       console.log(dob);
-      return dob;
+      return dob.toISOString().split('T')[0];
     },
     inputs() {
       return [
@@ -99,7 +99,6 @@ export default {
   },
   methods: {
     daysInMonth(month, year = 1904) {
-      // Use 1 for January, 2 for February, etc.
       return new Date(year, month, 0).getDate();
     },
   },
