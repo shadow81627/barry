@@ -22,6 +22,7 @@ export default {
   props: {
     reverse: { type: Boolean, default: false },
     fullWidth: { type: Boolean, default: false },
+    textAlign: { type: String },
     src: { type: String },
   },
   computed: {
@@ -31,6 +32,7 @@ export default {
         'offset-md-3': !this.reverse && !this.fullWidth,
         'offset-md-0': this.reverse && !this.fullWidth,
         'col-lg-6': !this.fullWidth,
+        'col-xl-5': !this.fullWidth,
         'col-md-9': !this.fullWidth,
         'col-sm-10': this.fullWidth,
         'full-card': this.fullWidth,
