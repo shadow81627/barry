@@ -5,7 +5,7 @@
     </div>
 
     <div class="row">
-      <img class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
+      <b-img-lazy class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
     </div>
     <div class="row">
       <div class="" :class="cardClass">
@@ -63,7 +63,8 @@ export default {
   position: absolute;
   top: 0px;
   z-index: -1;
-  /* height: 100%; */
+  /* JOHN */
+  height: 100%;
   background-color: #e2eaee;
   object-fit: cover;
 }
