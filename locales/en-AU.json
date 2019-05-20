@@ -350,7 +350,7 @@
       {
         "image": "/images/blog/blog-hotel-cairns.jpg",
         "alt_text": "Hotel in Cairns",
-        "heading": "The hotel making a huge splash in Cairns",
+        "heading": "The hotel making a huge splash<span><br/>&nbsp;</span>in Cairns",
         "link": "https://blog.queensland.com/2019/05/16/riley-cairns-hotel/"
       },
       {
@@ -362,7 +362,7 @@
       {
         "image": "/images/blog/blog-stay.jpg",
         "alt_text": "Where to stay on the GBR",
-        "heading": "Where to stay on the Great Barrier Reef",
+        "heading": "Where to stay on the<span><br/>&nbsp;</span>Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/"
       },
       {
