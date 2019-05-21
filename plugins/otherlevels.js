@@ -145,6 +145,8 @@ function olSetup() {
       console.log('placement 2');
     }
 
+    // if user visits win page
+
     // i) NOT ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
     // ii) NOT ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
     // iii) Ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)

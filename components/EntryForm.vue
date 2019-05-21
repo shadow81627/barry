@@ -304,6 +304,7 @@ export default {
             if (vm.form.teq_opt_in === 1) {
               _ol('setTag', 'TEQOptIn', 1, 'numeric', function() {});
             }
+            _ol('setTag', 'TEQOptIn', 0, 'numeric', function() {});
 
             // Trigger event
             EventBus.$emit('entry-confirmed', true);

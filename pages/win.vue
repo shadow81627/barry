@@ -27,6 +27,10 @@ export default {
   components: {
     EntryForm,
   },
+  mounted() {
+    _ol('registerEvent', 'pageview', 'win', function() {});
+    // _ol('setTag', 'pageview', 'win', 'string', function() {});
+  },
   head() {
     return {
       title: 'Win',
