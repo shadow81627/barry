@@ -11,8 +11,9 @@
 
     <Navbar variant="dark" />
 
+    <Heading :heading="$t('deals.heading')" class="bg-dark" />
+
     <div class="container" style="min-height: 100vh;">
-      <Heading :heading="$t('deals.heading')" class="bg-dark" />
       <Pagination />
       <nuxt id="page-content" class="main-content" />
     </div>
