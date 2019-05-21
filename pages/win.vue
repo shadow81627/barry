@@ -1,5 +1,5 @@
 <template>
-  <div class="[ main-content__left ] col-12 col-md-7">
+  <div class="[ main-content__left ] col-12 col-md-7 entry-left">
     <h2 class="h4 text-dark">{{ $t('entry.title') }}</h2>
     <div class="intro">
       <p>
@@ -44,3 +44,11 @@ export default {
   },
 };
 </script>
+
+<style>
+@media all and (max-width: 768px) {
+  .entry-left {
+    padding-bottom: 0rem !important;
+  }
+}
+</style>
