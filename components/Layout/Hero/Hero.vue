@@ -20,7 +20,7 @@
 
         <b-nav v-if="cta" class="d-inline">
           <nuxt-link
-            :to="{ path: localePath('entry'), hash: '#page-content' }"
+            :to="{ path: localePath('win'), hash: '#page-content' }"
             class="[ btn ] btn-dark [ hero__cta ]"
             >{{ cta }}</nuxt-link
           >
