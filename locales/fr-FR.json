@@ -382,14 +382,14 @@
     "posts": [
       {
         "image": "/images/blog/blog-hero.jpg",
-        "alt_text": "6 tips to plan your GBR holiday",
-        "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
+        "alt_text": "6 conseils",
+        "heading": "6 conseils pour planifier votre voyage de rêve sur la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/"
       },
       {
         "image": "/images/blog/blog-daintree.jpg",
-        "alt_text": "The world's oldest rainforest",
-        "heading": "Everything you need to know about the world's oldest rainforest",
+        "alt_text": "Tout ce que vous devez savoir sur la forêt tropicale la plus ancienne au monde",
+        "heading": "Tout ce que vous devez savoir sur la forêt tropicale la plus ancienne au monde",
         "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/"
       },
       {
@@ -400,44 +400,44 @@
       },
       {
         "image": "/images/blog/blog-GBR-wet.jpg",
-        "alt_text": "How to see the GBR",
-        "heading": "How to see the Great Barrier Reef without getting wet",
+        "alt_text": "Découvrir la Grande barrière de corail",
+        "heading": "Comment découvrir la Grande barrière de corail sans se mouiller",
         "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/"
       },
       {
         "image": "/images/blog/blog-stay.jpg",
-        "alt_text": "Where to stay on the GBR",
-        "heading": "Where to stay on the<span><br/>&nbsp;</span>Great Barrier Reef",
+        "alt_text": "Où séjourner pour profiter de la Grande barrière de corail",
+        "heading": "Où séjourner pour profiter de la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/"
       },
       {
         "image": "/images/blog/blog-8-ways.jpg",
-        "alt_text": "8 ways to experience the GBR",
-        "heading": "8 epic ways to experience the Great Barrier Reef",
+        "alt_text": "8 moyens épiques de découvrir la Grande barrière de corail",
+        "heading": "8 moyens épiques de découvrir la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/"
       },
       {
         "image": "/images/blog/blog-unforgettable.jpg",
-        "alt_text": "Unforgettable dining on the GBR",
-        "heading": "The 5 most unforgettable dining experiences on the Great Barrier Reef",
+        "alt_text": "Les cinq dîners les plus inoubliables sur la Grande barrière de corail",
+        "heading": "Les cinq dîners les plus inoubliables sur la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/"
       },
       {
         "image": "/images/blog/blog-gbr-islands.jpg",
-        "alt_text": "10 Great Barrier Reef islands",
-        "heading": "10 Great Barrier Reef islands you need to experience now",
+        "alt_text": "10 îles de la Grande barrière de corail",
+        "heading": "10 îles de la Grande barrière de corail à découvrir sans attendre",
         "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/"
       },
       {
         "image": "/images/blog/blog-heron-island.jpg",
-        "alt_text": "Where to stay on the GBR",
+        "alt_text": "Long weekend on Heron Island",
         "heading": "How to spend a long weekend on Heron Island",
         "link": "https://blog.queensland.com/2019/04/12/3-days-on-heron-island/"
       },
       {
         "image": "/images/blog/blog-best-diving.jpg",
-        "alt_text": "Best diving in the world",
-        "heading": "Best diving in the world: 11 must-dive sites",
+        "alt_text": "Les 11 meilleurs sites de plongée au monde",
+        "heading": "Les 11 meilleurs sites de plongée au monde",
         "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/"
       }
     ]
