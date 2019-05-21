@@ -50,9 +50,9 @@
         </span>
       </div>
 
-      <span v-show="friends.length < 3" class="ff-modal__add" @click="addFriend()"
-        >[+] {{ $t('emailshare.form.add') }}</span
-      >
+      <strong v-show="friends.length < 3" class="ff-modal__add" @click="addFriend()">
+        [+] {{ $t('emailshare.form.add') }}
+      </strong>
 
       <button type="submit" class="[ btn btn--green ] [ entry-form__cta ]" :disabled="ctaLoading">
         <span v-if="!ctaLoading">{{ $t('emailshare.form.submit') }}</span>
