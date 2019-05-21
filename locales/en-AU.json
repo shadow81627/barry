@@ -24,7 +24,7 @@
         "text": "Privacy",
         "href": "https://www.queensland.com/info/disclaimer-and-privacy?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
-      { "text": "Terms & Conditions", "href": "#" },
+      { "text": "Terms & Conditions", "href": "/EN_ScUber_Competition_TCs.pdf" },
       { "text": "Media Centre", "href": "https://media.queensland.com/explore-queensland" },
       { "text": "General Enquiries", "href": "mailto:scuberenquiries@queensland.com" }
     ]
@@ -223,7 +223,7 @@
         "year": { "placeholder": "Year" }
       },
       "word_count": "Words",
-      "opt_in": "I agree to the <a rel=\"noopener\" href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">terms and conditions</a>.",
+      "opt_in": "I agree to the <a rel=\"noopener\" href=\"/EN_ScUber_Competition_TCs.pdf\" target=\"_blank\">terms and conditions</a>.",
       "teq_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
       "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='mailto:info@queensland.com'>here</a>.",
       "submit": "Enter Now"

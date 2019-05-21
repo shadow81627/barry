@@ -18,7 +18,7 @@
       { "text": "Queensland.com", "href": "https://queensland.com" },
       { "text": "Uber.com", "href": "https://uber.com" },
       { "text": "Privacy", "href": "https://www.queensland.com/en-au/info/disclaimer-and-privacy" },
-      { "text": "Terms & Conditions", "href": "#" },
+      { "text": "Terms & Conditions", "href": "/FR_ScUber_Competition_TCs.pdf" },
       { "text": "Media Centre", "href": "#" },
       { "text": "Questions d'ordre général", "href": "#" }
     ]
@@ -217,7 +217,7 @@
         "year": { "placeholder": "Année" }
       },
       "word_count": "Mots",
-      "opt_in": "J'accepte <a rel=\"noopener\" href=\"https://cdn.compassets.xct01.com/teq/summer-feels/Queensland-Summer-Holiday-Competition-Terms-and-Conditions.pdf\" target=\"_blank\">les conditions générales</a>.",
+      "opt_in": "J'accepte <a rel=\"noopener\" href=\"/FR_ScUber_Competition_TCs.pdf\" target=\"_blank\">les conditions générales</a>.",
       "teq_opt_in": "J'accepte de recevoir les offres de vacances exclusives, les jeux-concours et les conseils de voyage du Queensland.",
       "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='mailto:info@queensland.com'>ici</a>.",
       "submit": "ENTRER"
