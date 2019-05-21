@@ -1,7 +1,12 @@
 {
   "head": {
-    "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+    "title": "scUber",
     "meta": [
+      {
+        "hid": "title",
+        "name": "title",
+        "content": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
+      },
       {
         "hid": "description",
         "name": "description",
@@ -79,8 +84,13 @@
 
   "about": {
     "head": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+      "title": "scUber Queensland",
       "meta": [
+        {
+          "hid": "title",
+          "name": "title",
+          "content": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
+        },
         {
           "hid": "description",
           "name": "description",
@@ -189,8 +199,13 @@
   },
   "entry": {
     "head": {
-      "title": "Enter the competition to win a trip to the Great Barrier Reef with scUber",
+      "title": "Win a scUber ride",
       "meta": [
+        {
+          "hid": "title",
+          "name": "title",
+          "content": "Enter the competition to win a trip to the Great Barrier Reef with scUber"
+        },
         {
           "hid": "description",
           "name": "description",
@@ -323,8 +338,13 @@
 
   "ondemand": {
     "head": {
-      "title": "How to request a ride on Australia's Great Barrier Reef with scUber",
+      "title": "Request a ride",
       "meta": [
+        {
+          "hid": "title",
+          "name": "title",
+          "content": "How to request a ride on Australia's Great Barrier Reef with scUber"
+        },
         {
           "hid": "description",
           "name": "description",
@@ -465,8 +485,13 @@
   },
   "blog": {
     "head": {
-      "title": "Things to see and do on Australia's Great Barrier Reef in Queensland",
+      "title": "Explore the reef",
       "meta": [
+        {
+          "hid": "title",
+          "name": "title",
+          "content": "Things to see and do on Australia's Great Barrier Reef in Queensland"
+        },
         {
           "hid": "description",
           "name": "description",
@@ -545,8 +570,13 @@
   },
   "deals": {
     "head": {
-      "title": "Exclusive travel offers to plan your holiday on Australia's Great Barrier Reef",
+      "title": "Travel offers",
       "meta": [
+        {
+          "hid": "title",
+          "name": "title",
+          "content": "Exclusive travel offers to plan your holiday on Australia's Great Barrier Reef"
+        },
         {
           "hid": "description",
           "name": "description",
