@@ -87,6 +87,7 @@ export default {
     ['@nuxtjs/google-tag-manager', { id: 'GTM-WV2SB2T' }],
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
+    'vue-scrollto/nuxt',
     [
       'nuxt-i18n',
       {

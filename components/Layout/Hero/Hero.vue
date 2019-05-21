@@ -19,15 +19,13 @@
         <div v-if="blurb" class="hero__blurb" v-html="blurb" />
 
         <b-nav v-if="cta" class="d-inline">
-          <nuxt-link
-            :to="{ path: localePath('win'), hash: '#page-content' }"
-            class="[ btn ] btn-dark [ hero__cta ]"
-            >{{ cta }}</nuxt-link
-          >
+          <a v-scroll-to="{ el: '#page-content' }" class="[ btn ] btn-dark [ hero__cta ]">
+            {{ cta }}
+          </a>
         </b-nav>
       </div>
 
-      <nuxt-link v-if="link" :to="localePath(link.path)" class="hero__link"
+      <nuxt-link v-if="link" :to="`${localePath(link.path)}#page-content`" class="hero__link"
         >{{ link.text }} &gt;</nuxt-link
       >
     </div>
