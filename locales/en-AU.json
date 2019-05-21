@@ -63,12 +63,12 @@
     {
       "image": "/images/win3-image.jpg",
       "alt": "Riley",
-      "link": "https://www.crystalbrookcollection.com/riley"
+      "link": "https://www.crystalbrookcollection.com/riley?utm_source=TEQ"
     },
     {
       "image": "/images/win2-image.jpg",
       "alt": "Quicksilver",
-      "link": "https://quicksilver-cruises.com/"
+      "link": "https://quicksilver-cruises.com/?utm_source=PB&utm_medium=link&utm_campaign=PB"
     },
     {
       "image": "/images/win1-image.jpg",
@@ -277,7 +277,7 @@
       "word_count": "Words",
       "opt_in": "I agree to the <a rel=\"noopener\" href=\"/EN_ScUber_Competition_TCs.pdf\" target=\"_blank\">terms and conditions</a>.",
       "teq_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
-      "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='mailto:info@queensland.com'>here</a>.",
+      "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='https://www.queensland.com/en-au/info/about-us'>here</a>.",
       "submit": "Enter Now"
     }
   },
@@ -415,14 +415,12 @@
     "title": "The competition is now closed.",
     "body": ["Winners will be announced on June 3, 2019 (10am AEST).", "Good luck!"]
   },
-
   "unsubscribed": {
     "head": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
     },
     "title": "You have unsubscribed from scUber, the world's first rideshare submarine experience."
   },
-
   "comingsoon": {
     "head": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
@@ -440,7 +438,6 @@
       "seconds": "Seconds"
     }
   },
-
   "emailshare": {
     "head": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
@@ -480,7 +477,7 @@
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
     "intro": [
-      "Each year, two million people make the trip to Queensland all in the name of a Great Barrier Reef holiday. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
+      "Each year, two million people make the trip to Queensland all in the name of a <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\">Great Barrier Reef</a> holiday. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
       "Use the below Great Barrier Reef holiday guides to discover the world’s largest living organism, with ease."
     ],
     "posts": [
@@ -577,8 +574,8 @@
           {
             "image": "/images/deals/AU_Deal_4.jpg",
             "alt_text": "Deal4",
-            "heading": "Heron Island Resort<span><br/>&nbsp;</span>",
-            "description": "4 Nights in a Turtle Room, Flights, Transfers + $500 Bonus Value",
+            "heading": "Heron Island Resort",
+            "description": "4 Nights in a Turtle Room, Flights, Transfers + $800 Bonus Value",
             "price": "From<br>$1,290pp",
             "link": "https://www.myqldholiday.com.au/package/heron-island-resort-turtle-room-4-nights/?utm_source=teq%20&utm_medium=referral%20&utm_campaign=teq_great_barrier_reef_campaign"
           },
