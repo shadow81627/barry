@@ -97,7 +97,7 @@
           class="col-12 col-md-4"
           :disabled="form.country_iso !== 'AU'"
           :required="form.country_iso === 'AU'"
-          pattern="\d*"
+          pattern="[0-9]{4}"
           :maxlength="4"
           :state="$v.form.postcode.$dirty ? !$v.form.postcode.$error : null"
           @input="$v.form.postcode.$touch()"
@@ -221,6 +221,9 @@ export default {
         requiredIf: requiredIf(function(value) {
           return this.form.country_iso === 'AU';
         }),
+        length: function(value) {
+          return this.form.country_iso === 'AU' ? value.length === 4 : true;
+        },
       },
       dob: {
         required,
@@ -303,8 +306,9 @@ export default {
             // Set other levels tag for teq opt in
             if (vm.form.teq_opt_in === 1) {
               _ol('setTag', 'TEQOptIn', 1, 'numeric', function() {});
+            } else {
+              _ol('setTag', 'TEQOptIn', 0, 'numeric', function() {});
             }
-            _ol('setTag', 'TEQOptIn', 0, 'numeric', function() {});
 
             // Trigger event
             EventBus.$emit('entry-confirmed', true);
