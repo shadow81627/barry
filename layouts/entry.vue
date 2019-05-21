@@ -18,6 +18,7 @@
       }"
       :data-setup="
         JSON.stringify({
+          xchildren: { loadingSpinner: false },
           html5: {
             hls: {
               overrideNative: true,
@@ -27,7 +28,12 @@
       "
     >
       <source src="/video/win.m3u8" type="application/x-mpegURL" />
-      <!-- <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" /> -->
+      <source
+        src="/video/WIN_Mobile_Placeholder.mp4"
+        type="video/mp4"
+        media="all and (max-width: 480px)"
+      />
+      <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
     </HeroLong>
 
     <Navbar
@@ -38,7 +44,7 @@
     <div class="container">
       <div class="row">
         <nuxt id="page-content" class="main-content" />
-        <main-content-right class="col-12 col-md-4 col-md-offset-1" />
+        <main-content-right class="col-12 col-md-4 ml-md-auto" />
       </div>
     </div>
 
