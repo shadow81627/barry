@@ -4,7 +4,7 @@ export default {
   mode: 'spa',
 
   router: {
-    middleware: ['entrant-exists'],
+    middleware: ['check-subscriber-hash'],
   },
 
   manifest: {
