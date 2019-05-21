@@ -11,7 +11,7 @@
       <div
         class="col"
         :class="{ 'position-absolute': infoPosition === 'absolute' }"
-        style="bottom: 1rem;"
+        :style="bottom"
       >
         <Info v-bind="{ heading, description, link, dark, textAlign, featured }" />
       </div>
@@ -36,7 +36,12 @@ export default {
     dark: { type: Boolean, default: true },
     infoPosition: { type: String, default: null },
     textAlign: { type: String, default: 'center' },
-    featured: { type: Boolean },
+    featured: { type: Boolean, default: false },
+  },
+  computed: {
+    bottom() {
+      return this.featured ? 'bottom: 3rem;' : 'bottom: 1rem;';
+    },
   },
 };
 </script>
