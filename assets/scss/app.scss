@@ -238,7 +238,7 @@ select {
 
 @media all and (min-width: 992px) {
   .entry-form {
-    // ELI top bottom padding
+    // ELI top bottom
     padding: 4rem 4rem;
   }
 }
@@ -448,7 +448,7 @@ a.social__item {
   width: 100%;
   text-align: right;
   font-size: 0.8rem;
-  color: #a2b8c1;
+  // color: #a2b8c1;
   text-transform: uppercase;
   cursor: pointer;
 }
