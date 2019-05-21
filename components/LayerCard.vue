@@ -8,8 +8,8 @@
       <b-img-lazy class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
     </div>
     <div class="row">
-      <div class="" :class="cardClass">
-        <div class="card card-body rounded-0 text-center shadow p-5 my-5">
+      <div :class="cardClass">
+        <div class="card card-body rounded-0 shadow p-5 my-5" :class="textClass">
           <slot />
         </div>
       </div>
@@ -22,7 +22,7 @@ export default {
   props: {
     reverse: { type: Boolean, default: false },
     fullWidth: { type: Boolean, default: false },
-    textAlign: { type: String },
+    textAlign: { type: String, default: 'center' },
     src: { type: String },
   },
   computed: {
@@ -54,6 +54,12 @@ export default {
         'offset-md-4': !this.reverse,
         'col-md-7': true,
         'col-12': this.fullWidth,
+      };
+    },
+    textClass() {
+      return {
+        'text-center': this.textAlign === 'center',
+        'text-left': this.textAlign === 'left',
       };
     },
   },

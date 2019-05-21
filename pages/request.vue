@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="intro text-center">
+    <div class="intro text-center" style="padding-top: 20px;">
       <p v-html="$t('ondemand.intro')" />
     </div>
 
-    <div class="row p-5">
-      <div class="col-md-7 pr-5">
+    <div class="row py-5 special-padding-mobile">
+      <div class="col-md-6 offset-md-1">
         <div class="intro">
           <h2 v-html="$t('ondemand.title')" />
         </div>
@@ -35,6 +35,7 @@
         :alt="$t('ondemand.sections')[1].alt"
         reverse
         :full-width="this.$mq === 'md' || this.$mq === 'sm'"
+        text-align="left"
       >
         <div class="intro">
           <h2 class="pb-4" v-html="$t('ondemand.sections')[1].title" />
@@ -87,6 +88,7 @@
         <div class="col-sm-6">
           <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
         </div>
+        <div class="w-100 d-block d-sm-none" style="padding-bottom: 15px;" />
         <div class="col-sm-6">
           <b-img-lazy :src="$t('ondemand.map.image2')" fluid />
         </div>
