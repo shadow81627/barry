@@ -32,7 +32,7 @@ export default {
   },
   head() {
     return {
-      ...this.$t('entry.meta'),
+      ...this.$t('entry.head'),
       link: [
         {
           hid: 'canonical',

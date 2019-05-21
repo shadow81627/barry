@@ -20,7 +20,7 @@ export default {
   },
   head() {
     return {
-      ...this.$t('confirmation.meta'),
+      ...this.$t('confirmation.head'),
       link: [
         {
           hid: 'canonical',

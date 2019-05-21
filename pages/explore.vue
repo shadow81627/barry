@@ -43,7 +43,7 @@ export default {
   },
   head() {
     return {
-      ...this.$t('blog.meta'),
+      ...this.$t('blog.head'),
       link: [
         {
           hid: 'canonical',

@@ -1,17 +1,30 @@
 {
-  "meta": {
+  "head": {
     "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-    "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    "meta": [
+      {
+        "hid": "description",
+        "name": "description",
+        "content": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+      }
+    ]
   },
 
   "error": {
     "404": {
-      "heading": "",
-      "body": ""
+      "heading": "404 page not found",
+      "body": [
+        "Looking for Something? We can’t find it either...",
+        "But now that you’re here - let’s point you back in the right direction..."
+      ],
+      "cta": {
+        "text": "HOME",
+        "path": "index"
+      }
     },
     "500": {
-      "heading": "",
-      "body": ""
+      "heading": "An unexpected error has occured",
+      "body": "Please try again, or email scuberenquiries@queensland.com with the words 'Technical Issue' in the subject line."
     }
   },
 
@@ -65,9 +78,15 @@
   ],
 
   "about": {
-    "meta": {
+    "head": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+      "meta": [
+        {
+          "hid": "description",
+          "name": "description",
+          "content": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+        }
+      ]
     },
     "hero": {
       "title": "scUber",
@@ -169,9 +188,15 @@
     }
   },
   "entry": {
-    "meta": {
+    "head": {
       "title": "Enter the competition to win a trip to the Great Barrier Reef with scUber",
-      "description": "You and a friend can win a once-in-a-lifetime trip to Australia's Great Barrier Reef to experience the ride of your lives with scUber."
+      "meta": [
+        {
+          "hid": "description",
+          "name": "description",
+          "content": "You and a friend can win a once-in-a-lifetime trip to Australia's Great Barrier Reef to experience the ride of your lives with scUber."
+        }
+      ]
     },
     "hero": {
       "title": "Win a scUber ride",
@@ -257,9 +282,15 @@
     }
   },
   "confirmation": {
-    "meta": {
+    "head": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+      "meta": [
+        {
+          "hid": "description",
+          "name": "description",
+          "content": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+        }
+      ]
     },
     "title": "CONGRATULATIONS, YOU'RE IN THE DRAW!",
     "body": [
@@ -291,9 +322,15 @@
   },
 
   "ondemand": {
-    "meta": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    "head": {
+      "title": "How to request a ride on Australia's Great Barrier Reef with scUber",
+      "meta": [
+        {
+          "hid": "description",
+          "name": "description",
+          "content": "Request a scUber experience in Gladstone, Cairns, Port Douglas or Palm Cove to experience Australia's Great Barrier Reef via the Uber app."
+        }
+      ]
     },
     "heading": "Request a Ride",
     "intro": "Uber and Queensland, Australia are offering a limited number of people the chance to delve into the depths of one of the world's greatest natural wonders – the Great Barrier Reef – and explore a breathtaking underwater playground. For some lucky people, it all starts with a simple tap on the Uber app.",
@@ -371,7 +408,7 @@
     ]
   },
   "closed": {
-    "meta": {
+    "head": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
       "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
     },
@@ -380,17 +417,15 @@
   },
 
   "unsubscribed": {
-    "meta": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    "head": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
     },
     "title": "You have unsubscribed from scUber, the world's first rideshare submarine experience."
   },
 
   "comingsoon": {
-    "meta": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    "head": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
     },
     "title": "Coming soon",
     "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\">Register now</a> to be the first to hear.",
@@ -407,9 +442,8 @@
   },
 
   "emailshare": {
-    "meta": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    "head": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
     },
     "form": {
       "heading": "Forward to a Friend",
@@ -433,9 +467,15 @@
     }
   },
   "blog": {
-    "meta": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    "head": {
+      "title": "Things to see and do on Australia's Great Barrier Reef in Queensland",
+      "meta": [
+        {
+          "hid": "description",
+          "name": "description",
+          "content": "Learn more about planning a holiday on Australia's Great Barrier Reef in Queensland and things to see and do on your holiday."
+        }
+      ]
     },
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
@@ -507,9 +547,15 @@
     ]
   },
   "deals": {
-    "meta": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    "head": {
+      "title": "Exclusive travel offers to plan your holiday on Australia's Great Barrier Reef",
+      "meta": [
+        {
+          "hid": "description",
+          "name": "description",
+          "content": "Find your perfect next Great Barrier Reef holiday with these exclusive travel offers to experience this natural masterpiece."
+        }
+      ]
     },
     "heading": "TRAVEL OFFERS",
     "no-deals": "No Deal",

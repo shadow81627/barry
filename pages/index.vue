@@ -150,7 +150,7 @@ export default {
   },
   head() {
     return {
-      ...this.$t('about.meta'),
+      ...this.$t('about.head'),
       link: [
         {
           hid: 'canonical',

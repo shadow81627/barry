@@ -18,7 +18,7 @@ export default {
   layout: 'default',
   head() {
     return {
-      ...this.$t('closed.meta'),
+      ...this.$t('closed.head'),
       link: [
         {
           hid: 'canonical',

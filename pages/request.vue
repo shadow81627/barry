@@ -113,7 +113,7 @@ export default {
   },
   head() {
     return {
-      ...this.$t('ondemand.meta'),
+      ...this.$t('ondemand.head'),
       link: [
         {
           hid: 'canonical',
