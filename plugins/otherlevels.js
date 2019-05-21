@@ -131,9 +131,10 @@ function olSetup() {
       olCookieHandler['click Cookies'] = olCookieAccepted;
 
       _ol('displayInterstitial', 'Placement 1', olCookieHandler);
-      console.log('placement');
+      console.log('placement 1');
 
       const olSubscribed = function(event, context) {
+        console.log('placement 2');
         context.close();
         context.pushPhash();
       };
