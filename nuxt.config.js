@@ -74,7 +74,6 @@ export default {
     { src: '@/plugins/otherlevels', ssr: false },
     { src: '@/plugins/facebook', ssr: false },
     { src: '@/plugins/twitter', ssr: false },
-    { src: '@/plugins/vac', ssr: false },
     { src: '@/plugins/mq', ssr: false },
   ],
 
