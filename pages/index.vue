@@ -62,7 +62,7 @@
     </TwoByOne>
 
     <!-- card4 -->
-    <div class="row container-break-out-center pb-5">
+    <div class="row container-break-out-center py-5">
       <LayerCard :src="$t('about.card4.image')" full-width>
         <h2>{{ $t('about.card4.title') }}</h2>
         <p v-for="item in $t('about.card4.body')" :key="item" v-html="item" />
@@ -79,7 +79,7 @@
         <div>
           <a
             :href="$t('about.card4.link.href')"
-            class="[ btn ] btn-dark [ hero__cta ] shadow"
+            class="[ btn ] btn-dark [ hero__cta ] shadow mt-4"
             target="blank"
           >
             {{ $t('about.card4.link.text') }}
