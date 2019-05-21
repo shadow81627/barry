@@ -34,7 +34,7 @@
         :src="$t('ondemand.sections')[1].image"
         :alt="$t('ondemand.sections')[1].alt"
         reverse
-        :full-width="this.$mq === 'md' || this.$mq === 'sm'"
+        :full-width="this.$mq === 'xs' || this.$mq === 'sm'"
         text-align="left"
       >
         <div class="intro">

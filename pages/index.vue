@@ -6,7 +6,7 @@
         :src="$t('about.card1.image')"
         :alt="$t('about.card1.alt')"
         reverse
-        :full-width="this.$mq === 'md' || this.$mq === 'sm'"
+        :full-width="this.$mq === 'xs' || this.$mq === 'sm'"
       >
         <div class="intro">
           <h2 class="pb-4" v-html="$t('about.card1.title')" />
