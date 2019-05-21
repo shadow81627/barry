@@ -8,8 +8,9 @@ export default {
   mounted() {
     const vm = this;
     const player = videojs(document.querySelector('.video-js', this.dataSetup));
-    if (vm.playerresize) {
-      player.on('playerresize', function() {
+
+    function updateVideo() {
+      if (vm.playerresize) {
         const videos =
           vm.$mq === 'sm'
             ? [
@@ -27,11 +28,22 @@ export default {
                   src: '/video/index.m3u8',
                   type: 'application/x-mpegURL',
                 },
+                {
+                  src: '/video/ABOUT_Desktop_Placeholder.mp4',
+                  type: 'video/mp4',
+                },
               ];
 
         player.src(videos);
-      });
+      }
     }
+
+    document.addEventListener('DOMContentLoaded', function(e) {
+      updateVideo();
+    });
+    player.on('playerresize', function() {
+      updateVideo();
+    });
   },
   head: () => ({
     scripts: [{ hid: 'videojs', src: 'https://vjs.zencdn.net/7.5.4/video.js' }],
