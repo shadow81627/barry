@@ -12,7 +12,7 @@ export default {
     function updateVideo() {
       if (vm.playerresize) {
         const videos =
-          vm.$mq === 'sm'
+          vm.$mq === 'sm' || vm.$mq === 'md'
             ? [
                 {
                   src: '/video/about_mobile.m3u8',
