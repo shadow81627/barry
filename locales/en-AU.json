@@ -295,7 +295,7 @@
     "title": "CONGRATULATIONS, YOU'RE IN THE DRAW!",
     "body": [
       "Thanks for entering the competition to experience the Great Barrier Reef with scUber!  Winners will be selected and notified by email at 10am (AEST) on Monday, 3 June 2019.",
-      "Get set to embark on an awesome ocean adventure and don't forget to share this with your friends."
+      "<span style=\"font-size: 1.2rem;\" class=\"text-primary\">Get set to embark on an awesome ocean adventure and don't forget to share this with your friends.</span>"
     ],
     "blog": {
       "title": "EXPLORE THE REEF",
