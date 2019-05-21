@@ -28,7 +28,7 @@ export default {
     EntryForm,
   },
   mounted() {
-    _ol('registerEvent', 'pageview', 'win', function() {});
+    _ol('registerEvent', 'pageview', 'WINpage', function() {});
   },
   head() {
     return {
