@@ -4,7 +4,7 @@
       v-bind="{ image, heading, link }"
       :dark="true"
       :info-position="this.$mq === 'sm' || this.$mq === 'md' ? null : 'absolute'"
-      text-align="right"
+      :text-align="this.$mq === 'sm' || this.$mq === 'md' ? null : 'right'"
       featured
     />
   </div>
