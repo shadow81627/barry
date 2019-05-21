@@ -50,10 +50,9 @@
     </div> -->
 
     <div class="row">
-      <div clas="col-sm-12">
-        <h2 class="h4 text-dark" v-html="$t('ondemand.sections')[2].title" />
-      </div>
+      <h2 class="h4 text-dark col-12" v-html="$t('ondemand.sections')[2].title" />
     </div>
+
     <div class="row">
       <div class="col-sm-6">
         <ul>
@@ -82,16 +81,17 @@
     </div>
 
     <!-- map section -->
-    <div class="py-5">
-      <h2 class="h4 text-dark" v-html="$t('ondemand.map.title')" />
-      <div class="row">
-        <div class="col-sm-6">
-          <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
-        </div>
-        <div class="w-100 d-block d-sm-none" style="padding-bottom: 15px;" />
-        <div class="col-sm-6">
-          <b-img-lazy :src="$t('ondemand.map.image2')" fluid />
-        </div>
+    <div class="row pt-5">
+      <h2 class="h4 text-dark col-12" v-html="$t('ondemand.map.title')" />
+    </div>
+
+    <div class="row pb-5">
+      <div class="col-sm-6">
+        <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
+      </div>
+      <div class="w-100 d-block d-sm-none" style="padding-bottom: 15px;" />
+      <div class="col-sm-6">
+        <b-img-lazy :src="$t('ondemand.map.image2')" fluid />
       </div>
     </div>
     <!-- disclaimer -->
