@@ -6,18 +6,32 @@ import Hero from './Hero';
 export default {
   extends: Hero,
   mounted() {
-    videojs(document.querySelector('.video-js'));
-    // const player = videojs(document.querySelector('.video-js'));
-    // let src;
-    // if (this.$mq === 'sm') {
-    //   src = '/video/about_mobile.m3u8';
-    // } else {
-    //   src = '/video/index.m3u8';
-    // }
-    // player.src({
-    //   src,
-    //   type: 'application/x-mpegURL',
-    // });
+    const vm = this;
+    const player = videojs(document.querySelector('.video-js', this.dataSetup));
+    if (vm.playerresize) {
+      player.on('playerresize', function() {
+        const videos =
+          vm.$mq === 'sm'
+            ? [
+                {
+                  src: '/video/about_mobile.m3u8',
+                  type: 'application/x-mpegURL',
+                },
+                {
+                  src: '/video/ABOUT_Mobile_Placeholder.mp4',
+                  type: 'video/mp4',
+                },
+              ]
+            : [
+                {
+                  src: '/video/index.m3u8',
+                  type: 'application/x-mpegURL',
+                },
+              ];
+
+        player.src(videos);
+      });
+    }
   },
   head: () => ({
     scripts: [{ hid: 'videojs', src: 'https://vjs.zencdn.net/7.5.4/video.js' }],

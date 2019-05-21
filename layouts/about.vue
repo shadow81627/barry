@@ -18,6 +18,7 @@
           text: $t('about.hero.link.text'),
         },
       }"
+      :playerresize="function() {}"
       :data-setup="
         JSON.stringify({
           html5: {
@@ -62,14 +63,6 @@ export default {
     Footer,
     Navbar,
     Pagination,
-  },
-  computed: {
-    dataSetup() {
-      return {
-        src: this.$mq === 'sm' ? '/video/about_mobile.m3u8' : '/video/index.m3u8',
-        type: 'application/x-mpegURL',
-      };
-    },
   },
 };
 </script>

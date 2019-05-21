@@ -10,7 +10,9 @@
       loop
       :data-setup="dataSetup"
     >
-      <slot />
+      <slot>
+        <source v-for="source in sources" :key="source.src" :src="source.src" :type="source.type" />
+      </slot>
     </video>
 
     <div class="container-fluid h-100 p-0">
@@ -44,6 +46,7 @@ export default {
     cta: { type: String },
     link: { type: Object },
     dataSetup: { type: String, default: '' },
+    playerresize: { type: Function },
   },
   head() {
     return { title: this.title };
