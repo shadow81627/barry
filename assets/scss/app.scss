@@ -533,7 +533,6 @@ a.social__item {
   width: 100vw;
   position: relative;
   left: calc(-1 * (100vw - 100%) / 2);
-  color: rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (min-width: 1400px) {
@@ -544,7 +543,6 @@ a.social__item {
     /* force content full width when inside container */
     width: 100vw;
     position: relative;
-    color: rgba(0, 0, 0, 0.6);
   }
 }
 
