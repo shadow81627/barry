@@ -15,12 +15,18 @@
   ],
   "footer": {
     "links": [
-      { "text": "Queensland.com", "href": "https://queensland.com" },
+      {
+        "text": "Queensland.com",
+        "href": "https://www.queensland.com?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
+      },
       { "text": "Uber.com", "href": "https://uber.com" },
-      { "text": "Privacy", "href": "https://www.queensland.com/en-au/info/disclaimer-and-privacy" },
+      {
+        "text": "Privacy",
+        "href": "https://www.queensland.com/info/disclaimer-and-privacy?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
+      },
       { "text": "Terms & Conditions", "href": "/FR_ScUber_Competition_TCs.pdf" },
-      { "text": "Media Centre", "href": "#" },
-      { "text": "Questions d'ordre général", "href": "#" }
+      { "text": "Media Centre", "href": "https://media.queensland.com/explore-queensland" },
+      { "text": "Questions d'ordre général", "href": "mailto:scuberenquiries@queensland.com" }
     ]
   },
 
@@ -94,13 +100,13 @@
       "image": "/images/card4-image.jpg",
       "alt": "Plongez dans les abysses",
       "body": [
-        "Cette attraction de renommée mondiale est à la fois le récif corallien le plus vaste au monde et le plus grand organisme vivant de la planète. Il n’y a donc rien d’étonnant à ce que les expériences proposées sur <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef' target='_blank'>la Grande barrière de corail</a> soient sans commune mesure.",
+        "Cette attraction de renommée mondiale est à la fois le récif corallien le plus vaste au monde et le plus grand organisme vivant de la planète. Il n’y a donc rien d’étonnant à ce que les expériences proposées sur <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>la Grande barrière de corail</a> soient sans commune mesure.",
         "Le scUber est un nouveau moyen de profiter d'une expérience sous-marine totalement immersive au beau milieu de 3 000 récifs, 900 îles et 1 500 espèces de poissons."
       ],
       "list": [
         {
           "image": "/images/icons/about-1.png",
-          "text": "Elle représente environ 10°% de tous <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts' target='_blank'>les récifs coralliens</a> à travers le monde."
+          "text": "Elle représente environ 10°% de tous <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>les récifs coralliens</a> à travers le monde."
         },
         {
           "image": "/images/icons/about-2.png",
@@ -125,7 +131,7 @@
       ],
       "link": {
         "text": "EN SAVOIR PLUS",
-        "href": "https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts"
+        "href": "https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       }
     },
     "card5": {
@@ -242,13 +248,13 @@
       "posts": [
         {
           "heading": "8 moyens épiques de découvrir la Grande barrière de corail",
-          "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/",
+          "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland",
           "image": "/images/blog/blog-8-ways.jpg",
           "alt": "blog-8-ways"
         },
         {
           "heading": "6 conseils pour planifier votre voyage de rêve sur la Grande barrière de corail",
-          "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/",
+          "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland",
           "image": "/images/blog/blog-6-tips.jpg",
           "alt": "blog-6-tips"
         }
@@ -387,49 +393,49 @@
         "image": "/images/blog/blog-hero.jpg",
         "alt_text": "6 conseils",
         "heading": "6 conseils pour planifier votre voyage de rêve sur la Grande barrière de corail",
-        "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday/"
+        "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-daintree.jpg",
         "alt_text": "Tout ce que vous devez savoir sur la forêt tropicale la plus ancienne au monde",
         "heading": "Tout ce que vous devez savoir sur la forêt tropicale la plus ancienne au monde",
-        "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/"
+        "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-hotel-cairns.jpg",
         "alt_text": "Hotel in Cairns",
         "heading": "The hotel making a huge splash<span><br/>&nbsp;</span>in Cairns",
-        "link": "https://blog.queensland.com/2019/05/16/riley-cairns-hotel/"
+        "link": "https://blog.queensland.com/2019/05/16/riley-cairns-hotel/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-GBR-wet.jpg",
         "alt_text": "Découvrir la Grande barrière de corail",
         "heading": "Comment découvrir <span><br/>&nbsp;</span>la Grande barrière de corail sans se mouiller",
-        "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/"
+        "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-stay.jpg",
         "alt_text": "Où séjourner pour profiter de la Grande barrière de corail",
         "heading": "Où séjourner pour profiter de la Grande barrière de corail",
-        "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/"
+        "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-8-ways.jpg",
         "alt_text": "8 moyens épiques de découvrir la Grande barrière de corail",
         "heading": "8 moyens épiques de découvrir la Grande barrière de corail",
-        "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/"
+        "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-unforgettable.jpg",
         "alt_text": "Les cinq dîners les plus inoubliables sur la Grande barrière de corail",
         "heading": "Les cinq dîners les plus inoubliables sur la Grande barrière de corail",
-        "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/"
+        "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-gbr-islands.jpg",
         "alt_text": "10 îles de la Grande barrière de corail",
         "heading": "10 îles de la Grande barrière de corail à découvrir sans attendre",
-        "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/"
+        "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-heron-island.jpg",
@@ -441,7 +447,7 @@
         "image": "/images/blog/blog-best-diving.jpg",
         "alt_text": "Les 11 meilleurs sites de plongée au monde",
         "heading": "Les 11 meilleurs sites de plongée au monde",
-        "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/"
+        "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       }
     ]
   },
