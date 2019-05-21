@@ -273,19 +273,19 @@
         "list": [
           {
             "text": "Prise en charge à votre adresse par une voiture Uber",
-            "image": "/images/icons/about-1.png"
+            "image": "/images/icons/ride_icon1.png"
           },
           {
             "text": "Trajet en hélicoptère vers et depuis Gladstone à destination de Heron Island, ou depuis Cairns ou Port Douglas à destination d'Agincourt Reef",
-            "image": "/images/icons/about-1.png"
+            "image": "/images/icons/ride_icon2.png"
           },
           {
             "text": "Plongée à bord d'un sous-marin scUber",
-            "image": "/images/icons/about-1.png"
+            "image": "/images/icons/ride_icon3.png"
           },
           {
             "text": "Retour en voiture à votre adresse de départ",
-            "image": "/images/icons/about-1.png"
+            "image": "/images/icons/ride_icon4.png"
           }
         ]
       },
