@@ -4,7 +4,7 @@ function olSetup() {
   const options = {
     // name of the app. Change this for production app.
     appName: 'barry',
-    preloadContent: ['Notification Prompt'],
+    // preloadContent: ['Notification Prompt'],
     onError: function(e) {
       console.log(typeof e === 'string' ? e : e.message);
     },
