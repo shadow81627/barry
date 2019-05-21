@@ -1,4 +1,27 @@
 {
+  "meta": {
+    "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+    "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+  },
+
+  "error": {
+    "404": {
+      "heading": "Erreur 404 - Page introuvable",
+      "body": [
+        "Vous recherchez quelque-chose ? Nous ne trouvons pas non plus l’information.",
+        "Mais puisque vous êtes là, nous allons vous indiquer la bonne direction ..."
+      ],
+      "cta": {
+        "text": "PAGE D’ACCUEIL",
+        "path": "index"
+      }
+    },
+    "500": {
+      "heading": "An unexpected error has occured",
+      "body": "Please try again, or email scuberenquiries@queensland.com with the words 'Technical Issue' in the subject line."
+    }
+  },
+
   "navigation": [
     { "value": "index", "text": "À PROPOS DU SCUBER" },
     { "value": "win", "text": "GAGNER UNE PLONGÉE" },
@@ -34,12 +57,12 @@
     {
       "image": "/images/win3-image.jpg",
       "alt": "Riley",
-      "link": "https://www.crystalbrookcollection.com/riley"
+      "link": "https://www.crystalbrookcollection.com/riley?utm_source=TEQ"
     },
     {
       "image": "/images/win2-image.jpg",
       "alt": "Quicksilver",
-      "link": "https://quicksilver-cruises.com/"
+      "link": "https://quicksilver-cruises.com/?utm_source=PB&utm_medium=link&utm_campaign=PB"
     },
     {
       "image": "/images/win1-image.jpg",
@@ -49,6 +72,10 @@
   ],
 
   "about": {
+    "meta": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    },
     "hero": {
       "title": "scUber",
       "blurb": "Great Barrier Reef Australia",
@@ -149,6 +176,10 @@
     }
   },
   "entry": {
+    "meta": {
+      "title": "Enter the competition to win a trip to the Great Barrier Reef with scUber",
+      "description": "You and a friend can win a once-in-a-lifetime trip to Australia's Great Barrier Reef to experience the ride of your lives with scUber."
+    },
     "hero": {
       "title": "GAGNEZ UNE PLONGÉE EN SCUBER",
       "cta": "ENTRER",
@@ -228,11 +259,15 @@
       "word_count": "Mots",
       "opt_in": "J'accepte <a rel=\"noopener\" href=\"/FR_ScUber_Competition_TCs.pdf\" target=\"_blank\">les conditions générales</a>.",
       "teq_opt_in": "J'accepte de recevoir les offres de vacances exclusives, les jeux-concours et les conseils de voyage du Queensland.",
-      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='mailto:info@queensland.com'>ici</a>.",
+      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/en-au/info/about-us'>ici</a>.",
       "submit": "ENTRER"
     }
   },
   "confirmation": {
+    "meta": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    },
     "title": "FÉLICITATIONS, VOUS ALLEZ PARTICIPER AU TIRAGE AU SORT !",
     "body": [
       "Nous vous remercions de participer à notre jeu-concours afin de découvrir la Grande barrière de corail à bord du scUber !  Les gagnants seront sélectionnés et avertis par e-mail le lundi 3 juin 2019 à 10h00 (AEST).",
@@ -263,6 +298,10 @@
   },
 
   "ondemand": {
+    "meta": {
+      "title": "How to request a ride on Australia's Great Barrier Reef with scUber",
+      "description": "Request a scUber experience in Gladstone, Cairns, Port Douglas or Palm Cove to experience Australia's Great Barrier Reef via the Uber app."
+    },
     "heading": "RÉSERVER UNE PLONGÉE",
     "intro": "Uber et l'état du Queensland en Australie offrent à un nombre limité de personnes la chance de plonger dans les profondeurs de l'une des plus belles merveilles naturelles au monde (la Grande barrière de corail) afin d'explorer un univers sous-marin à couper le souffle. Pour ces quelques chanceux, tout commence par un simple clic sur l'application Uber.",
     "title": "Comment réserver une plongée en scUber",
@@ -339,13 +378,25 @@
     ]
   },
   "closed": {
+    "meta": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    },
     "title": "Le jeu-concours est désormais terminé.",
     "body": ["Les gagnants seront annoncés le 3 juin 2019 (à 10h00 AEST).", "Bonne chance à vous !"]
   },
   "unsubscribed": {
+    "meta": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    },
     "title": "Vous venez de vous désinscrire de  scUber, la première expérience sous-marine au monde disponible à la demande."
   },
   "comingsoon": {
+    "meta": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    },
     "title": "Coming soon",
     "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\">Register now</a> to be the first to hear.",
     "cta": {
@@ -360,6 +411,10 @@
     }
   },
   "emailshare": {
+    "meta": {
+      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
+      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+    },
     "form": {
       "heading": "Transférer à un(e) ami(e)",
       "first_name": {
@@ -382,11 +437,16 @@
     }
   },
   "blog": {
+    "meta": {
+      "title": "Things to see and do on Australia's Great Barrier Reef in Queensland",
+      "description": "Learn more about planning a holiday on Australia's Great Barrier Reef in Queensland and things to see and do on your holiday."
+    },
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
     "intro": [
-      "Each year, two million people make the trip to Queensland all in the name of a Great Barrier Reef holiday. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
-      "Use the below Great Barrier Reef holiday guides to discover the world’s largest living organism, with ease."
+      "Chaque année, deux millions de touristes se rendent dans le Queensland pour admirer <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\">la Grande barrière de corail.</a> Serez-vous l’un d’entre eux ?",
+      "Organiser une excursion à la découverte d’une merveille du monde plus vaste que le Royaume-Uni, les Pays-Bas et la Suisse réunis peut être une tâche ardue, c’est le moins que l’on puisse dire.",
+      "Utilisez les guides touristiques ci-dessous consacrés à la Grande barrière de corail pour faire facilement connaissance avec le plus grand organisme vivant au monde."
     ],
     "posts": [
       {
@@ -452,6 +512,10 @@
     ]
   },
   "deals": {
+    "meta": {
+      "title": "Exclusive travel offers to plan your holiday on Australia's Great Barrier Reef",
+      "description": "Find your perfect next Great Barrier Reef holiday with these exclusive travel offers to experience this natural masterpiece."
+    },
     "heading": "OFFRES DE VOYAGE",
     "no-deals": "Pas d'entente",
     "cta_view_deal": "Voir Deal",
