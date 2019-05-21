@@ -378,6 +378,7 @@
     "title": "The competition is now closed.",
     "body": ["Winners will be announced on June 3, 2019 (10am AEST).", "Good luck!"]
   },
+
   "unsubscribed": {
     "meta": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
@@ -385,6 +386,7 @@
     },
     "title": "You have unsubscribed from scUber, the world's first rideshare submarine experience."
   },
+
   "comingsoon": {
     "meta": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
@@ -403,6 +405,7 @@
       "seconds": "Seconds"
     }
   },
+
   "emailshare": {
     "meta": {
       "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
@@ -490,10 +493,10 @@
         "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
-        "image": "/images/blog/blog-heron-island.jpg",
-        "alt_text": "Long weekend on Heron Island",
-        "heading": "How to spend a long weekend on Heron Island",
-        "link": "https://blog.queensland.com/2019/04/12/3-days-on-heron-island/"
+        "image": "/images/blog/blog-gbr-events.jpg",
+        "alt_text": "GBR Events",
+        "heading": "Great Barrier Reef Events to plan your next trip around",
+        "link": "https://blog.queensland.com/2018/10/17/great-barrier-reef-events/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-best-diving.jpg",
