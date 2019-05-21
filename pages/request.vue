@@ -81,9 +81,9 @@
     </div>
 
     <!-- map section -->
-    <div>
+    <div class="py-5">
       <h2 class="h4 text-dark" v-html="$t('ondemand.map.title')" />
-      <div class="row py-5">
+      <div class="row">
         <div class="col-sm-6">
           <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
         </div>
