@@ -33,15 +33,18 @@
   "mrec-tiles": [
     {
       "image": "/images/win3-image.jpg",
-      "alt": "Riley"
+      "alt": "Riley",
+      "link": "https://www.crystalbrookcollection.com/riley"
     },
     {
       "image": "/images/win2-image.jpg",
-      "alt": "Quicksilver"
+      "alt": "Quicksilver",
+      "link": "https://quicksilver-cruises.com/"
     },
     {
       "image": "/images/win1-image.jpg",
-      "alt": "Nautilus"
+      "alt": "Nautilus",
+      "link": "https://www.nautilusaviation.com.au/"
     }
   ],
 
