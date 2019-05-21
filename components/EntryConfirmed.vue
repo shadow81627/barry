@@ -1,10 +1,10 @@
 <template>
   <div id="entry-form" class="entry-form confirmed p-0">
-    <div class="row m-5 pt-5">
+    <div class="row pt-5">
       <div class="col-12">
         <span style="text-align:center">
-          <h2 v-html="$t('confirmation.title')" />
-          <p v-for="item in $t('confirmation.body')" :key="item" v-html="item" />
+          <h2 class="confirm-title" v-html="$t('confirmation.title')" />
+          <p v-for="item in $t('confirmation.body')" :key="item" v-html="item" class="mx-5" />
         </span>
       </div>
     </div>
