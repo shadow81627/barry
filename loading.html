@@ -1,13 +1,5 @@
 <style>
   body {
-    background: #00b4ff;
-    color: #333;
-    font: 100% Lato, Arial, Sans Serif;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-
     background: <%= options.background %>;
   }
   .loading-animation-container {
@@ -22,7 +14,6 @@
     position: relative;
     width: 150px;
     height: 100px;
-    background: #00b2a9;
     overflow: hidden;
   }
 
@@ -125,7 +116,7 @@
 
   @keyframes animateBubble {
     from {
-      margin-top: 150px;
+      margin-top: 80px;
     }
     to {
       margin-top: 0px;
@@ -146,42 +137,42 @@
 
   .x1 {
     animation: animateBubble 8s linear infinite, sideWays 4s ease-in-out infinite alternate;
-    left: 35%;
-    top: 5%;
+    left: 28%;
+    top: 0px;
     transform: scale(0.6);
   }
 
   .x2 {
     animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
-    left: 10%;
-    top: 80%;
+    left: 20%;
+    top: 0px;
     transform: scale(0.6);
   }
 
   .x3 {
     animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
     left: 50%;
-    top: 40%;
+    top: 0px;
     transform: scale(0.7);
   }
 
   .x4 {
     animation: animateBubble 6s linear infinite, sideWays 2s ease-in-out infinite alternate;
     left: 60%;
-    top: 0;
+    top: 0px;
     transform: scale(0.4);
   }
 
   .x5 {
     animation: animateBubble 14s linear infinite, sideWays 2s ease-in-out infinite alternate;
-    left: 80%;
-    top: 50%;
+    left: 65%;
+    top: 0px;
     transform: scale(0.5);
   }
 </style>
-
 <div class="loading-animation-container">
   <div class="loading-animation">
+    <div class="la-masker"></div>
     <div class="bubble-wrap">
       <div class="bubble x1"></div>
       <div class="bubble x2"></div>
@@ -191,6 +182,5 @@
     </div>
     <div class="la-wave"></div>
     <div class="la-sub"></div>
-    <div class="la-masker"></div>
   </div>
 </div>
