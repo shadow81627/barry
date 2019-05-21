@@ -183,10 +183,6 @@ header .overlay {
     width: 60%;
     margin-bottom: 0.8rem;
   }
-
-  .hero__text h1 {
-    // font-size: 4rem;
-  }
 }
 
 .btn.hero__cta {
