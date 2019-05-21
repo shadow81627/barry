@@ -29,11 +29,10 @@ export default {
   },
   mounted() {
     _ol('registerEvent', 'pageview', 'win', function() {});
-    // _ol('setTag', 'pageview', 'win', 'string', function() {});
   },
   head() {
     return {
-      title: 'Win',
+      ...this.$t('entry.meta'),
       link: [
         {
           hid: 'canonical',

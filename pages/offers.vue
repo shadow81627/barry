@@ -33,7 +33,7 @@ export default {
   },
   head() {
     return {
-      title: 'Explore',
+      ...this.$t('deals.meta'),
       link: [
         {
           hid: 'canonical',

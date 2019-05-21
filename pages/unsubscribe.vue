@@ -10,7 +10,7 @@
 export default {
   head() {
     return {
-      title: 'Unsubscribe',
+      ...this.$t('unsubscribed.meta'),
       link: [
         {
           hid: 'canonical',

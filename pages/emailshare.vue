@@ -14,7 +14,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('entry.title'),
+      ...this.$t('emailshare.meta'),
       link: [
         {
           hid: 'canonical',

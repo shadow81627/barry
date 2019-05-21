@@ -67,6 +67,7 @@ export default {
   layout: 'comingsoon',
   head() {
     return {
+      ...this.$t('comingsoon.meta'),
       link: [
         {
           hid: 'canonical',
