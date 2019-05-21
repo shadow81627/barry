@@ -272,7 +272,7 @@
 
     "sections": [
       {
-        "title": "L'expérience comprend ce qui suit :",
+        "title": "L'expérience comprend ce qui <span style=\"white-space: nowrap;\">suit :</span>",
         "list": [
           {
             "text": "Prise en charge à votre adresse par une voiture Uber",
