@@ -60,7 +60,7 @@ function olSetup() {
 
     _ol('push.isSubscribed', function(isSubscribed) {
       if (!isSubscribed) {
-        _ol('askForPermission', 'notification', function(subscribed) {
+        _ol('askForPermission', 'notification', {}, function(subscribed) {
           if (subscribed === 'subscribed') {
             _ol('registerEvent', 'softyes_hardallow', '', function() {});
             setTimeout(sendWelcomePushSW, 5000);
@@ -81,7 +81,7 @@ function olSetup() {
       if (isSupported) {
         _ol('push.isSubscribed', function(isSubscribed) {
           if (!isSubscribed) {
-            _ol('askForPermission', 'notification', function(subscribed) {
+            _ol('askForPermission', 'notification', {}, function(subscribed) {
               if (subscribed === 'subscribed') {
                 _ol('registerEvent', 'softyes_hardallow', '', function() {});
                 setTimeout(sendWelcomePushSW, 5000);
@@ -134,7 +134,6 @@ function olSetup() {
       console.log('placement 1');
 
       const olSubscribed = function(event, context) {
-        console.log('placement 2');
         context.close();
         context.pushPhash();
       };
@@ -143,6 +142,7 @@ function olSetup() {
       olSubscribeHandler['click Subscribe'] = olSubscribed;
 
       _ol('displayInterstitial', 'Placement 2', olSubscribeHandler);
+      console.log('placement 2');
     }
 
     // i) NOT ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
