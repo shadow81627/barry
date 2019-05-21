@@ -351,19 +351,19 @@
         "list": [
           {
             "text": "Pickup and drop-off from your location in a scUber car",
-            "image": "/images/icons/ride_icon1.png"
+            "image": "/images/icons/ride_icon1.svg"
           },
           {
             "text": "Chopper ride to and from Gladstone to either Heron Island or from Cairns or Port Douglas to Agincourt Reef",
-            "image": "/images/icons/ride_icon2.png"
+            "image": "/images/icons/ride_icon2.svg"
           },
           {
             "text": "Ride in a scUber submarine",
-            "image": "/images/icons/ride_icon3.png"
+            "image": "/images/icons/ride_icon3.svg"
           },
           {
             "text": "Car back to your original pick up address",
-            "image": "/images/icons/ride_icon4.png"
+            "image": "/images/icons/ride_icon4.svg"
           }
         ]
       },
