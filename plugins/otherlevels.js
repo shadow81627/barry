@@ -112,39 +112,38 @@ function olSetup() {
       }
     });
 
-    const olCookieAccepted = function(event, context) {
-      context.close();
-      context.pushPhash();
-
-      // const olCookiesAccepted = new RegExp('[; ]cookies_accepted=([^\\s;]*)');
-      // const olCheckCookie = (' ' + document.cookie).match(olCookiesAccepted);
-
-      const cookieElement = document.getElementById('Cookies');
-
-      console.log(`cookie element: ${cookieElement}`);
-
-      if (cookieElement !== null) {
-        console.log('cookies_accepted');
-        _ol('setTag', 'cookies_accepted', 1, 'numeric', function() {});
-      }
-    };
-    const olCookieHandler = {};
-    olCookieHandler['click Cookies'] = olCookieAccepted;
-
-    _ol('displayInterstitial', 'Placement 1', olCookieHandler);
-    console.log('placement');
-
-    // subscribe me interstitial
     if (olCurrentPageName !== 'win') {
-      const olOnSubscribeClicked = function(event, context) {
+      const olCookieAccepted = function(event, context) {
+        context.close();
+        context.pushPhash();
+
+        const cookieElement = document.getElementById('Cookies');
+
+        // console.log(`cookie element: ${cookieElement}`);
+
+        if (cookieElement !== null) {
+          // console.log('cookies_accepted');
+          _ol('setTag', 'cookies_accepted', 1, 'numeric', function() {});
+        }
+      };
+
+      const olCookieHandler = {};
+      olCookieHandler['click Cookies'] = olCookieAccepted;
+
+      _ol('displayInterstitial', 'Placement 1', olCookieHandler);
+      console.log('placement');
+
+      const olSubscribed = function(event, context) {
         context.close();
         context.pushPhash();
       };
-      const olSubscribeHandlers = {};
-      olSubscribeHandlers['click olPlacement1Click'] = olOnSubscribeClicked;
 
-      _ol('displayInterstitial', 'Placement 1', olSubscribeHandlers);
+      const olSubscribeHandler = {};
+      olSubscribeHandler['click Subscribe'] = olSubscribed;
+
+      _ol('displayInterstitial', 'Placement 2', olSubscribeHandler);
     }
+
     // i) NOT ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
     // ii) NOT ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
     // iii) Ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
