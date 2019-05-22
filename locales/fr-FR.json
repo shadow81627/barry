@@ -57,7 +57,7 @@
     { "value": "offers", "text": "offres" }
   ],
   "cookie": {
-    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">Ce site utilise des cookies afin d'optimiser votre expérience. Consultez les Informations relatives aux cookies pour en savoir plus.</span>",
+    "body": "Ce site utilise des cookies afin d&#39;optimiser votre exp&eacute;rience. Consultez les <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" style=\"color:#fff; text-decoration:underline;\" target=\"_blank\">Informations relatives aux cookies</a> pour en savoir plus.</span>",
     "cta": "CONTINUER"
   },
   "footer": {
