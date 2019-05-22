@@ -3,8 +3,8 @@
     <Post
       v-bind="{ image, heading, link }"
       :dark="true"
-      :info-position="this.$mq === 'sm' || this.$mq === 'md' ? null : 'absolute'"
-      :text-align="this.$mq === 'sm' || this.$mq === 'md' ? null : 'right'"
+      :info-position="$mq === 'xs' || $mq === 'sm' || $mq === 'md' ? null : 'absolute'"
+      :text-align="$mq === 'xs' || $mq === 'sm' || $mq === 'md' ? null : 'right'"
       featured
     />
   </div>
