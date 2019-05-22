@@ -77,13 +77,12 @@
           </div>
         </div>
         <div>
-          <a
-            :href="$t('about.card4.link.href')"
+          <nuxt-link
+            :to="localePath($t('about.card4.link.path'))"
             class="[ btn ] btn-dark [ hero__cta ] shadow mt-4"
-            target="blank"
           >
             {{ $t('about.card4.link.text') }}
-          </a>
+          </nuxt-link>
         </div>
       </LayerCard>
     </div>
