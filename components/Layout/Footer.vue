@@ -47,9 +47,11 @@ export default {
 </script>
 
 <style>
-footer a {
-  color: #fff !important;
-  text-decoration: none;
+@media all and (min-width: 575.98px) {
+  footer a {
+    color: #fff !important;
+    text-decoration: none;
+  }
 }
 
 .footer-links a::before {
