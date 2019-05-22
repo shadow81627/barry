@@ -1,6 +1,7 @@
 <script>
 // import videojs from 'video.js';
 
+import { setInterval } from 'timers';
 import Hero from './Hero';
 
 export default {
@@ -38,7 +39,15 @@ export default {
       }
     }
 
+    setTimeout(setInterval(updateVideo(), 1000), 10000);
+
     document.addEventListener('DOMContentLoaded', function(e) {
+      updateVideo();
+    });
+    document.addEventListener('beforeunload', function(e) {
+      updateVideo();
+    });
+    document.addEventListener('onload', function(e) {
       updateVideo();
     });
     player.on('playerresize', function() {
