@@ -33,7 +33,7 @@
       </div>
     </div>
     <div
-      class="xblog-header w-100 h-100 pt-5"
+      class="xblog-header w-100 h-100 py-5"
       :style="`background-image: url(/images/sharebg-image.jpg); background-size: cover;`"
     >
       <div class="blog-link row" style="position: relative;">
