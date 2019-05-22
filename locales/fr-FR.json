@@ -295,7 +295,7 @@
       "word_count": "Mots",
       "opt_in": "J'accepte <a rel=\"noopener\" href=\"/FR_ScUber_Competition_TCs.pdf\" target=\"_blank\">les conditions générales</a>.",
       "teq_opt_in": "J'accepte de recevoir les offres de vacances exclusives, les jeux-concours et les conseils de voyage du Queensland.",
-      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/en-au/info/about-us'>ici</a>.",
+      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/en-au/info/about-us' target=\"_blank\">ici</a>.",
       "submit": "ENTRER"
     }
   },
