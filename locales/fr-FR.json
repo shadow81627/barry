@@ -61,11 +61,11 @@
       },
       { "text": "Uber.com", "href": "https://uber.com" },
       {
-        "text": "Privacy",
+        "text": "Déclaration de confidentialité",
         "href": "https://www.queensland.com/info/disclaimer-and-privacy?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
-      { "text": "Terms & Conditions", "href": "/FR_ScUber_Competition_TCs.pdf" },
-      { "text": "Media Centre", "href": "https://media.queensland.com/explore-queensland" },
+      { "text": "Les conditions générales", "href": "/FR_ScUber_Competition_TCs.pdf" },
+      { "text": "Espace presse", "href": "https://media.queensland.com/explore-queensland" },
       { "text": "Questions d'ordre général", "href": "mailto:scuberenquiries@queensland.com" }
     ]
   },
@@ -299,11 +299,15 @@
       "word_count": "Mots",
       "opt_in": "J'accepte <a rel=\"noopener\" href=\"/FR_ScUber_Competition_TCs.pdf\" target=\"_blank\">les conditions générales</a>.",
       "teq_opt_in": "J'accepte de recevoir les offres de vacances exclusives, les jeux-concours et les conseils de voyage du Queensland.",
-      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/en-au/info/about-us' target=\"_blank\">ici</a>.",
+      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\">ici</a>.",
       "submit": "ENTRER"
     }
   },
   "confirmation": {
+    "head": {
+      "title": "scUber Queensland",
+      "meta": []
+    },
     "title": "FÉLICITATIONS, VOUS ALLEZ PARTICIPER AU TIRAGE AU SORT !",
     "body": [
       "Nous vous remercions de participer à notre jeu-concours afin de découvrir la Grande barrière de corail à bord du scUber !  Les gagnants seront sélectionnés et avertis par e-mail le lundi 3 juin 2019 à 10h00 (AEST).",
@@ -453,6 +457,10 @@
     }
   },
   "emailshare": {
+    "head": {
+      "title": "scUber Queensland",
+      "meta": []
+    },
     "form": {
       "heading": "Transférer à un(e) ami(e)",
       "first_name": {

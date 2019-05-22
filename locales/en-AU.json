@@ -50,7 +50,7 @@
     { "value": "offers", "text": "offers" }
   ],
   "cookie": {
-    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">This site uses cookies to give you the best experience. Review our<a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\"target=\"_blank\" style=\"color:#fff; text-decoration:underline;\">cookies information</a>for more details.</span>",
+    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">This site uses cookies to give you the best experience. Review our <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\"target=\"_blank\" style=\"color:#fff; text-decoration:underline;\"> cookies information</a>for more details.</span>",
     "cta": "Continue"
   },
   "footer": {
@@ -299,11 +299,15 @@
       "word_count": "Words",
       "opt_in": "I agree to the <a rel=\"noopener\" href=\"/EN_ScUber_Competition_TCs.pdf\" target=\"_blank\">terms and conditions</a>.",
       "teq_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
-      "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='https://www.queensland.com/en-au/info/about-us' target=\"_blank\">here</a>.",
+      "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\">here</a>.",
       "submit": "Enter Now"
     }
   },
   "confirmation": {
+    "head": {
+      "title": "Congratulations",
+      "meta": []
+    },
     "title": "CONGRATULATIONS, YOU'RE IN THE DRAW!",
     "body": [
       "Thanks for entering the competition to experience the Great Barrier Reef with scUber!  Winners will be selected and notified by email at 10am (AEST) on Monday, 3 June 2019.",
@@ -453,6 +457,10 @@
     }
   },
   "emailshare": {
+    "head": {
+      "title": "Forward to a friend",
+      "meta": []
+    },
     "form": {
       "heading": "Forward to a Friend",
       "first_name": {
