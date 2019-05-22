@@ -20,9 +20,15 @@ export const state = {
   formSubmitted: false,
   // Set of validation for form fields, returned by the subforms-api
   serverValidation: [],
+
+  cookieAccepted: false,
 };
 
 export const mutations = {
+  setCookieAccepted(currentState, cookieAccepted) {
+    const newState = currentState;
+    newState.cookieAccepted = cookieAccepted;
+  },
   addMessage(currentState, messages) {
     const newState = currentState;
     if (messages) {

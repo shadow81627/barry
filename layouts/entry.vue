@@ -51,11 +51,13 @@
     <Footer />
 
     <Notification />
+    <Cookie />
   </div>
 </template>
 
 <script>
 import Notification from '@/components/Layout/Notification';
+import Cookie from '@/components/Layout/Cookie';
 import HeroLong from '@/components/Layout/Hero/HeroLong';
 import MainContentRight from '@/components/Layout/MainContentRight.vue';
 import Footer from '@/components/Layout/Footer';
@@ -64,6 +66,7 @@ import Navbar from '@/components/Layout/Navbar';
 export default {
   components: {
     Notification,
+    Cookie,
     HeroLong,
     MainContentRight,
     Footer,

@@ -21,11 +21,13 @@
     <Footer />
 
     <Notification />
+    <Cookie />
   </div>
 </template>
 
 <script>
 import Notification from '@/components/Layout/Notification';
+import Cookie from '@/components/Layout/Cookie';
 import Footer from '@/components/Layout/Footer';
 import Navbar from '@/components/Layout/Navbar';
 import Heading from '@/components/Layout/Navbar/Heading';
@@ -34,6 +36,7 @@ import Pagination from '@/components/Layout/Navbar/Pagination';
 export default {
   components: {
     Notification,
+    Cookie,
     Footer,
     Navbar,
     Heading,
