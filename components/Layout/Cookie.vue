@@ -20,7 +20,7 @@
           <button class="attached-banner-interstitial-main-actions-action ol-confirm" type="button">
             <label class="attached-banner-interstitial-main-actions-action-label">
               <span
-                class="attached-banner-interstitial-main-actions-action-label-title"
+                class="attached-banner-interstitial-main-actions-action-label-title text-uppercase"
                 @click="cookieAccepted()"
                 >Continue</span
               >
