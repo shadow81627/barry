@@ -137,6 +137,13 @@ header .overlay {
   }
 }
 
+// Remove padding for chrome to make video centered
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .vid1-dimensions.vjs-fluid {
+    padding-top: 0px !important;
+  }
+}
+
 .hero__title {
   font-weight: 300;
   line-height: 1.2;

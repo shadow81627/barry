@@ -12,28 +12,55 @@ export default {
 
     function updateVideo() {
       if (vm.playerresize) {
-        const videos =
-          vm.$mq === 'sm' || vm.$mq === 'md' || vm.$mq === 'xs'
-            ? [
-                {
-                  src: '/video/about_mobile.m3u8',
-                  type: 'application/x-mpegURL',
-                },
-                {
-                  src: '/video/ABOUT_Mobile_Placeholder.mp4',
-                  type: 'video/mp4',
-                },
-              ]
-            : [
-                {
-                  src: '/video/index.m3u8',
-                  type: 'application/x-mpegURL',
-                },
-                {
-                  src: '/video/ABOUT_Desktop_Placeholder.mp4',
-                  type: 'video/mp4',
-                },
-              ];
+        let videos;
+
+        if (vm.$i18n.locale === 'fr-fr') {
+          videos =
+            vm.$mq === 'sm' || vm.$mq === 'md' || vm.$mq === 'xs'
+              ? [
+                  {
+                    src: '/video/about_mobile.m3u8',
+                    type: 'application/x-mpegURL',
+                  },
+                  {
+                    src: '/video/ABOUT_Mobile_Placeholder.mp4',
+                    type: 'video/mp4',
+                  },
+                ]
+              : [
+                  {
+                    src: '/video/index_fr.m3u8',
+                    type: 'application/x-mpegURL',
+                  },
+                  {
+                    src: '/video/ABOUT_Desktop_Placeholder.mp4',
+                    type: 'video/mp4',
+                  },
+                ];
+        } else {
+          videos =
+            vm.$mq === 'sm' || vm.$mq === 'md' || vm.$mq === 'xs'
+              ? [
+                  {
+                    src: '/video/about_mobile.m3u8',
+                    type: 'application/x-mpegURL',
+                  },
+                  {
+                    src: '/video/ABOUT_Mobile_Placeholder.mp4',
+                    type: 'video/mp4',
+                  },
+                ]
+              : [
+                  {
+                    src: '/video/index.m3u8',
+                    type: 'application/x-mpegURL',
+                  },
+                  {
+                    src: '/video/ABOUT_Desktop_Placeholder.mp4',
+                    type: 'video/mp4',
+                  },
+                ];
+        }
 
         player.src(videos);
       }
