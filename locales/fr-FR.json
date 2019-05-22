@@ -235,6 +235,7 @@
       "Les conditions générales s'appliquent. Le jeu-concours se termine le 1er juin 2019 à 14h00 AEST et les gagnants seront annoncés le 3 juin 2019 à 10h00 AEST."
     ],
     "form": {
+      "disabled": "Désolé, nous connaissons actuellement une très forte demande. Veuillez réessayer plus tard.",
       "heading": "ENTREZ",
       "entry_text": {
         "placeholder": "25 mots maximum",

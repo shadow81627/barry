@@ -13,7 +13,10 @@
         <li v-for="item in $t('entry.prize_package_list')" :key="item" v-html="item" />
       </ul>
     </div>
-    <EntryForm />
+    <div v-if="disabled">
+      <h2>{{ $t('entry.form.disabled') }}</h2>
+    </div>
+    <EntryForm v-else />
     <p v-for="item in $t('entry.body')" :key="item" class="pb-2" v-html="item" />
   </div>
 </template>
@@ -26,6 +29,11 @@ export default {
   middleware: ['competition-state'],
   components: {
     EntryForm,
+  },
+  data() {
+    return {
+      disabled: process.env.DISABLE_FORM === 'TRUE',
+    };
   },
   mounted() {
     _ol('registerEvent', 'WINpage', 1, function() {});

@@ -235,6 +235,7 @@
       "Terms and conditions apply. Entries close June 1, 2019 (1.59pm AEST) and winners will be announced on June 3, 2019 (10am AEST)."
     ],
     "form": {
+      "disabled": "Sorry, we are experiencing very high demand at present. Please try again later.",
       "heading": "Enter Now",
       "entry_text": {
         "placeholder": "25 words or less",
