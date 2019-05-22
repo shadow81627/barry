@@ -5,6 +5,7 @@ export default ({ app }, inject) => {
     const options = {
       // name of the app. Change this for production app.
       appName: 'barry',
+      serviceWorkerLocation: '/sw.js',
       onError: function(e) {
         console.log(typeof e === 'string' ? e : e.message);
       },
