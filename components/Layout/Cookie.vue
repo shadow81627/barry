@@ -6,11 +6,14 @@
           <div class="attached-banner-interstitial-main-content-label" v-html="$t('cookie.body')" />
         </div>
         <div class="attached-banner-interstitial-main-actions">
-          <button class="attached-banner-interstitial-main-actions-action ol-confirm" type="button">
+          <button
+            class="attached-banner-interstitial-main-actions-action ol-confirm"
+            type="button"
+            @click="cookieAccepted()"
+          >
             <label class="attached-banner-interstitial-main-actions-action-label">
               <span
                 class="attached-banner-interstitial-main-actions-action-label-title text-uppercase"
-                @click="cookieAccepted()"
                 v-html="$t('cookie.cta')"
                 >Continue</span
               >
