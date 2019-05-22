@@ -49,6 +49,10 @@
     { "value": "explore", "text": "explorer" },
     { "value": "offers", "text": "offres" }
   ],
+  "cookie": {
+    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">Ce site utilise des cookies afin d'optimiser votre expérience. Consultez les Informations relatives aux cookies pour en savoir plus.</span>",
+    "cta": "CONTINUER"
+  },
   "footer": {
     "links": [
       {

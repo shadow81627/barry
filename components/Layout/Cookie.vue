@@ -3,18 +3,7 @@
     <aside class="attached-banner-interstitial">
       <div class="attached-banner-interstitial-main">
         <div class="attached-banner-interstitial-main-content">
-          <div class="attached-banner-interstitial-main-content-label">
-            <span class="attached-banner-interstitial-main-content-label-description"
-              >This site uses cookies to give you the best experience. Review our
-              <a
-                href="https://www.queensland.com/en-au/info/disclaimer-and-privacy"
-                target="_blank"
-                style="color:#fff; text-decoration:underline;"
-                >cookies information</a
-              >
-              for more details.</span
-            >
-          </div>
+          <div class="attached-banner-interstitial-main-content-label" v-html="$t('cookie.body')" />
         </div>
         <div class="attached-banner-interstitial-main-actions">
           <button class="attached-banner-interstitial-main-actions-action ol-confirm" type="button">
@@ -22,6 +11,7 @@
               <span
                 class="attached-banner-interstitial-main-actions-action-label-title text-uppercase"
                 @click="cookieAccepted()"
+                v-html="$t('cookie.cta')"
                 >Continue</span
               >
             </label>
