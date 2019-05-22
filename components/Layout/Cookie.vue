@@ -72,7 +72,7 @@ export default {
   padding: 16px;
   position: fixed;
   right: 0;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .attached-banner-interstitial-main {
