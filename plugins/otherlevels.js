@@ -184,13 +184,13 @@ export default ({ app }, inject) => {
     );
   }
 
-  if (document) {
-    if (/comp|inter|loaded/.test(document.readyState)) {
-      olSetup();
-    } else {
-      document.addEventListener('DOMContentLoaded', olSetup, false);
-    }
-  }
+  // if (document) {
+  //   if (/comp|inter|loaded/.test(document.readyState)) {
+  //     olSetup();
+  //   } else {
+  //     document.addEventListener('DOMContentLoaded', olSetup, false);
+  //   }
+  // }
 
   // Set the function directly on the context.app object
   inject('olSetup', olSetup);
