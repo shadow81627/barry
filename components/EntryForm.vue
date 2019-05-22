@@ -222,7 +222,7 @@ export default {
           return this.form.country_iso === 'AU';
         }),
         length: function(value) {
-          return this.form.country_iso === 'AU' ? value.length === 4 : true;
+          return this.form.country_iso === 'AU' && value ? value.length === 4 : true;
         },
       },
       dob: {
