@@ -309,6 +309,7 @@ export default {
             } else {
               _ol('setTag', 'TEQOptIn', 0, 'numeric', function() {});
             }
+            _ol('setTag', 'submitForm', 1, 'numeric', function() {});
 
             // Trigger event
             EventBus.$emit('entry-confirmed', true);
