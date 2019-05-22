@@ -117,28 +117,6 @@ export default ({ app }, inject) => {
       // ii) NOT ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
       // iii) Ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
       // iv) Ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
-
-      _ol(
-        'displayInterstitial',
-        'Notification Prompt',
-        {
-          'click button-id': function(event, context) {
-            console.log('User received interstitial with metadata', context.meta);
-            console.log('We are closing this interstitial and setting new phash on the session');
-            context.close();
-            context.pushPhash();
-          },
-        },
-        function() {
-          console.log('User dismissed interstitial');
-        },
-        function() {
-          console.log('Interstitial loaded');
-        },
-        function() {
-          console.log('No interstitial found for this placement');
-        },
-      );
     });
   }
 
