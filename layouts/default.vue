@@ -35,6 +35,9 @@ export default {
     Navbar,
     Cookie,
   },
+  head() {
+    return this.$t('head');
+  },
 };
 </script>
 

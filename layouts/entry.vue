@@ -72,6 +72,9 @@ export default {
     Footer,
     Navbar,
   },
+  head() {
+    return this.$t('head');
+  },
 };
 </script>
 

@@ -42,6 +42,9 @@ export default {
     Heading,
     Pagination,
   },
+  head() {
+    return this.$t('head');
+  },
 };
 </script>
 

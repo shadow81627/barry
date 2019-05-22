@@ -11,6 +11,12 @@
         "hid": "description",
         "name": "description",
         "content": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
+      },
+      { "hid": "og:title", "property": "og:title", "content": "Win a scUber ride" },
+      {
+        "hid": "og:description",
+        "property": "og:description",
+        "content": "I just entered to win a scUber ride, who’s coming with me?!"
       }
     ]
   },

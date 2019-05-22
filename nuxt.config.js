@@ -1,5 +1,3 @@
-import pkg from './package';
-
 export default {
   mode: 'spa',
 
@@ -21,13 +19,32 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'scUber Queensland',
     // Stop head from being reloaded client side
     // htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
+      },
+      { hid: 'fb:app_id', content: process.env.FACEBOOK_APP_ID },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: 'Win a scUber ride' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'I just entered to win a scUber ride, who’s coming with me?!',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://scuberqueensland.com/images/fb-share-image.jpg',
+      },
+      { hid: 'og:url', property: 'og:url', content: 'https://scuberqueensland.com/win' },
     ],
     link: [
       {

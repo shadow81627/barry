@@ -68,6 +68,9 @@ export default {
     Navbar,
     Pagination,
   },
+  head() {
+    return this.$t('head');
+  },
 };
 </script>
 
