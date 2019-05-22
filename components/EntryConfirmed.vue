@@ -60,8 +60,6 @@
 </template>
 
 <script>
-import axios from 'axios';
-import qs from 'qs';
 import EventBus from '@/assets/js/EventBus.js';
 
 import BlogPost from '@/components/Blog/Post';
@@ -101,51 +99,25 @@ export default {
           // FB shared successfully
           if (response && !response.error_message) {
             // Store twitter Facebook record
-            const url = `${process.env.API_BASE_URL}/${process.env.API_KEY}/api/event`;
-            axios
-              .post(
-                url,
-                qs.stringify({
-                  secret: process.env.API_SECRET,
-                  hash: this.entrant.hash,
-                  event: 'facebook',
-                }),
-              )
-              .then(response => {
-                if (!response.data.success) {
-                  EventBus.$emit('notification', {
-                    type: 'error',
-                    message: 'Error processing event data.',
-                  });
-                }
-              });
+            EventBus.$emit('notification', {
+              type: 'success',
+              message: 'Facebook share successful.',
+            });
           } else {
-            // event.$emit('notification', {type: 'error', message: 'Error sharing via Facebook.'});
+            EventBus.$emit('notification', {
+              type: 'error',
+              message: 'Error sharing via Facebook.',
+            });
           }
         },
       );
     },
     shareTwitter(obj) {
-      // Store twitter share record
-      const url = process.env.API_BASE_URL + '/' + process.env.API_KEY + '/api/event';
-
-      axios
-        .post(
-          url,
-          qs.stringify({
-            secret: process.env.API_SECRET,
-            hash: this.entrant.hash,
-            event: 'twitter',
-          }),
-        )
-        .then(response => {
-          if (!response.data.success) {
-            EventBus.$emit('notification', {
-              type: 'error',
-              message: 'Error processing event data.',
-            });
-          }
-        });
+      // share itent set heading
+      // EventBus.$emit('notification', {
+      //   type: 'success',
+      //   message: 'Twitter share successful.',
+      // });
     },
   },
 };
