@@ -23,7 +23,7 @@ export default {
   head: {
     title: pkg.name,
     // Stop head from being reloaded client side
-    htmlAttrs: { 'data-vue-meta-server-rendered': '' },
+    // htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
