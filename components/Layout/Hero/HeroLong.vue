@@ -39,7 +39,7 @@ export default {
       }
     }
 
-    setTimeout(setInterval(updateVideo(), 1000), 10000);
+    setInterval(updateVideo(), 1000);
 
     document.addEventListener('DOMContentLoaded', function(e) {
       updateVideo();
