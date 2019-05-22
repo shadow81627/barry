@@ -447,7 +447,11 @@
     "body": ["Les gagnants seront annoncés le 3 juin 2019 (à 10h00 AEST).", "Bonne chance à vous !"]
   },
   "unsubscribed": {
-    "title": "Vous venez de vous désinscrire de  scUber, la première expérience sous-marine au monde disponible à la demande."
+    "head": {
+      "title": "Désinscrire",
+      "meta": []
+    },
+    "title": "Vous venez de vous désinscrire de scUber, la première expérience sous-marine au monde disponible à la demande."
   },
   "comingsoon": {
     "title": "Coming soon",
