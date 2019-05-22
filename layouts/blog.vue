@@ -11,7 +11,7 @@
 
     <Navbar variant="dark" />
 
-    <Heading heading="Explore the Reef" class="bg-dark" />
+    <Heading :heading="$t('blog.heading')" class="bg-dark" />
 
     <div class="container" style="min-height: 100vh;">
       <Pagination />
