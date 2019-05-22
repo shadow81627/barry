@@ -4,17 +4,19 @@
       <p v-html="$t('ondemand.intro')" />
     </div>
 
-    <div class="row py-5 special-padding-mobile">
-      <div class="col-md-6 offset-md-1">
-        <div class="intro">
-          <h2 v-html="$t('ondemand.title')" />
+    <div class="row py-5">
+      <div class="col-md-7">
+        <div class="special-padding-mobile">
+          <div class="intro">
+            <h2 v-html="$t('ondemand.title')" />
+          </div>
+          <p v-for="item in $t('ondemand.body')" :key="item" v-html="item" />
         </div>
-        <p v-for="item in $t('ondemand.body')" :key="item" v-html="item" />
       </div>
-      <div class="col-1">
-        <!-- spacing col -->
-      </div>
-      <div class="col-md-4 text-center p-5" style="background-color: #e2eaee;">
+      <!-- <div class="col-1"> -->
+      <!-- spacing col -->
+      <!-- </div> -->
+      <div class="col-md-5 text-center p-5" style="background-color: #e2eaee;">
         <h2 class="h4 text-dark" v-html="$t('ondemand.sections')[0].title" />
         <div
           v-for="(chunk, index) in chunk($t('ondemand.sections')[0].list, 10)"
@@ -127,3 +129,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.special-padding-mobile {
+  padding-right: 3rem;
+}
+
+@media all and (max-width: 768px) {
+  .special-padding-mobile {
+    padding-right: 0rem;
+  }
+}
+</style>
