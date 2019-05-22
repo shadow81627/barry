@@ -21,6 +21,7 @@
       :playerresize="function() {}"
       :data-setup="
         JSON.stringify({
+          fluid: true,
           html5: {
             hls: {
               overrideNative: true,

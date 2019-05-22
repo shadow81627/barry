@@ -109,6 +109,31 @@ header .overlay {
   object-fit: cover;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  // IE fix
+  // still broken mobile
+  .hero__video embed .hero__video iframe,
+  .video-js,
+  .video-js video,
+  .hero__video object,
+  .hero__video video {
+    transform: scale(1.2);
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  // EDGE fix
+  // still broken mobile
+  .hero__video embed .hero__video iframe,
+  .video-js,
+  .video-js video,
+  .hero__video object,
+  .hero__video video {
+    transform: scale(1.2);
+  }
+}
+
 .hero__title {
   font-weight: 300;
   line-height: 1.2;
@@ -184,6 +209,10 @@ header .overlay {
     width: 60%;
     margin-bottom: 0.8rem;
   }
+
+  .vid1-dimensions.vjs-fluid {
+    padding-top: 0px !important;
+  }
 }
 
 .btn.hero__cta {
@@ -208,12 +237,12 @@ header .overlay {
 }
 
 // fucked video dimensions
-.vid1-dimensions {
-  width: 100%;
-  height: 100%;
-}
-.video-js {
-  width: 100%;
-  height: 100%;
-}
+// .vid1-dimensions {
+//   width: 100%;
+//   height: 100%;
+// }
+// .video-js {
+//   width: 100%;
+//   height: 100%;
+// }
 </style>
