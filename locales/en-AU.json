@@ -1,6 +1,6 @@
 {
   "head": {
-    "title": "scUber",
+    "title": "scUber Queensland",
     "meta": [
       {
         "hid": "title",
@@ -180,14 +180,14 @@
       ],
       "link": {
         "text": "LEARN MORE",
-        "href": "https://www.queensland.com/en-au/search-results/~/link.aspx?_id=55A4DCAF07B74C5B935C1ED898D09F12&_z=z"
+        "href": "https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       }
     },
     "card5": {
       "title": "",
       "image": "/images/card5-image.jpg",
       "image-link": {
-        "href": "https://citizensgbr.org/"
+        "href": "https://citizensgbr.org/our-partners/uber/"
       },
       "alt": "Protecting the Reef",
       "body": [
@@ -297,16 +297,6 @@
     }
   },
   "confirmation": {
-    "head": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "meta": [
-        {
-          "hid": "description",
-          "name": "description",
-          "content": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
-        }
-      ]
-    },
     "title": "CONGRATULATIONS, YOU'RE IN THE DRAW!",
     "body": [
       "Thanks for entering the competition to experience the Great Barrier Reef with scUber!  Winners will be selected and notified by email at 10am (AEST) on Monday, 3 June 2019.",
@@ -332,7 +322,11 @@
           "image": "/images/blog/blog-6-tips.jpg",
           "alt": "blog-6-tips"
         }
-      ]
+      ],
+      "link": {
+        "text": "LEARN MORE",
+        "href": "https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
+      }
     }
   },
 
@@ -361,7 +355,7 @@
       "If you're an Uber rider in Gladstone, Cairns, Port Douglas or Palm Cove, you can request a scUber experience on the following dates:",
       "<ul><li>Gladstone - 27th May, 28th May, 30th May, 31 May, 2nd June, 3rd June;</li></ul>",
       "<ul><li>Port Douglas, Palm Cove and Cairns - 9th June, 11th June, 12th June, 14th June, 15th June 17th June, 18th June</li></ul>",
-      "Please note just one trip for two will become available daily in each location. These numbers are strictly limited so availability cannot be guaranteed.",
+      "Please note that a minimum of just one trip for two will become available daily in each location. These numbers are strictly limited so availability cannot be guaranteed.",
       "The cost of each scUber experience will be $3,000 for two people. Uber will be donating the equivalent value of every scUber ride taken to Citizens of the Great Barrier Reef."
     ],
 
@@ -374,7 +368,7 @@
             "image": "/images/icons/ride_icon1.svg"
           },
           {
-            "text": "Chopper ride to and from Gladstone to either Heron Island or from Cairns or Port Douglas to Agincourt Reef",
+            "text": "Helicopter ride to and from Gladstone to Heron Island, or from Cairns or Port Douglas to Agincourt Reef",
             "image": "/images/icons/ride_icon2.svg"
           },
           {
@@ -405,7 +399,7 @@
           "20 rides will be available throughout the 4 weeks which means 40 riders will get to experience the Great Barrier Reef like never before in a fully submersible submarine",
           "At 7.30am each morning scUber becomes available for riders to request within the service area (see maps below)",
           "Enter 'Great Barrier Reef' as your destination in the app in order to request a scUber ride",
-          "One request is accepted per day (first-come-first-serve). Maximum and minimum seats you can book is 2.",
+          "A minimum of one request is accepted per day (first-come-first-serve). Maximum and minimum seats you can book is 2.",
           "You must be available for travel each day at 9am on the day you select your scUber ride",
           "scUber rides will be 1 hour in length",
           "You should be returned back to your original pick up address by 4.30pm on the day of travel"
@@ -414,37 +408,27 @@
     ],
     "map": {
       "title": "Where can you request a ride with scUber?",
-      "image1": "/images/ondemand/map1-cairns.jpg",
-      "alt1": "Map-Cairns",
       "image2": "/images/ondemand/map2-gladstone.jpg",
-      "alt2": "Map-Gladstone"
+      "alt2": "Map-Gladstone",
+      "image1": "/images/ondemand/map1-cairns.jpg",
+      "alt1": "Map-Cairns"
     },
     "disclaimer": [
       "Disclaimer: The scUber experience is strictly limited and available for a limited time only. A scUber request can only be made using the Uber app on or after 7.30am on specified dates (set out below), for travel on the same date. A successful scUber request will be confirmed no later than 8:30am on the date it was requested and all riders must be available to commence travel by 9am on the same day. Uber does not guarantee availability of scUber rides. Each scUber trip is priced at $3000 for two riders. Where only one rider can attend, the full cost of the scUber trip remains due and payable. All passengers must satisfy certain physical and legal requirements. Please note, Uber is not a submarine operator and all scUber rides will be operated by Aquatica Submarines.",
       "The specified dates for each of the participating geographical area are as follows:",
       "<ul class=\"mb-0\"><li>Gladstone - 27th May, 28th May, 30th May, 31 May, 2nd June, 3rd June;</li></ul>",
-      "<ul class=\"mb-0\"><li>Port Douglas, Palm Cove and Cairns - 9th June, 11th June, 12th June, 14th June, 15th June 17th June, 18th June</li></ul>",
+      "<ul class=\"mb-0\"><li>Port Douglas, Palm Cove and Cairns - 9th June, 11th June, 12th June, 14th June, 15th June, 17th June, 18th June</li></ul>",
       "These dates may change due to inclement weather."
     ]
   },
   "closed": {
-    "head": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef",
-      "description": "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber."
-    },
     "title": "The competition is now closed.",
     "body": ["Winners will be announced on June 3, 2019 (10am AEST).", "Good luck!"]
   },
   "unsubscribed": {
-    "head": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
-    },
     "title": "You have unsubscribed from scUber, the world's first rideshare submarine experience."
   },
   "comingsoon": {
-    "head": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
-    },
     "title": "Coming soon",
     "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\">Register now</a> to be the first to hear.",
     "cta": {
@@ -459,9 +443,6 @@
     }
   },
   "emailshare": {
-    "head": {
-      "title": "Meet scUber: Rideshare Submarine on the Great Barrier Reef"
-    },
     "form": {
       "heading": "Forward to a Friend",
       "first_name": {
