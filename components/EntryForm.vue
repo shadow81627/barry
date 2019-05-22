@@ -1,5 +1,5 @@
 <template>
-  <div class="entry-form">
+  <div id="entry-form" class="entry-form">
     <form novalidate @submit.prevent="submitForm">
       <h2>{{ $t('entry.form.heading') }}</h2>
 
