@@ -4,7 +4,7 @@ function olSetup() {
   const options = {
     // name of the app. Change this for production app.
     appName: 'barry',
-    // preloadContent: ['Notification Prompt'],
+    preloadContent: [],
     onError: function(e) {
       console.log(typeof e === 'string' ? e : e.message);
     },
@@ -12,6 +12,8 @@ function olSetup() {
 
   const olMaxDepth = 3;
   const olPageUrlArray = location.pathname.substring(location.pathname.indexOf('/') + 1).split('/');
+  console.log(this);
+  console.log(olPageUrlArray);
   let olCurrentPageName;
 
   // grab the URL relative path and dissect it for use in tags and events
@@ -34,16 +36,10 @@ function olSetup() {
     olCurrentPageName = 'home';
   }
 
-  let placementToPreload;
-
   // exclude soft optin for win page
-  if (olCurrentPageName !== 'win') {
-    options.preloadContent.push('Notification Prompt');
-  }
-
-  if (placementToPreload) {
-    options.preloadContent.push(placementToPreload);
-  }
+  // if (olCurrentPageName !== 'win') {
+  //   options.preloadContent.push('Notification Prompt');
+  // }
 
   _ol('create', appKey, options, function() {
     if (localStorage.getItem('OL_os_name') == null) {
@@ -58,20 +54,22 @@ function olSetup() {
       _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
     }
 
-    _ol('push.isSubscribed', function(isSubscribed) {
-      if (!isSubscribed) {
-        _ol('askForPermission', 'notification', {}, function(subscribed) {
-          if (subscribed === 'subscribed') {
-            _ol('registerEvent', 'softyes_hardallow', '', function() {});
-            setTimeout(sendWelcomePushSW, 5000);
-          } else if (subscribed === 'notsubscribed') {
-            _ol('registerEvent', 'softyes_hardblock', '', function() {});
-          }
-        });
-      } else {
-        _ol('push.subscribe');
-      }
-    });
+    if (olCurrentPageName !== 'win') {
+      _ol('push.isSubscribed', function(isSubscribed) {
+        if (!isSubscribed) {
+          _ol('askForPermission', 'notification', {}, function(subscribed) {
+            if (subscribed === 'subscribed') {
+              _ol('registerEvent', 'softyes_hardallow', '', function() {});
+              setTimeout(sendWelcomePushSW, 5000);
+            } else if (subscribed === 'notsubscribed') {
+              _ol('registerEvent', 'softyes_hardblock', '', function() {});
+            }
+          });
+        } else {
+          _ol('push.subscribe');
+        }
+      });
+    }
 
     checkIncognito();
 
