@@ -186,7 +186,7 @@
       ],
       "link": {
         "text": "LEARN MORE",
-        "href": "https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
+        "path": "explore"
       }
     },
     "card5": {
@@ -199,7 +199,7 @@
       "body": [
         "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce its partnership with Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
         "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
-        "<a href='https://citizensgbr.org/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
+        "<a href='https://citizensgbr.org/our-partners/uber/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
       ]
     }
   },

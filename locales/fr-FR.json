@@ -43,7 +43,7 @@
     { "value": "offers", "text": "OFFRES DE VOYAGE" }
   ],
   "pagination": [
-    { "value": "index", "text": "à propos de" },
+    { "value": "index", "text": "à propos" },
     { "value": "win", "text": "gagner" },
     { "value": "request", "text": "réserver" },
     { "value": "explore", "text": "explorer" },
@@ -161,7 +161,7 @@
       "list": [
         {
           "image": "/images/icons/about-1.png",
-          "text": "Elle représente environ 10°% de tous <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>les récifs coralliens</a> à travers le monde."
+          "text": "Elle représente environ 10% de tous <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>les récifs coralliens</a> à travers le monde."
         },
         {
           "image": "/images/icons/about-2.png",
@@ -186,7 +186,7 @@
       ],
       "link": {
         "text": "EN SAVOIR PLUS",
-        "href": "https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
+        "path": "explore"
       }
     },
     "card5": {
@@ -199,7 +199,7 @@
       "body": [
         "La préservation et la protection durables de la Grande barrière de corail sont des sujets d'importance mondiale. Uber est fier d'annoncer son partenariat avec l'association Citizens of the Great Barrier Reef dans le but de soutenir ses initiatives de conservation du plus vaste écosystème au monde.",
         "Uber va donner AUD 100 000 $ à Citizens of the Great Barrier Reef pour l’aider à financer ses programmes de conservation de la Grande barrière de corail et lui offrir l’équivalent de la valeur de toutes les plongées effectuées en scUber.",
-        "Pour en savoir plus sur ce partenariat et les programmes de conservation de Citizens of the Great Barrier Reef, rendez-vous sur le site <a href='https://citizensgbr.org/' target='_blank'>https://citizensgbr.org/</a>."
+        "Pour en savoir plus sur ce partenariat et les programmes de conservation de Citizens of the Great Barrier Reef, rendez-vous sur le site <a href='https://citizensgbr.org/our-partners/uber/' target='_blank'>citizensgbr.org/our-partners/uber/</a>."
       ]
     }
   },
@@ -487,6 +487,7 @@
         }
       ]
     },
+    "header": "EXPLORER LA GRANDE BARRIÈRE",
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
     "intro": [
