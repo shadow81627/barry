@@ -89,11 +89,11 @@
 
     <div class="row pb-5">
       <div class="col-sm-6">
-        <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
+        <b-img-lazy :src="$t('ondemand.map.image2')" fluid />
       </div>
       <div class="w-100 d-block d-sm-none" style="padding-bottom: 15px;" />
       <div class="col-sm-6">
-        <b-img-lazy :src="$t('ondemand.map.image2')" fluid />
+        <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
       </div>
     </div>
     <!-- disclaimer -->
