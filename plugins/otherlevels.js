@@ -5,7 +5,6 @@ export default ({ app }, inject) => {
     const options = {
       // name of the app. Change this for production app.
       appName: 'barry',
-      preloadContent: [],
       onError: function(e) {
         console.log(typeof e === 'string' ? e : e.message);
       },
@@ -39,37 +38,37 @@ export default ({ app }, inject) => {
       olCurrentPageName = 'home';
     }
 
-    // exclude soft optin for win page
-    // if (olCurrentPageName !== 'win') {
-    //   options.preloadContent.push('Notification Prompt');
-    // }
-
     _ol('create', appKey, options, function() {
-      if (localStorage.getItem('OL_os_name') == null) {
-        const olOsName = getOSName();
-        localStorage.setItem('OL_os_name', olOsName);
-        _ol('setTag', 'os_name', olOsName, 'string', function() {});
-      }
+      if (window.localStorage) {
+        // localStorage is supported
+        if (localStorage.getItem('OL_os_name') == null) {
+          const olOsName = getOSName();
+          localStorage.setItem('OL_os_name', olOsName);
+          _ol('setTag', 'os_name', olOsName, 'string', function() {});
+        }
 
-      if (localStorage.getItem('OL_device_type') == null) {
-        const olDeviceType = getMobileOrDesktop();
-        localStorage.setItem('OL_device_type', olDeviceType);
-        _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
-      }
+        if (localStorage.getItem('OL_device_type') == null) {
+          const olDeviceType = getMobileOrDesktop();
+          localStorage.setItem('OL_device_type', olDeviceType);
+          _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
+        }
+      } else {
+        // localStorage is not supported
+        _ol('getTag', 'os_name', function(tag) {
+          const olOsName = getOSName();
+          if (!tag.value) {
+            _ol('setTag', 'os_name', olOsName, 'string', function() {});
+          } else if (olOsName !== tag.value) {
+            _ol('setTag', 'os_name', olOsName, 'string', function() {});
+          }
+        });
 
-      if (olCurrentPageName !== 'win') {
-        _ol('push.isSubscribed', function(isSubscribed) {
-          if (!isSubscribed) {
-            _ol('askForPermission', 'notification', {}, function(subscribed) {
-              if (subscribed === 'subscribed') {
-                _ol('registerEvent', 'softyes_hardallow', '', function() {});
-                setTimeout(sendWelcomePushSW, 5000);
-              } else if (subscribed === 'notsubscribed') {
-                _ol('registerEvent', 'softyes_hardblock', '', function() {});
-              }
-            });
-          } else {
-            _ol('push.subscribe');
+        _ol('getTag', 'device_type', function(tag) {
+          const olDeviceType = getMobileOrDesktop();
+          if (!tag.value) {
+            _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
+          } else if (olDeviceType !== tag.value) {
+            _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
           }
         });
       }
@@ -82,58 +81,24 @@ export default ({ app }, inject) => {
         if (isSupported) {
           _ol('push.isSubscribed', function(isSubscribed) {
             if (!isSubscribed) {
-              _ol('askForPermission', 'notification', {}, function(subscribed) {
-                if (subscribed === 'subscribed') {
-                  _ol('registerEvent', 'softyes_hardallow', '', function() {});
-                  setTimeout(sendWelcomePushSW, 5000);
-                } else if (subscribed === 'notsubscribed') {
-                  _ol('registerEvent', 'softyes_hardblock', '', function() {});
-                }
-              });
+              if (olCurrentPageName !== 'win') {
+                _ol('askForPermission', 'notification', {}, function(subscribed) {
+                  if (subscribed === 'subscribed') {
+                    _ol('registerEvent', 'softyes_hardallow', '', function() {});
+                    setTimeout(sendWelcomePushSW, 5000);
+                  } else if (subscribed === 'notsubscribed') {
+                    _ol('registerEvent', 'softyes_hardblock', '', function() {});
+                  }
+                });
+              }
             } else {
               _ol('push.subscribe');
-              _ol('getTag', 'os_name', function(tag) {
-                const olOsName = getOSName();
-                if (!tag.value) {
-                  _ol('setTag', 'os_name', olOsName, 'string', function() {});
-                } else if (olOsName !== tag.value) {
-                  _ol('setTag', 'os_name', olOsName, 'string', function() {});
-                }
-              });
-              _ol('getTag', 'device_type', function(tag) {
-                const olDeviceType = getMobileOrDesktop();
-                if (!tag.value) {
-                  _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
-                } else if (olDeviceType !== tag.value) {
-                  _ol('setTag', 'device_type', olDeviceType, 'string', function() {});
-                }
-              });
             }
           });
         }
       });
 
       if (olCurrentPageName !== 'win') {
-        const olCookieAccepted = function(event, context) {
-          context.close();
-          context.pushPhash();
-
-          const cookieElement = document.getElementById('Cookies');
-
-          // console.log(`cookie element: ${cookieElement}`);
-
-          if (cookieElement !== null) {
-            // console.log('cookies_accepted');
-            _ol('setTag', 'cookies_accepted', 1, 'numeric', function() {});
-          }
-        };
-
-        const olCookieHandler = {};
-        olCookieHandler['click Cookies'] = olCookieAccepted;
-
-        _ol('displayInterstitial', 'Placement 1', olCookieHandler);
-        console.log('placement 1');
-
         const olSubscribed = function(event, context) {
           context.close();
           context.pushPhash();
@@ -152,9 +117,6 @@ export default ({ app }, inject) => {
       // ii) NOT ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
       // iii) Ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
       // iv) Ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
-
-      // _ol('setTag', 'existingSubscriber', true, 'boolean', function() {});
-      // _ol('setTag', 'TEQOptIn', true, 'boolean', function() {});
 
       _ol(
         'displayInterstitial',
