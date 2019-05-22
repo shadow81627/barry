@@ -1,3 +1,3 @@
-export default function({ app }) {
-  app.$olSetup();
+export default function({ app, route }) {
+  app.$olSetup(route.path);
 }
