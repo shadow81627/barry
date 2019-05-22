@@ -84,13 +84,16 @@ export default ({ app }, inject) => {
           _ol('push.isSubscribed', function(isSubscribed) {
             if (!isSubscribed) {
               if (olCurrentPageName !== 'win') {
-                _ol('askForPermission', 'notification', {}, function(subscribed) {
-                  if (subscribed === 'subscribed') {
-                    _ol('registerEvent', 'softyes_hardallow', '', function() {});
-                  } else if (subscribed === 'notsubscribed') {
-                    _ol('registerEvent', 'softyes_hardblock', '', function() {});
-                  }
-                });
+                setTimeout(
+                  _ol('askForPermission', 'notification', {}, function(subscribed) {
+                    if (subscribed === 'subscribed') {
+                      _ol('registerEvent', 'softyes_hardallow', '', function() {});
+                    } else if (subscribed === 'notsubscribed') {
+                      _ol('registerEvent', 'softyes_hardblock', '', function() {});
+                    }
+                  }),
+                  3000,
+                );
               }
             } else {
               _ol('push.subscribe');
