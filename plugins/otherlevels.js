@@ -6,6 +6,7 @@ export default ({ app }, inject) => {
       // name of the app. Change this for production app.
       appName: 'barry',
       serviceWorkerLocation: '/sw.js',
+      safariWebsitePushId: 'web.com.scuberqueensland',
       onError: function(e) {
         console.log(typeof e === 'string' ? e : e.message);
       },
@@ -86,7 +87,6 @@ export default ({ app }, inject) => {
                 _ol('askForPermission', 'notification', {}, function(subscribed) {
                   if (subscribed === 'subscribed') {
                     _ol('registerEvent', 'softyes_hardallow', '', function() {});
-                    setTimeout(sendWelcomePushSW, 5000);
                   } else if (subscribed === 'notsubscribed') {
                     _ol('registerEvent', 'softyes_hardblock', '', function() {});
                   }
@@ -118,15 +118,6 @@ export default ({ app }, inject) => {
       // ii) NOT ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
       // iii) Ticked opt-in to TEQ; NOT an existing subscriber (no v2hash or hash)
       // iv) Ticked opt-in to TEQ; is an existing subscriber (has a v2hash or hash)
-    });
-  }
-
-  function sendWelcomePushSW() {
-    navigator.serviceWorker.ready.then(function(registration) {
-      registration.showNotification('barry.com', {
-        body: 'Thanks for subscribing to barry.com updates!',
-        icon: 'https://cdn-image.otherlevels.com/12380/3a63fae7-81bd-47a1-950f-f07528d039f4.png',
-      });
     });
   }
 
