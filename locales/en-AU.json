@@ -56,7 +56,7 @@
     { "value": "offers", "text": "offers" }
   ],
   "cookie": {
-    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">This site uses cookies to give you the best experience. Review our <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\"target=\"_blank\" style=\"color:#fff; text-decoration:underline;\"> cookies information</a>for more details.</span>",
+    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">This site uses cookies to give you the best experience. Review our <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\"target=\"_blank\" style=\"color:#fff; text-decoration:underline;\">cookies information</a> for more details.</span>",
     "cta": "Continue"
   },
   "footer": {
