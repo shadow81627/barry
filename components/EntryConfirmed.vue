@@ -17,9 +17,7 @@
       </div>
       <div class="col-4">
         <a
-          :href="
-            'https://twitter.com/intent/tweet?text=☀️ Experience the best of what Queensland has to offer this summer with a $5,000 holiday 🌴 http://mve.me/PYnx3rl'
-          "
+          :href="`https://twitter.com/intent/tweet?text=${$t('confirmation.twitter.text')}`"
           class="social__item"
           target="_blank"
         >
