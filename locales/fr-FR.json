@@ -29,7 +29,9 @@
     },
     "500": {
       "heading": "Une erreur inattendue s'est produite",
-      "body": "Veuillez réessayer ou envoyez un e-mail à scuberenquiries@queensland.com en précisant « Technical Issue » en objet."
+      "body": [
+        "Veuillez réessayer ou envoyez un e-mail à scuberenquiries@queensland.com en précisant « Technical Issue » en objet."
+      ]
     }
   },
 

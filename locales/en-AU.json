@@ -29,7 +29,9 @@
     },
     "500": {
       "heading": "An unexpected error has occured",
-      "body": "Please try again, or email scuberenquiries@queensland.com with the words 'Technical Issue' in the subject line."
+      "body": [
+        "Please <a href=\"javascript:location.reload();\">try again</a>, or email <a href=\"mailto:scuberenquiries@queensland.com?subject=Technical%20issue\">scuberenquiries@queensland.com</a> with the words '<strong>Technical Issue</strong>' in the subject line."
+      ]
     }
   },
 
