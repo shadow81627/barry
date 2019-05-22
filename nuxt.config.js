@@ -4,7 +4,7 @@ export default {
   mode: 'spa',
 
   router: {
-    middleware: ['check-subscriber-hash'],
+    middleware: ['check-subscriber-hash', 'otherlevels-middleware'],
   },
 
   manifest: {
