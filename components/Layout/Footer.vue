@@ -54,6 +54,11 @@ export default {
   }
 }
 
+/* fix custom .btn:hover to not be white */
+.btn-outline-light:hover {
+  color: #212529 !important;
+}
+
 .footer-links a::before {
   content: ' | ';
 }
