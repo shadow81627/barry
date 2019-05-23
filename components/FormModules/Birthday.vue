@@ -79,9 +79,6 @@ export default {
     },
   },
   data: () => ({
-    // day: new Date().getDay(),
-    // month: new Date().getMonth(),
-    // year: new Date().getFullYear() - 18,
     day: '',
     month: '',
     year: null,
@@ -91,12 +88,17 @@ export default {
       return this.daysInMonth(this.month, this.year);
     },
     dob() {
-      if (this.year && this.month && this.day) {
-        const temp = `${this.year}-${this.month
-          .toString()
-          .padStart(2, '0')}-${this.day.toString().padStart(2, '0')}`;
-        console.log(temp);
-        return temp;
+      if (this.year && this.month && this.day && !isNaN(Number(this.year))) {
+        const tempDate = new Date(this.year, this.month, this.day);
+        if (tempDate) {
+          return `${tempDate.getFullYear()}-${tempDate
+            .getMonth()
+            .toString()
+            .padStart(2, '0')}-${tempDate
+            .getDate()
+            .toString()
+            .padStart(2, '0')}`;
+        }
       }
       return null;
     },
@@ -115,7 +117,10 @@ export default {
   },
   methods: {
     daysInMonth(month, year = 1904) {
-      return new Date(year, month, 0).getDate();
+      if (!isNaN(Number(this.year))) {
+        return new Date(year, month, 0).getDate();
+      }
+      return new Date(1904, month, 0).getDate();
     },
   },
 };
