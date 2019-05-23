@@ -173,7 +173,7 @@
         <i v-else class="fa fa-circle-o-notch fa-spin fa-fw" />
       </button>
 
-      <small class="text-muted" v-html="$t('entry.form.submit_info')" />
+      <p class="text-muted mt-4" v-html="$t('entry.form.submit_info')" />
     </form>
   </div>
 </template>
