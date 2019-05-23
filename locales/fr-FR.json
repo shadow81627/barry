@@ -57,7 +57,7 @@
     { "value": "offers", "text": "offres" }
   ],
   "cookie": {
-    "body": "Ce site utilise des cookies afin d&#39;optimiser votre exp&eacute;rience. Consultez les <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" style=\"color:#fff; text-decoration:underline;\" target=\"_blank\">Informations relatives aux cookies</a> pour en savoir plus.</span>",
+    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">Ce site utilise des cookies afin d&#39;optimiser votre exp&eacute;rience. Consultez les <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" style=\"color:#fff; text-decoration:underline;\" target=\"_blank\">Informations relatives aux cookies</a> pour en savoir plus.</span>",
     "cta": "CONTINUER"
   },
   "footer": {
@@ -308,7 +308,7 @@
       "teq_opt_in": "J'accepte de recevoir les offres de vacances exclusives, les jeux-concours et les conseils de voyage du Queensland.",
       "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\">ici</a>.",
       "submit": "ENTRER",
-      "submit_info": "Note: Certains pare-feux ou firewalls d'entreprises peuvent vous empêcher de soumettre votre message. Dans ce cas, nous vous recommandons d'essayer avec vos propres périphériques en utilisant votre réseau mobile ou votre connexion Internet personelle. Bonne chance&nbsp;!"
+      "submit_info": "Note: Certains pare-feux ou firewalls d'entreprises peuvent vous empêcher de soumettre votre message. Dans ce cas, nous vous recommandons d'essayer avec vos propres périphériques en utilisant votre réseau mobile ou votre connexion Internet personelle."
     }
   },
   "confirmation": {
@@ -436,7 +436,7 @@
       "alt1": "Map-Cairns"
     },
     "disclaimer": [
-      "Clause de non-responsabilité : l'expérience en scUber est strictement limitée et uniquement proposée sur une période restreinte. Le scUber peut uniquement être réservé à l'aide de l'application Uber à partir de 7h30 aux dates spécifiées (précisées ci-dessous), pour une plongée le même jour. L'acceptation de la réservation du scUber sera confirmée au plus tard à 8h30 le jour de la demande et tous les participants devront se tenir prêts à partir à 9h00 le même jour.  Uber ne peut garantir la disponibilité des plongées en scUber. Chaque plongée en scUber est facturée 3 000 $ AUD pour deux passagers. Si un seul passager peut participer, il devra tout de même s'acquitter du coût total.  Tous les passagers doivent satisfaire à certaines exigences physiques et légales. Veuillez noter qu'Uber n'est pas un exploitant de sous-marin et que toutes les plongées en scUber seront assurées par Aquatica Submarines.",
+      "Clause de non-responsabilité : l'expérience en scUber est strictement limitée et uniquement proposée sur une période restreinte. Le scUber peut uniquement être réservé à l'aide de l'application Uber à partir de 7h30 aux dates spécifiées (précisées ci-dessous), pour une plongée le même jour. L'acceptation de la réservation du scUber sera confirmée au plus tard à 8h30 le jour de la demande et tous les participants devront se tenir prêts à partir à 9h00 le même jour.  Uber ne peut garantir la disponibilité des plongées en scUber. Chaque plongée en scUber est facturée 3 000 $ AUD pour deux passagers. Si un seul passager peut participer, il devra tout de même s'acquitter du coût total.  Tous les passagers doivent avoir au moins 18 ans et satisfaire à certaines exigences physiques et légales. Veuillez noter qu'Uber n'est pas un exploitant de sous-marin et que toutes les plongées en scUber seront assurées par Aquatica Submarines.",
       "Les dates spécifiées pour chaque zone géographique participante sont les suivantes :",
       "<ul class=\"mb-0\"><li>Gladstone : les 27, 28, 30 et 31 mai et les 2 et 3 juin ;</li></ul>",
       "<ul class=\"mb-0\"><li>Port Douglas, Palm Cove et Cairns : les 9, 11, 12, 14, 15, 17 et 18 juin</li></ul>",
