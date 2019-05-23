@@ -306,7 +306,8 @@
       "opt_in": "I agree to the <a rel=\"noopener\" href=\"/EN_ScUber_Competition_TCs.pdf\" target=\"_blank\">terms and conditions</a>.",
       "teq_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
       "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\">here</a>.",
-      "submit": "Enter Now"
+      "submit": "Enter Now",
+      "submit_info": "Business firewalls may prevent the submission of this form. In this case, please try your personal device and network. Good luck."
     }
   },
   "confirmation": {

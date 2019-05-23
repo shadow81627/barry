@@ -172,6 +172,8 @@
         <span v-if="!ctaLoading">{{ $t('entry.form.submit') }}</span>
         <i v-else class="fa fa-circle-o-notch fa-spin fa-fw" />
       </button>
+
+      <small class="text-muted" v-html="$t('entry.form.submit_info')" />
     </form>
   </div>
 </template>
