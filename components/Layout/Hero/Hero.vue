@@ -49,7 +49,7 @@ export default {
     cta: { type: String },
     link: { type: Object },
     dataSetup: { type: String, default: '' },
-    playerresize: { type: Function },
+    playerresize: { type: String },
   },
   head() {
     return { title: this.title };

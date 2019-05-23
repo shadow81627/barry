@@ -18,7 +18,7 @@
           text: $t('about.hero.link.text'),
         },
       }"
-      :playerresize="function() {}"
+      playerresize="about"
       :data-setup="
         JSON.stringify({
           fluid: true,

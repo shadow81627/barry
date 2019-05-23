@@ -16,8 +16,10 @@
         brand: $t('entry.hero.brand'),
         cta: $t('entry.hero.cta'),
       }"
+      playerresize="win"
       :data-setup="
         JSON.stringify({
+          fluid: true,
           xchildren: { loadingSpinner: false },
           html5: {
             hls: {

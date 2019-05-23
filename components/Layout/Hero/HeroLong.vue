@@ -11,9 +11,8 @@ export default {
     const player = videojs(document.querySelector('.video-js', this.dataSetup));
 
     function updateVideo() {
-      if (vm.playerresize) {
-        let videos;
-
+      let videos;
+      if (vm.playerresize === 'about') {
         if (vm.$i18n.locale === 'fr-fr') {
           videos =
             vm.$mq === 'sm' || vm.$mq === 'md' || vm.$mq === 'xs'
@@ -62,6 +61,23 @@ export default {
                 ];
         }
 
+        player.src(videos);
+      } else {
+        // Win page video
+        videos =
+          vm.$mq === 'sm' || vm.$mq === 'xs'
+            ? [
+                {
+                  src: '/video/win_mobile.m3u8',
+                  type: 'application/x-mpegURL',
+                },
+              ]
+            : [
+                {
+                  src: '/video/win.m3u8',
+                  type: 'application/x-mpegURL',
+                },
+              ];
         player.src(videos);
       }
     }
