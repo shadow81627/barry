@@ -1,8 +1,8 @@
 {
-  "name": "barry",
+  "name": "scuber-queensland-competition",
   "version": "1.0.0",
-  "description": "barry",
-  "author": "Damien Robinson",
+  "description": "scUber Queensland Competition",
+  "author": "XCOM",
   "private": true,
   "scripts": {
     "dev": "nuxt",
