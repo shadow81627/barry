@@ -55,6 +55,10 @@ export default {
           locale = countryMap[response.data.country_iso]
             ? countryMap[response.data.country_iso]
             : 'en-au';
+
+          // Set in local storage
+          // localStorage.setItem('geoIpLocale', locale);
+          this.$router.push(this.switchLocalePath(locale));
         })
         .catch(error => {
           if (error.response) {
@@ -71,12 +75,6 @@ export default {
           }
           console.log(error.config);
         });
-
-      console.log(locale);
-
-      // Set in local storage
-      // localStorage.setItem('geoIpLocale', locale);
-      this.$router.push(this.switchLocalePath(locale));
     }
   },
   methods: {
