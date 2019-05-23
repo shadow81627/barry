@@ -19,7 +19,7 @@ export default {
             vm.$mq === 'sm' || vm.$mq === 'md' || vm.$mq === 'xs'
               ? [
                   {
-                    src: '/video/about_mobile.m3u8',
+                    src: '/video/about_mobile_fr.m3u8',
                     type: 'application/x-mpegURL',
                   },
                   {
