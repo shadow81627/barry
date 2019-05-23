@@ -109,6 +109,8 @@ export default ({ app }, inject) => {
               _ol('push.subscribe');
             }
           });
+        } else {
+          _ol('registerEvent', 'unsupportedBrowser', '', function() {});
         }
       });
 
