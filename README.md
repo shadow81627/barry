@@ -49,6 +49,14 @@ ffmpeg -i input.mp4 -profile:v baseline -level 3.0 -s 640x360 -start_number 0 -h
 ffmpeg -i "Salty Wings - Summersite - Whitehaven Couple Wide Qld endframe V3.mp4" -profile:v baseline -level 3.0 -s 640x360 -start_number 0 -hls_time 10 -hls_list_size 0 -f hls index.m3u8
 ```
 
+```bash
+ffmpeg -i "48 Website_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index.m3u8
+```
+
+```bash
+ffmpeg -i "48 Hero 9-16_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile.m3u8
+```
+
 ## Dependencies
 
 Dependencies:
