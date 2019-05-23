@@ -92,9 +92,11 @@ export default {
     },
     dob() {
       if (this.year && this.month && this.day) {
-        const dob = new Date(this.year, this.month, this.day);
-        console.log(dob);
-        return dob.toISOString().split('T')[0];
+        const temp = `${this.year}-${this.month
+          .toString()
+          .padStart(2, '0')}-${this.day.toString().padStart(2, '0')}`;
+        console.log(temp);
+        return temp;
       }
       return null;
     },
