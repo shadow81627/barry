@@ -21,19 +21,11 @@ export default {
                     src: '/video/about_mobile_fr.m3u8',
                     type: 'application/x-mpegURL',
                   },
-                  {
-                    src: '/video/ABOUT_Mobile_Placeholder.mp4',
-                    type: 'video/mp4',
-                  },
                 ]
               : [
                   {
                     src: '/video/index_fr.m3u8',
                     type: 'application/x-mpegURL',
-                  },
-                  {
-                    src: '/video/ABOUT_Desktop_Placeholder.mp4',
-                    type: 'video/mp4',
                   },
                 ];
         } else {
@@ -44,19 +36,11 @@ export default {
                     src: '/video/about_mobile.m3u8',
                     type: 'application/x-mpegURL',
                   },
-                  {
-                    src: '/video/ABOUT_Mobile_Placeholder.mp4',
-                    type: 'video/mp4',
-                  },
                 ]
               : [
                   {
                     src: '/video/index.m3u8',
                     type: 'application/x-mpegURL',
-                  },
-                  {
-                    src: '/video/ABOUT_Desktop_Placeholder.mp4',
-                    type: 'video/mp4',
                   },
                 ];
         }
