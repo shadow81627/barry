@@ -85,14 +85,13 @@ export default {
   }),
   computed: {
     days() {
-      return this.daysInMonth(this.month, this.year);
+      return this.daysInMonth(this.month - 1, this.year);
     },
     dob() {
       if (this.year && this.month && this.day && !isNaN(Number(this.year))) {
-        const tempDate = new Date(this.year, this.month, this.day);
+        const tempDate = new Date(this.year, this.month - 1, this.day);
         if (tempDate) {
-          return `${tempDate.getFullYear()}-${tempDate
-            .getMonth()
+          return `${tempDate.getFullYear()}-${(tempDate.getMonth() + 1)
             .toString()
             .padStart(2, '0')}-${tempDate
             .getDate()
@@ -121,6 +120,17 @@ export default {
         return new Date(year, month, 0).getDate();
       }
       return new Date(1904, month, 0).getDate();
+    },
+    formatDate(date) {
+      const d = new Date(date);
+      let month = '' + (d.getMonth() + 1);
+      let day = '' + d.getDate();
+      const year = d.getFullYear();
+
+      if (month.length < 2) month = '0' + month;
+      if (day.length < 2) day = '0' + day;
+
+      return [year, month, day].join('-');
     },
   },
 };
