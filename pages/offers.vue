@@ -7,8 +7,6 @@ import utils from '@/assets/js/utils';
 
 import Section from '@/components/Deal/Section';
 
-import axios from 'axios';
-
 export default {
   layout: 'deals',
   components: {
@@ -23,59 +21,6 @@ export default {
     sortDisabledDeals: function() {
       return this.sections;
     },
-  },
-  mounted() {
-    // check local storage for locale
-    const storedLocale = localStorage.getItem('geoIpLocale');
-    // Check stored locale
-
-    // Set locale route if not found in storage
-    if (storedLocale) {
-      // don't do anything if we have already set local storage locale
-    } else if (this.$i18n.locale === 'en-au') {
-      // only geo ip set locale if locale is default (AU)
-      // Get locale
-      let locale = 'en-au';
-      // Make call to api here
-      const url = `${process.env.API_BASE_URL}/api/geoip`;
-      axios
-        .post(url, { secret: process.env.API_SECRET })
-        .then(response => {
-          const countryMap = {
-            AU: 'en-au',
-            NZ: 'en-nz',
-            GB: 'en-gb',
-            IE: 'en-gb',
-            US: 'en-us',
-            UM: 'en-us',
-            CA: 'en-ca',
-            FR: 'fr-fr',
-          };
-          console.log(response.data.country_iso);
-          locale = countryMap[response.data.country_iso]
-            ? countryMap[response.data.country_iso]
-            : 'en-au';
-
-          // Set in local storage
-          // localStorage.setItem('geoIpLocale', locale);
-          this.$router.push(this.switchLocalePath(locale));
-        })
-        .catch(error => {
-          if (error.response) {
-            // The request was made and the server responded with a status code
-            // that falls out of the range of 2xx
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-          } else if (error.request) {
-            console.log(error.request);
-          } else {
-            // Something happened in setting up the request that triggered an Error
-            console.log('Error', error.message);
-          }
-          console.log(error.config);
-        });
-    }
   },
   methods: {
     chunk: utils.chunk,
