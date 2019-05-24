@@ -30,7 +30,11 @@
         })
       "
     >
-      <source v-if="$mq === 'sm'" src="/video/about_mobile.m3u8" type="application/x-mpegURL" />
+      <source
+        v-if="$mq === 'sm' || $mq === 'md' || $mq === 'xs'"
+        src="/video/about_mobile.m3u8"
+        type="application/x-mpegURL"
+      />
       <source v-else src="/video/index.m3u8" type="application/x-mpegURL" />
     </HeroLong>
 
