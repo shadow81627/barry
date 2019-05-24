@@ -24,6 +24,7 @@ export default {
     value: {},
     placeholder: { type: String },
     invalid: { type: Boolean, default: false },
+    pattern: { type: String },
   },
 
   computed: {

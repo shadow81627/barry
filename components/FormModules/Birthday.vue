@@ -85,19 +85,21 @@ export default {
   }),
   computed: {
     days() {
-      return this.daysInMonth(this.month - 1, this.year);
+      return this.daysInMonth(this.month, this.year);
     },
     dob() {
-      if (this.year && this.month && this.day && !isNaN(Number(this.year))) {
-        const tempDate = new Date(this.year, this.month - 1, this.day);
-        if (tempDate) {
-          return `${tempDate.getFullYear()}-${(tempDate.getMonth() + 1)
-            .toString()
-            .padStart(2, '0')}-${tempDate
-            .getDate()
-            .toString()
-            .padStart(2, '0')}`;
-        }
+      if (
+        this.day <= this.daysInMonth(this.month, this.year) &&
+        this.year &&
+        this.month &&
+        this.day &&
+        !isNaN(Number(this.year)) &&
+        this.year.length === 4 &&
+        this.year >= 1800
+      ) {
+        return `${this.year}-${this.month
+          .toString()
+          .padStart(2, '0')}-${this.day.toString().padStart(2, '0')}`;
       }
       return null;
     },
