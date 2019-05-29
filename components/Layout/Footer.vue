@@ -34,6 +34,10 @@
             {{ link.text }}
           </a>
         </div>
+
+        <div class="col-12 text-center pt-2">
+          scuberqueensland.com is managed by Tourism and Events Queensland.
+        </div>
       </div>
     </div>
   </footer>
