@@ -74,7 +74,8 @@
       { "text": "Les conditions générales", "href": "/FR_ScUber_Competition_TCs.pdf" },
       { "text": "Espace presse", "href": "https://media.queensland.com/explore-queensland" },
       { "text": "Questions d'ordre général", "href": "mailto:scuberenquiries@queensland.com" }
-    ]
+    ],
+    "body": ["scuberqueensland.com is managed by Tourism and Events Queensland."]
   },
 
   "mrec-tiles": [

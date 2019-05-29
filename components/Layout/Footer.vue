@@ -36,7 +36,7 @@
         </div>
 
         <div class="col-12 text-center pt-2">
-          scuberqueensland.com is managed by Tourism and Events Queensland.
+          <small v-for="item in $t('footer.body')" :key="item" v-html="item" />
         </div>
       </div>
     </div>
