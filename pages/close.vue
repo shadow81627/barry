@@ -1,5 +1,5 @@
 <template>
-  <div v-in-viewport="-800" class="[ main-content__left ] scrollTo col-12 col-md-7">
+  <div class="[ main-content__left ] scrollTo col-12 text-center">
     <div class="intro">
       <h2 v-html="$t('closed.title')" />
     </div>
@@ -15,7 +15,7 @@ h2 {
 
 <script>
 export default {
-  layout: 'default',
+  layout: 'close',
   head() {
     return {
       ...this.$t('closed.head'),

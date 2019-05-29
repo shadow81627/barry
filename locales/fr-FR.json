@@ -444,6 +444,9 @@
     ]
   },
   "closed": {
+    "hero": {
+      "title": "jeu-concours fermé"
+    },
     "title": "Le jeu-concours est désormais terminé.",
     "body": ["Les gagnants seront annoncés le 3 juin 2019 (à 10h00 AEST).", "Bonne chance à vous !"]
   },
