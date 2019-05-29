@@ -1,4 +1,4 @@
-export default function({ app, env }) {
+export default function({ app, env, redirect }) {
   // Check competition state
   // const openTime = new Date(env.COMPETITON_OPEN_TIME);
   const closeTime = new Date(env.COMPETITON_CLOSE_TIME);
@@ -14,6 +14,6 @@ export default function({ app, env }) {
 
   // closed
   if (now >= closeTime) {
-    return app.router.push(app.localePath('close'));
+    return redirect(app.localePath('close'));
   }
 }
