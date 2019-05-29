@@ -41,13 +41,6 @@ export default {
   head() {
     return {
       ...this.$t('entry.head'),
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://scuberqueensland.com/win',
-        },
-      ],
     };
   },
 };

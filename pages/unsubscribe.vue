@@ -11,13 +11,6 @@ export default {
   head() {
     return {
       ...this.$t('unsubscribed.head'),
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://scuberqueensland.com/unsubscribe',
-        },
-      ],
     };
   },
 };

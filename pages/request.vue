@@ -118,13 +118,6 @@ export default {
   head() {
     return {
       ...this.$t('ondemand.head'),
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://scuberqueensland.com/request',
-        },
-      ],
     };
   },
 };

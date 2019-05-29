@@ -117,6 +117,7 @@ export default {
     [
       'nuxt-i18n',
       {
+        baseUrl: 'https://scuberqueensland.com',
         strategy: 'prefix_and_default',
         langDir: 'locales/',
         locales: [

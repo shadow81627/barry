@@ -19,13 +19,6 @@ export default {
   head() {
     return {
       ...this.$t('closed.head'),
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://scuberqueensland.com/close',
-        },
-      ],
     };
   },
 };
