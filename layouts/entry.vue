@@ -30,12 +30,6 @@
       "
     >
       <source src="/video/win.m3u8" type="application/x-mpegURL" />
-      <source
-        src="/video/WIN_Mobile_Placeholder.mp4"
-        type="video/mp4"
-        media="all and (max-width: 480px)"
-      />
-      <source src="/video/WIN_Desktop_Placeholder.mp4" type="video/mp4" />
     </HeroLong>
 
     <Navbar
