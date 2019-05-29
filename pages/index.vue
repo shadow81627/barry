@@ -126,24 +126,6 @@ export default {
     TwoByOne,
     LayerCard,
   },
-  mounted: () => {
-    // const olCookieAccepted = function(event, context) {
-    //   context.close();
-    //   context.pushPhash();
-    //   // const olCookiesAccepted = new RegExp('[; ]cookies_accepted=([^\\s;]*)');
-    //   // const olCheckCookie = (' ' + document.cookie).match(olCookiesAccepted);
-    //   const cookieElement = document.getElementById('Cookies');
-    //   console.log(`cookie element: ${cookieElement}`);
-    //   if (cookieElement !== null) {
-    //     console.log('cookies_accepted');
-    //     _ol('setTag', 'cookies_accepted', 1, 'numeric', function() {});
-    //   }
-    // };
-    // const olCookieHandler = {};
-    // olCookieHandler['click Cookies'] = olCookieAccepted;
-    // _ol('displayInterstitial', 'Placement 1', olCookieHandler);
-    // console.log('placement');
-  },
   methods: {
     chunk: utils.chunk,
   },
