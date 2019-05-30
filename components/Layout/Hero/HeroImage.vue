@@ -73,7 +73,7 @@ html {
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 30%;
 }
 
 #close-header .hero__text h1 {
