@@ -14,6 +14,6 @@ export default function({ app, env, redirect }) {
 
   // closed
   if (now >= closeTime) {
-    return redirect(app.localePath('close'));
+    return redirect(app.localePath('index'));
   }
 }
