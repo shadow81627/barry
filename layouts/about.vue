@@ -13,7 +13,7 @@
       v-bind="{
         overlay: false,
         poster: '/images/bg2_screen.jpg',
-        link: {
+        xlink: {
           path: $t('about.hero.link.path'),
           text: $t('about.hero.link.text'),
         },
