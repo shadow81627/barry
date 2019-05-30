@@ -22,7 +22,7 @@
     <TwoByOne class="py-5">
       <template #column-1>
         <div class="w-100">
-          <nuxt-link :to="{ path: localePath('win') }">
+          <nuxt-link :to="{ path: localePath('close') }">
             <b-img-lazy :src="$t('about.card2.image')" width="420" height="420" fluid center />
           </nuxt-link>
         </div>
@@ -34,7 +34,7 @@
             <!-- <p v-for="item in $t('about.card2.body')" :key="item" class="pb-2" v-html="item" /> -->
           </div>
           <nuxt-link
-            :to="{ path: localePath('win') }"
+            :to="{ path: localePath('close') }"
             class="[ btn ] btn-dark [ hero__cta ] shadow"
             >{{ $t('about.card2.cta') }}</nuxt-link
           >

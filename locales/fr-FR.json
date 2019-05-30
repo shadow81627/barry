@@ -44,14 +44,14 @@
 
   "navigation": [
     { "value": "index", "text": "À PROPOS DU SCUBER" },
-    { "value": "win", "text": "GAGNER UNE PLONGÉE" },
+    { "value": "close", "text": "GAGNER UNE PLONGÉE" },
     { "value": "request", "text": "RÉSERVER UNE PLONGÉE" },
     { "value": "explore", "text": "EXPLORER LA GRANDE BARRIÈRE" },
     { "value": "offers", "text": "OFFRES DE VOYAGE" }
   ],
   "pagination": [
     { "value": "index", "text": "à propos" },
-    { "value": "win", "text": "gagner" },
+    { "value": "close", "text": "gagner" },
     { "value": "request", "text": "réserver" },
     { "value": "explore", "text": "explorer" },
     { "value": "offers", "text": "offres" }
@@ -117,7 +117,7 @@
       "blurb": "Great Barrier Reef Australia",
       "link": {
         "text": "GAGNEZ UNE PLONGÉE EN SCUBER",
-        "path": "win"
+        "path": "close"
       }
     },
     "card1": {
@@ -128,7 +128,7 @@
       "body": [
         "Uber et l'état du Queensland en Australie offrent aux passagers la possibilité d'explorer la Grande barrière de corail à bord du scUber, le premier sous-marin au monde disponible à la demande.",
         "Du 27 mai au 18 juin 2019, cette expérience unique offrira aux passagers un aperçu authentique d’un monde sous-marin extraordinairement riche et diversifié.",
-        "Pour profiter du scUber, deux possibilités s’offrent à vous. Les pays participants peuvent prendre part au jeu-concours mondial. Les passagers de certaines villes du Queensland, quant à eux, auront la possibilité de réserver leur excursion en scUber directement sur l'application Uber."
+        "Pour profiter du scUber, les passagers de certaines villes du Queensland auront la possibilité de réserver leur excursion en scUber directement sur l'application Uber."
       ]
     },
     "card2": {
@@ -136,7 +136,7 @@
       "intro": "En compagnie de la personne de votre choix, <strong class=\"text-primary\">remportez un voyage unique</strong> à la découverte de la Grande barrière de corail australienne et profitez de la plongée de votre vie en scUber.",
       "image": "/images/card2-image-fr.jpg",
       "image-link": {
-        "path": "win"
+        "path": "close"
       },
       "alt": "GAGNEZ une plongée en scUber",
       "cta": "ENTRER"

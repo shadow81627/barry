@@ -43,14 +43,14 @@
 
   "navigation": [
     { "value": "index", "text": "about scuber" },
-    { "value": "win", "text": "win a ride" },
+    { "value": "close", "text": "win a ride" },
     { "value": "request", "text": "request a ride" },
     { "value": "explore", "text": "explore the reef" },
     { "value": "offers", "text": "travel offers" }
   ],
   "pagination": [
     { "value": "index", "text": "about" },
-    { "value": "win", "text": "win" },
+    { "value": "close", "text": "win" },
     { "value": "request", "text": "request" },
     { "value": "explore", "text": "explore" },
     { "value": "offers", "text": "offers" }
@@ -116,7 +116,7 @@
       "blurb": "Great Barrier Reef Australia",
       "link": {
         "text": "Win a scuber ride",
-        "path": "win"
+        "path": "close"
       }
     },
     "card1": {
@@ -127,18 +127,18 @@
       "body": [
         "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
         "From May 27 to June 18, 2019, this once-in-a-lifetime experience will provide riders with an unfiltered view of an extraordinary underwater world, rich and diverse in marine life.",
-        "There are two ways to experience scUber: for participating countries, you can enter the global competition; or riders in selected Queensland cities will have the opportunity to request a scUber ride directly in the Uber app."
+        "To experience scUber: riders in selected Queensland cities will have the opportunity to request a scUber ride directly in the Uber app."
       ]
     },
     "card2": {
       "title": "WIN! a ride in scUber",
-      "intro": "You and a friend can <strong class=\"text-primary\">WIN a once-in-a-lifetime trip</strong> to Australia's Great Barrier Reef to experience the ride of your lives with scUber.",
+      "intro": "The competition to win a scUber ride is now closed.",
       "image": "/images/card2-image.jpg",
       "image-link": {
-        "path": "win"
+        "path": "close"
       },
       "alt": "Win a ride in scUber",
-      "cta": "ENTER NOW"
+      "cta": "VIEW WINNERS"
     },
     "card3": {
       "title": "",
