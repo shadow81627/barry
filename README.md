@@ -57,6 +57,59 @@ ffmpeg -i "48 Website_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio
 ffmpeg -i "48 Hero 9-16_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile.m3u8
 ```
 
+```bash
+ffmpeg -i "6sec Bumper 9-16_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls win_mobile.m3u8
+```
+
+```bash
+ffmpeg -i "6sec Bumper_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -c:a aac -ar 48000 -b:a 128k -c:v h264 -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 10 -hls_list_size 0 -f hls win.m3u8
+```
+
+```bash
+ffmpeg -i "6sec Bumper_1.mp4" -framerate 30 -profile:v baseline -level 3.0 -start_number 0 -hls_time 6 -hls_list_size 0 -f hls win.m3u8
+```
+
+```bash
+ffmpeg -i "48 Website_1.mp4" -framerate 30 -profile:v baseline -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index.m3u8
+```
+
+video change on first and 9th of june.
+remove win a scuber ta on hero on 1st
+copy change in meet scuber
+remove enter now scuber
+remove request tile on 19th of june
+3rd of june winners
+offers 30th of june
+
+```bash
+ffmpeg -hide_banner -y -i "6sec Bumper_1.mp4" \
+  -vf scale=w=640:h=360:force_original_aspect_ratio=decrease -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod  -b:v 800k -maxrate 856k -bufsize 1200k -b:a 96k -hls_segment_filename win/360p_%03d.ts win/360p.m3u8 \
+  -vf scale=w=842:h=480:force_original_aspect_ratio=decrease -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -b:v 1400k -maxrate 1498k -bufsize 2100k -b:a 128k -hls_segment_filename win/480p_%03d.ts win/480p.m3u8 \
+  -vf scale=w=1280:h=720:force_original_aspect_ratio=decrease -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -b:v 2800k -maxrate 2996k -bufsize 4200k -b:a 128k -hls_segment_filename win/720p_%03d.ts win/720p.m3u8 \
+  -vf scale=w=1920:h=1080:force_original_aspect_ratio=decrease -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -b:v 5000k -maxrate 5350k -bufsize 7500k -b:a 192k -hls_segment_filename win/1080p_%03d.ts win/1080p.m3u8
+```
+
+### Close videos
+
+```bash
+ffmpeg -i "48 Website_Book_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index.m3u8
+```
+
+```bash
+ffmpeg -i "48 Hero 9-16_Book_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile.m3u8
+```
+
+French
+
+```bash
+ffmpeg -i "48 French Website mute_Book_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index_fr.m3u8
+```
+
+```bash
+ffmpeg -i "48 French 9-16_Book_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile_fr.m3u8
+```
+
+
 ## Dependencies
 
 Dependencies:
