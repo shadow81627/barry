@@ -448,7 +448,16 @@
       "title": "Competition closed"
     },
     "title": "The competition is now closed.",
-    "body": ["Winners will be announced on June 3, 2019 (10am AEST).", "Good luck!"]
+    "body": [
+      "Congratulations to our lucky winners :",
+      "• To be confirmed - Australia",
+      "• Justin, M - Canada",
+      "• To be confirmed - France",
+      "• Elizabeth, M - New Zealand",
+      "• Natalie, B - United Kingdom",
+      "• Sherry, R - United States of America",
+      "All winners have been notified by email."
+    ]
   },
   "unsubscribed": {
     "title": "You have unsubscribed from scUber, the world's first rideshare submarine experience."

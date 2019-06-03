@@ -139,7 +139,7 @@
         "path": "close"
       },
       "alt": "GAGNEZ une plongée en scUber",
-      "cta": "ENTRER"
+      "cta": "VOIR LES GAGNANTS"
     },
     "card3": {
       "title": "",
@@ -449,7 +449,16 @@
       "title": "jeu-concours fermé"
     },
     "title": "Le jeu-concours est désormais terminé.",
-    "body": ["Les gagnants seront annoncés le 3 juin 2019 (à 10h00 AEST).", "Bonne chance à vous !"]
+    "body": [
+      "Toutes nos félicitations aux heureux gagnants :",
+      "• Être confirmé – Australie",
+      "• Justin, M – Canada",
+      "• Être confirmé – France",
+      "• Elizabeth, M – Nouvelle-Zélande",
+      "• Natalie, B – Royaume-Uni",
+      "• Sherry, R – États-Unis d’Amérique",
+      "Tous les gagnants ont été avertis par email."
+    ]
   },
   "unsubscribed": {
     "head": {
