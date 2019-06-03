@@ -44,6 +44,13 @@ export default {
   head() {
     return {
       ...this.$t('blog.head'),
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/explore',
+        },
+      ],
     };
   },
 };
