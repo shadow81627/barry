@@ -132,7 +132,7 @@
     },
     "card2": {
       "title": "WIN! a ride in scUber",
-      "intro": "The competition to win a scUber ride is now closed. Winners will be announced on June 3, 2019 (10am AEST).",
+      "intro": "The competition to win a scUber ride is now closed.",
       "image": "/images/card2-image.jpg",
       "image-link": {
         "path": "close"
