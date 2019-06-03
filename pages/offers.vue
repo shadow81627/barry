@@ -28,6 +28,13 @@ export default {
   head() {
     return {
       ...this.$t('deals.head'),
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/offers',
+        },
+      ],
     };
   },
 };

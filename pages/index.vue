@@ -132,6 +132,13 @@ export default {
   head() {
     return {
       ...this.$t('about.head'),
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://scuberqueensland.com/',
+        },
+      ],
     };
   },
 };
