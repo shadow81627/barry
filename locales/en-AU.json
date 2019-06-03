@@ -449,14 +449,15 @@
     },
     "title": "The competition is now closed.",
     "body": [
-      "Congratulations to our lucky winners :",
-      "• To be confirmed - Australia",
-      "• Justin, M - Canada",
-      "• To be confirmed - France",
-      "• Elizabeth, M - New Zealand",
-      "• Natalie, B - United Kingdom",
-      "• Sherry, R - United States of America",
-      "All winners have been notified by email."
+      "<strong>Congratulations to our lucky winners:</strong>",
+      "<em>• To be confirmed - Australia</em>",
+      "<strong>• Justin, M - Canada</strong>",
+      "<em>• To be confirmed - France</em>",
+      "<strong>• Elizabeth, M - New Zealand</strong>",
+      "<strong>• Natalie, B - United Kingdom</strong>",
+      "<strong>• Sherry, R - United States of America</strong>",
+      "&nbsp;",
+      "<em>All winners have been notified by email.</em>"
     ]
   },
   "unsubscribed": {
