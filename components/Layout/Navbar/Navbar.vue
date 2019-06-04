@@ -5,10 +5,11 @@
         <img
           v-if="menuOpen"
           src="/images/logos/scUber-logo-gbr-black.svg"
+          alt="scUber"
           height="60"
           width="180"
         />
-        <img v-else src="/images/logos/scUber-logo-gbr.svg" height="60" width="180" />
+        <img v-else src="/images/logos/scUber-logo-gbr.svg" alt="scUber" height="60" width="180" />
       </slot>
     </b-navbar-brand>
 
