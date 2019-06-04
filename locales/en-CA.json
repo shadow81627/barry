@@ -25,61 +25,61 @@
     "posts": [
       {
         "image": "/images/blog/blog-hero.jpg",
-        "alt_text": "6 tips to plan your GBR holiday",
+        "alt": "6 tips to plan your GBR holiday",
         "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
         "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-daintree.jpg",
-        "alt_text": "The world's oldest rainforest",
+        "alt": "The world's oldest rainforest",
         "heading": "Everything you need to know about the world's oldest rainforest",
         "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-hotel-cairns.jpg",
-        "alt_text": "Hotel in Cairns",
+        "alt": "Hotel in Cairns",
         "heading": "The hotel making a huge splash<span><br/>&nbsp;</span>in Cairns",
         "link": "https://blog.queensland.com/2019/05/16/riley-cairns-hotel/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-GBR-wet.jpg",
-        "alt_text": "How to see the GBR",
+        "alt": "How to see the GBR",
         "heading": "How to see the Great Barrier Reef without getting wet",
         "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-stay.jpg",
-        "alt_text": "Where to stay on the GBR",
+        "alt": "Where to stay on the GBR",
         "heading": "Where to stay on the<span><br/>&nbsp;</span>Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-8-ways.jpg",
-        "alt_text": "8 ways to experience the GBR",
+        "alt": "8 ways to experience the GBR",
         "heading": "8 epic ways to experience the Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-unforgettable.jpg",
-        "alt_text": "Unforgettable dining on the GBR",
+        "alt": "Unforgettable dining on the GBR",
         "heading": "The 5 most unforgettable dining experiences on the Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-gbr-islands.jpg",
-        "alt_text": "10 Great Barrier Reef islands",
+        "alt": "10 Great Barrier Reef islands",
         "heading": "10 Great Barrier Reef islands you need to experience now",
         "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-gbr-events.jpg",
-        "alt_text": "GBR Events",
+        "alt": "GBR Events",
         "heading": "Great Barrier Reef Events to plan your next trip around",
         "link": "https://blog.queensland.com/2018/10/17/great-barrier-reef-events/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-best-diving.jpg",
-        "alt_text": "Best diving in the world",
+        "alt": "Best diving in the world",
         "heading": "Best diving in the world: 11 must-dive sites",
         "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       }
@@ -94,7 +94,7 @@
         "deals": [
           {
             "image": "/images/deals/CA_DT_Deal_1.jpg",
-            "alt_text": "Deal1",
+            "alt": "Deal1",
             "heading": "Guided Adventure in Beautiful Queensland",
             "description": "Enjoy a 9-day Guided Queensland Adventure and explore Brisbane, Cairns & the Great Barrier Reef!<span><br/>&nbsp;</span>",
             "price": "From<br>$4,371",
@@ -102,7 +102,7 @@
           },
           {
             "image": "/images/deals/CA_DT_Deal_2.jpg",
-            "alt_text": "Deal2",
+            "alt": "Deal2",
             "heading": "13 Day East-Coast Australia Adventure!",
             "description": "From Sydney to the capital city of Queensland, Brisbane, and to the Great Barrier Reef and Cairns, this itinerary gives travellers a stunning itinerary to enjoy many of Australia’s much-loved regions!",
             "price": "From<br>$3,605",
@@ -117,7 +117,7 @@
         "deals": [
           {
             "image": "/images/deals/CA_GW_Deal_1.jpg",
-            "alt_text": "Deal3",
+            "alt": "Deal3",
             "heading": "7 Day Best of <span><br/>&nbsp;</span>the Tropical North",
             "description": "From Cairns, experience easy access to tropical islands, rainforests, mountains, beautiful beaches and the Great Barrier Reef, one of nature’s wonders of the world. Land only, from CA$1,228.",
             "price": "From<br>$1,228",
@@ -125,7 +125,7 @@
           },
           {
             "image": "/images/deals/CA_GW_Deal_2.jpg",
-            "alt_text": "Deal3",
+            "alt": "Deal4",
             "heading": "10 Day Gold Coast & Great Barrier Reef Getaway",
             "description": "Experience the coastal highlights of Queensland on an air-inclusive vacation. Enjoy Australia’s beach culture at the Gold Coast. Fly north to Cairns and visit the Great Barrier Reef, the world’s largest coral reef.",
             "price": "From<br>$3,399",

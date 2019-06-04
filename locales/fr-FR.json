@@ -536,61 +536,61 @@
     "posts": [
       {
         "image": "/images/blog/blog-hero.jpg",
-        "alt_text": "6 conseils",
+        "alt": "6 conseils",
         "heading": "6 conseils pour planifier votre voyage de rêve sur la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-daintree.jpg",
-        "alt_text": "Tout ce que vous devez savoir sur la forêt tropicale la plus ancienne au monde",
+        "alt": "Tout ce que vous devez savoir sur la forêt tropicale la plus ancienne au monde",
         "heading": "Tout ce que vous devez savoir sur la forêt tropicale la plus ancienne au monde",
         "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-hotel-cairns.jpg",
-        "alt_text": "Hotel in Cairns",
+        "alt": "Hotel in Cairns",
         "heading": "Le dernier hôtel en vue<span><br/>&nbsp;</span>à Cairns",
         "link": "https://blog.queensland.com/2019/05/16/riley-cairns-hotel/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-GBR-wet.jpg",
-        "alt_text": "Découvrir la Grande barrière de corail",
+        "alt": "Découvrir la Grande barrière de corail",
         "heading": "Comment découvrir <span><br/>&nbsp;</span>la Grande barrière de corail sans se mouiller",
         "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-stay.jpg",
-        "alt_text": "Où séjourner pour profiter de la Grande barrière de corail",
+        "alt": "Où séjourner pour profiter de la Grande barrière de corail",
         "heading": "Où séjourner pour profiter de la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-8-ways.jpg",
-        "alt_text": "8 moyens épiques de découvrir la Grande barrière de corail",
+        "alt": "8 moyens épiques de découvrir la Grande barrière de corail",
         "heading": "8 moyens épiques de découvrir la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-unforgettable.jpg",
-        "alt_text": "Les cinq dîners les plus inoubliables sur la Grande barrière de corail",
+        "alt": "Les cinq dîners les plus inoubliables sur la Grande barrière de corail",
         "heading": "Les cinq dîners les plus inoubliables sur la Grande barrière de corail",
         "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-gbr-islands.jpg",
-        "alt_text": "10 îles de la Grande barrière de corail",
+        "alt": "10 îles de la Grande barrière de corail",
         "heading": "10 îles de la Grande barrière de corail à découvrir sans attendre",
         "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-gbr-events.jpg",
-        "alt_text": "GBR Events",
+        "alt": "GBR Events",
         "heading": "Les événements à envisager pour votre prochain voyage sur la Grande barrière de corail",
         "link": "https://blog.queensland.com/2018/10/17/great-barrier-reef-events/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-best-diving.jpg",
-        "alt_text": "Les 11 meilleurs sites de plongée au monde",
+        "alt": "Les 11 meilleurs sites de plongée au monde",
         "heading": "Les 11 meilleurs sites de plongée au monde",
         "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       }
@@ -623,7 +623,7 @@
         "deals": [
           {
             "image": "/images/deals/FR_Deal_1.jpg",
-            "alt_text": "Deal1",
+            "alt": "Deal1",
             "heading": "QUEENSLAND À CONTRE-COURANT, DE CAIRNS À BRISBANE",
             "description": "Dévouvrez les joyaux de la côte Est :  forêt pluviale de Daintree, plages dorées de Port Douglas, l'archipel des Whitsundays, Fraser Island. Un parcours classique mais à contre-sens des itinéraires classiques.",
             "price": "<span style='font-size: 0.9rem;'>À partir de<br>1 399 € <br>/ pers.</span>",
@@ -631,7 +631,7 @@
           },
           {
             "image": "/images/deals/FR_Deal_2.jpg",
-            "alt_text": "Deal2",
+            "alt": "Deal2",
             "heading": "ROADTRIP DANS LA DAINTREE<span><br/>&nbsp;</span>",
             "description": "Une fabuleuse échappée en 4×4, à la croisée de la forêt pluviale de Daintree et de la Grande Barrière de Corail. Un itinéraire aux paysages multiples, entre mer de corail et jungle primaire.",
             "price": "<span style='font-size: 0.9rem;'>À partir de<br>1 189 € <br>/ pers.</span>",
@@ -639,7 +639,7 @@
           },
           {
             "image": "/images/deals/FR_Deal_3.jpg",
-            "alt_text": "Deal3",
+            "alt": "Deal3",
             "heading": "MERVEILLES DU QUEENSLAND",
             "description": "Hébergement au milieu de la forêt tropicale à Narrows Escape (Sunshine Coast). Séjour dans une ferme australienne à Rockhampton avec dîner-barbecue. Croisière dans l'archipel des Whitsundays. Observation des ornithorynques dans le parc national Eungella.",
             "price": "<span style='font-size: 0.9rem;'>À partir de<br>3 179 € <br>/ pers.</span>",
@@ -647,7 +647,7 @@
           },
           {
             "image": "/images/deals/FR_Deal_4.jpg",
-            "alt_text": "Deal4",
+            "alt": "Deal4",
             "heading": "D'ÎLE EN ÎLE SUR LA CAPRICORN COAST",
             "description": "Visitez Fraser Island, la plus grande île de sable du monde hors des sentiers battus. Lady Musgrave et son lagon turquoise au cœur de la Grande Barrière de Corail. Assistez à la nidification, la ponte ou l'éclosion des tortues de mer à Mon Repos.",
             "price": "<span style='font-size: 0.9rem;'>À partir de<br>1 669 € <br>/ pers.</span>",
@@ -655,7 +655,7 @@
           },
           {
             "image": "/images/deals/FR_Deal_5.jpg",
-            "alt_text": "Deal5",
+            "alt": "Deal5",
             "heading": "BIENVENUE À CAIRNS",
             "description": "Une escale idéale pour découvrir Cairns. Une région unique ou la forêt tropicale et la Grande Barrière de Corail se rencontrent.<span><br/>&nbsp;</span>",
             "price": "<span style='font-size: 0.9rem;'>À partir de<br>499 € <br>/ pers.</span>",
@@ -663,7 +663,7 @@
           },
           {
             "image": "/images/deals/FR_Deal_6.jpg",
-            "alt_text": "Deal6",
+            "alt": "Deal6",
             "heading": "BIENVENUE À PORT DOUGLAS",
             "description": "Plongée et les activités nautiques autour de la Grande Barrière de corail. Forêt tropicale de Daintree, pour une évasion au cœur de la nature. Les magnifiques plages bordées de cocotiers. Demi-journée en compagnie d'un guide aborigène.",
             "price": "<span style='font-size: 0.9rem;'>À partir de<br>575 € <br>/ pers.</span>",

@@ -8,7 +8,7 @@
         "deals": [
           {
             "image": "/images/deals/NZ_Deal_5.jpg",
-            "alt_text": "Deal5",
+            "alt": "Deal5",
             "heading": "Heron Island Resort",
             "description": "A natural coral cay 89km off the coast of Queensland, Heron Island is a place for divers, swimmers and snorkellers. From $1,019 per person share twin, enjoy the peace and quiet at Heron Island Resort.",
             "price": "From<br>$1,019pp",
@@ -17,7 +17,7 @@
           },
           {
             "image": "/images/deals/NZ_Deal_6.jpg",
-            "alt_text": "Deal6",
+            "alt": "Deal6",
             "heading": "Daydream Island Resort",
             "description": "Newly re-opened Daydream Island Resort provides modern rooms and suites. Enjoy this from $909 per person share twin, including 5 nights accommodation, free guest activities and more.",
             "price": "From<br>$909pp",
@@ -26,7 +26,7 @@
           },
           {
             "image": "/images/deals/NZ_Deal_3.jpg",
-            "alt_text": "Deal3",
+            "alt": "Deal3",
             "heading": "Mantra Aqueous on Port",
             "description": "Laze by the pool or wander to the beach, Mantra Aqueous on Port is the perfect spot for your next getaway. Deal includes 7 nights accommodation and an Outer Barrier Reef Cruise.",
             "price": "From<br>$855pp",
@@ -35,7 +35,7 @@
           },
           {
             "image": "/images/deals/NZ_Deal_4.jpg",
-            "alt_text": "Deal4",
+            "alt": "Deal4",
             "heading": "Mantra Amphora",
             "description": "From $709 per person share twin, enjoy 7 nights accommodation <span><br/>&nbsp;</span>at Mantra Amphora and a Quicksilver <span><br/>&nbsp;</span>Outer Barrier Reef Cruise.",
             "price": "From<br>$709pp",
@@ -44,7 +44,7 @@
           },
           {
             "image": "/images/deals/NZ_Deal_1.jpg",
-            "alt_text": "Deal1",
+            "alt": "Deal1",
             "heading": "Breakfree Royal Harbour",
             "description": "7 nights accommodation plus a Quicksilver Outer Barrier Reef Cruise at the Breakfree Royal Harbour, overlooking Trinity Bay and the Cairns Lagoon from $799 per person share twin.",
             "price": "From<br>$799pp",
@@ -53,7 +53,7 @@
           },
           {
             "image": "/images/deals/NZ_Deal_2.jpg",
-            "alt_text": "Deal2",
+            "alt": "Deal2",
             "heading": "Peppers Beach Club",
             "description": "Enjoy the Mediterranean villa feel of Peppers Beach Club, Port Douglas - includes 7 nights accommodation, breakfast daily, Quicksilver Outer Barrier Reef Cruise and more.",
             "price": "From<br>$1,205pp",

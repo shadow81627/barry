@@ -169,26 +169,32 @@
       "list": [
         {
           "image": "/images/icons/about-1.svg",
+          "alt": "Coral",
           "text": "It represents approximately 10% of all <a href='https://www.queensland.com/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>coral reefs</a> in the world."
         },
         {
           "image": "/images/icons/about-2.svg",
+          "alt": "Football",
           "text": "The Great Barrier Reef is the size of about 70 million football fields."
         },
         {
           "image": "/images/icons/about-3.svg",
+          "alt": "Moon",
           "text": "It's the largest natural feature on Earth and is the only living structure that can be seen from the moon."
         },
         {
           "image": "/images/icons/about-4.svg",
+          "alt": "Turtle",
           "text": "The Great Barrier Reef is home to the 'Great 8' marine encounters: whales, turtles, manta rays, clown fish, sharks, potato cod, Maori wrasse and the giant clam."
         },
         {
           "image": "/images/icons/about-5.svg",
+          "alt": "Map of Queensland Australia",
           "text": "The Reef is the world's largest and longest coral reef system, stretching for 2,300km from the tip of Cape York in the north to Bundaberg in the south. That's about the distance between New York and Dallas!"
         },
         {
           "image": "/images/icons/about-6.svg",
+          "alt": "Ecosystem",
           "text": "A World Heritage Area since 1981 and the world's first reef ecosystem to be recognised by UNESCO, the Great Barrier Reef is highly protected and one of the best-managed marine areas on Earth. "
         }
       ],
@@ -388,18 +394,22 @@
         "list": [
           {
             "text": "Pickup and drop-off from your location in a scUber car",
+            "alt": "location marker",
             "image": "/images/icons/ride_icon1.svg"
           },
           {
             "text": "Helicopter ride to and from Gladstone to Heron Island, or from Cairns or Port Douglas to Agincourt Reef",
+            "alt": "helicopter",
             "image": "/images/icons/ride_icon2.svg"
           },
           {
             "text": "Ride in a scUber submarine",
+            "alt": "scuber",
             "image": "/images/icons/ride_icon4.svg"
           },
           {
             "text": "Car back to your original pick up address",
+            "alt": "car",
             "image": "/images/icons/ride_icon3.svg"
           }
         ]
@@ -530,61 +540,61 @@
     "posts": [
       {
         "image": "/images/blog/blog-hero.jpg",
-        "alt_text": "6 tips to plan your GBR holiday",
+        "alt": "6 tips to plan your GBR holiday",
         "heading": "6 tips to plan your ultimate Great Barrier Reef holiday",
         "link": "https://blog.queensland.com/2019/04/30/how-to-plan-great-barrier-reef-holiday?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-daintree.jpg",
-        "alt_text": "The world's oldest rainforest",
+        "alt": "The world's oldest rainforest",
         "heading": "Everything you need to know about the world's oldest rainforest",
         "link": "https://blog.queensland.com/2018/04/27/daintree-national-park/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-hotel-cairns.jpg",
-        "alt_text": "Hotel in Cairns",
+        "alt": "Hotel in Cairns",
         "heading": "The hotel making a huge splash<span><br/>&nbsp;</span>in Cairns",
         "link": "https://blog.queensland.com/2019/05/16/riley-cairns-hotel/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-GBR-wet.jpg",
-        "alt_text": "How to see the GBR",
+        "alt": "How to see the GBR",
         "heading": "How to see the Great Barrier Reef without getting wet",
         "link": "https://blog.queensland.com/2019/01/20/how-to-see-the-great-barrier-reef-without-getting-wet/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-stay.jpg",
-        "alt_text": "Where to stay on the GBR",
+        "alt": "Where to stay on the GBR",
         "heading": "Where to stay on the<span><br/>&nbsp;</span>Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/05/01/where-to-stay-great-barrier-reef-hotels-island-resorts/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-8-ways.jpg",
-        "alt_text": "8 ways to experience the GBR",
+        "alt": "8 ways to experience the GBR",
         "heading": "8 epic ways to experience the Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/04/23/great-barrier-reef-experiences/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-unforgettable.jpg",
-        "alt_text": "Unforgettable dining on the GBR",
+        "alt": "Unforgettable dining on the GBR",
         "heading": "The 5 most unforgettable dining experiences on the Great Barrier Reef",
         "link": "https://blog.queensland.com/2019/05/01/dining-experiences-great-barrier-reef/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-gbr-islands.jpg",
-        "alt_text": "10 Great Barrier Reef islands",
+        "alt": "10 Great Barrier Reef islands",
         "heading": "10 Great Barrier Reef islands you need to experience now",
         "link": "https://blog.queensland.com/2019/04/29/great-barrier-reef-islands/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-gbr-events.jpg",
-        "alt_text": "GBR Events",
+        "alt": "GBR Events",
         "heading": "Great Barrier Reef Events to plan your next trip around",
         "link": "https://blog.queensland.com/2018/10/17/great-barrier-reef-events/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       },
       {
         "image": "/images/blog/blog-best-diving.jpg",
-        "alt_text": "Best diving in the world",
+        "alt": "Best diving in the world",
         "heading": "Best diving in the world: 11 must-dive sites",
         "link": "https://blog.queensland.com/2019/04/26/best-diving-in-the-world/?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland"
       }
@@ -617,7 +627,7 @@
         "deals": [
           {
             "image": "/images/deals/AU_Deal_1.jpg",
-            "alt_text": "Deal1",
+            "alt": "Deal1",
             "heading": "Riley, a Crystalbrook Collection Resort",
             "description": "7 Nights in a Resort Room, Flights, Transfers + $3,500 Bonus Value",
             "price": "From<br>$1,490pp",
@@ -625,7 +635,7 @@
           },
           {
             "image": "/images/deals/AU_Deal_4.jpg",
-            "alt_text": "Deal4",
+            "alt": "Deal4",
             "heading": "Heron Island Resort",
             "description": "4 Nights in a Turtle Room, Flights, Transfers + $2,250 Bonus Value",
             "price": "From<br>$1,290pp",
@@ -633,7 +643,7 @@
           },
           {
             "image": "/images/deals/AU_Deal_3.jpg",
-            "alt_text": "Deal3",
+            "alt": "Deal3",
             "heading": "Hotel Grand Chancellor Townsville",
             "description": "3 Nights in an Executive Room, Flights, Transfers + $500 Bonus Value",
             "price": "From<br>$690pp",
@@ -641,7 +651,7 @@
           },
           {
             "image": "/images/deals/AU_Deal_2.jpg",
-            "alt_text": "Deal2",
+            "alt": "Deal2",
             "heading": "Reef View Hotel Hamilton Island",
             "description": "5 Nights in a Garden View Room, Flights, Transfers + $750 Bonus Value",
             "price": "From<br>$1,190pp",
