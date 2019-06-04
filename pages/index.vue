@@ -23,7 +23,14 @@
       <template #column-1>
         <div class="w-100">
           <nuxt-link :to="{ path: localePath('close') }">
-            <b-img-lazy :src="$t('about.card2.image')" width="420" height="420" fluid center />
+            <b-img-lazy
+              :src="$t('about.card2.image')"
+              :alt="$t('about.card2.alt')"
+              width="420"
+              height="420"
+              fluid
+              center
+            />
           </nuxt-link>
         </div>
       </template>
@@ -47,7 +54,14 @@
       <template #column-1>
         <div class="w-100">
           <nuxt-link :to="localePath($t('about.card3.image-link.path'))">
-            <b-img-lazy :src="$t('about.card3.image')" width="420" height="420" fluid center />
+            <b-img-lazy
+              :src="$t('about.card3.image')"
+              :alt="$t('about.card3.alt')"
+              width="420"
+              height="420"
+              fluid
+              center
+            />
           </nuxt-link>
         </div>
       </template>
@@ -63,7 +77,7 @@
 
     <!-- card4 -->
     <div class="row container-break-out-center py-5">
-      <LayerCard :src="$t('about.card4.image')" full-width>
+      <LayerCard :src="$t('about.card4.image')" :alt="$t('about.card4.alt')" full-width>
         <h2>{{ $t('about.card4.title') }}</h2>
         <p v-for="item in $t('about.card4.body')" :key="item" v-html="item" />
         <div class="intro">
@@ -72,7 +86,7 @@
 
         <div v-for="(chunk, index) in chunk($t('about.card4.list'), 10)" :key="index" class="row">
           <div v-for="item in chunk" :key="item.text" class="col-lg-4 col-md-6 col-sm-12">
-            <b-img-lazy :src="item.image" height="43" width="43" fluid />
+            <b-img-lazy :src="item.image" :alt="item.alt" height="43" width="43" fluid />
             <p v-html="item.text" />
           </div>
         </div>
@@ -92,7 +106,14 @@
       <template #column-1>
         <div class="w-100">
           <a :href="$t('about.card5.image-link.href')" target="_blank" rel="noopener">
-            <b-img-lazy :src="$t('about.card5.image')" width="420" height="420" fluid center />
+            <b-img-lazy
+              :src="$t('about.card5.image')"
+              :alt="$t('about.card5.alt')"
+              width="420"
+              height="420"
+              fluid
+              center
+            />
           </a>
         </div>
       </template>

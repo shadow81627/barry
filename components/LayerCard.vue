@@ -5,7 +5,12 @@
     </div>
 
     <div class="row">
-      <b-img-lazy class="layer-card__bg layer-card__bg--image p-0" :class="imageClass" :src="src" />
+      <b-img-lazy
+        class="layer-card__bg layer-card__bg--image p-0"
+        :class="imageClass"
+        :src="src"
+        :alt="alt"
+      />
     </div>
     <div class="row">
       <div :class="cardClass">
@@ -24,6 +29,7 @@ export default {
     fullWidth: { type: Boolean, default: false },
     textAlign: { type: String, default: 'center' },
     src: { type: String },
+    alt: { type: String },
   },
   computed: {
     cardClass() {
