@@ -17,6 +17,7 @@
           <a
             :href="link.href"
             target="_blank"
+            rel="noopener"
             class="btn btn-outline-light col-md-4 col-sm-6 col-12"
           >
             {{ link.text }}
