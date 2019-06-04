@@ -57,7 +57,7 @@
     { "value": "offers", "text": "offres" }
   ],
   "cookie": {
-    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">Ce site utilise des cookies afin d&#39;optimiser votre exp&eacute;rience. Consultez les <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" style=\"color:#fff; text-decoration:underline;\" target=\"_blank\">Informations relatives aux cookies</a> pour en savoir plus.</span>",
+    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">Ce site utilise des cookies afin d&#39;optimiser votre exp&eacute;rience. Consultez les <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" style=\"color:#fff; text-decoration:underline;\" target=\"_blank\" rel=\"noopener\">Informations relatives aux cookies</a> pour en savoir plus.</span>",
     "cta": "CONTINUER"
   },
   "footer": {
@@ -164,13 +164,13 @@
       "image": "/images/card4-image.jpg",
       "alt": "Plongez dans les abysses",
       "body": [
-        "Cette attraction de renommée mondiale est à la fois le récif corallien le plus vaste au monde et le plus grand organisme vivant de la planète. Il n’y a donc rien d’étonnant à ce que les expériences proposées sur <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>la Grande barrière de corail</a> soient sans commune mesure.",
+        "Cette attraction de renommée mondiale est à la fois le récif corallien le plus vaste au monde et le plus grand organisme vivant de la planète. Il n’y a donc rien d’étonnant à ce que les expériences proposées sur <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">la Grande barrière de corail</a> soient sans commune mesure.",
         "Le scUber est un nouveau moyen de profiter d'une expérience sous-marine totalement immersive au beau milieu de 3 000 récifs, 900 îles et 1 500 espèces de poissons."
       ],
       "list": [
         {
           "image": "/images/icons/about-1.png",
-          "text": "Elle représente environ 10% de tous <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>les récifs coralliens</a> à travers le monde."
+          "text": "Elle représente environ 10% de tous <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">les récifs coralliens</a> à travers le monde."
         },
         {
           "image": "/images/icons/about-2.png",
@@ -208,7 +208,7 @@
       "body": [
         "La préservation et la protection durables de la Grande barrière de corail sont des sujets d'importance mondiale. Uber est fier d'annoncer son partenariat avec l'association Citizens of the Great Barrier Reef dans le but de soutenir ses initiatives de conservation du plus vaste écosystème au monde.",
         "Uber va donner AUD 100 000 $ à Citizens of the Great Barrier Reef pour l’aider à financer ses programmes de conservation de la Grande barrière de corail et lui offrir l’équivalent de la valeur de toutes les plongées effectuées en scUber.",
-        "Pour en savoir plus sur ce partenariat et les programmes de conservation de Citizens of the Great Barrier Reef, rendez-vous sur le site <a href='https://citizensgbr.org/our-partners/uber/' target='_blank'>citizensgbr.org/our-partners/uber/</a>."
+        "Pour en savoir plus sur ce partenariat et les programmes de conservation de Citizens of the Great Barrier Reef, rendez-vous sur le site <a href='https://citizensgbr.org/our-partners/uber/' target='_blank' rel=\"noopener\">citizensgbr.org/our-partners/uber/</a>."
       ]
     }
   },
@@ -308,7 +308,7 @@
       "word_count": "Mots",
       "opt_in": "J'accepte <a rel=\"noopener\" href=\"/FR_ScUber_Competition_TCs.pdf\" target=\"_blank\">les conditions générales</a>.",
       "teq_opt_in": "J'accepte de recevoir les offres de vacances exclusives, les jeux-concours et les conseils de voyage du Queensland.",
-      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\">ici</a>.",
+      "teq_opt_in_info": "Je comprends que je peux me désabonner à tout moment et que je peux contacter Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\" rel=\"noopener\">ici</a>.",
       "submit": "ENTRER",
       "submit_info": "Note: Certains pare-feux ou firewalls d'entreprises peuvent vous empêcher de soumettre votre message. Dans ce cas, nous vous recommandons d'essayer avec vos propres périphériques en utilisant votre réseau mobile ou votre connexion Internet personelle."
     }
@@ -471,7 +471,7 @@
   },
   "comingsoon": {
     "title": "Coming soon",
-    "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\">Register now</a> to be the first to hear.",
+    "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\" rel=\"noopener\">Register now</a> to be the first to hear.",
     "cta": {
       "link": "https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe",
       "text": "Register now"
@@ -529,7 +529,7 @@
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
     "intro": [
-      "Chaque année, deux millions de touristes se rendent dans le Queensland pour admirer <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\" target=\"_blank\">la Grande barrière de corail.</a> Serez-vous l’un d’entre eux ?",
+      "Chaque année, deux millions de touristes se rendent dans le Queensland pour admirer <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\" target=\"_blank\" rel=\"noopener\">la Grande barrière de corail.</a> Serez-vous l’un d’entre eux ?",
       "Organiser une excursion à la découverte d’une merveille du monde plus vaste que le Royaume-Uni, les Pays-Bas et la Suisse réunis peut être une tâche ardue, c’est le moins que l’on puisse dire.",
       "Utilisez les guides touristiques ci-dessous consacrés à la Grande barrière de corail pour faire facilement connaissance avec le plus grand organisme vivant au monde."
     ],

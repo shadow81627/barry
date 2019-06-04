@@ -19,7 +19,7 @@
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
     "intro": [
-      "Each year, two million people make the trip to Queensland all in the name of a <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\" target=\"_blank\">Great Barrier Reef</a> vacation. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
+      "Each year, two million people make the trip to Queensland all in the name of a <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\" target=\"_blank\" rel=\"noopener\">Great Barrier Reef</a> vacation. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
       "Use the below Great Barrier Reef holiday guides to discover the world’s largest living organism, with ease."
     ],
     "posts": [

@@ -56,7 +56,7 @@
     { "value": "offers", "text": "offers" }
   ],
   "cookie": {
-    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">This site uses cookies to give you the best experience. Review our <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\"target=\"_blank\" style=\"color:#fff; text-decoration:underline;\">cookies information</a> for more details.</span>",
+    "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">This site uses cookies to give you the best experience. Review our <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" target=\"_blank\" rel=\"noopener\" style=\"color:#fff; text-decoration:underline;\">cookies information</a> for more details.</span>",
     "cta": "Continue"
   },
   "footer": {
@@ -163,14 +163,14 @@
       "image": "/images/card4-image.jpg",
       "alt": "Take a deep dive",
       "body": [
-        "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>Great Barrier Reef</a>.",
+        "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">Great Barrier Reef</a>.",
         "scUber is a new way to have a completely immersive underwater experience in the home of 3,000 individual reefs, 900 islands and over 1,500 species of fish."
       ],
       "list": [
         {
           "image": "/images/icons/about-1.svg",
           "alt": "Coral",
-          "text": "It represents approximately 10% of all <a href='https://www.queensland.com/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank'>coral reefs</a> in the world."
+          "text": "It represents approximately 10% of all <a href='https://www.queensland.com/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">coral reefs</a> in the world."
         },
         {
           "image": "/images/icons/about-2.svg",
@@ -213,7 +213,7 @@
       "body": [
         "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce its partnership with Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
         "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
-        "<a href='https://citizensgbr.org/our-partners/uber/' target='_blank'>Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
+        "<a href='https://citizensgbr.org/our-partners/uber/' target='_blank' rel=\"noopener\">Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
       ]
     }
   },
@@ -313,7 +313,7 @@
       "word_count": "Words",
       "opt_in": "I agree to the <a rel=\"noopener\" href=\"/EN_ScUber_Competition_TCs.pdf\" target=\"_blank\">terms and conditions</a>.",
       "teq_opt_in": "I agree to receive exclusive holiday deals, competitions and insider travel tips from Queensland.",
-      "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\">here</a>.",
+      "teq_opt_in_info": "I understand I can unsubscribe at any time and can contact Tourism and Events Queensland <a href='https://www.queensland.com/info/about-us?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target=\"_blank\" rel=\"noopener\">here</a>.",
       "submit": "Enter Now",
       "submit_info": "Note: Business firewalls may prevent the submission of this form. In this case, please try your personal device and network."
     }
@@ -476,7 +476,7 @@
   },
   "comingsoon": {
     "title": "Coming soon",
-    "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\">Register now</a> to be the first to hear.",
+    "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\" rel=\"noopener\">Register now</a> to be the first to hear.",
     "cta": {
       "link": "https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe",
       "text": "Register now"
@@ -534,7 +534,7 @@
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
     "intro": [
-      "Each year, two million people make the trip to Queensland all in the name of a <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\" target=\"_blank\">Great Barrier Reef</a> holiday. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
+      "Each year, two million people make the trip to Queensland all in the name of a <a href=\"https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland\" target=\"_blank\" rel=\"noopener\">Great Barrier Reef</a> holiday. Are you going to be one of them? Planning a visit to a wonder of the world that's greater in size than the United Kingdom, Holland and Switzerland combined can be overwhelming to say the least.",
       "Use the below Great Barrier Reef holiday guides to discover the world’s largest living organism, with ease."
     ],
     "posts": [

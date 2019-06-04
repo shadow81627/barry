@@ -7,7 +7,12 @@
       <h2 class="h4 text-uppercase text-dark" v-html="heading" />
       <div class="deal__description--body text-dark" v-html="description" />
       <div class="w-100 py-3">
-        <a :href="link" target="_blank" class="deal__link text-primary text-center text-uppercase">
+        <a
+          :href="link"
+          target="_blank"
+          class="deal__link text-primary text-center text-uppercase"
+          rel="noopener"
+        >
           {{ $t('deals.cta_view_deal') }} >
         </a>
       </div>
