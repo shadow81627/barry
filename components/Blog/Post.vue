@@ -1,11 +1,6 @@
 <template>
   <a :id="heading" :href="link" target="_blank" class="mb-5 text-decoration-none" rel="noopener">
-    <b-img-lazy
-      class="img-fluid mx-auto d-block w-100"
-      alt="How to go camping in the tropics and survive"
-      :src="image"
-      fluid
-    />
+    <b-img-lazy class="img-fluid mx-auto d-block w-100" :alt="alt" :src="image" fluid />
 
     <div class="row mb-2">
       <div
@@ -30,6 +25,7 @@ export default {
       type: String,
       default: 'https://cdn-blog.queensland.com/wp-content/uploads/2018/09/134971-56-335x256.jpg',
     },
+    alt: { type: String },
     heading: { type: String, default: 'deal1' },
     description: { type: String, default: 'I am deal1' },
     link: { type: String, default: 'https://example.com/deals/1' },

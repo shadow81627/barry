@@ -24,7 +24,15 @@
           class="row"
         >
           <div v-for="item in chunk" :key="item.text" class="col-sm-12 p-2">
-            <b-img-lazy v-if="item.image" :src="item.image" height="43" width="43" fluid center />
+            <b-img-lazy
+              v-if="item.image"
+              :src="item.image"
+              :alt="item.alt"
+              height="43"
+              width="43"
+              fluid
+              center
+            />
             <p v-html="item.text" />
           </div>
         </div>
@@ -89,11 +97,11 @@
 
     <div class="row pb-5">
       <div class="col-sm-6">
-        <b-img-lazy :src="$t('ondemand.map.image2')" fluid />
+        <b-img-lazy :src="$t('ondemand.map.image2')" :alt="$t('ondemand.map.alt2')" fluid />
       </div>
       <div class="w-100 d-block d-sm-none" style="padding-bottom: 15px;" />
       <div class="col-sm-6">
-        <b-img-lazy :src="$t('ondemand.map.image1')" fluid />
+        <b-img-lazy :src="$t('ondemand.map.image1')" :alt="$t('ondemand.map.alt1')" fluid />
       </div>
     </div>
     <!-- disclaimer -->

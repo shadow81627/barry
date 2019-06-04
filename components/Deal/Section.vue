@@ -4,7 +4,7 @@
       <div :key="section.intro" class="row">
         <div class="col-12 text-center">
           <div class="mx-auto" style="max-width: 400px;">
-            <img :src="section.image" class="img-fluid d-block" />
+            <img :src="section.image" class="img-fluid d-block" :alt="section.alt" />
           </div>
           <p class="pb-4" v-html="section.intro" />
         </div>
