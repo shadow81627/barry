@@ -5,7 +5,7 @@
         <div class="col-12">
           <b-img-lazy
             :src="require('@/assets/images/QA_ScUber_WR.png')"
-            alt="Tourism and Events Queensland | Queensland Government"
+            :alt="$t('footer.alt')"
             center
             fluid
           />
