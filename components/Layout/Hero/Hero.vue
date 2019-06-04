@@ -17,7 +17,7 @@
 
     <div class="container-fluid h-100 p-0">
       <div class="hero__text">
-        <h1 class="pt-3 hero__title text-uppercase" v-html="title" />
+        <h1 v-if="title" class="pt-3 hero__title text-uppercase" v-html="title" />
         <div v-if="blurb" class="hero__blurb" v-html="blurb" />
 
         <b-nav v-if="cta" class="d-inline">
