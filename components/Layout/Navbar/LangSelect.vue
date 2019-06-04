@@ -1,5 +1,5 @@
 <template>
-  <b-select v-model="locale" class="lang" tabindex="-1">
+  <b-select v-model="locale" class="lang" tabindex="-1" aria-label="language">
     <option :value="currentLocale.code">{{ currentLocale.name }}</option>
     <option
       v-for="locale in $i18n.locales.filter(i => i.code !== $i18n.locale)"
