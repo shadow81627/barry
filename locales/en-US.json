@@ -1,20 +1,5 @@
 {
   "blog": {
-    "head": {
-      "title": "Explore the reef",
-      "meta": [
-        {
-          "hid": "title",
-          "name": "title",
-          "content": "Things to see and do on Australia's Great Barrier Reef in Queensland"
-        },
-        {
-          "hid": "description",
-          "name": "description",
-          "content": "Learn more about planning a holiday on Australia's Great Barrier Reef in Queensland and things to see and do on your holiday."
-        }
-      ]
-    },
     "heading": "EXPLORE THE REEF",
     "image": "/images/blog/queensland-blog-logo.png",
     "alt": "BlogLogo",
@@ -86,6 +71,21 @@
     ]
   },
   "deals": {
+    "head": {
+      "title": "Offers - Plan your next Great Barrier Reef vacation | scUber Queensland",
+      "meta": [
+        {
+          "hid": "title",
+          "name": "title",
+          "content": "Exclusive travel offers to plan your holiday on Australia's Great Barrier Reef"
+        },
+        {
+          "hid": "description",
+          "name": "description",
+          "content": "Find your perfect next Great Barrier Reef holiday with these exclusive travel offers to experience this natural masterpiece."
+        }
+      ]
+    },
     "heading": "TRAVEL OFFERS",
     "no-deals": "No Deal",
     "cta_view_deal": "View Offer",
