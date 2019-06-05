@@ -169,27 +169,27 @@
       ],
       "list": [
         {
-          "image": "/images/icons/about-1.png",
+          "image": "/images/icons/about-1.svg",
           "text": "Elle représente environ 10% de tous <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef/coral-reef-facts?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">les récifs coralliens</a> à travers le monde."
         },
         {
-          "image": "/images/icons/about-2.png",
+          "image": "/images/icons/about-2.svg",
           "text": "Aussi vaste qu’environ 70 millions de terrains de foot, la Grande barrière de corail mérite bien son nom."
         },
         {
-          "image": "/images/icons/about-3.png",
+          "image": "/images/icons/about-3.svg",
           "text": "Il s'agit de la plus grande merveille naturelle sur Terre et de la seule structure vivante pouvant être vue de la Lune."
         },
         {
-          "image": "/images/icons/about-4.png",
+          "image": "/images/icons/about-4.svg",
           "text": "La Grande barrière de corail héberge le 'Top 8' des espèces marines à rencontrer : baleines, tortues, raies manta, Clownfish, requins, mérous patate, labres Maori et bénitiers géants."
         },
         {
-          "image": "/images/icons/about-5.png",
+          "image": "/images/icons/about-5.svg",
           "text": "Ce récif corallien est le plus long et le plus large au monde. Il s’étend sur 2 300 km entre la pointe de Cape York au nord et Bundaberg au sud, soit environ la distance entre New York et Dallas !"
         },
         {
-          "image": "/images/icons/about-6.png",
+          "image": "/images/icons/about-6.svg",
           "text": "Classée au patrimoine mondial depuis 1981, elle est le premier récif corallien à avoir été reconnu par l’UNESCO. À ce titre, la Grande barrière de corail est hautement protégée et constitue l'un des sites marins les mieux gérés au monde."
         }
       ],
@@ -389,19 +389,19 @@
         "list": [
           {
             "text": "Prise en charge à votre adresse par une voiture Uber",
-            "image": "/images/icons/ride_icon1.png"
+            "image": "/images/icons/ride_icon1.svg"
           },
           {
             "text": "Trajet en hélicoptère vers et depuis Gladstone à destination de Heron Island, ou depuis Cairns ou Port Douglas à destination d'Agincourt Reef",
-            "image": "/images/icons/ride_icon2.png"
+            "image": "/images/icons/ride_icon2.svg"
           },
           {
             "text": "Plongée à bord d'un sous-marin scUber",
-            "image": "/images/icons/ride_icon3.png"
+            "image": "/images/icons/ride_icon3.svg"
           },
           {
             "text": "Retour en voiture à votre adresse de départ",
-            "image": "/images/icons/ride_icon4.png"
+            "image": "/images/icons/ride_icon4.svg"
           }
         ]
       },
