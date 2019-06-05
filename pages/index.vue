@@ -9,7 +9,7 @@
         :full-width="this.$mq === 'xs' || this.$mq === 'sm'"
       >
         <div class="intro">
-          <h2 class="pb-4" v-html="$t('about.card1.title')" />
+          <h1 class="pb-4" v-html="$t('about.card1.title')" />
           <p class="sub-heading">
             {{ $t('about.card1.intro') }}
           </p>
