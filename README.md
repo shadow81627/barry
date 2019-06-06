@@ -92,23 +92,22 @@ ffmpeg -hide_banner -y -i "6sec Bumper_1.mp4" \
 ### Close videos
 
 ```bash
-ffmpeg -i "48 Website_Book_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index.m3u8
+ffmpeg -i "15secHighlights_16x9_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index.m3u8
 ```
 
 ```bash
-ffmpeg -i "48 Hero 9-16_Book_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile.m3u8
+ffmpeg -i "15secHighlights_9x16_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile.m3u8
 ```
 
 French
 
 ```bash
-ffmpeg -i "48 French Website mute_Book_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index_fr.m3u8
+ffmpeg -i "15secHighlights_16x9_1.mp4" -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls index_fr.m3u8
 ```
 
 ```bash
-ffmpeg -i "48 French 9-16_Book_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile_fr.m3u8
+ffmpeg -i "15secHighlights_9x16_1.mp4" -profile:v main -crf 20 -g 48 -keyint_min 48 -sc_threshold 0 -b:v 2500k -maxrate 2675k -bufsize 3750k -level 3.0 -start_number 0 -hls_time 4 -hls_list_size 0 -f hls about_mobile_fr.m3u8
 ```
-
 
 ## Dependencies
 
