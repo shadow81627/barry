@@ -44,14 +44,12 @@
   "navigation": [
     { "value": "index", "text": "about scuber" },
     { "value": "close", "text": "win a ride" },
-    { "value": "request", "text": "request a ride" },
     { "value": "explore", "text": "explore the reef" },
     { "value": "offers", "text": "travel offers" }
   ],
   "pagination": [
     { "value": "index", "text": "about" },
     { "value": "close", "text": "win" },
-    { "value": "request", "text": "request" },
     { "value": "explore", "text": "explore" },
     { "value": "offers", "text": "offers" }
   ],
@@ -126,9 +124,8 @@
       "image": "/images/card1-image.jpg",
       "alt": "Meet scUber",
       "body": [
-        "Uber and Queensland, Australia, are giving riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
-        "From May 27 to June 17, 2019, this once-in-a-lifetime experience will provide riders with an unfiltered view of an extraordinary underwater world, rich and diverse in marine life.",
-        "To experience scUber, riders in selected Queensland cities will have the opportunity to request a scUber ride directly in the Uber app."
+        "Uber and Queensland, Australia, gave riders the opportunity to explore the Great Barrier Reef in the world's first rideshare submarine, scUber.",
+        "From May 27 to June 17, 2019, this once-in-a-lifetime experience provided riders with an unfiltered view of an extraordinary underwater world, rich and diverse in marine life."
       ]
     },
     "card2": {
@@ -163,8 +160,7 @@
       "image": "/images/card4-image.jpg",
       "alt": "Take a deep dive",
       "body": [
-        "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">Great Barrier Reef</a>.",
-        "scUber is a new way to have a completely immersive underwater experience in the home of 3,000 individual reefs, 900 islands and over 1,500 species of fish."
+        "It's the world-famous attraction that carries some sizeable tags – largest reef system and largest living organism on the planet – so it's no surprise that there are big experiences to be had on the <a href='https://www.queensland.com/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">Great Barrier Reef</a>."
       ],
       "list": [
         {
@@ -212,7 +208,7 @@
       "alt": "Protecting the Reef",
       "body": [
         "The ongoing preservation and sustainable protection of the Great Barrier Reef is one of global importance. Uber is proud to announce its partnership with Citizens of the Great Barrier Reef to support their conservation initiatives for the world's largest ecosystem.",
-        "Uber will be donating $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also be donating the equivalent value of every scUber ride taken to this important organisation.",
+        "Uber donated $100,000 to Citizens of the Great Barrier Reef to help support their Reef conservation programs and will also donate the equivalent value of every scUber ride taken to this important organisation.",
         "<a href='https://citizensgbr.org/our-partners/uber/' target='_blank' rel=\"noopener\">Learn more</a> about the partnership and the conservation programs by Citizens of the Great Barrier Reef."
       ]
     }

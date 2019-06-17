@@ -45,14 +45,12 @@
   "navigation": [
     { "value": "index", "text": "À PROPOS DU SCUBER" },
     { "value": "close", "text": "GAGNER UNE PLONGÉE" },
-    { "value": "request", "text": "RÉSERVER UNE PLONGÉE" },
     { "value": "explore", "text": "EXPLORER LA GRANDE BARRIÈRE" },
     { "value": "offers", "text": "OFFRES DE VOYAGE" }
   ],
   "pagination": [
     { "value": "index", "text": "à propos" },
     { "value": "close", "text": "gagner" },
-    { "value": "request", "text": "réserver" },
     { "value": "explore", "text": "explorer" },
     { "value": "offers", "text": "offres" }
   ],
@@ -128,8 +126,7 @@
       "alt": "Découvrez le scUber",
       "body": [
         "Uber et l'état du Queensland en Australie offrent aux passagers la possibilité d'explorer la Grande barrière de corail à bord du scUber, le premier sous-marin au monde disponible à la demande.",
-        "Du 27 mai au 17 juin 2019, cette expérience unique offrira aux passagers un aperçu authentique d’un monde sous-marin extraordinairement riche et diversifié.",
-        "Pour profiter du scUber, les passagers de certaines villes du Queensland auront la possibilité de réserver leur excursion en scUber directement sur l'application Uber."
+        "Du 27 mai au 17 juin 2019, cette expérience unique offrira aux passagers un aperçu authentique d’un monde sous-marin extraordinairement riche et diversifié."
       ]
     },
     "card2": {
@@ -164,8 +161,7 @@
       "image": "/images/card4-image.jpg",
       "alt": "Plongez dans les abysses",
       "body": [
-        "Cette attraction de renommée mondiale est à la fois le récif corallien le plus vaste au monde et le plus grand organisme vivant de la planète. Il n’y a donc rien d’étonnant à ce que les expériences proposées sur <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">la Grande barrière de corail</a> soient sans commune mesure.",
-        "Le scUber est un nouveau moyen de profiter d'une expérience sous-marine totalement immersive au beau milieu de 3 000 récifs, 900 îles et 1 500 espèces de poissons."
+        "Cette attraction de renommée mondiale est à la fois le récif corallien le plus vaste au monde et le plus grand organisme vivant de la planète. Il n’y a donc rien d’étonnant à ce que les expériences proposées sur <a href='https://www.queensland.com/fr-fr/explore-queensland/great-barrier-reef?utm_medium=referral&utm_source=scuberqueensland-com&utm_campaign=teq-gl_co_gn_scuber&utm_content=queensland' target='_blank' rel=\"noopener\">la Grande barrière de corail</a> soient sans commune mesure."
       ],
       "list": [
         {

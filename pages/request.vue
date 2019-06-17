@@ -120,6 +120,7 @@ export default {
     LayerCard,
   },
   layout: 'ondemand',
+  middleware: ['competition-state'],
   methods: {
     chunk: utils.chunk,
   },

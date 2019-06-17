@@ -50,7 +50,7 @@
     </TwoByOne>
 
     <!-- card3 -->
-    <TwoByOne class="py-5" reverse>
+    <!-- <TwoByOne class="py-5" reverse>
       <template #column-1>
         <div class="w-100">
           <nuxt-link :to="localePath($t('about.card3.image-link.path'))">
@@ -73,7 +73,7 @@
           </div>
         </div>
       </template>
-    </TwoByOne>
+    </TwoByOne> -->
 
     <!-- card4 -->
     <div class="row container-break-out-center py-5">
