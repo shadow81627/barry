@@ -11,6 +11,7 @@ export default ({ app }, inject) => {
     const options = {
       // name of the app. Change this for production app.
       appName: 'barry',
+      preloadContent: ['Notification Prompt'],
       serviceWorkerLocation: '/sw.js',
       safariWebsitePushId: 'web.com.scuberqueensland',
       onError: function(e) {
