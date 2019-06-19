@@ -95,16 +95,7 @@ export default ({ app }, inject) => {
             if (!isSubscribed) {
               console.log(`Push supported: ${page}`);
               if (!olCurrentPageName.includes('win')) {
-                setTimeout(
-                  _ol('askForPermission', 'notification', {}, function(subscribed) {
-                    if (subscribed === 'subscribed') {
-                      _ol('registerEvent', 'softyes_hardallow', '', function() {});
-                    } else if (subscribed === 'notsubscribed') {
-                      _ol('registerEvent', 'softyes_hardblock', '', function() {});
-                    }
-                  }),
-                  3000,
-                );
+                _ol('registerEvent', 'notSubscribed', '', function() {});
               }
             } else {
               _ol('push.subscribe');
