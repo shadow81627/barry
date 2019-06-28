@@ -45,14 +45,12 @@
   "navigation": [
     { "value": "index", "text": "À PROPOS DU SCUBER" },
     { "value": "close", "text": "GAGNER UNE PLONGÉE" },
-    { "value": "explore", "text": "EXPLORER LA GRANDE BARRIÈRE" },
-    { "value": "offers", "text": "OFFRES DE VOYAGE" }
+    { "value": "explore", "text": "EXPLORER LA GRANDE BARRIÈRE" }
   ],
   "pagination": [
     { "value": "index", "text": "à propos" },
     { "value": "close", "text": "gagner" },
-    { "value": "explore", "text": "explorer" },
-    { "value": "offers", "text": "offres" }
+    { "value": "explore", "text": "explorer" }
   ],
   "cookie": {
     "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">Ce site utilise des cookies afin d&#39;optimiser votre exp&eacute;rience. Consultez les <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" style=\"color:#fff; text-decoration:underline;\" target=\"_blank\" rel=\"noopener\">Informations relatives aux cookies</a> pour en savoir plus.</span>",

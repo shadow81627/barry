@@ -9,6 +9,7 @@ import Section from '@/components/Deal/Section';
 
 export default {
   layout: 'deals',
+  middleware: ['competition-state'],
   components: {
     Section,
   },

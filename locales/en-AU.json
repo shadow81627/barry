@@ -44,14 +44,12 @@
   "navigation": [
     { "value": "index", "text": "about scuber" },
     { "value": "close", "text": "win a ride" },
-    { "value": "explore", "text": "explore the reef" },
-    { "value": "offers", "text": "travel offers" }
+    { "value": "explore", "text": "explore the reef" }
   ],
   "pagination": [
     { "value": "index", "text": "about" },
     { "value": "close", "text": "win" },
-    { "value": "explore", "text": "explore" },
-    { "value": "offers", "text": "offers" }
+    { "value": "explore", "text": "explore" }
   ],
   "cookie": {
     "body": "<span class=\"attached-banner-interstitial-main-content-label-description\">This site uses cookies to give you the best experience. Review our <a href=\"https://www.queensland.com/en-au/info/disclaimer-and-privacy\" target=\"_blank\" rel=\"noopener\" style=\"color:#fff; text-decoration:underline;\">cookies information</a> for more details.</span>",
