@@ -11,15 +11,12 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    // 'airbnb-base',
-    // 'plugin:nuxt/recommended',
     'plugin:vue/recommended',
     '@nuxtjs',
     'prettier/vue',
     'plugin:prettier/recommended',
   ],
   plugins: ['vue', 'prettier'],
-  // add your custom rules here
   rules: {
     'prettier/prettier': ['error', prettierrc],
     'vue/html-self-closing': [
