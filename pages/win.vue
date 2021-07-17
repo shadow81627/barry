@@ -35,9 +35,6 @@ export default {
       disabled: process.env.DISABLE_FORM === 'TRUE',
     };
   },
-  mounted() {
-    _ol('registerEvent', 'WINpage', 1, function() {});
-  },
   head() {
     return {
       ...this.$t('entry.head'),

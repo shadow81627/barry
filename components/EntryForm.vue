@@ -305,14 +305,6 @@ export default {
             // Set entrant in vuex store
             this.$store.commit('setEntrant', { ...this.form, hash: response.data.hash });
 
-            // Set other levels tag for teq opt in
-            if (vm.form.teq_opt_in === 1) {
-              _ol('setTag', 'TEQOptIn', 1, 'numeric', function() {});
-            } else {
-              _ol('setTag', 'TEQOptIn', 0, 'numeric', function() {});
-            }
-            _ol('setTag', 'submitForm', 1, 'numeric', function() {});
-
             // Trigger event
             EventBus.$emit('entry-confirmed', true);
             EventBus.$emit('notification', {
