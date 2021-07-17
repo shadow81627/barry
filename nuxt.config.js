@@ -7,17 +7,7 @@ export default {
   modern: true,
 
   router: {
-    middleware: ['check-subscriber-hash', 'otherlevels-middleware'],
-  },
-
-  manifest: {
-    gcm_sender_id: '609863794561',
-  },
-
-  workbox: {
-    importScripts: [
-      'https://cdn.otherlevels.com/js-sdk/ol-service-worker.js?appKey=7b9f8bc23f715afc5141842400f6451a',
-    ],
+    middleware: [],
   },
 
   /*
@@ -78,12 +68,6 @@ export default {
     ],
     script: [
       {
-        src:
-          'https://cdn.otherlevels.com/js-sdk/otherlevels.js?appKey=7b9f8bc23f715afc5141842400f6451a',
-        // async: true,
-        // defer: true,
-      },
-      {
         hid: 'videojs',
         src: 'https://vjs.zencdn.net/7.5.4/video.min.js',
         async: true,
@@ -111,7 +95,6 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '@/plugins/otherlevels', ssr: false },
     { src: '@/plugins/facebook', ssr: false },
     { src: '@/plugins/twitter', ssr: false },
     { src: '@/plugins/mq', ssr: false },
