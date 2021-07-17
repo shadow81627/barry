@@ -25,11 +25,19 @@ export default {
    */
   head: {
     title: 'scUber Queensland',
-    // Stop head from being reloaded client side
-    // htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        once: true,
+        name: 'charset',
+        hid: 'charset',
+        content: 'utf-8',
+      },
+      {
+        once: true,
+        hid: 'viewport',
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
       {
         hid: 'description',
         name: 'description',
