@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.1](https://github.com/shadow81627/barry/compare/v1.0.0...v1.0.1) (2021-07-17)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/setup-dotnet from 1.8.0 to 1.8.1 ([#3](https://github.com/shadow81627/barry/issues/3)) ([62e1dfe](https://github.com/shadow81627/barry/commit/62e1dfe33a7a7d60fd8ebe9e76c05f27f7d83515))
+
 # 1.0.0 (2021-07-17)
 
 
