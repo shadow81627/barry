@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@nuxtjs/dotenv": "1.3.0",
@@ -18,9 +19,7 @@
     "@nuxtjs/google-tag-manager": "2.2.0",
     "@nuxtjs/pwa": "2.6.0",
     "axios": "0.21.1",
-    "bootstrap": "4.3.1",
     "bootstrap-vue": "2.0.0-rc.20",
-    "cross-env": "5.2.0",
     "nuxt": "^2.7.1",
     "nuxt-i18n": "5.12.3",
     "video.js": "7.5.4",
@@ -32,9 +31,8 @@
   "devDependencies": {
     "@babel/core": "7.4.3",
     "@nuxtjs/eslint-config": "0.0.1",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0",
-    "@vue/test-utils": "^1.0.0-beta.27",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
@@ -51,12 +49,9 @@
     "eslint-plugin-promise": "4.1.1",
     "eslint-plugin-standard": "4.0.0",
     "eslint-plugin-vue": "5.2.2",
-    "husky": "1.3.1",
     "node-sass": "4.12.0",
-    "nodemon": "1.19.0",
     "prettier": "1.17.1",
-    "pretty-quick": "1.11.0",
     "sass-loader": "7.1.0",
-    "vue-jest": "^3.0.3"
+    "semantic-release": "17.4.4"
   }
 }
