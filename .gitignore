@@ -88,6 +88,3 @@ __pycache__
 
 # Google Auth
 token.pickle
-
-# vscode
-.vscode
