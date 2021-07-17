@@ -1,21 +1,6 @@
 <!DOCTYPE html>
-<html data-vue-meta-server-rendered="" lang="en" data-n-head="data-vue-meta-server-rendered,lang">
+<html lang="en">
   <head data-n-head="">
-    <!-- Google Tag Manager  /  Paste this code as high in the <head> of the page as possible  -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-WV2SB2T');
-    </script>
-    <!-- End Google Tag Manager -->
-
     <title data-n-head="true">Coming soon</title>
     <meta data-n-head="true" charset="utf-8" />
     <meta data-n-head="true" name="viewport" content="width=device-width,initial-scale=1" />
@@ -27,16 +12,6 @@
     />
   </head>
   <body>
-    <!-- Google Tag Manager (noscript)  /  Additionally, paste this code immediately after the opening <body> tag: -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WV2SB2T"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <script src="https://cdn.rawgit.com/vuejs/vue/v1.0.24/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
     <div class="text" style="padding-top: 100px;">
@@ -359,9 +334,9 @@
       var Countdown = new Vue({
         el: el,
 
-        template: ` 
+        template: `
                 <div class="flip-clock" data-date="2019-05-23" @click="update">
-                  <tracker 
+                  <tracker
                     v-for="tracker in trackers"
                     :property="tracker"
                     :time="time"
