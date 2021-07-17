@@ -2,7 +2,7 @@
   "name": "barry",
   "version": "1.0.0",
   "description": "scUber Queensland Competition",
-  "author": "XCOM",
+  "author": "Damien Robinson",
   "private": true,
   "scripts": {
     "dev": "nuxt",
