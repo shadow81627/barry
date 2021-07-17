@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.2](https://github.com/shadow81627/barry/compare/v1.0.1...v1.0.2) (2021-07-17)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([#6](https://github.com/shadow81627/barry/issues/6)) ([d3280eb](https://github.com/shadow81627/barry/commit/d3280eb9062aa87994e49a381614f85e1e4af1ad))
+
 ## [1.0.1](https://github.com/shadow81627/barry/compare/v1.0.0...v1.0.1) (2021-07-17)
 
 
