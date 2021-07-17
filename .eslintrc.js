@@ -37,7 +37,6 @@ module.exports = {
     FB: 'readable',
     twttr: 'readable',
     $: 'readable',
-    _ol: 'readable',
     videojs: 'readable',
   },
 };
