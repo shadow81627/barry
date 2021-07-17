@@ -43,13 +43,13 @@ export default {
       const self = this;
 
       // Self close earliest notification after 8 secs
-      const timer = window.setInterval(function() {
+      const timer = global.setInterval(function() {
         if (self.notifications.length > 0) {
           setTimeout(function() {
             self.notifications.shift();
           }, 5000);
         } else {
-          window.clearInterval(timer);
+          global.clearInterval(timer);
         }
       }, 5000);
     },

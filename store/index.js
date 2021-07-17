@@ -21,7 +21,7 @@ export const state = {
   // Set of validation for form fields, returned by the subforms-api
   serverValidation: [],
 
-  cookieAccepted: window.localStorage ? localStorage.getItem('cookieAccepted') || false : false,
+  cookieAccepted: global.localStorage ? localStorage.getItem('cookieAccepted') || false : false,
 };
 
 export const mutations = {
