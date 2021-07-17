@@ -1,5 +1,6 @@
 export default {
   mode: 'spa',
+  modern: true,
 
   router: {
     middleware: ['check-subscriber-hash', 'otherlevels-middleware'],
