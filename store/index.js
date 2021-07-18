@@ -1,7 +1,7 @@
 // Form select input options
 import countries from '@/assets/json/countries.json';
 
-export const state = {
+export const state = () => ({
   entrant: {
     secret: process.env.API_SECRET,
     first_name: null,
@@ -22,7 +22,7 @@ export const state = {
   serverValidation: [],
 
   cookieAccepted: global.localStorage ? localStorage.getItem('cookie-accepted') || false : false,
-};
+});
 
 export const mutations = {
   setCookieAccepted(currentState, cookieAccepted) {
