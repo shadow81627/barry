@@ -10,7 +10,7 @@
         </div>
       </div>
 
-      <div v-for="(chunk, index) in chunk(section.deals, 2)" :key="index" class="row">
+      <div v-for="(chunk, index) in chunks(section.deals, 2)" :key="index" class="row">
         <div v-for="deal in chunk" :key="deal.heading" class="col-md-6 col-sm-12 deal-column">
           <Deal v-bind="deal" />
         </div>
@@ -32,7 +32,7 @@ export default {
     sections: { type: Array },
   },
   methods: {
-    chunk: utils.chunk,
+    chunks: utils.chunk,
   },
 };
 </script>

@@ -84,7 +84,7 @@
           <p class="sub-heading" v-html="$t('about.card4.intro')" />
         </div>
 
-        <div v-for="(chunk, index) in chunk($t('about.card4.list'), 10)" :key="index" class="row">
+        <div v-for="(chunk, index) in chunks($t('about.card4.list'), 10)" :key="index" class="row">
           <div v-for="item in chunk" :key="item.text" class="col-lg-4 col-md-6 col-sm-12">
             <b-img-lazy :src="item.image" :alt="item.alt" height="43" width="43" fluid />
             <p v-html="item.text" />
@@ -160,7 +160,7 @@ export default {
     };
   },
   methods: {
-    chunk: utils.chunk,
+    chunks: utils.chunk,
   },
 };
 </script>

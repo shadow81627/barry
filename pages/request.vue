@@ -19,7 +19,7 @@
       <div class="col-md-5 text-center p-5" style="background-color: #e2eaee;">
         <h2 class="h4 text-dark" v-html="$t('ondemand.sections')[0].title" />
         <div
-          v-for="(chunk, index) in chunk($t('ondemand.sections')[0].list, 10)"
+          v-for="(chunk, index) in chunks($t('ondemand.sections')[0].list, 10)"
           :key="index"
           class="row"
         >
@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import utils from '@/assets/js/utils';
+import { chunk } from '@/assets/js/utils';
 
 // import TwoByOne from '@/components/TwoByOne';
 import LayerCard from '@/components/LayerCard';
@@ -134,7 +134,7 @@ export default {
     };
   },
   methods: {
-    chunk: utils.chunk,
+    chunks: utils.chunk,
   },
 };
 </script>
