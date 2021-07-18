@@ -19,19 +19,19 @@ jobs:
         uses: actions/setup-node@v2.2.0
         with:
           node-version: 12
-          cache: npm
+          cache: yarn
 
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci
+        run: yarn ci
 
       - name: Lint ✨
-        run: npm run lint
+        run: yarn run lint
 
       - name: Build 🔨
-        run: npm run generate
+        run: yarn run generate
       # - name: Test 🧪
-      #   run: npm run test:e2e
+      #   run: yarn run test:e2e
       # - name: Run Lighthouse 💡
-      #   run: npm run lhci:autorun
+      #   run: yarn run lhci:autorun
       #   env:
       #     LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

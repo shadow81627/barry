@@ -88,3 +88,6 @@ __pycache__
 
 # Google Auth
 token.pickle
+
+# npm lockfile
+package-lock.json

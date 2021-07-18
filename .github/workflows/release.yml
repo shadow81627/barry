@@ -18,10 +18,10 @@ jobs:
         uses: actions/setup-node@v2.2.0
         with:
           node-version: 12
-          cache: npm
+          cache: yarn
 
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci
+        run: yarn ci
 
       - name: Release 🚀
         env:
