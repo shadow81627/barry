@@ -91,3 +91,6 @@ token.pickle
 
 # npm lockfile
 package-lock.json
+
+# lighthouse
+.lighthouseci
