@@ -21,17 +21,17 @@
 import EventBus from '@/assets/js/EventBus.js';
 
 export default {
-  data: function() {
+  data() {
     return {
       notifications: [],
     };
   },
-  mounted: function() {
+  mounted() {
     // Listening to event notification from app
     EventBus.$on('notification', this.add);
   },
   methods: {
-    add: function(message) {
+    add(message) {
       // Keep a maximum of 5 messages displayed
       if (this.notifications.length >= 5) {
         this.notifications.shift();
@@ -53,7 +53,7 @@ export default {
         }
       }, 5000);
     },
-    close: function(index) {
+    close(index) {
       this.notifications.splice(index, 1);
     },
   },

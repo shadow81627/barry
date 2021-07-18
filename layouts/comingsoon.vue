@@ -1,7 +1,5 @@
 <template>
   <div id="comingsoon-layout">
-
-
     <div class="container-fluid main-content-container">
       <nuxt id="page-content" class="main-content-comingsoon" />
     </div>

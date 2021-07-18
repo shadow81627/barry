@@ -28,18 +28,15 @@ import BlogPost from '@/components/Blog/Post';
 import BlogPostBanner from '@/components/Blog/Banner';
 
 export default {
-  layout: 'blog',
   components: {
     BlogPost,
     BlogPostBanner,
   },
-  data: function() {
+  layout: 'blog',
+  data() {
     return {
       deals: this.$t('blog.posts'),
     };
-  },
-  methods: {
-    chunk: utils.chunk,
   },
   head() {
     return {
@@ -52,6 +49,9 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    chunk: utils.chunk,
   },
 };
 </script>

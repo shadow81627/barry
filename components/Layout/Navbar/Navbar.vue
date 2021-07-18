@@ -45,14 +45,14 @@ export default {
     menuOpen: false,
   }),
   computed: {
-    color: function() {
+    color() {
       if (this.menuOpen) {
         // Set nav variant to white when menu open
         return 'light';
       }
       return this.variant;
     },
-    type: function() {
+    type() {
       return (this.dark || this.variant === 'dark') && !this.menuOpen ? 'dark' : 'light';
     },
   },

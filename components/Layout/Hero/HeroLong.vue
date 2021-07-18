@@ -6,6 +6,10 @@ import Hero from './Hero';
 
 export default {
   extends: Hero,
+  head: () => ({
+    scripts: [{ hid: 'videojs', src: 'https://vjs.zencdn.net/7.5.4/video.js' }],
+    link: [{ rel: 'stylesheet', href: 'https://vjs.zencdn.net/7.4.1/video-js.css' }],
+  }),
   mounted() {
     const vm = this;
     const player = videojs(document.querySelector('.video-js', this.dataSetup));
@@ -81,10 +85,6 @@ export default {
       updateVideo();
     });
   },
-  head: () => ({
-    scripts: [{ hid: 'videojs', src: 'https://vjs.zencdn.net/7.5.4/video.js' }],
-    link: [{ rel: 'stylesheet', href: 'https://vjs.zencdn.net/7.4.1/video-js.css' }],
-  }),
 };
 </script>
 

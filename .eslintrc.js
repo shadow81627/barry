@@ -1,5 +1,3 @@
-const prettierrc = require('./prettier.config.js');
-
 module.exports = {
   root: true,
   env: {
@@ -7,28 +5,26 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
   },
   extends: [
-    'eslint:recommended',
-    'plugin:vue/recommended',
     '@nuxtjs',
-    'prettier/vue',
+    '@nuxtjs/eslint-config-typescript',
+    'prettier',
     'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
   ],
-  plugins: ['vue', 'prettier'],
+  plugins: ['prettier'],
+  ignorePatterns: ['static/**'],
   rules: {
-    'prettier/prettier': ['error', prettierrc],
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'any',
-        },
-      },
-    ],
-    'no-console': 'off',
-    'vue/max-attributes-per-line': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'vue/require-prop-types': 'off',
+    'vue/require-default-prop': 'off',
+    'vue/no-v-html': 'off',
+    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
   globals: {
     FB: 'readable',

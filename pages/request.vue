@@ -40,18 +40,18 @@
     </div>
 
     <div class="row container-break-out-center py-5" style="padding-top: 10px;">
-      <layerCard
+      <LayerCard
         :src="$t('ondemand.sections')[1].image"
         :alt="$t('ondemand.sections')[1].alt"
         reverse
-        :full-width="this.$mq === 'xs' || this.$mq === 'sm'"
+        :full-width="$mq === 'xs' || $mq === 'sm'"
         text-align="left"
       >
         <div class="intro">
           <h2 class="pb-4" v-html="$t('ondemand.sections')[1].title" />
           <p v-for="item in $t('ondemand.sections')[1].list" :key="item" v-html="item" />
         </div>
-      </layerCard>
+      </LayerCard>
     </div>
 
     <!-- <div v-for="section in $t('ondemand.sections')" :key="section.title" class="row">
@@ -121,9 +121,6 @@ export default {
   },
   layout: 'ondemand',
   middleware: ['competition-state'],
-  methods: {
-    chunk: utils.chunk,
-  },
   head() {
     return {
       ...this.$t('ondemand.head'),
@@ -135,6 +132,9 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    chunk: utils.chunk,
   },
 };
 </script>

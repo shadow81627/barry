@@ -87,7 +87,7 @@
           @input="$v.form.country_iso.$touch()"
         />
         <FormField
-          v-show="this.form.country_iso === 'AU'"
+          v-show="form.country_iso === 'AU'"
           v-model.trim="form.postcode"
           v-bind="{
             id: 'postcode',
@@ -223,7 +223,7 @@ export default {
         requiredIf: requiredIf(function(value) {
           return this.form.country_iso === 'AU';
         }),
-        length: function(value) {
+        length(value) {
           return this.form.country_iso === 'AU' && value ? value.length === 4 : true;
         },
       },
@@ -258,13 +258,13 @@ export default {
     };
   },
   computed: {
-    currentWordCountText: function() {
+    currentWordCountText() {
       // display word count text
       return `${
         this.form.entry_text.length === 0 ? this.$n(0) : this.countWords(this.form.entry_text)
       } / ${this.$n(25)} ${this.$t('entry.form.word_count')}`;
     },
-    wordCountColor: function() {
+    wordCountColor() {
       // Set word count description display color based on word count
       if (this.$v.form.entry_text.$dirty) {
         if (this.$v.form.entry_text.$error) {

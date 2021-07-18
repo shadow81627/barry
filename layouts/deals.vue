@@ -1,7 +1,5 @@
 <template>
   <div id="app" class="deals-layout">
-
-
     <Navbar variant="dark" />
 
     <Heading :heading="$t('deals.heading')" class="bg-dark" />

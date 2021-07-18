@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-
-
     <Hero
       v-bind="{
         title: $t('closed.hero.title'),

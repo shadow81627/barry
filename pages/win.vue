@@ -25,11 +25,11 @@
 import EntryForm from '@/components/EntryForm';
 
 export default {
-  layout: 'entry',
-  middleware: ['competition-state'],
   components: {
     EntryForm,
   },
+  layout: 'entry',
+  middleware: ['competition-state'],
   data() {
     return {
       disabled: process.env.DISABLE_FORM === 'TRUE',

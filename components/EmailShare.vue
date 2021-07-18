@@ -100,7 +100,7 @@ export default {
       },
     },
   },
-  data: function() {
+  data() {
     return {
       entrant: this.$store.state.entrant,
       friends: [emptyFriend],

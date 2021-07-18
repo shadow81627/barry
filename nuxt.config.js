@@ -102,6 +102,8 @@ export default {
     { src: '@/plugins/mq', ssr: false },
   ],
 
+  buildModules: ['@nuxt/typescript-build'],
+
   /*
    ** Nuxt.js modules
    */
@@ -109,7 +111,6 @@ export default {
     'bootstrap-vue/nuxt',
     // ['@nuxtjs/google-tag-manager', { id: 'GTM-WV2SB2T' }],
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv',
     'vue-scrollto/nuxt',
     'nuxt-i18n',
   ],

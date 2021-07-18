@@ -8,23 +8,15 @@ import utils from '@/assets/js/utils';
 import Section from '@/components/Deal/Section';
 
 export default {
-  layout: 'deals',
-  middleware: ['competition-state'],
   components: {
     Section,
   },
-  data: function() {
+  layout: 'deals',
+  middleware: ['competition-state'],
+  data() {
     return {
       sections: this.$t('deals.sections'),
     };
-  },
-  computed: {
-    sortDisabledDeals: function() {
-      return this.sections;
-    },
-  },
-  methods: {
-    chunk: utils.chunk,
   },
   head() {
     return {
@@ -37,6 +29,14 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    sortDisabledDeals() {
+      return this.sections;
+    },
+  },
+  methods: {
+    chunk: utils.chunk,
   },
 };
 </script>

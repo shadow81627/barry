@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-
-
     <HeroLong
       v-bind="{
         title: $t('entry.hero.title'),
@@ -33,7 +31,7 @@
     <div class="container">
       <div class="row">
         <nuxt id="page-content" class="main-content" />
-        <main-content-right class="col-12 col-md-4 ml-md-auto" />
+        <MainContentRight class="col-12 col-md-4 ml-md-auto" />
       </div>
     </div>
 

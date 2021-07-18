@@ -2,11 +2,11 @@
   <div>
     <!-- card1 -->
     <div class="row container-break-out-center pb-5" style="padding-top: 10px;">
-      <layerCard
+      <LayerCard
         :src="$t('about.card1.image')"
         :alt="$t('about.card1.alt')"
         reverse
-        :full-width="this.$mq === 'xs' || this.$mq === 'sm'"
+        :full-width="$mq === 'xs' || $mq === 'sm'"
       >
         <div class="intro">
           <h1 class="pb-4" v-html="$t('about.card1.title')" />
@@ -15,7 +15,7 @@
           </p>
           <p v-for="item in $t('about.card1.body')" :key="item" v-html="item" />
         </div>
-      </layerCard>
+      </LayerCard>
     </div>
 
     <!-- card2 -->
@@ -142,14 +142,11 @@ import utils from '@/assets/js/utils';
 import TwoByOne from '@/components/TwoByOne';
 import LayerCard from '@/components/LayerCard';
 export default {
-  layout: 'about',
   components: {
     TwoByOne,
     LayerCard,
   },
-  methods: {
-    chunk: utils.chunk,
-  },
+  layout: 'about',
   head() {
     return {
       ...this.$t('about.head'),
@@ -161,6 +158,9 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    chunk: utils.chunk,
   },
 };
 </script>
