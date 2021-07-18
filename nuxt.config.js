@@ -84,7 +84,7 @@ export default {
   loadingIndicator: {
     name: '~/loading.html',
     color: 'white',
-    throttle: 0,
+    throttle: 1000,
     background: 'black',
   },
 
@@ -99,7 +99,7 @@ export default {
   plugins: [
     { src: '@/plugins/facebook', ssr: false },
     { src: '@/plugins/twitter', ssr: false },
-    { src: '@/plugins/mq', ssr: false },
+    { src: '@/plugins/mq' },
   ],
 
   buildModules: ['@nuxt/typescript-build'],
