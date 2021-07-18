@@ -1,5 +1,6 @@
 const env = {
   FACEBOOK_APP_ID: process.env.FACEBOOK_APP_ID,
+  BASE_URL: 'https://scuberqueensland.com',
 };
 
 export default {
@@ -109,53 +110,53 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     'vue-scrollto/nuxt',
-    [
-      'nuxt-i18n',
-      {
-        baseUrl: 'https://scuberqueensland.com',
-        strategy: 'prefix_and_default',
-        langDir: 'locales/',
-        locales: [
-          {
-            code: 'en-au',
-            name: 'English Australia',
-            iso: 'en-AU',
-            file: 'en-AU.json',
-          },
-          {
-            code: 'en-nz',
-            name: 'English New Zealand',
-            iso: 'en-AU',
-            file: 'en-NZ.json',
-          },
-          {
-            code: 'en-gb',
-            name: 'English United Kingdom',
-            iso: 'en-GB',
-            file: 'en-GB.json',
-          },
-          {
-            code: 'en-us',
-            name: 'English USA',
-            iso: 'en-US',
-            file: 'en-US.json',
-          },
-          {
-            code: 'en-ca',
-            name: 'English Canada',
-            iso: 'en-CA',
-            file: 'en-CA.json',
-          },
-          { code: 'fr-fr', name: 'Français', iso: 'fr-FR', file: 'fr-FR.json' },
-        ],
-        defaultLocale: 'en-au',
-        lazy: true,
-        vueI18n: {
-          fallbackLocale: 'en-au',
-        },
-      },
-    ],
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    baseUrl: env.BASE_URL,
+    strategy: 'prefix_and_default',
+    langDir: 'locales/',
+    locales: [
+      {
+        code: 'en-au',
+        name: 'English Australia',
+        iso: 'en-AU',
+        file: 'en-AU.json',
+      },
+      {
+        code: 'en-nz',
+        name: 'English New Zealand',
+        iso: 'en-AU',
+        file: 'en-NZ.json',
+      },
+      {
+        code: 'en-gb',
+        name: 'English United Kingdom',
+        iso: 'en-GB',
+        file: 'en-GB.json',
+      },
+      {
+        code: 'en-us',
+        name: 'English USA',
+        iso: 'en-US',
+        file: 'en-US.json',
+      },
+      {
+        code: 'en-ca',
+        name: 'English Canada',
+        iso: 'en-CA',
+        file: 'en-CA.json',
+      },
+      { code: 'fr-fr', name: 'Français', iso: 'fr-FR', file: 'fr-FR.json' },
+    ],
+    defaultLocale: 'en-au',
+    lazy: true,
+    vueI18n: {
+      fallbackLocale: 'en-au',
+    },
+  },
+
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`
