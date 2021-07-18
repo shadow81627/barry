@@ -12,67 +12,6 @@
   </div>
 </template>
 
-<style scoped>
-.loading-page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(28, 178, 169);
-
-  z-index: 100000;
-
-  margin: 0;
-}
-/* Non essential CSS - Just for example centering */
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.center-outer {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-.center-inner {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* Essential CSS - Makes the effect work */
-
-.bubbles {
-  display: inline-block;
-  font-family: arial;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.bubbles h1 {
-  position: relative;
-  margin: 1em 0 0;
-  font-family: 'Luckiest Guy', cursive;
-  color: #fff;
-  z-index: 2;
-}
-
-.individual-bubble {
-  position: absolute;
-  border-radius: 100%;
-  bottom: 10px;
-  background-color: #fff;
-  z-index: 1;
-}
-</style>
-
 <script>
 export default {
   data: () => ({
@@ -140,3 +79,64 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(28, 178, 169);
+
+  z-index: 100000;
+
+  margin: 0;
+}
+/* Non essential CSS - Just for example centering */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.center-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.center-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Essential CSS - Makes the effect work */
+
+.bubbles {
+  display: inline-block;
+  font-family: arial;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bubbles h1 {
+  position: relative;
+  margin: 1em 0 0;
+  font-family: 'Luckiest Guy', cursive;
+  color: #fff;
+  z-index: 2;
+}
+
+.individual-bubble {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+</style>

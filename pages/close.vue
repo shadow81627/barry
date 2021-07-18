@@ -7,12 +7,6 @@
   </div>
 </template>
 
-<style scoped>
-h2 {
-  margin-bottom: 3rem;
-}
-</style>
-
 <script>
 export default {
   layout: 'close',
@@ -30,3 +24,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h2 {
+  margin-bottom: 3rem;
+}
+</style>
