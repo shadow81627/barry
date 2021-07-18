@@ -4,7 +4,7 @@ const env = {
 };
 
 export default {
-  mode: 'spa',
+  mode: 'static',
   modern: true,
 
   router: {
