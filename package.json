@@ -48,6 +48,7 @@
     "faker": "5.5.1",
     "playwright": "1.12.3",
     "prettier": "1.17.1",
+    "sass": "1.32.13",
     "sass-loader": "10.1.1",
     "semantic-release": "17.4.4",
     "serve-handler": "6.1.3",
