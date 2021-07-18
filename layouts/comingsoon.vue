@@ -1,13 +1,6 @@
 <template>
   <div id="comingsoon-layout">
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WV2SB2T"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
+
 
     <div class="container-fluid main-content-container">
       <nuxt id="page-content" class="main-content-comingsoon" />

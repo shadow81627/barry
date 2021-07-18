@@ -1,13 +1,6 @@
 <template>
   <div id="app">
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WV2SB2T"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
+
 
     <HeroLong
       v-bind="{
