@@ -9,6 +9,7 @@ export default {
 
   router: {
     middleware: [],
+    fallack: true,
   },
 
   /*
