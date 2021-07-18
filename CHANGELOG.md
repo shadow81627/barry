@@ -1,5 +1,13 @@
 # Releases
 
+## [1.0.6](https://github.com/shadow81627/barry/compare/v1.0.5...v1.0.6) (2021-07-18)
+
+
+### Bug Fixes
+
+* **404:** move fallback to generate ([d0f90eb](https://github.com/shadow81627/barry/commit/d0f90eb82b6db6caadb970179f78e1230eac4e9d))
+* **deps:** update dependency jquery to v3 [security] ([#32](https://github.com/shadow81627/barry/issues/32)) ([1405dad](https://github.com/shadow81627/barry/commit/1405dad143ce7a5bd6f09baeebd1600b0968c829))
+
 ## [1.0.5](https://github.com/shadow81627/barry/compare/v1.0.4...v1.0.5) (2021-07-18)
 
 
