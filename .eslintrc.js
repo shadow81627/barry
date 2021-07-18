@@ -16,7 +16,6 @@ module.exports = {
     'plugin:nuxt/recommended',
   ],
   plugins: ['prettier'],
-  ignorePatterns: ['static/**', 'assets/**'],
   rules: {
     '@typescript-eslint/no-unused-vars': 'off',
     'vue/require-prop-types': 'off',
