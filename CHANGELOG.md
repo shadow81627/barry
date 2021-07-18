@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.5](https://github.com/shadow81627/barry/compare/v1.0.4...v1.0.5) (2021-07-18)
+
+
+### Bug Fixes
+
+* **request:** import utils ([8f5e932](https://github.com/shadow81627/barry/commit/8f5e9327383e973a95562c0a6ddc5b95aaa662ef))
+
 ## [1.0.4](https://github.com/shadow81627/barry/compare/v1.0.3...v1.0.4) (2021-07-18)
 
 
