@@ -1,0 +1,21 @@
+# https://github.com/marketplace/actions/labeler
+# https://github.com/marketplace/actions/regex-issue-labeler
+
+chore:
+  - ./*
+
+test:
+  - test/**/*
+
+dependencies:
+  - package.json
+  - package-lock.json
+
+config:
+  - nuxt.config.js
+  - .npmrc
+  - .gitignore
+  - .gitattributes
+  - .editorconfig
+  - .github/**/**
+#   - .env.example
