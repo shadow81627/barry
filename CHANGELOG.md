@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.3](https://github.com/shadow81627/barry/compare/v1.0.2...v1.0.3) (2021-07-18)
+
+
+### Bug Fixes
+
+* **notification:** key by message ([f4e9b6c](https://github.com/shadow81627/barry/commit/f4e9b6c9cebb35173fca0ffa3dc35da33068be75))
+
 ## [1.0.2](https://github.com/shadow81627/barry/compare/v1.0.1...v1.0.2) (2021-07-17)
 
 
