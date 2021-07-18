@@ -3,7 +3,7 @@
     <transition-group name="list-complete">
       <div
         v-for="(notification, index) in notifications"
-        :key="index"
+        :key="notification.message"
         :class="`[ notification__item notification--${notification.type} ]`"
         class="list-complete-item"
       >
