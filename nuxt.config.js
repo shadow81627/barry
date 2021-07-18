@@ -47,7 +47,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://dliu8bphxvibx.cloudfront.net/images/fb-share-image.jpg',
+        content: '/images/fb-share-image.jpg',
       },
       { hid: 'og:url', property: 'og:url', content: 'https://scuberqueensland.com/win' },
     ],
