@@ -38,6 +38,8 @@ module.exports = {
         'font-display': 'warn',
         'external-anchors-use-rel-noopener': 'warn',
         'button-name': 'warn',
+        'image-size-responsive': 'warn',
+        'uses-optimized-images': 'warn',
       },
     },
     upload: {
