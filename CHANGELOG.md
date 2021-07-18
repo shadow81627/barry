@@ -1,5 +1,14 @@
 # Releases
 
+## [1.0.4](https://github.com/shadow81627/barry/compare/v1.0.3...v1.0.4) (2021-07-18)
+
+
+### Bug Fixes
+
+* add typescript ([19c2171](https://github.com/shadow81627/barry/commit/19c217107b48432c09752c9f4db0c73f8908ffda))
+* **deps:** pin dependency nuxt to v2.7.1 ([#12](https://github.com/shadow81627/barry/issues/12)) ([dbfec95](https://github.com/shadow81627/barry/commit/dbfec95b1c9f9e08fd34849732fbe104cdc03988))
+* **deps:** pin dependency vuex to v3.1.1 ([#11](https://github.com/shadow81627/barry/issues/11)) ([cb4567e](https://github.com/shadow81627/barry/commit/cb4567e669ddfba4f53298f2e3a6c21fe0eb25f7))
+
 ## [1.0.3](https://github.com/shadow81627/barry/compare/v1.0.2...v1.0.3) (2021-07-18)
 
 
