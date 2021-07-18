@@ -12,6 +12,7 @@
     "lint": "eslint --ext .ts,.js,.vue .",
     "lint:fix": "yarn run lint -- --fix",
     "test": "codeceptjs run --steps",
+    "lhci:autorun": "lhci autorun",
     "semantic-release": "semantic-release"
   },
   "dependencies": {

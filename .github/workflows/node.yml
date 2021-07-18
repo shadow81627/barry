@@ -33,7 +33,7 @@ jobs:
       - name: Test 🧪
         run: yarn run test
 
-      # - name: Run Lighthouse 💡
-      #   run: yarn run lhci:autorun
-      #   env:
-      #     LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+      - name: Run Lighthouse 💡
+        run: yarn run lhci:autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
