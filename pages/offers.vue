@@ -12,7 +12,6 @@ export default {
     Section,
   },
   layout: 'deals',
-  middleware: ['competition-state'],
   data() {
     return {
       sections: this.$t('deals.sections'),
