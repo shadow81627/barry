@@ -120,7 +120,6 @@ export default {
     LayerCard,
   },
   layout: 'ondemand',
-  middleware: ['competition-state'],
   head() {
     return {
       ...this.$t('ondemand.head'),
