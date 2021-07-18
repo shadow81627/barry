@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import { chunk } from '@/assets/js/utils';
+import utils from '@/assets/js/utils';
 
 // import TwoByOne from '@/components/TwoByOne';
 import LayerCard from '@/components/LayerCard';
