@@ -20,7 +20,7 @@
     "@nuxtjs/pwa": "2.6.0",
     "axios": "0.21.1",
     "bootstrap-vue": "2.0.0-rc.20",
-    "nuxt": "^2.7.1",
+    "nuxt": "2.7.1",
     "nuxt-i18n": "5.12.3",
     "video.js": "7.5.4",
     "vue-mq": "1.0.1",
