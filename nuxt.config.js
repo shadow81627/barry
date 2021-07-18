@@ -84,7 +84,7 @@ export default {
   loadingIndicator: {
     name: '~/loading.html',
     color: 'white',
-    throttle: 1000,
+    throttle: 100,
     background: 'black',
   },
 
