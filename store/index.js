@@ -21,13 +21,13 @@ export const state = {
   // Set of validation for form fields, returned by the subforms-api
   serverValidation: [],
 
-  cookieAccepted: global.localStorage ? localStorage.getItem('cookieAccepted') || false : false,
+  cookieAccepted: global.localStorage ? localStorage.getItem('cookie-accepted') || false : false,
 };
 
 export const mutations = {
   setCookieAccepted(currentState, cookieAccepted) {
     const newState = currentState;
-    localStorage.setItem('cookieAccepted', true);
+    localStorage.setItem('cookie-accepted', true);
     newState.cookieAccepted = cookieAccepted;
   },
   addMessage(currentState, messages) {
