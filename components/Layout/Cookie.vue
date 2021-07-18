@@ -1,34 +1,26 @@
 <template>
-  <div v-if="!$store.state.cookieAccepted" class="ol-modal ol-beh-fade">
-    <aside class="attached-banner-interstitial">
-      <div class="attached-banner-interstitial-main">
-        <div class="attached-banner-interstitial-main-content">
-          <div class="attached-banner-interstitial-main-content-label" v-html="$t('cookie.body')" />
-        </div>
-        <div class="attached-banner-interstitial-main-actions">
-          <button
-            class="attached-banner-interstitial-main-actions-action ol-confirm"
-            type="button"
-            @click="cookieAccepted()"
-          >
-            <label class="attached-banner-interstitial-main-actions-action-label">
-              <span
-                class="attached-banner-interstitial-main-actions-action-label-title text-uppercase"
-                v-html="$t('cookie.cta')"
-                >Continue</span
-              >
-            </label>
-          </button>
-        </div>
-      </div>
-    </aside>
-  </div>
+  <b-container
+    v-if="!$store.state.cookieAccepted"
+    tag="aside"
+    class="attached-banner-interstitial"
+    fluid
+  >
+    <b-row align-v="center">
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <b-col v-html="$t('cookie.body')" />
+      <b-col cols="auto">
+        <b-button class="text-uppercase" type="button" variant="outline-primary" @click="accept()">
+          {{ $t('cookie.cta') }}
+        </b-button>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
 export default {
   methods: {
-    cookieAccepted() {
+    accept() {
       this.$store.commit('setCookieAccepted', true);
     },
   },
@@ -57,10 +49,8 @@ export default {
   box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.15);
   color: #f0f0f0;
   display: grid;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   left: 0;
-  grid-auto-flow: row;
-  grid-row-gap: 12px;
   overflow: hidden;
   padding: 16px;
   position: fixed;
@@ -127,12 +117,6 @@ export default {
   font-weight: bold;
   line-height: 1;
   margin-bottom: 0;
-}
-
-.attached-banner-interstitial-main-content-label {
-  display: grid;
-  grid-auto-flow: row;
-  grid-row-gap: 12px;
 }
 
 .attached-banner-interstitial-main-content-label-description {
