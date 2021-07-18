@@ -9,6 +9,9 @@ export default {
 
   router: {
     middleware: [],
+  },
+
+  generate: {
     fallback: true,
   },
 
