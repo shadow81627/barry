@@ -160,6 +160,7 @@ export default {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false, // or `bvCSS`
     componentPlugins: [
+      'LayoutPlugin',
       'Form',
       'FormGroup',
       'FormCheckbox',
