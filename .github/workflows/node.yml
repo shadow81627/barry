@@ -29,8 +29,10 @@ jobs:
 
       - name: Build 🔨
         run: yarn run generate
-      # - name: Test 🧪
-      #   run: yarn run test:e2e
+
+      - name: Test 🧪
+        run: yarn run test
+
       # - name: Run Lighthouse 💡
       #   run: yarn run lhci:autorun
       #   env:
