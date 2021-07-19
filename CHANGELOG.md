@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.7](https://github.com/shadow81627/barry/compare/v1.0.6...v1.0.7) (2021-07-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nuxt-i18n to v5.12.7 ([2db68db](https://github.com/shadow81627/barry/commit/2db68db7a13368777d5ef69398c5dce0d62c6643))
+
 ## [1.0.6](https://github.com/shadow81627/barry/compare/v1.0.5...v1.0.6) (2021-07-18)
 
 
