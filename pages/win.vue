@@ -29,7 +29,7 @@ export default {
     EntryForm,
   },
   layout: 'entry',
-  middleware: ['competition-state'],
+  // middleware: ['competition-state'],
   data() {
     return {
       disabled: process.env.DISABLE_FORM === 'TRUE',

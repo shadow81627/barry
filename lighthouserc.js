@@ -40,6 +40,7 @@ module.exports = {
         'button-name': 'warn',
         'image-size-responsive': 'warn',
         'uses-optimized-images': 'warn',
+        list: 'warn',
       },
     },
     upload: {
