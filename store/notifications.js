@@ -2,43 +2,48 @@ export const ADD_NOTIFICATION = 'ADD_NOTIFICATION';
 export const REMOVE_NOTIFICATION = 'REMOVE_NOTIFICATION';
 
 export const state = () => ({
-  notifications: [],
+  list: [],
 });
 export const getters = {
   findNotificationById: state => id => {
-    return state.notifications.find(notification => notification.id === id);
+    return state.list.find(notification => notification.id === id);
   },
 };
 export const mutations = {
   [ADD_NOTIFICATION](state, payload) {
-    state.notifications = [...state.notifications, { ...payload, id: Symbol('notification') }];
+    state.list = [...state.list, { ...payload, id: Symbol('notification') }];
   },
   [REMOVE_NOTIFICATION](state, payload) {
     const index = payload;
-    const notifications = [...state.notifications];
+    const list = [...state.list];
     if (index) {
-      state.notifications.splice(index, 1);
+      state.list.splice(index, 1);
     } else {
-      notifications.shift();
+      list.shift();
     }
-    state.notifications = [...notifications];
-    return state.notifications;
+    state.list = [...list];
+    return state.list;
   },
 };
 export const actions = {
   async add(
     {
-      state: { notifications },
+      state: { list },
+      commit,
     },
     data,
   ) {
     // Keep a maximum of 5 messages displayed
-    if (notifications.length >= 5) {
+    if (list.length >= 5) {
       commit(REMOVE_NOTIFICATION);
     }
     commit(ADD_NOTIFICATION, data);
-    await new Promise((resolve, reject) => setTimeout(() => resolve(), 4000));
-    dispatch(REMOVE_NOTIFICATION);
+    await new Promise((resolve, reject) =>
+      setTimeout(() => {
+        // commit(REMOVE_NOTIFICATION);
+        resolve();
+      }, 4000),
+    );
   },
   close({ commit }, index) {
     commit(REMOVE_NOTIFICATION, index);
