@@ -67,7 +67,6 @@ import { validationMixin } from 'vuelidate';
 import { required, email, maxLength } from 'vuelidate/lib/validators';
 
 import axios from 'axios';
-import EventBus from '@/assets/js/EventBus.js';
 
 import FormField from '@/components/FormField/FormField.vue';
 
@@ -137,24 +136,28 @@ export default {
               // Reset
               this.friends = [emptyFriend];
 
-              EventBus.$emit('notification', {
+              const message = {
                 type: 'success',
                 message: 'Forward to friend successful.',
-              });
+              };
+              this.$store.notifications.dispatch('notifications/add', message);
+
               this.$router.push(this.localePath('confirm'));
             } else {
-              EventBus.$emit('notification', {
+              const message = {
                 type: 'error',
                 message: 'Error processing event data.',
-              });
+              };
+              this.$store.notifications.dispatch('notifications/add', message);
             }
           })
           .catch(error => {
             // this.ctaLoading = false;
-            EventBus.$emit('notification', {
+            const message = {
               type: 'error',
               message: 'Error submitting Forward to friend.',
-            });
+            };
+            this.$store.notifications.dispatch('notifications/add', message);
             if (error.response) {
               // The request was made and the server responded with a status code
               // that falls out of the range of 2xx

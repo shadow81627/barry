@@ -187,8 +187,6 @@ import { mapMutations } from 'vuex';
 import FormField from '@/components/FormField/FormField.vue';
 import Birthday from '@/components/FormModules/Birthday';
 
-import EventBus from '@/assets/js/EventBus.js';
-
 import axios from 'axios';
 
 const wordLimit = param => value => value.trim().split(' ').length < param;
@@ -275,6 +273,13 @@ export default {
       return 'muted';
     },
   },
+  mounted() {
+    const message = {
+      type: 'success',
+      message: 'Entry successful.',
+    };
+    this.$store.dispatch('notifications/add', message);
+  },
   methods: {
     ...mapMutations(['setEntrant']),
     async submitForm(event) {
@@ -305,19 +310,19 @@ export default {
             // Set entrant in vuex store
             this.$store.commit('setEntrant', { ...this.form, hash: response.data.hash });
 
-            // Trigger event
-            EventBus.$emit('entry-confirmed', true);
-            EventBus.$emit('notification', {
+            const message = {
               type: 'success',
               message: 'Entry successful.',
-            });
+            };
+            this.$store.notifications.dispatch('notifications/add', message);
             this.$router.push(this.localePath('confirm'));
           })
           .catch(error => {
-            EventBus.$emit('notification', {
+            const message = {
               type: 'error',
               message: 'Error submitting entry.',
-            });
+            };
+            this.$store.notifications.dispatch('notifications/add', message);
             if (error.response) {
               // The request was made and the server responded with a status code
               // that falls out of the range of 2xx

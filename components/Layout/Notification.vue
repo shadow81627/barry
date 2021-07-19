@@ -18,43 +18,15 @@
 </template>
 
 <script>
-import EventBus from '@/assets/js/EventBus.js';
-
 export default {
-  data() {
-    return {
-      notifications: [],
-    };
-  },
-  mounted() {
-    // Listening to event notification from app
-    EventBus.$on('notification', this.add);
+  computed: {
+    notifications() {
+      return this.$store.state.notifications;
+    },
   },
   methods: {
-    add(message) {
-      // Keep a maximum of 5 messages displayed
-      if (this.notifications.length >= 5) {
-        this.notifications.shift();
-      }
-
-      // Push to message to notifications array
-      this.notifications.push(message);
-
-      const self = this;
-
-      // Self close earliest notification after 8 secs
-      const timer = global.setInterval(function() {
-        if (self.notifications.length > 0) {
-          setTimeout(function() {
-            self.notifications.shift();
-          }, 5000);
-        } else {
-          global.clearInterval(timer);
-        }
-      }, 5000);
-    },
     close(index) {
-      this.notifications.splice(index, 1);
+      this.$store.notifications.close(index);
     },
   },
 };

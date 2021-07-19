@@ -60,8 +60,6 @@
 </template>
 
 <script>
-import EventBus from '@/assets/js/EventBus.js';
-
 import BlogPost from '@/components/Blog/Post';
 
 export default {
@@ -99,15 +97,17 @@ export default {
           // FB shared successfully
           if (response && !response.error_message) {
             // Store twitter Facebook record
-            EventBus.$emit('notification', {
+            const message = {
               type: 'success',
               message: 'Facebook share successful.',
-            });
+            };
+            this.$store.notifications.dispatch('notifications/add', message);
           } else {
-            EventBus.$emit('notification', {
+            const message = {
               type: 'error',
               message: 'Error sharing via Facebook.',
-            });
+            };
+            this.$store.notifications.dispatch('notifications/add', message);
           }
         },
       );
