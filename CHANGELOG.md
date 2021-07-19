@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.9](https://github.com/shadow81627/barry/compare/v1.0.8...v1.0.9) (2021-07-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/google-tag-manager to v2.3.2 ([f73c589](https://github.com/shadow81627/barry/commit/f73c589617676430328c6cf0d1694004df00ac7e))
+
 ## [1.0.8](https://github.com/shadow81627/barry/compare/v1.0.7...v1.0.8) (2021-07-19)
 
 
