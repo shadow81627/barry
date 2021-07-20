@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.11](https://github.com/shadow81627/barry/compare/v1.0.10...v1.0.11) (2021-07-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/google-analytics to v2.4.0 ([e561922](https://github.com/shadow81627/barry/commit/e561922b6bffebae1bec174fee9c77ceaddf2d30))
+
 ## [1.0.10](https://github.com/shadow81627/barry/compare/v1.0.9...v1.0.10) (2021-07-19)
 
 
