@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.12](https://github.com/shadow81627/barry/compare/v1.0.11...v1.0.12) (2021-07-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vuex to v3.6.2 ([0d932e6](https://github.com/shadow81627/barry/commit/0d932e6878ae65be1f9f9efcf0019d1ecfb0c010))
+
 ## [1.0.11](https://github.com/shadow81627/barry/compare/v1.0.10...v1.0.11) (2021-07-20)
 
 
