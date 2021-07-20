@@ -21,7 +21,7 @@
     "@nuxtjs/google-tag-manager": "2.3.2",
     "@nuxtjs/pwa": "2.6.0",
     "axios": "0.21.1",
-    "bootstrap-vue": "2.0.0-rc.20",
+    "bootstrap-vue": "2.21.2",
     "jquery": "3.5.0",
     "nuxt": "2.15.7",
     "nuxt-i18n": "5.12.7",
