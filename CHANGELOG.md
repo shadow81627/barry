@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.13](https://github.com/shadow81627/barry/compare/v1.0.12...v1.0.13) (2021-07-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency bootstrap-vue to v2.21.2 ([5f7c659](https://github.com/shadow81627/barry/commit/5f7c659025539023b5e06c08f4bbd6ff6d1a291f))
+
 ## [1.0.12](https://github.com/shadow81627/barry/compare/v1.0.11...v1.0.12) (2021-07-20)
 
 
