@@ -479,6 +479,11 @@
     "title": "You have unsubscribed from scUber, the world's first rideshare submarine experience."
   },
   "comingsoon": {
+    "head": {
+      "title": "Coming soon",
+      "description": "A world-first experience is launching May 23! Register now to be the first to hear."
+
+    },
     "title": "Coming soon",
     "description": "A world-first experience is launching May 23! <a href=\"https://www.queensland.com/Plan-Your-Trip/Travel-Tools/eNews-Subscribe\" rel=\"noopener\">Register now</a> to be the first to hear.",
     "cta": {

@@ -12,6 +12,7 @@ module.exports = {
         '/request',
         '/unsubscribe',
         '/win/',
+        '/comingsoon/',
       ],
       staticDistDir: './dist',
     },
