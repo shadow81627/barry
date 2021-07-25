@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.16](https://github.com/shadow81627/barry/compare/v1.0.15...v1.0.16) (2021-07-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue-scrollto to v2.20.0 ([11e4231](https://github.com/shadow81627/barry/commit/11e4231b121ae51676d1a6e802366869320f0580))
+
 ## [1.0.15](https://github.com/shadow81627/barry/compare/v1.0.14...v1.0.15) (2021-07-25)
 
 
