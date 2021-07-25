@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   background: black;
+  color: #fff;
 }
 .main-content-comingsoon {
   min-height: 100vh;
