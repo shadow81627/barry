@@ -42,7 +42,7 @@ module.exports = {
         'image-size-responsive': WARN,
         'uses-optimized-images': WARN,
         list: WARN,
-        'total-byte-weight': WARN
+        'total-byte-weight': WARN,
       },
     },
     upload: {
