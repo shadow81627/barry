@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.15](https://github.com/shadow81627/barry/compare/v1.0.14...v1.0.15) (2021-07-25)
+
+
+### Bug Fixes
+
+* **deps:** bump github/codeql-action from 1.0.5 to 1.0.7 ([#39](https://github.com/shadow81627/barry/issues/39)) ([cdec2b1](https://github.com/shadow81627/barry/commit/cdec2b18a21865264cc7340a68a22d52d0f68d63))
+
 ## [1.0.14](https://github.com/shadow81627/barry/compare/v1.0.13...v1.0.14) (2021-07-20)
 
 
