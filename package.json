@@ -26,7 +26,7 @@
     "jquery": "3.5.0",
     "nuxt": "2.15.7",
     "nuxt-i18n": "5.12.7",
-    "video.js": "7.13.3",
+    "video.js": "7.14.3",
     "vue-mq": "1.0.1",
     "vue-scrollto": "2.20.0",
     "vuelidate": "0.7.6",
