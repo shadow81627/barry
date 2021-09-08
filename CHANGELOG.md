@@ -1,5 +1,12 @@
 # Releases
 
+## [1.0.17](https://github.com/shadow81627/barry/compare/v1.0.16...v1.0.17) (2021-09-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to v0.21.2 [security] ([7a117f9](https://github.com/shadow81627/barry/commit/7a117f99649c1b15f8862d32ee759f202944db5b))
+
 ## [1.0.16](https://github.com/shadow81627/barry/compare/v1.0.15...v1.0.16) (2021-07-25)
 
 
