@@ -45,7 +45,7 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-nuxt": "2.0.0",
     "eslint-plugin-prettier": "3.4.0",
-    "playwright": "1.12.3",
+    "playwright": "1.55.1",
     "prettier": "1.19.1",
     "sass": "1.32.13",
     "sass-loader": "10.1.1",
